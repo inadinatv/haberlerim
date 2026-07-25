@@ -1,0 +1,32 @@
+name: Haberleri Guncelle
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Her saat başı otomatik çalışır
+  workflow_dispatch: # GitHub üzerinden manuel tetiklemek istersen buton ekler
+
+permissions:
+  contents: write
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Botu Çalıştır ve JSON Üret
+        run: python bot.py
+
+      - name: Güncel Haberleri GitHub'a Gönder
+        run: |
+          git config --global user.name "Haber Botu"
+          git config --global user.email "bot@habersistemi.com"
+          git add haberler.json
+          git commit -m "Otomatik güncelleme: Yeni haberler eklendi" || echo "Yeni haber yok, değişiklik yapılmadı"
+          git push
