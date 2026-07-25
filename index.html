@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gündem - TRT Haber</title>
+    <title>Gündem Haberleri</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans p-4 md:p-8">
     <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-center text-red-600 mb-8 tracking-tight">Son Dakika Haberleri</h1>
         
-        <div id="haberler" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Haber kartları buraya yüklenecek -->
+        <!-- ANA SAYFA (Haber Kartları) -->
+        <div id="ana-sayfa">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-center text-red-600 mb-8 tracking-tight">Son Dakika Gelişmeleri</h1>
+            <div id="haberler-listesi" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Kartlar JavaScript ile buraya yüklenecek -->
+            </div>
         </div>
+
+        <!-- DETAY SAYFASI (Okuma Modu) -->
+        <div id="detay-sayfasi" class="hidden bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
+            <button onclick="geriDon()" class="mb-6 inline-flex items-center text-gray-600 hover:text-red-600 font-semibold transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Geri Dön
+            </button>
+            <div class="w-full h-64 md:h-96 bg-gray-200 rounded-xl overflow-hidden mb-8 relative">
+                <img id="detay-resim" src="" alt="" class="w-full h-full object-cover">
+            </div>
+            <span id="detay-tarih" class="text-sm font-semibold text-gray-400 mb-4 block"></span>
+            <h1 id="detay-baslik" class="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight"></h1>
+            
+            <!-- Haberin kazınan tüm içeriği buraya HTML olarak basılacak -->
+            <div id="detay-icerik" class="text-lg text-gray-700 leading-relaxed">
+                <!-- Haber içeriği buraya gelecek -->
+            </div>
+        </div>
+
     </div>
 
     <script>
-        async function haberleriGetir() {
-            const kapsayici = document.getElementById('haberler');
-            try {
-                // Aynı klasördeki JSON dosyasını çekiyoruz
-                const response = await fetch('haberler.json');
-                const veriler = await response.json();
+        // Haberleri bellekte tutmak için global değişken
+        let globalHaberler = [];
 
-                kapsayici.innerHTML = veriler.map(haber => `
-                    <a href="${haber.link}" target="_blank" class="block bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
+        async function haberleriGetir() {
+            const kapsayici = document.getElementById('haberler-listesi');
+            try {
+                // haberler.json dosyasını çekiyoruz
+                const response = await fetch('haberler.json');
+                globalHaberler = await response.json();
+
+                kapsayici.innerHTML = globalHaberler.map((haber, index) => `
+                    <div onclick="haberOku(${index})" class="cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
                         <div class="h-48 w-full bg-gray-200 overflow-hidden relative">
                             <img src="${haber.resim}" alt="${haber.baslik}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x200?text=Görsel+Bulunamadı'">
                         </div>
@@ -38,13 +63,40 @@
                                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 `).join('');
             } catch (hata) {
-                kapsayici.innerHTML = '<p class="text-red-500 text-center col-span-full">Haberler yüklenirken bir sorun oluştu.</p>';
+                kapsayici.innerHTML = '<p class="text-red-500 text-center col-span-full">Haberler yüklenirken bir sorun oluştu veya haberler.json henüz oluşmadı.</p>';
             }
         }
 
+        // Habere tıklandığında detay sayfasını açan fonksiyon
+        function haberOku(index) {
+            const haber = globalHaberler[index];
+            
+            // Verileri detay sayfasına yerleştir
+            document.getElementById('detay-resim').src = haber.resim;
+            document.getElementById('detay-baslik').innerText = haber.baslik;
+            document.getElementById('detay-tarih').innerText = new Date(haber.tarih).toLocaleDateString('tr-TR');
+            
+            // YENİ EKLENEN KISIM: Botun kazıdığı uzun metni HTML formatında basıyoruz
+            document.getElementById('detay-icerik').innerHTML = haber.tam_metin;
+
+            // Ekranları değiştir
+            document.getElementById('ana-sayfa').classList.add('hidden');
+            document.getElementById('detay-sayfasi').classList.remove('hidden');
+            
+            // Sayfanın en üstüne kaydır
+            window.scrollTo(0, 0);
+        }
+
+        // Geri dön butonunu çalıştıran fonksiyon
+        function geriDon() {
+            document.getElementById('detay-sayfasi').classList.add('hidden');
+            document.getElementById('ana-sayfa').classList.remove('hidden');
+        }
+
+        // Sayfa açıldığında haberleri yükle
         haberleriGetir();
     </script>
 </body>
