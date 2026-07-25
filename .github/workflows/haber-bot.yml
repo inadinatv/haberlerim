@@ -2,8 +2,8 @@ name: Haberleri Guncelle
 
 on:
   schedule:
-    - cron: '0 * * * *' # Her saat başı otomatik çalışır
-  workflow_dispatch: # GitHub üzerinden manuel tetiklemek istersen buton ekler
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -20,6 +20,10 @@ jobs:
         with:
           python-version: '3.10'
 
+      # YENİ EKLENEN ADIM: Kazıma kütüphanesini kuruyoruz
+      - name: Gerekli Kütüphaneleri Kur
+        run: pip install beautifulsoup4
+
       - name: Botu Çalıştır ve JSON Üret
         run: python bot.py
 
@@ -28,5 +32,5 @@ jobs:
           git config --global user.name "Haber Botu"
           git config --global user.email "bot@habersistemi.com"
           git add haberler.json
-          git commit -m "Otomatik güncelleme: Yeni haberler eklendi" || echo "Yeni haber yok, değişiklik yapılmadı"
+          git commit -m "Otomatik güncelleme: Tüm içerikler kazındı" || echo "Yeni haber yok"
           git push
