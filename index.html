@@ -30,6 +30,7 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.5);
             --navbar-bg: rgba(10,10,26,0.8);
             --ticker-bg: rgba(244,63,94,0.1);
+            --finans-bg: rgba(10,10,26,0.95);
             --skeleton-base: rgba(255,255,255,0.04);
             --skeleton-shine: rgba(255,255,255,0.08);
             --detail-bg: #0e0e22;
@@ -53,6 +54,7 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.15);
             --navbar-bg: rgba(240,240,248,0.85);
             --ticker-bg: rgba(244,63,94,0.08);
+            --finans-bg: rgba(255,255,255,0.95);
             --skeleton-base: rgba(0,0,0,0.04);
             --skeleton-shine: rgba(0,0,0,0.08);
             --detail-bg: #ffffff;
@@ -154,12 +156,17 @@
         }
         .theme-toggle:hover { border-color:var(--accent-2); transform:rotate(20deg) scale(1.1); }
 
-        /* ═══════ TICKER ═══════ */
+        /* ═══════ TICKERS (HABER & FİNANS) ═══════ */
         .ticker-wrap {
             background: var(--ticker-bg);
             border-bottom: 1px solid var(--border-color);
             overflow: hidden; height:40px; display:flex; align-items:center;
             position:relative; z-index:10;
+        }
+        /* Finans şeridi için özel arka plan (haberden ayırmak için) */
+        .finans-wrap {
+            background: var(--finans-bg);
+            border-top: none;
         }
         .ticker-label {
             background: linear-gradient(135deg, var(--accent-4), var(--accent-3));
@@ -168,25 +175,46 @@
             text-transform:uppercase; z-index:2; flex-shrink:0;
             box-shadow: 0 2px 10px rgba(244,63,94,0.3);
         }
+        .finans-label {
+            background: linear-gradient(135deg, #eab308, #ca8a04); /* Altın Sarısı */
+            box-shadow: 0 2px 10px rgba(234,179,8,0.3);
+            color: #000; /* Sarının üstünde siyah daha net okunur */
+        }
         .ticker-track {
-            display:flex; animation: tickerScroll 30s linear infinite; white-space:nowrap;
-            margin-left:20px;
+            display:flex; 
+            animation: tickerScroll 120s linear infinite; 
+            white-space:nowrap; margin-left:20px;
+        }
+        .finans-track {
+            /* Piyasalar ters yöne ve biraz daha hızlı kaysın */
+            animation: tickerScrollReverse 90s linear infinite;
         }
         .ticker-track:hover { animation-play-state:paused; }
         .ticker-item {
             color:var(--text-secondary); font-size:0.82rem; font-weight:500;
             padding:0 2rem; position:relative; cursor: pointer; transition: color 0.3s;
         }
-        .ticker-item:hover {
-            color: var(--accent-2);
-        }
+        .ticker-item:hover { color: var(--accent-2); }
         .ticker-item::before {
             content:'◆'; position:absolute; left:0; color:var(--accent-2);
             font-size:0.5rem; top:50%; transform:translateY(-50%);
         }
+        
+        /* Finans Şeridi Özel Renklendirmeleri */
+        .finans-item { cursor: default; } /* Tıklanabilir olmasın */
+        .finans-item:hover { color: var(--text-secondary); }
+        .finans-item::before { content:'|'; color: var(--border-color); font-size:1rem; }
+        .finans-name { color: var(--text-primary); font-weight: 700; margin-right: 4px; }
+        .finans-up { color: #22c55e; font-weight: 600; margin-left: 4px; }
+        .finans-down { color: #ef4444; font-weight: 600; margin-left: 4px; }
+
         @keyframes tickerScroll {
             0% { transform:translateX(0); }
             100% { transform:translateX(-50%); }
+        }
+        @keyframes tickerScrollReverse {
+            0% { transform:translateX(-50%); }
+            100% { transform:translateX(0); }
         }
 
         /* ═══════ MAIN ═══════ */
@@ -195,43 +223,11 @@
             max-width:1280px; margin:0 auto; padding:2rem 1.5rem 4rem;
         }
 
-        /* ═══════ HERO ═══════ */
-        .hero { text-align:center; padding:1.2rem 0 1.5rem; }
-        .hero-greeting {
-            font-size:0.75rem; font-weight:600; color:var(--accent-2);
-            text-transform:uppercase; letter-spacing:3px; margin-bottom:0.5rem;
-            display:flex; align-items:center; justify-content:center; gap:8px;
-        }
-        .hero-title {
-            font-family:'Playfair Display', serif;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            font-weight:900; line-height:1.15; margin-bottom:0.5rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
-            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-            background-clip:text;
-        }
-        .hero-sub {
-            color:var(--text-secondary); font-size:0.9rem; max-width:600px;
-            margin:0 auto 1rem; line-height:1.5;
-        }
-        .hero-stats { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; }
-        .stat-item { text-align:center; }
-        .stat-number {
-            font-size:1.4rem; font-weight:900;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-            background-clip:text;
-        }
-        .stat-label {
-            font-size:0.65rem; color:var(--text-muted); text-transform:uppercase;
-            letter-spacing:1px; font-weight:600; margin-top:2px;
-        }
-
         /* ═══════ NEWS GRID & CARDS ═══════ */
         .news-grid {
             display:grid;
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap:1.8rem; margin-top:1rem;
+            gap:1.8rem;
         }
         @media(max-width:400px){ .news-grid { grid-template-columns:1fr; } }
 
@@ -456,8 +452,6 @@
         @media(max-width:768px) {
             .navbar { padding:0 1rem; }
             .main-container { padding:1.2rem 1rem 3rem; }
-            .hero { padding:2rem 0 1.5rem; }
-            .hero-stats { gap:1.5rem; }
             .detail-hero { height:280px; }
             .detail-body { padding:1.5rem; }
             .detail-hero-content { padding:1.5rem; }
@@ -486,10 +480,16 @@
         </div>
     </nav>
 
-    <!-- TICKER -->
+    <!-- TICKER: SON DAKİKA HABERLERİ -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
+    </div>
+    
+    <!-- TICKER: PİYASALAR VE DÖVİZ -->
+    <div class="ticker-wrap finans-wrap" id="finans-wrap" style="display:none;">
+        <span class="ticker-label finans-label">💰 Piyasalar</span>
+        <div class="ticker-track finans-track" id="finans-track"></div>
     </div>
 
     <!-- MAIN -->
@@ -497,26 +497,7 @@
 
         <!-- ANA SAYFA -->
         <div id="ana-sayfa">
-            <div class="hero animate-in">
-                <div class="hero-greeting" id="greeting">☀️ İyi Günler</div>
-                <h1 class="hero-title">Gündemin Nabzını<br>Tutuyoruz</h1>
-                <p class="hero-sub">Yapay zekâ destekli botumuz, en son gelişmeleri sizin için derliyor. Tarafsız, hızlı ve kesintisiz haber akışı.</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="stat-count">0</div>
-                        <div class="stat-label">Haber</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Takip</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">AI</div>
-                        <div class="stat-label">Destekli</div>
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="news-grid" id="haberler-listesi">
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
@@ -580,15 +561,6 @@
         }
         setInterval(updateClock,1000); updateClock();
 
-        // ═══════ GREETING ═══════
-        (function(){
-            const h = new Date().getHours(), el = document.getElementById('greeting');
-            if(h<6) el.textContent='🌙 İyi Geceler';
-            else if(h<12) el.textContent='☀️ Günaydın';
-            else if(h<18) el.textContent='🌤️ İyi Günler';
-            else el.textContent='🌆 İyi Akşamlar';
-        })();
-
         // ═══════ THEME ═══════
         const themeBtn = document.getElementById('theme-toggle');
         const saved = localStorage.getItem('theme') || 'dark';
@@ -609,10 +581,45 @@
             document.getElementById('back-to-top').classList.toggle('visible', st>400);
         });
 
-        // ═══════ COUNTER ═══════
-        function animateCounter(el, target){
-            let cur=0; const step=Math.max(1,Math.floor(target/40));
-            const iv=setInterval(()=>{ cur+=step; if(cur>=target){cur=target;clearInterval(iv);} el.textContent=cur; },30);
+        // ═══════ FETCH FİNANS (YENİ EKLENEN KISIM) ═══════
+        async function finansGetir(){
+            try {
+                // Türkiye geneli ücretsiz finans API'si (Döviz, Altın vs.)
+                const response = await fetch('https://api.genelpara.com/embed/para-birimleri.json');
+                const data = await response.json();
+                
+                if(data) {
+                    document.getElementById('finans-wrap').style.display = 'flex';
+                    
+                    // Göstermek istediğimiz kurları seçiyoruz
+                    const kurlar = [
+                        { ad: 'USD', veri: data.USD },
+                        { ad: 'EUR', veri: data.EUR },
+                        { ad: 'GRAM ALTIN', veri: data.GA },
+                        { ad: 'ÇEYREK', veri: data.C },
+                        { ad: 'GBP', veri: data.GBP },
+                        { ad: 'BIST 100', veri: data.BIST100 }
+                    ];
+
+                    const items = kurlar.map(k => {
+                        if(!k.veri) return '';
+                        const artis = parseFloat(k.veri.degisim) > 0;
+                        const renk = artis ? 'finans-up' : 'finans-down';
+                        const ok = artis ? '▲' : '▼';
+                        return `
+                        <span class="ticker-item finans-item">
+                            <span class="finans-name">${k.ad}:</span> 
+                            ${k.veri.satis} 
+                            <span class="${renk}">${ok} %${k.veri.degisim}</span>
+                        </span>`;
+                    }).join('');
+                    
+                    // Kesintisiz döngü için 3 kere yan yana basıyoruz
+                    document.getElementById('finans-track').innerHTML = items + items + items;
+                }
+            } catch(e) {
+                console.log('Finans verisi çekilemedi veya API geçici olarak meşgul.');
+            }
         }
 
         // ═══════ FETCH NEWS ═══════
@@ -624,7 +631,6 @@
                 const response = await fetch('haberler.json');
                 globalHaberler = await response.json();
 
-                // Ticker - Güncellendi: Artık tıklanabilir!
                 if(globalHaberler.length > 0){
                     document.getElementById('ticker-wrap').style.display='flex';
                     const items = globalHaberler.map((h, index) => 
@@ -632,8 +638,6 @@
                     ).join('');
                     document.getElementById('ticker-track').innerHTML = items + items;
                 }
-
-                animateCounter(document.getElementById('stat-count'), globalHaberler.length);
 
                 kapsayici.innerHTML = globalHaberler.map((haber, index) => {
                     const gecikme = index * 0.12;
@@ -703,6 +707,8 @@
             window.scrollTo({top:0,behavior:'smooth'});
         }
 
+        // Başlangıçta fonksiyonları çalıştır
+        finansGetir();
         haberleriGetir();
     </script>
 </body>
