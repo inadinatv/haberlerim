@@ -110,7 +110,7 @@
         }
         .theme-toggle:hover { border-color:var(--accent-2);transform:rotate(20deg) scale(1.1); }
 
-        /* ═══════ CANLI PİYASALAR ŞERİDİ — YAVAŞ (90s) ═══════ */
+        /* ═══════ CANLI PİYASALAR ŞERİDİ ═══════ */
         .market-strip {
             position:relative; z-index:10;
             background:var(--market-bg);
@@ -160,7 +160,7 @@
         }
         @keyframes spin { to{transform:rotate(360deg)} }
 
-        /* ═══════ SON DAKİKA TICKER — ÇOK YAVAŞ (120s) ═══════ */
+        /* ═══════ SON DAKİKA TICKER — ÇOK YAVAŞ (240s) ═══════ */
         .ticker-wrap {
             background:var(--ticker-bg);
             border-bottom:1px solid var(--border-color);
@@ -175,30 +175,19 @@
             box-shadow:0 2px 10px rgba(244,63,94,.3);
         }
         .ticker-track {
-            display:flex; animation:tickerScroll 120s linear infinite; white-space:nowrap; margin-left:20px;
+            display:flex; animation:tickerScroll 240s linear infinite; white-space:nowrap; margin-left:20px;
         }
         .ticker-track:hover { animation-play-state:paused; }
-        .ticker-item { color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; }
+        .ticker-item { 
+            color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; 
+            cursor:pointer; transition:color 0.3s;
+        }
+        .ticker-item:hover { color:var(--accent-2); }
         .ticker-item::before { content:'◆';position:absolute;left:0;color:var(--accent-2);font-size:.5rem;top:50%;transform:translateY(-50%); }
         @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
         .main-container { position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:2rem 1.5rem 4rem; }
-        .hero { text-align:center; padding:2.5rem 0 2rem; }
-        .hero-title {
-            font-family:'Playfair Display',serif;
-            font-size:clamp(2.2rem,5vw,3.5rem); font-weight:900; line-height:1.15; margin-bottom:1rem;
-            background:linear-gradient(135deg,var(--text-primary) 0%,var(--accent-2) 50%,var(--accent-3) 100%);
-            -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-        }
-        .hero-sub { color:var(--text-secondary);font-size:1rem;max-width:500px;margin:0 auto 2rem;line-height:1.7; }
-        .hero-stats { display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap; }
-        .stat-item { text-align:center; }
-        .stat-number {
-            font-size:1.8rem;font-weight:900;
-            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
-            -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-        }
-        .stat-label { font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;margin-top:2px; }
+        
         .news-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.8rem;margin-top:1rem; }
         @media(max-width:400px){ .news-grid{grid-template-columns:1fr;} }
         .news-card {
@@ -324,7 +313,6 @@
         ::-webkit-scrollbar-thumb { background:linear-gradient(var(--accent-1),var(--accent-3));border-radius:10px; }
         @media(max-width:768px) {
             .navbar{padding:0 1rem} .main-container{padding:1.2rem 1rem 3rem}
-            .hero{padding:2rem 0 1.5rem} .hero-stats{gap:1.5rem}
             .detail-hero{height:280px} .detail-body{padding:1.5rem} .detail-hero-content{padding:1.5rem}
             .news-grid{gap:1.2rem}
         }
@@ -350,23 +338,15 @@
         </div>
     </div>
 
-    <!-- ═══════ SON DAKİKA TICKER — 120 SANİYE ═══════ -->
+    <!-- ═══════ SON DAKİKA TICKER — ÇOK YAVAŞ EKLENDİ ═══════ -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
     </div>
 
     <div class="main-container">
+        <!-- ANA SAYFA: YAZILAR KALDIRILDI -->
         <div id="ana-sayfa">
-            <div class="hero animate-in">
-                <h1 class="hero-title">Gündemin Nabzını<br>Tutuyoruz</h1>
-                <p class="hero-sub">Yapay zekâ destekli botumuz, en son gelişmeleri sizin için derliyor. Tarafsız, hızlı ve kesintisiz haber akışı.</p>
-                <div class="hero-stats">
-                    <div class="stat-item"><div class="stat-number" id="stat-count">0</div><div class="stat-label">Haber</div></div>
-                    <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Takip</div></div>
-                    <div class="stat-item"><div class="stat-number">AI</div><div class="stat-label">Destekli</div></div>
-                </div>
-            </div>
             <div class="news-grid" id="haberler-listesi">
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
@@ -443,12 +423,6 @@
             document.getElementById('back-to-top').classList.toggle('visible',st>400);
         });
 
-        // ═══════ COUNTER ═══════
-        function animateCounter(el,target){
-            let cur=0; const step=Math.max(1,Math.floor(target/40));
-            const iv=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(iv);}el.textContent=cur;},30);
-        }
-
         // ═══════ CANLI PİYASALAR (API) ═══════
         async function piyasalariGetir(){
             const strip=document.getElementById('market-strip-inner');
@@ -508,12 +482,14 @@
             try {
                 const response=await fetch('haberler.json');
                 globalHaberler=await response.json();
+                
+                // Ticker: Artık onclick özelliğiyle tıklanabilir durumda
                 if(globalHaberler.length>0){
                     document.getElementById('ticker-wrap').style.display='flex';
-                    const items=globalHaberler.map(h=>`<span class="ticker-item">${h.baslik}</span>`).join('');
+                    const items=globalHaberler.map((h, index)=>`<span class="ticker-item" onclick="haberOku(${index})">${h.baslik}</span>`).join('');
                     document.getElementById('ticker-track').innerHTML=items.repeat(4); // 4 kopya → boşluksuz sonsuz döngü
                 }
-                animateCounter(document.getElementById('stat-count'),globalHaberler.length);
+                
                 kapsayici.innerHTML=globalHaberler.map((haber,index)=>{
                     const gecikme=index*0.12;
                     return `
