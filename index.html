@@ -75,9 +75,7 @@
             background-size:400% 400%;
         }
         @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-        .particles { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
-        .particle { position:absolute; border-radius:50%; opacity:.15; animation:floatParticle linear infinite; }
-        @keyframes floatParticle { 0%{transform:translateY(100vh) rotate(0deg);opacity:0} 10%{opacity:.15} 90%{opacity:.15} 100%{transform:translateY(-10vh) rotate(720deg);opacity:0} }
+        
         #progress-bar {
             position:fixed; top:0; left:0; height:3px; z-index:9999;
             background:linear-gradient(90deg,var(--accent-1),var(--accent-2),var(--accent-3));
@@ -101,8 +99,6 @@
         .navbar-brand .dot { width:10px;height:10px;border-radius:50%;background:var(--accent-4);animation:pulse-dot 2s ease infinite;box-shadow:0 0 8px var(--accent-4); }
         @keyframes pulse-dot { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:.6} }
         .navbar-right { display:flex; align-items:center; gap:16px; }
-        .live-clock { font-size:.8rem;font-weight:600;color:var(--text-secondary);display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums; }
-        .live-clock .live-dot { width:6px;height:6px;border-radius:50%;background:#ef4444;animation:pulse-dot 1.5s ease infinite; }
         .theme-toggle {
             width:42px;height:42px;border-radius:14px;border:1px solid var(--border-color);
             background:var(--bg-glass);cursor:pointer;font-size:1.1rem;
@@ -110,78 +106,60 @@
         }
         .theme-toggle:hover { border-color:var(--accent-2);transform:rotate(20deg) scale(1.1); }
 
+        /* ═══════ YENİ: KATEGORİ MENÜSÜ ═══════ */
+        .category-nav {
+            display: flex; gap: 10px; padding: 14px 2rem;
+            background: var(--navbar-bg); border-bottom: 1px solid var(--border-color);
+            overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch;
+            position: sticky; top: 64px; z-index: 99;
+            backdrop-filter: blur(20px);
+        }
+        .category-nav::-webkit-scrollbar { display: none; } /* Scrollbar'ı gizle */
+        .cat-btn {
+            background: var(--bg-glass); border: 1px solid var(--border-color);
+            color: var(--text-primary); font-weight: 600; font-size: 0.85rem;
+            padding: 8px 18px; border-radius: 20px; cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .cat-btn:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
+        .cat-btn.active {
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            color: #fff; border-color: transparent;
+            box-shadow: 0 4px 15px var(--glow-1);
+        }
+
         /* ═══════ CANLI PİYASALAR ŞERİDİ ═══════ */
         .market-strip {
             position:relative; z-index:10;
-            background:var(--market-bg);
-            border-bottom:1px solid var(--market-border);
-            backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
-            overflow:hidden;
+            background:var(--market-bg); border-bottom:1px solid var(--market-border);
+            backdrop-filter:blur(12px); overflow:hidden;
         }
         .market-strip-inner {
-            display:flex; align-items:stretch;
-            animation: marketScroll 90s linear infinite;
-            width:max-content;
+            display:flex; align-items:stretch; animation: marketScroll 90s linear infinite; width:max-content;
         }
         .market-strip-inner:hover { animation-play-state:paused; }
         @keyframes marketScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
         .market-item {
-            display:flex; align-items:center; gap:10px;
-            padding:12px 28px; white-space:nowrap;
-            border-right:1px solid var(--market-border);
-            transition:background .3s;
+            display:flex; align-items:center; gap:10px; padding:12px 28px; white-space:nowrap; border-right:1px solid var(--market-border); transition:background .3s;
         }
         .market-item:hover { background:var(--bg-card-hover); }
         .market-icon {
-            width:32px; height:32px; border-radius:10px;
-            display:flex; align-items:center; justify-content:center;
-            font-size:.9rem; font-weight:800; flex-shrink:0;
+            width:32px; height:32px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:.9rem; font-weight:800; flex-shrink:0;
         }
         .market-icon.usd { background:linear-gradient(135deg,#22c55e22,#22c55e44); color:#22c55e; }
         .market-icon.eur { background:linear-gradient(135deg,#3b82f622,#3b82f644); color:#3b82f6; }
-        .market-icon.gbp { background:linear-gradient(135deg,#a855f722,#a855f744); color:#a855f7; }
         .market-icon.gold { background:linear-gradient(135deg,#f59e0b22,#f59e0b44); color:#f59e0b; }
-        .market-icon.btc { background:linear-gradient(135deg,#f9731622,#f9731644); color:#f97316; }
         .market-info { display:flex; flex-direction:column; }
         .market-name { font-size:.65rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
         .market-price { font-size:.92rem; font-weight:800; color:var(--text-primary); font-variant-numeric:tabular-nums; }
-        .market-live-dot {
-            width:5px; height:5px; border-radius:50%; background:#22c55e;
-            animation:pulse-dot 1.5s ease infinite; flex-shrink:0;
-        }
-        .market-loading {
-            padding:12px 28px; font-size:.8rem; color:var(--text-muted); font-weight:600;
-            display:flex; align-items:center; gap:8px;
-        }
-        .market-loading .spinner {
-            width:14px; height:14px; border:2px solid var(--border-color);
-            border-top-color:var(--accent-2); border-radius:50%;
-            animation:spin .8s linear infinite;
-        }
-        @keyframes spin { to{transform:rotate(360deg)} }
+        .market-live-dot { width:5px; height:5px; border-radius:50%; background:#22c55e; animation:pulse-dot 1.5s ease infinite; flex-shrink:0; }
 
-        /* ═══════ SON DAKİKA TICKER — ÇOK YAVAŞ (240s) ═══════ */
-        .ticker-wrap {
-            background:var(--ticker-bg);
-            border-bottom:1px solid var(--border-color);
-            overflow:hidden; height:42px; display:flex; align-items:center;
-            position:relative; z-index:10;
-        }
-        .ticker-label {
-            background:linear-gradient(135deg,var(--accent-4),var(--accent-3));
-            color:#fff; font-weight:800; font-size:.68rem; letter-spacing:1px;
-            padding:4px 14px; border-radius:6px; margin-left:16px; white-space:nowrap;
-            text-transform:uppercase; z-index:2; flex-shrink:0;
-            box-shadow:0 2px 10px rgba(244,63,94,.3);
-        }
-        .ticker-track {
-            display:flex; animation:tickerScroll 240s linear infinite; white-space:nowrap; margin-left:20px;
-        }
+        /* ═══════ SON DAKİKA TICKER ═══════ */
+        .ticker-wrap { background:var(--ticker-bg); border-bottom:1px solid var(--border-color); overflow:hidden; height:42px; display:flex; align-items:center; position:relative; z-index:10; }
+        .ticker-label { background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff; font-weight:800; font-size:.68rem; letter-spacing:1px; padding:4px 14px; border-radius:6px; margin-left:16px; white-space:nowrap; text-transform:uppercase; z-index:2; flex-shrink:0; box-shadow:0 2px 10px rgba(244,63,94,.3); }
+        .ticker-track { display:flex; animation:tickerScroll 240s linear infinite; white-space:nowrap; margin-left:20px; }
         .ticker-track:hover { animation-play-state:paused; }
-        .ticker-item { 
-            color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; 
-            cursor:pointer; transition:color 0.3s;
-        }
+        .ticker-item { color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; cursor:pointer; transition:color 0.3s; }
         .ticker-item:hover { color:var(--accent-2); }
         .ticker-item::before { content:'◆';position:absolute;left:0;color:var(--accent-2);font-size:.5rem;top:50%;transform:translateY(-50%); }
         @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
@@ -190,6 +168,7 @@
         
         .news-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.8rem;margin-top:1rem; }
         @media(max-width:400px){ .news-grid{grid-template-columns:1fr;} }
+        
         .news-card {
             position:relative; background:var(--bg-card); border:1px solid var(--border-color);
             border-radius:24px; overflow:hidden; cursor:pointer;
@@ -197,17 +176,20 @@
             backdrop-filter:blur(10px); display:flex; flex-direction:column;
         }
         .news-card:hover { transform:translateY(-12px) scale(1.02);border-color:var(--border-hover);box-shadow:var(--shadow-card-hover),0 0 40px var(--glow-1);background:var(--bg-card-hover); }
-        .news-card::before {
-            content:'';position:absolute;inset:-2px;border-radius:26px;z-index:-1;
-            background:linear-gradient(135deg,var(--accent-1),var(--accent-2),var(--accent-3),var(--accent-1));
-            background-size:300% 300%; opacity:0; transition:opacity .5s; animation:glowRotate 4s linear infinite;
-        }
-        .news-card:hover::before { opacity:1; }
-        @keyframes glowRotate { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
         .card-image-wrap { position:relative;height:220px;overflow:hidden; }
         .card-image-wrap img { width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1); }
         .news-card:hover .card-image-wrap img { transform:scale(1.12); }
         .card-image-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%); }
+        
+        /* ═══════ YENİ: KATEGORİ BADGE ═══════ */
+        .card-cat-badge {
+            position:absolute;top:14px;right:14px;
+            background:linear-gradient(135deg, var(--accent-2), var(--accent-1));
+            color:#fff;font-size:.65rem;font-weight:800;padding:4px 10px;border-radius:8px;
+            text-transform:uppercase; letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
         .card-date-badge {
             position:absolute;top:14px;left:14px;
             background:rgba(0,0,0,.55);backdrop-filter:blur(10px);
@@ -219,7 +201,6 @@
             background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
             display:flex;align-items:center;justify-content:center;
             opacity:0;transform:translateY(10px);transition:all .4s cubic-bezier(.16,1,.3,1);
-            box-shadow:0 4px 15px rgba(108,92,231,.4);
         }
         .news-card:hover .card-read-arrow { opacity:1;transform:translateY(0); }
         .card-read-arrow svg { width:18px;height:18px;stroke:#fff; }
@@ -235,47 +216,22 @@
             display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;
             background:linear-gradient(135deg,var(--accent-1),var(--accent-2));
             color:#fff;font-weight:700;font-size:.85rem;border:none;border-radius:16px;cursor:pointer;
-            transition:all .3s;box-shadow:0 4px 20px var(--glow-1);
+            transition:all .3s;
         }
-        .news-card:hover .card-read-btn { box-shadow:0 6px 30px var(--glow-2);transform:scale(1.03); }
-        .card-read-btn svg { width:16px;height:16px;transition:transform .3s; }
-        .news-card:hover .card-read-btn svg { transform:translateX(4px); }
+        .news-card:hover .card-read-btn { transform:scale(1.03); }
         .skeleton-card { background:var(--bg-card);border:1px solid var(--border-color);border-radius:24px;overflow:hidden; }
-        .skeleton-img { height:220px;background:var(--skeleton-base);position:relative;overflow:hidden; }
-        .skeleton-line { height:14px;border-radius:8px;background:var(--skeleton-base);margin:0 1.5rem .8rem;position:relative;overflow:hidden; }
-        .skeleton-line.w80{width:80%} .skeleton-line.w60{width:60%} .skeleton-line.w100{width:calc(100% - 3rem)}
-        .skeleton-btn { height:44px;border-radius:16px;background:var(--skeleton-base);margin:.5rem 1.5rem 1.5rem;position:relative;overflow:hidden; }
-        .skeleton-img::after,.skeleton-line::after,.skeleton-btn::after {
-            content:'';position:absolute;inset:0;
-            background:linear-gradient(90deg,transparent,var(--skeleton-shine),transparent);
-            animation:shimmer 1.5s infinite;
-        }
-        @keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
         
         #detay-sayfasi { display:none; }
         #detay-sayfasi.active { display:block; }
         #ana-sayfa.hidden-page { display:none; }
         
-        .detail-container {
-            max-width:820px;margin:0 auto;background:var(--detail-bg);
-            border-radius:32px;border:1px solid var(--border-color);overflow:hidden;box-shadow:var(--shadow-card);
-        }
+        .detail-container { max-width:820px;margin:0 auto;background:var(--detail-bg); border-radius:32px;border:1px solid var(--border-color);overflow:hidden;box-shadow:var(--shadow-card); }
         .detail-hero { position:relative;height:420px;overflow:hidden; }
         .detail-hero img { width:100%;height:100%;object-fit:cover; }
         .detail-hero-overlay { position:absolute;inset:0;background:var(--overlay-gradient); }
         .detail-hero-content { position:absolute;bottom:0;left:0;right:0;padding:2.5rem; }
-        .detail-date {
-            display:inline-block;background:linear-gradient(135deg,var(--accent-4),var(--accent-3));
-            color:#fff;font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:10px;margin-bottom:12px;
-            box-shadow:0 4px 15px rgba(244,63,94,.3);
-        }
-        .detail-title {
-            font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem);
-            font-weight:900;color:#fff;line-height:1.25;text-shadow:0 2px 20px rgba(0,0,0,.3);
-        }
-        .detail-meta { display:flex;align-items:center;gap:16px;margin-top:14px;flex-wrap:wrap; }
-        .detail-meta-item { display:flex;align-items:center;gap:5px;color:rgba(255,255,255,.7);font-size:.8rem;font-weight:500; }
-        .detail-meta-item svg { width:14px;height:14px; }
+        .detail-date { display:inline-block;background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff;font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:10px;margin-bottom:12px; }
+        .detail-title { font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem); font-weight:900;color:#fff;line-height:1.25;text-shadow:0 2px 20px rgba(0,0,0,.3); }
         
         .detail-body { padding:2.5rem; }
         .detail-body p { margin-bottom:1.5rem;line-height:1.9;color:var(--text-secondary);font-size:1.05rem; }
@@ -286,91 +242,53 @@
             -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
         }
 
-        /* ═══════ RESPONSIVE MEDYA (VİDEO & İFRAME TAŞMA ÇÖZÜMÜ) ═══════ */
-        .detail-body iframe,
-        .detail-body video,
-        .detail-body img {
-            max-width: 100% !important;
-            border-radius: 16px;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-        /* Botun gönderdiği 16:9 çerçeveli videoların boyutlarını otomatik ayarlar */
-        .detail-body div[style*="padding-top: 56.25%"] {
-            position: relative;
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 1.5rem;
-        }
-        .detail-body div[style*="padding-top: 56.25%"] iframe {
-            position: absolute !important;
-            top: 0 !important;
-            left: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
-            margin-bottom: 0;
-        }
+        .detail-body iframe, .detail-body video, .detail-body img { max-width: 100% !important; border-radius: 16px; margin-bottom: 1.5rem; display: block; }
+        .detail-body div[style*="padding-top: 56.25%"] { position: relative; width: 100%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1.5rem; }
+        .detail-body div[style*="padding-top: 56.25%"] iframe { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; }
 
-        .back-btn {
-            display:inline-flex;align-items:center;gap:8px;padding:10px 22px;margin-bottom:1.5rem;
-            background:var(--bg-glass);border:1px solid var(--border-color);border-radius:16px;
-            color:var(--text-primary);font-weight:700;font-size:.88rem;cursor:pointer;
-            transition:all .3s;backdrop-filter:blur(10px);
-        }
-        .back-btn:hover { border-color:var(--accent-2);color:var(--accent-2);transform:translateX(-4px);box-shadow:0 4px 20px var(--glow-1); }
-        .back-btn svg { width:18px;height:18px;transition:transform .3s; }
-        .back-btn:hover svg { transform:translateX(-3px); }
-        #back-to-top {
-            position:fixed;bottom:28px;right:28px;z-index:200;width:50px;height:50px;border-radius:16px;border:none;
-            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));color:#fff;cursor:pointer;
-            display:flex;align-items:center;justify-content:center;
-            opacity:0;transform:translateY(20px) scale(.8);transition:all .4s cubic-bezier(.16,1,.3,1);
-            box-shadow:0 6px 25px var(--glow-2);
-        }
-        #back-to-top.visible { opacity:1;transform:translateY(0) scale(1); }
-        #back-to-top:hover { transform:translateY(-4px) scale(1.1); }
-        #back-to-top svg { width:22px;height:22px; }
+        .back-btn { display:inline-flex;align-items:center;gap:8px;padding:10px 22px;margin-bottom:1.5rem; background:var(--bg-glass);border:1px solid var(--border-color);border-radius:16px; color:var(--text-primary);font-weight:700;font-size:.88rem;cursor:pointer; transition:all .3s; }
+        .back-btn:hover { border-color:var(--accent-2);color:var(--accent-2);transform:translateX(-4px); }
+        
         @keyframes fadeInUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
         .animate-in { animation:fadeInUp .7s cubic-bezier(.16,1,.3,1) forwards;opacity:0; }
-        @keyframes scaleIn { from{opacity:0;transform:scale(.92)} to{opacity:1;transform:scale(1)} }
-        .animate-scale { animation:scaleIn .6s cubic-bezier(.16,1,.3,1) forwards; }
         .error-state { text-align:center;padding:5rem 2rem;color:var(--text-muted); }
-        .error-state svg { width:64px;height:64px;margin:0 auto 1.5rem;opacity:.3; }
-        .error-state p { font-size:1.05rem;font-weight:600; }
+        
         ::-webkit-scrollbar { width:8px; }
         ::-webkit-scrollbar-track { background:var(--bg-primary); }
         ::-webkit-scrollbar-thumb { background:linear-gradient(var(--accent-1),var(--accent-3));border-radius:10px; }
         @media(max-width:768px) {
-            .navbar{padding:0 1rem} .main-container{padding:1.2rem 1rem 3rem}
+            .navbar{padding:0 1rem} .category-nav{padding:10px 1rem} .main-container{padding:1.2rem 1rem 3rem}
             .detail-hero{height:280px} .detail-body{padding:1.5rem} .detail-hero-content{padding:1.5rem}
-            .news-grid{gap:1.2rem}
         }
     </style>
 </head>
 <body>
     <div class="bg-animated"></div>
-    <div class="particles" id="particles"></div>
     <div id="progress-bar"></div>
 
     <nav class="navbar">
         <div class="navbar-brand"><div class="dot"></div>GÜNDEM</div>
         <div class="navbar-right">
-            <div class="live-clock"><span class="live-dot"></span><span id="clock">00:00:00</span></div>
             <button class="theme-toggle" id="theme-toggle" title="Tema Değiştir">🌙</button>
         </div>
     </nav>
 
-    <!-- ═══════ CANLI PİYASALAR ŞERİDİ ═══════ -->
-    <div class="market-strip" id="market-strip">
-        <div class="market-strip-inner" id="market-strip-inner">
-            <div class="market-loading"><div class="spinner"></div> Piyasa verileri yükleniyor...</div>
-        </div>
+    <!-- KATEGORİ MENÜSÜ -->
+    <div class="category-nav" id="category-nav">
+        <button class="cat-btn active" onclick="kategoriSec('Tümü', this)">Tümü</button>
+        <button class="cat-btn" onclick="kategoriSec('Gündem', this)">Gündem</button>
+        <button class="cat-btn" onclick="kategoriSec('Ekonomi', this)">Ekonomi</button>
+        <button class="cat-btn" onclick="kategoriSec('Spor', this)">Spor</button>
+        <button class="cat-btn" onclick="kategoriSec('Dünya', this)">Dünya</button>
+        <button class="cat-btn" onclick="kategoriSec('Yaşam & Sanat', this)">Yaşam & Sanat</button>
     </div>
 
-    <!-- ═══════ SON DAKİKA TICKER ═══════ -->
+    <!-- PİYASALAR -->
+    <div class="market-strip" id="market-strip">
+        <div class="market-strip-inner" id="market-strip-inner"></div>
+    </div>
+
+    <!-- SON DAKİKA TICKER -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
@@ -380,9 +298,8 @@
         <!-- ANA SAYFA -->
         <div id="ana-sayfa">
             <div class="news-grid" id="haberler-listesi">
-                <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
-                <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
-                <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
+                <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div></div></div>
+                <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div></div></div>
             </div>
         </div>
 
@@ -391,23 +308,13 @@
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
                 Haberlere Dön
             </button>
-            <div class="detail-container animate-scale">
+            <div class="detail-container">
                 <div class="detail-hero">
                     <img id="detay-resim" src="" alt="">
                     <div class="detail-hero-overlay"></div>
                     <div class="detail-hero-content">
                         <span class="detail-date" id="detay-tarih"></span>
                         <h1 class="detail-title" id="detay-baslik"></h1>
-                        <div class="detail-meta">
-                            <span class="detail-meta-item">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                <span id="detay-okuma-suresi">3 dk okuma</span>
-                            </span>
-                            <span class="detail-meta-item">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                                Gündem Bot
-                            </span>
-                        </div>
                     </div>
                 </div>
                 <div class="detail-body" id="detay-icerik"></div>
@@ -415,27 +322,7 @@
         </div>
     </div>
 
-    <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
-    </button>
-
     <script>
-        // ═══════ PARTICLES ═══════
-        (function(){
-            const c=document.getElementById('particles');
-            const colors=['#6c5ce7','#a855f7','#ec4899','#f43f5e','#3b82f6'];
-            for(let i=0;i<20;i++){
-                const p=document.createElement('div'); p.className='particle';
-                const s=Math.random()*6+3;
-                p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*20+15}s;animation-delay:${Math.random()*10}s;`;
-                c.appendChild(p);
-            }
-        })();
-
-        // ═══════ CLOCK ═══════
-        function updateClock(){ document.getElementById('clock').textContent=new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit',second:'2-digit'}); }
-        setInterval(updateClock,1000); updateClock();
-
         // ═══════ THEME ═══════
         const themeBtn=document.getElementById('theme-toggle');
         const saved=localStorage.getItem('theme')||'dark';
@@ -448,50 +335,24 @@
             themeBtn.textContent=next==='dark'?'🌙':'☀️';
         });
 
-        // ═══════ PROGRESS + FAB ═══════
         window.addEventListener('scroll',()=>{
             const st=window.scrollY, dh=document.documentElement.scrollHeight-window.innerHeight;
             document.getElementById('progress-bar').style.width=(dh>0?(st/dh)*100:0)+'%';
-            document.getElementById('back-to-top').classList.toggle('visible',st>400);
         });
 
-        // ═══════ CANLI PİYASALAR (API) ═══════
+        // ═══════ PİYASALAR ═══════
         async function piyasalariGetir(){
             const strip=document.getElementById('market-strip-inner');
-            let usdTry=0, eurTry=0, gbpTry=0, goldUsd=0, btcUsd=0;
-
-            try {
-                const r=await fetch('https://open.er-api.com/v6/latest/USD');
-                const d=await r.json();
-                if(d&&d.rates){
-                    usdTry=d.rates.TRY||0;
-                    eurTry=usdTry/(d.rates.EUR||1);
-                    gbpTry=usdTry/(d.rates.GBP||1);
-                }
-            } catch(e){}
-
-            try {
-                const r=await fetch('https://api.gold-api.com/price/XAU');
-                const d=await r.json();
-                if(d&&d.price) goldUsd=d.price;
-            } catch(e){}
-
-            try {
-                const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
-                const d=await r.json();
-                if(d&&d.bitcoin) btcUsd=d.bitcoin.usd;
-            } catch(e){}
-
+            let usdTry=0, eurTry=0, goldUsd=0;
+            try { const r=await fetch('https://open.er-api.com/v6/latest/USD'); const d=await r.json(); if(d&&d.rates){ usdTry=d.rates.TRY||0; eurTry=usdTry/(d.rates.EUR||1); } } catch(e){}
+            try { const r=await fetch('https://api.gold-api.com/price/XAU'); const d=await r.json(); if(d&&d.price) goldUsd=d.price; } catch(e){}
+            
             const goldGramTry=(goldUsd&&usdTry)?(goldUsd*usdTry/31.1035):0;
-
             const items=[
-                {icon:'$',cls:'usd',name:'USD / TRY',price:usdTry?usdTry.toFixed(4)+' ₺':'—'},
-                {icon:'€',cls:'eur',name:'EUR / TRY',price:eurTry?eurTry.toFixed(4)+' ₺':'—'},
-                {icon:'£',cls:'gbp',name:'GBP / TRY',price:gbpTry?gbpTry.toFixed(4)+' ₺':'—'},
-                {icon:'Au',cls:'gold',name:'Altın Gram',price:goldGramTry?goldGramTry.toLocaleString('tr-TR',{maximumFractionDigits:2})+' ₺':'—'},
-                {icon:'₿',cls:'btc',name:'Bitcoin',price:btcUsd?'$'+btcUsd.toLocaleString('en-US'):'—'},
+                {icon:'$',cls:'usd',name:'USD',price:usdTry?usdTry.toFixed(4)+' ₺':'—'},
+                {icon:'€',cls:'eur',name:'EUR',price:eurTry?eurTry.toFixed(4)+' ₺':'—'},
+                {icon:'Au',cls:'gold',name:'Altın',price:goldGramTry?goldGramTry.toLocaleString('tr-TR',{maximumFractionDigits:2})+' ₺':'—'}
             ];
-
             const html=items.map(it=>`
                 <div class="market-item">
                     <div class="market-icon ${it.cls}">${it.icon}</div>
@@ -499,74 +360,112 @@
                         <span class="market-name">${it.name}</span>
                         <span class="market-price">${it.price}</span>
                     </div>
-                    <div class="market-live-dot"></div>
                 </div>`).join('');
-
-            strip.innerHTML=html.repeat(4);
+            strip.innerHTML=html.repeat(6);
         }
         piyasalariGetir();
-        setInterval(piyasalariGetir,300000);
 
-        // ═══════ HABERLER ═══════
+        // ═══════ HABERLER VE FİLTRELEME ═══════
         let globalHaberler=[];
+        
         async function haberleriGetir(){
-            const kapsayici=document.getElementById('haberler-listesi');
             try {
                 const response=await fetch('haberler.json');
                 globalHaberler=await response.json();
                 
-                if(globalHaberler.length>0){
+                // Ticker: Son Dakika (Sadece Gündem haberlerini şeritte döndür)
+                const gundemHaberleri = globalHaberler.filter(h => h.kategori === 'Gündem' || !h.kategori);
+                if(gundemHaberleri.length>0){
                     document.getElementById('ticker-wrap').style.display='flex';
-                    const items=globalHaberler.map((h, index)=>`<span class="ticker-item" onclick="haberOku(${index})">${h.baslik}</span>`).join('');
+                    const items = gundemHaberleri.slice(0,10).map(h=>`<span class="ticker-item" onclick="haberOkuLink('${h.link}')">${h.baslik}</span>`).join('');
                     document.getElementById('ticker-track').innerHTML=items.repeat(4);
                 }
                 
-                kapsayici.innerHTML=globalHaberler.map((haber,index)=>{
-                    const gecikme=index*0.12;
-                    return `
-                    <div onclick="haberOku(${index})" class="news-card animate-in" style="animation-delay:${gecikme}s">
-                        <div class="card-image-wrap">
-                            <img src="${haber.resim}" alt="${haber.baslik}" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/6c5ce7?text=Görsel+Yok'">
-                            <div class="card-image-overlay"></div>
-                            <div class="card-date-badge">${new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'})}</div>
-                            <div class="card-read-arrow"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></div>
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">${haber.baslik}</h2>
-                            <p class="card-desc">${haber.aciklama}</p>
-                            <div class="card-footer">
-                                <button class="card-read-btn">Haberi Oku <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
-                            </div>
-                        </div>
-                    </div>`;
-                }).join('');
+                haberleriEkranaCiz(globalHaberler);
             } catch(hata){
-                kapsayici.innerHTML=`<div class="error-state" style="grid-column:1/-1"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg><p>Haberler yüklenemedi veya bot henüz çalışmadı.</p></div>`;
+                document.getElementById('haberler-listesi').innerHTML=`<div class="error-state" style="grid-column:1/-1"><p>Haberler yüklenemedi. Bot henüz çalışmamış olabilir.</p></div>`;
             }
         }
 
+        // Seçilen kategoriye göre filtrele
+        function kategoriSec(kategoriAdi, btnElement) {
+            // Buton aktiflik durumunu güncelle
+            document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+            // Haberleri filtrele
+            if (kategoriAdi === 'Tümü') {
+                haberleriEkranaCiz(globalHaberler);
+            } else {
+                const filtrelenmis = globalHaberler.filter(h => h.kategori === kategoriAdi);
+                haberleriEkranaCiz(filtrelenmis);
+            }
+        }
+
+        function haberleriEkranaCiz(haberDizisi) {
+            const kapsayici = document.getElementById('haberler-listesi');
+            
+            if (haberDizisi.length === 0) {
+                kapsayici.innerHTML = `<div class="error-state" style="grid-column:1/-1"><p>Bu kategoride henüz haber bulunmuyor.</p></div>`;
+                return;
+            }
+
+            kapsayici.innerHTML = haberDizisi.map((haber, index) => {
+                const gecikme = (index % 10) * 0.1;
+                // Kategori bilgisi json'da yoksa Gündem yazsın
+                const katBadge = haber.kategori ? haber.kategori : 'Gündem'; 
+                
+                // Orijinal globalHaberler dizisindeki gerçek index'ini buluyoruz (detay sayfası için)
+                const gercekIndex = globalHaberler.findIndex(h => h.link === haber.link);
+
+                return `
+                <div onclick="haberOku(${gercekIndex})" class="news-card animate-in" style="animation-delay:${gecikme}s">
+                    <div class="card-image-wrap">
+                        <img src="${haber.resim}" alt="${haber.baslik}" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/6c5ce7?text=Görsel+Yok'">
+                        <div class="card-image-overlay"></div>
+                        <div class="card-cat-badge">${katBadge}</div>
+                        <div class="card-date-badge">${haber.tarih ? new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'short'}) : 'Yeni'}</div>
+                        <div class="card-read-arrow"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">${haber.baslik}</h2>
+                        <p class="card-desc">${haber.aciklama}</p>
+                        <div class="card-footer">
+                            <button class="card-read-btn">Okumaya Devam Et</button>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        // Ticker'dan tıklanınca haberi bulup açmak için yardımcı fonksiyon
+        function haberOkuLink(link) {
+            const idx = globalHaberler.findIndex(h => h.link === link);
+            if(idx !== -1) haberOku(idx);
+        }
+
         function haberOku(index){
-            const haber=globalHaberler[index];
-            document.getElementById('detay-resim').src=haber.resim;
-            document.getElementById('detay-baslik').innerText=haber.baslik;
-            document.getElementById('detay-tarih').innerText=new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'});
-            document.getElementById('detay-icerik').innerHTML=haber.tam_metin;
-            const text=haber.tam_metin.replace(/<[^>]*>/g,'');
-            document.getElementById('detay-okuma-suresi').textContent=Math.max(1,Math.ceil(text.trim().split(/\s+/).length/200))+' dk okuma';
+            const haber = globalHaberler[index];
+            document.getElementById('detay-resim').src = haber.resim;
+            document.getElementById('detay-baslik').innerText = haber.baslik;
+            document.getElementById('detay-tarih').innerText = haber.tarih ? new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'}) : '';
+            document.getElementById('detay-icerik').innerHTML = haber.tam_metin;
+            
             document.getElementById('ana-sayfa').classList.add('hidden-page');
-            const detay=document.getElementById('detay-sayfasi');
+            document.getElementById('category-nav').style.display = 'none'; // Detayda kategoriyi gizle
+            
+            const detay = document.getElementById('detay-sayfasi');
             detay.classList.add('active');
-            const dc=detay.querySelector('.detail-container');
-            dc.classList.remove('animate-scale'); void dc.offsetWidth; dc.classList.add('animate-scale');
             window.scrollTo({top:0,behavior:'smooth'});
         }
+
         function geriDon(){
             document.getElementById('detay-sayfasi').classList.remove('active');
-            const ana=document.getElementById('ana-sayfa');
-            ana.classList.remove('hidden-page');
-            ana.classList.remove('animate-in'); void ana.offsetWidth; ana.classList.add('animate-in');
+            document.getElementById('category-nav').style.display = 'flex'; // Geri dönünce göster
+            document.getElementById('ana-sayfa').classList.remove('hidden-page');
             window.scrollTo({top:0,behavior:'smooth'});
         }
+        
         haberleriGetir();
     </script>
 </body>
