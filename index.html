@@ -6,9 +6,6 @@
     <title>Gündem — Premium Haber</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* ═══════════════════════════════════════════
-           CSS VARIABLES & THEME SYSTEM
-        ═══════════════════════════════════════════ */
         :root {
             --bg-primary: #0a0a1a;
             --bg-secondary: #12122a;
@@ -30,13 +27,13 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.5);
             --navbar-bg: rgba(10,10,26,0.8);
             --ticker-bg: rgba(244,63,94,0.1);
-            --finans-bg: rgba(10,10,26,0.95);
             --skeleton-base: rgba(255,255,255,0.04);
             --skeleton-shine: rgba(255,255,255,0.08);
             --detail-bg: #0e0e22;
             --overlay-gradient: linear-gradient(to top, rgba(10,10,26,0.95) 0%, rgba(10,10,26,0.4) 50%, transparent 100%);
+            --market-bg: rgba(255,255,255,0.03);
+            --market-border: rgba(255,255,255,0.07);
         }
-
         [data-theme="light"] {
             --bg-primary: #f0f0f8;
             --bg-secondary: #e8e8f4;
@@ -54,450 +51,322 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.15);
             --navbar-bg: rgba(240,240,248,0.85);
             --ticker-bg: rgba(244,63,94,0.08);
-            --finans-bg: rgba(255,255,255,0.95);
             --skeleton-base: rgba(0,0,0,0.04);
             --skeleton-shine: rgba(0,0,0,0.08);
             --detail-bg: #ffffff;
             --overlay-gradient: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+            --market-bg: rgba(0,0,0,0.02);
+            --market-border: rgba(0,0,0,0.06);
         }
-
         * { margin:0; padding:0; box-sizing:border-box; }
-
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
-            overflow-x: hidden;
-            transition: background 0.5s, color 0.5s;
+            font-family:'Inter',-apple-system,sans-serif;
+            background:var(--bg-primary); color:var(--text-primary);
+            min-height:100vh; overflow-x:hidden;
+            transition:background .5s,color .5s;
         }
-
-        /* ═══════ ANIMATED GRADIENT BG ═══════ */
         .bg-animated {
-            position: fixed; inset: 0; z-index: 0;
-            background: linear-gradient(135deg, #0a0a1a 0%, #1a1040 25%, #0d1b3e 50%, #1a0a2e 75%, #0a0a1a 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
+            position:fixed; inset:0; z-index:0;
+            background:linear-gradient(135deg,#0a0a1a 0%,#1a1040 25%,#0d1b3e 50%,#1a0a2e 75%,#0a0a1a 100%);
+            background-size:400% 400%; animation:gradientShift 15s ease infinite;
         }
         [data-theme="light"] .bg-animated {
-            background: linear-gradient(135deg, #f0f0f8 0%, #e8e0f8 25%, #e0e8f8 50%, #f0e8f8 75%, #f0f0f8 100%);
-            background-size: 400% 400%;
+            background:linear-gradient(135deg,#f0f0f8 0%,#e8e0f8 25%,#e0e8f8 50%,#f0e8f8 75%,#f0f0f8 100%);
+            background-size:400% 400%;
         }
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* ═══════ PARTICLES ═══════ */
+        @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
         .particles { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
-        .particle {
-            position: absolute; border-radius: 50%; opacity: 0.15;
-            animation: floatParticle linear infinite;
-        }
-        @keyframes floatParticle {
-            0% { transform: translateY(100vh) rotate(0deg); opacity:0; }
-            10% { opacity:0.15; }
-            90% { opacity:0.15; }
-            100% { transform: translateY(-10vh) rotate(720deg); opacity:0; }
-        }
-
-        /* ═══════ PROGRESS BAR ═══════ */
+        .particle { position:absolute; border-radius:50%; opacity:.15; animation:floatParticle linear infinite; }
+        @keyframes floatParticle { 0%{transform:translateY(100vh) rotate(0deg);opacity:0} 10%{opacity:.15} 90%{opacity:.15} 100%{transform:translateY(-10vh) rotate(720deg);opacity:0} }
         #progress-bar {
-            position: fixed; top:0; left:0; height:3px; z-index:9999;
-            background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3));
-            width: 0%; transition: width 0.1s linear;
-            box-shadow: 0 0 10px var(--glow-2);
+            position:fixed; top:0; left:0; height:3px; z-index:9999;
+            background:linear-gradient(90deg,var(--accent-1),var(--accent-2),var(--accent-3));
+            width:0%; transition:width .1s linear; box-shadow:0 0 10px var(--glow-2);
         }
-
-        /* ═══════ NAVBAR ═══════ */
         .navbar {
-            position: sticky; top:0; z-index:100;
-            background: var(--navbar-bg);
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid var(--border-color);
-            padding: 0 2rem; height: 64px;
-            display: flex; align-items: center; justify-content: space-between;
-            transition: background 0.5s;
+            position:sticky; top:0; z-index:100;
+            background:var(--navbar-bg);
+            backdrop-filter:blur(20px) saturate(180%); -webkit-backdrop-filter:blur(20px) saturate(180%);
+            border-bottom:1px solid var(--border-color);
+            padding:0 2rem; height:64px;
+            display:flex; align-items:center; justify-content:space-between;
+            transition:background .5s;
         }
         .navbar-brand {
             display:flex; align-items:center; gap:10px;
-            font-weight:900; font-size:1.3rem; letter-spacing:-0.5px;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-            background-clip: text;
+            font-weight:900; font-size:1.3rem; letter-spacing:-.5px;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
         }
-        .navbar-brand .dot {
-            width:10px; height:10px; border-radius:50%;
-            background: var(--accent-4);
-            animation: pulse-dot 2s ease infinite;
-            box-shadow: 0 0 8px var(--accent-4);
-        }
-        @keyframes pulse-dot {
-            0%,100% { transform:scale(1); opacity:1; }
-            50% { transform:scale(1.4); opacity:0.6; }
-        }
+        .navbar-brand .dot { width:10px;height:10px;border-radius:50%;background:var(--accent-4);animation:pulse-dot 2s ease infinite;box-shadow:0 0 8px var(--accent-4); }
+        @keyframes pulse-dot { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:.6} }
         .navbar-right { display:flex; align-items:center; gap:16px; }
-        .live-clock {
-            font-size:0.8rem; font-weight:600; color:var(--text-secondary);
-            display:flex; align-items:center; gap:6px;
-            font-variant-numeric: tabular-nums;
-        }
-        .live-clock .live-dot {
-            width:6px; height:6px; border-radius:50%; background:#ef4444;
-            animation: pulse-dot 1.5s ease infinite;
-        }
+        .live-clock { font-size:.8rem;font-weight:600;color:var(--text-secondary);display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums; }
+        .live-clock .live-dot { width:6px;height:6px;border-radius:50%;background:#ef4444;animation:pulse-dot 1.5s ease infinite; }
         .theme-toggle {
-            width:42px; height:42px; border-radius:14px; border:1px solid var(--border-color);
-            background: var(--bg-glass); cursor:pointer; font-size:1.1rem;
-            display:flex; align-items:center; justify-content:center;
-            transition: all 0.3s;
+            width:42px;height:42px;border-radius:14px;border:1px solid var(--border-color);
+            background:var(--bg-glass);cursor:pointer;font-size:1.1rem;
+            display:flex;align-items:center;justify-content:center;transition:all .3s;
         }
-        .theme-toggle:hover { border-color:var(--accent-2); transform:rotate(20deg) scale(1.1); }
+        .theme-toggle:hover { border-color:var(--accent-2);transform:rotate(20deg) scale(1.1); }
 
-        /* ═══════ TICKERS (HABER & FİNANS) ═══════ */
+        /* ═══════ CANLI PİYASALAR ŞERİDİ — YAVAŞ (90s) ═══════ */
+        .market-strip {
+            position:relative; z-index:10;
+            background:var(--market-bg);
+            border-bottom:1px solid var(--market-border);
+            backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+            overflow:hidden;
+        }
+        .market-strip-inner {
+            display:flex; align-items:stretch;
+            animation: marketScroll 90s linear infinite;
+            width:max-content;
+        }
+        .market-strip-inner:hover { animation-play-state:paused; }
+        @keyframes marketScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+        .market-item {
+            display:flex; align-items:center; gap:10px;
+            padding:12px 28px; white-space:nowrap;
+            border-right:1px solid var(--market-border);
+            transition:background .3s;
+        }
+        .market-item:hover { background:var(--bg-card-hover); }
+        .market-icon {
+            width:32px; height:32px; border-radius:10px;
+            display:flex; align-items:center; justify-content:center;
+            font-size:.9rem; font-weight:800; flex-shrink:0;
+        }
+        .market-icon.usd { background:linear-gradient(135deg,#22c55e22,#22c55e44); color:#22c55e; }
+        .market-icon.eur { background:linear-gradient(135deg,#3b82f622,#3b82f644); color:#3b82f6; }
+        .market-icon.gbp { background:linear-gradient(135deg,#a855f722,#a855f744); color:#a855f7; }
+        .market-icon.gold { background:linear-gradient(135deg,#f59e0b22,#f59e0b44); color:#f59e0b; }
+        .market-icon.btc { background:linear-gradient(135deg,#f9731622,#f9731644); color:#f97316; }
+        .market-info { display:flex; flex-direction:column; }
+        .market-name { font-size:.65rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+        .market-price { font-size:.92rem; font-weight:800; color:var(--text-primary); font-variant-numeric:tabular-nums; }
+        .market-live-dot {
+            width:5px; height:5px; border-radius:50%; background:#22c55e;
+            animation:pulse-dot 1.5s ease infinite; flex-shrink:0;
+        }
+        .market-loading {
+            padding:12px 28px; font-size:.8rem; color:var(--text-muted); font-weight:600;
+            display:flex; align-items:center; gap:8px;
+        }
+        .market-loading .spinner {
+            width:14px; height:14px; border:2px solid var(--border-color);
+            border-top-color:var(--accent-2); border-radius:50%;
+            animation:spin .8s linear infinite;
+        }
+        @keyframes spin { to{transform:rotate(360deg)} }
+
+        /* ═══════ SON DAKİKA TICKER — ÇOK YAVAŞ (120s) ═══════ */
         .ticker-wrap {
-            background: var(--ticker-bg);
-            border-bottom: 1px solid var(--border-color);
-            overflow: hidden; height:40px; display:flex; align-items:center;
+            background:var(--ticker-bg);
+            border-bottom:1px solid var(--border-color);
+            overflow:hidden; height:42px; display:flex; align-items:center;
             position:relative; z-index:10;
         }
-        /* Finans şeridi için özel arka plan (haberden ayırmak için) */
-        .finans-wrap {
-            background: var(--finans-bg);
-            border-top: none;
-        }
         .ticker-label {
-            background: linear-gradient(135deg, var(--accent-4), var(--accent-3));
-            color:#fff; font-weight:800; font-size:0.7rem; letter-spacing:1px;
+            background:linear-gradient(135deg,var(--accent-4),var(--accent-3));
+            color:#fff; font-weight:800; font-size:.68rem; letter-spacing:1px;
             padding:4px 14px; border-radius:6px; margin-left:16px; white-space:nowrap;
             text-transform:uppercase; z-index:2; flex-shrink:0;
-            box-shadow: 0 2px 10px rgba(244,63,94,0.3);
-        }
-        .finans-label {
-            background: linear-gradient(135deg, #eab308, #ca8a04); /* Altın Sarısı */
-            box-shadow: 0 2px 10px rgba(234,179,8,0.3);
-            color: #000; /* Sarının üstünde siyah daha net okunur */
+            box-shadow:0 2px 10px rgba(244,63,94,.3);
         }
         .ticker-track {
-            display:flex; 
-            animation: tickerScroll 120s linear infinite; 
-            white-space:nowrap; margin-left:20px;
-        }
-        .finans-track {
-            /* Piyasalar ters yöne ve biraz daha hızlı kaysın */
-            animation: tickerScrollReverse 90s linear infinite;
+            display:flex; animation:tickerScroll 120s linear infinite; white-space:nowrap; margin-left:20px;
         }
         .ticker-track:hover { animation-play-state:paused; }
-        .ticker-item {
-            color:var(--text-secondary); font-size:0.82rem; font-weight:500;
-            padding:0 2rem; position:relative; cursor: pointer; transition: color 0.3s;
-        }
-        .ticker-item:hover { color: var(--accent-2); }
-        .ticker-item::before {
-            content:'◆'; position:absolute; left:0; color:var(--accent-2);
-            font-size:0.5rem; top:50%; transform:translateY(-50%);
-        }
-        
-        /* Finans Şeridi Özel Renklendirmeleri */
-        .finans-item { cursor: default; } /* Tıklanabilir olmasın */
-        .finans-item:hover { color: var(--text-secondary); }
-        .finans-item::before { content:'|'; color: var(--border-color); font-size:1rem; }
-        .finans-name { color: var(--text-primary); font-weight: 700; margin-right: 4px; }
-        .finans-up { color: #22c55e; font-weight: 600; margin-left: 4px; }
-        .finans-down { color: #ef4444; font-weight: 600; margin-left: 4px; }
+        .ticker-item { color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; }
+        .ticker-item::before { content:'◆';position:absolute;left:0;color:var(--accent-2);font-size:.5rem;top:50%;transform:translateY(-50%); }
+        @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
-        @keyframes tickerScroll {
-            0% { transform:translateX(0); }
-            100% { transform:translateX(-50%); }
+        .main-container { position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:2rem 1.5rem 4rem; }
+        .hero { text-align:center; padding:2.5rem 0 2rem; }
+        .hero-title {
+            font-family:'Playfair Display',serif;
+            font-size:clamp(2.2rem,5vw,3.5rem); font-weight:900; line-height:1.15; margin-bottom:1rem;
+            background:linear-gradient(135deg,var(--text-primary) 0%,var(--accent-2) 50%,var(--accent-3) 100%);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
         }
-        @keyframes tickerScrollReverse {
-            0% { transform:translateX(-50%); }
-            100% { transform:translateX(0); }
+        .hero-sub { color:var(--text-secondary);font-size:1rem;max-width:500px;margin:0 auto 2rem;line-height:1.7; }
+        .hero-stats { display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap; }
+        .stat-item { text-align:center; }
+        .stat-number {
+            font-size:1.8rem;font-weight:900;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
         }
-
-        /* ═══════ MAIN ═══════ */
-        .main-container {
-            position:relative; z-index:1;
-            max-width:1280px; margin:0 auto; padding:2rem 1.5rem 4rem;
-        }
-
-        /* ═══════ NEWS GRID & CARDS ═══════ */
-        .news-grid {
-            display:grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap:1.8rem;
-        }
-        @media(max-width:400px){ .news-grid { grid-template-columns:1fr; } }
-
+        .stat-label { font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;margin-top:2px; }
+        .news-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.8rem;margin-top:1rem; }
+        @media(max-width:400px){ .news-grid{grid-template-columns:1fr;} }
         .news-card {
-            position:relative;
-            background: var(--bg-card);
-            border:1px solid var(--border-color);
+            position:relative; background:var(--bg-card); border:1px solid var(--border-color);
             border-radius:24px; overflow:hidden; cursor:pointer;
-            transition: all 0.5s cubic-bezier(0.16,1,0.3,1);
-            backdrop-filter: blur(10px);
-            display:flex; flex-direction:column;
+            transition:all .5s cubic-bezier(.16,1,.3,1);
+            backdrop-filter:blur(10px); display:flex; flex-direction:column;
         }
-        .news-card:hover {
-            transform: translateY(-12px) scale(1.02);
-            border-color: var(--border-hover);
-            box-shadow: var(--shadow-card-hover), 0 0 40px var(--glow-1);
-            background: var(--bg-card-hover);
-        }
+        .news-card:hover { transform:translateY(-12px) scale(1.02);border-color:var(--border-hover);box-shadow:var(--shadow-card-hover),0 0 40px var(--glow-1);background:var(--bg-card-hover); }
         .news-card::before {
-            content:''; position:absolute; inset:-2px; border-radius:26px; z-index:-1;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-1));
-            background-size:300% 300%;
-            opacity:0; transition:opacity 0.5s;
-            animation: glowRotate 4s linear infinite;
+            content:'';position:absolute;inset:-2px;border-radius:26px;z-index:-1;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-2),var(--accent-3),var(--accent-1));
+            background-size:300% 300%; opacity:0; transition:opacity .5s; animation:glowRotate 4s linear infinite;
         }
         .news-card:hover::before { opacity:1; }
-        @keyframes glowRotate {
-            0% { background-position:0% 50%; }
-            50% { background-position:100% 50%; }
-            100% { background-position:0% 50%; }
-        }
-
-        .card-image-wrap { position:relative; height:220px; overflow:hidden; }
-        .card-image-wrap img {
-            width:100%; height:100%; object-fit:cover;
-            transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
-        }
+        @keyframes glowRotate { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        .card-image-wrap { position:relative;height:220px;overflow:hidden; }
+        .card-image-wrap img { width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1); }
         .news-card:hover .card-image-wrap img { transform:scale(1.12); }
-        .card-image-overlay {
-            position:absolute; inset:0;
-            background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
-        }
+        .card-image-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%); }
         .card-date-badge {
-            position:absolute; top:14px; left:14px;
-            background: rgba(0,0,0,0.55); backdrop-filter:blur(10px);
-            color:#fff; font-size:0.7rem; font-weight:700;
-            padding:5px 12px; border-radius:10px;
-            border:1px solid rgba(255,255,255,0.15);
+            position:absolute;top:14px;left:14px;
+            background:rgba(0,0,0,.55);backdrop-filter:blur(10px);
+            color:#fff;font-size:.7rem;font-weight:700;padding:5px 12px;border-radius:10px;
+            border:1px solid rgba(255,255,255,.15);
         }
         .card-read-arrow {
-            position:absolute; bottom:14px; right:14px;
-            width:38px; height:38px; border-radius:12px;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-            display:flex; align-items:center; justify-content:center;
-            opacity:0; transform:translateY(10px);
-            transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-            box-shadow: 0 4px 15px rgba(108,92,231,0.4);
+            position:absolute;bottom:14px;right:14px;width:38px;height:38px;border-radius:12px;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
+            display:flex;align-items:center;justify-content:center;
+            opacity:0;transform:translateY(10px);transition:all .4s cubic-bezier(.16,1,.3,1);
+            box-shadow:0 4px 15px rgba(108,92,231,.4);
         }
-        .news-card:hover .card-read-arrow { opacity:1; transform:translateY(0); }
-        .card-read-arrow svg { width:18px; height:18px; stroke:#fff; }
-
-        .card-body { padding:1.4rem 1.5rem 1.5rem; flex:1; display:flex; flex-direction:column; }
+        .news-card:hover .card-read-arrow { opacity:1;transform:translateY(0); }
+        .card-read-arrow svg { width:18px;height:18px;stroke:#fff; }
+        .card-body { padding:1.4rem 1.5rem 1.5rem;flex:1;display:flex;flex-direction:column; }
         .card-title {
-            font-size:1.12rem; font-weight:800; line-height:1.4;
-            margin-bottom:0.7rem; color:var(--text-primary);
-            display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
-            transition: color 0.3s;
+            font-size:1.12rem;font-weight:800;line-height:1.4;margin-bottom:.7rem;color:var(--text-primary);
+            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .3s;
         }
         .news-card:hover .card-title { color:var(--accent-2); }
-        .card-desc {
-            font-size:0.88rem; color:var(--text-secondary); line-height:1.7;
-            display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
-            flex:1;
-        }
+        .card-desc { font-size:.88rem;color:var(--text-secondary);line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:1; }
         .card-footer { margin-top:1.2rem; }
         .card-read-btn {
-            display:flex; align-items:center; justify-content:center; gap:8px;
-            width:100%; padding:12px;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-            color:#fff; font-weight:700; font-size:0.85rem;
-            border:none; border-radius:16px; cursor:pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 20px var(--glow-1);
+            display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-2));
+            color:#fff;font-weight:700;font-size:.85rem;border:none;border-radius:16px;cursor:pointer;
+            transition:all .3s;box-shadow:0 4px 20px var(--glow-1);
         }
-        .news-card:hover .card-read-btn {
-            box-shadow: 0 6px 30px var(--glow-2);
-            transform:scale(1.03);
-        }
-        .card-read-btn svg { width:16px; height:16px; transition:transform 0.3s; }
+        .news-card:hover .card-read-btn { box-shadow:0 6px 30px var(--glow-2);transform:scale(1.03); }
+        .card-read-btn svg { width:16px;height:16px;transition:transform .3s; }
         .news-card:hover .card-read-btn svg { transform:translateX(4px); }
-
-        /* ═══════ SKELETON ═══════ */
-        .skeleton-card {
-            background: var(--bg-card); border:1px solid var(--border-color);
-            border-radius:24px; overflow:hidden;
+        .skeleton-card { background:var(--bg-card);border:1px solid var(--border-color);border-radius:24px;overflow:hidden; }
+        .skeleton-img { height:220px;background:var(--skeleton-base);position:relative;overflow:hidden; }
+        .skeleton-line { height:14px;border-radius:8px;background:var(--skeleton-base);margin:0 1.5rem .8rem;position:relative;overflow:hidden; }
+        .skeleton-line.w80{width:80%} .skeleton-line.w60{width:60%} .skeleton-line.w100{width:calc(100% - 3rem)}
+        .skeleton-btn { height:44px;border-radius:16px;background:var(--skeleton-base);margin:.5rem 1.5rem 1.5rem;position:relative;overflow:hidden; }
+        .skeleton-img::after,.skeleton-line::after,.skeleton-btn::after {
+            content:'';position:absolute;inset:0;
+            background:linear-gradient(90deg,transparent,var(--skeleton-shine),transparent);
+            animation:shimmer 1.5s infinite;
         }
-        .skeleton-img { height:220px; background:var(--skeleton-base); position:relative; overflow:hidden; }
-        .skeleton-line {
-            height:14px; border-radius:8px; background:var(--skeleton-base);
-            margin:0 1.5rem 0.8rem; position:relative; overflow:hidden;
-        }
-        .skeleton-line.w80 { width:80%; }
-        .skeleton-line.w60 { width:60%; }
-        .skeleton-line.w100 { width:calc(100% - 3rem); }
-        .skeleton-btn {
-            height:44px; border-radius:16px; background:var(--skeleton-base);
-            margin:0.5rem 1.5rem 1.5rem; position:relative; overflow:hidden;
-        }
-        .skeleton-img::after, .skeleton-line::after, .skeleton-btn::after {
-            content:''; position:absolute; inset:0;
-            background: linear-gradient(90deg, transparent, var(--skeleton-shine), transparent);
-            animation: shimmer 1.5s infinite;
-        }
-        @keyframes shimmer { 0%{transform:translateX(-100%);} 100%{transform:translateX(100%);} }
-
-        /* ═══════ DETAIL PAGE ═══════ */
+        @keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
         #detay-sayfasi { display:none; }
         #detay-sayfasi.active { display:block; }
         #ana-sayfa.hidden-page { display:none; }
-
         .detail-container {
-            max-width:820px; margin:0 auto;
-            background: var(--detail-bg);
-            border-radius:32px; border:1px solid var(--border-color);
-            overflow:hidden; box-shadow: var(--shadow-card);
+            max-width:820px;margin:0 auto;background:var(--detail-bg);
+            border-radius:32px;border:1px solid var(--border-color);overflow:hidden;box-shadow:var(--shadow-card);
         }
-        .detail-hero { position:relative; height:420px; overflow:hidden; }
-        .detail-hero img { width:100%; height:100%; object-fit:cover; }
-        .detail-hero-overlay { position:absolute; inset:0; background: var(--overlay-gradient); }
-        .detail-hero-content { position:absolute; bottom:0; left:0; right:0; padding:2.5rem; }
+        .detail-hero { position:relative;height:420px;overflow:hidden; }
+        .detail-hero img { width:100%;height:100%;object-fit:cover; }
+        .detail-hero-overlay { position:absolute;inset:0;background:var(--overlay-gradient); }
+        .detail-hero-content { position:absolute;bottom:0;left:0;right:0;padding:2.5rem; }
         .detail-date {
-            display:inline-block;
-            background: linear-gradient(135deg, var(--accent-4), var(--accent-3));
-            color:#fff; font-size:0.75rem; font-weight:800;
-            padding:5px 14px; border-radius:10px; margin-bottom:12px;
-            box-shadow: 0 4px 15px rgba(244,63,94,0.3);
+            display:inline-block;background:linear-gradient(135deg,var(--accent-4),var(--accent-3));
+            color:#fff;font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:10px;margin-bottom:12px;
+            box-shadow:0 4px 15px rgba(244,63,94,.3);
         }
         .detail-title {
-            font-family:'Playfair Display', serif;
-            font-size: clamp(1.6rem, 4vw, 2.6rem);
-            font-weight:900; color:#fff; line-height:1.25;
-            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+            font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem);
+            font-weight:900;color:#fff;line-height:1.25;text-shadow:0 2px 20px rgba(0,0,0,.3);
         }
-        .detail-meta { display:flex; align-items:center; gap:16px; margin-top:14px; flex-wrap:wrap; }
-        .detail-meta-item {
-            display:flex; align-items:center; gap:5px;
-            color:rgba(255,255,255,0.7); font-size:0.8rem; font-weight:500;
-        }
-        .detail-meta-item svg { width:14px; height:14px; }
-
+        .detail-meta { display:flex;align-items:center;gap:16px;margin-top:14px;flex-wrap:wrap; }
+        .detail-meta-item { display:flex;align-items:center;gap:5px;color:rgba(255,255,255,.7);font-size:.8rem;font-weight:500; }
+        .detail-meta-item svg { width:14px;height:14px; }
         .detail-body { padding:2.5rem; }
-        .detail-body p {
-            margin-bottom:1.5rem; line-height:1.9; color:var(--text-secondary); font-size:1.05rem;
-        }
+        .detail-body p { margin-bottom:1.5rem;line-height:1.9;color:var(--text-secondary);font-size:1.05rem; }
         .detail-body p:first-child::first-letter {
-            font-family:'Playfair Display',serif;
-            font-size:3.2rem; font-weight:900; float:left;
-            line-height:1; margin-right:10px; margin-top:4px;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-            background-clip:text;
+            font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:900;float:left;
+            line-height:1;margin-right:10px;margin-top:4px;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
         }
-
         .back-btn {
-            display:inline-flex; align-items:center; gap:8px;
-            padding:10px 22px; margin-bottom:1.5rem;
-            background: var(--bg-glass); border:1px solid var(--border-color);
-            border-radius:16px; color:var(--text-primary);
-            font-weight:700; font-size:0.88rem; cursor:pointer;
-            transition: all 0.3s; backdrop-filter:blur(10px);
+            display:inline-flex;align-items:center;gap:8px;padding:10px 22px;margin-bottom:1.5rem;
+            background:var(--bg-glass);border:1px solid var(--border-color);border-radius:16px;
+            color:var(--text-primary);font-weight:700;font-size:.88rem;cursor:pointer;
+            transition:all .3s;backdrop-filter:blur(10px);
         }
-        .back-btn:hover {
-            border-color:var(--accent-2); color:var(--accent-2);
-            transform:translateX(-4px);
-            box-shadow: 0 4px 20px var(--glow-1);
-        }
-        .back-btn svg { width:18px; height:18px; transition:transform 0.3s; }
+        .back-btn:hover { border-color:var(--accent-2);color:var(--accent-2);transform:translateX(-4px);box-shadow:0 4px 20px var(--glow-1); }
+        .back-btn svg { width:18px;height:18px;transition:transform .3s; }
         .back-btn:hover svg { transform:translateX(-3px); }
-
-        /* ═══════ BACK TO TOP ═══════ */
         #back-to-top {
-            position:fixed; bottom:28px; right:28px; z-index:200;
-            width:50px; height:50px; border-radius:16px; border:none;
-            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
-            color:#fff; cursor:pointer;
-            display:flex; align-items:center; justify-content:center;
-            opacity:0; transform:translateY(20px) scale(0.8);
-            transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-            box-shadow: 0 6px 25px var(--glow-2);
+            position:fixed;bottom:28px;right:28px;z-index:200;width:50px;height:50px;border-radius:16px;border:none;
+            background:linear-gradient(135deg,var(--accent-1),var(--accent-3));color:#fff;cursor:pointer;
+            display:flex;align-items:center;justify-content:center;
+            opacity:0;transform:translateY(20px) scale(.8);transition:all .4s cubic-bezier(.16,1,.3,1);
+            box-shadow:0 6px 25px var(--glow-2);
         }
-        #back-to-top.visible { opacity:1; transform:translateY(0) scale(1); }
+        #back-to-top.visible { opacity:1;transform:translateY(0) scale(1); }
         #back-to-top:hover { transform:translateY(-4px) scale(1.1); }
-        #back-to-top svg { width:22px; height:22px; }
-
-        /* ═══════ ANIMATIONS ═══════ */
-        @keyframes fadeInUp {
-            from { opacity:0; transform:translateY(40px); }
-            to { opacity:1; transform:translateY(0); }
-        }
-        .animate-in {
-            animation: fadeInUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; opacity:0;
-        }
-        @keyframes scaleIn {
-            from { opacity:0; transform:scale(0.92); }
-            to { opacity:1; transform:scale(1); }
-        }
-        .animate-scale { animation: scaleIn 0.6s cubic-bezier(0.16,1,0.3,1) forwards; }
-
-        /* ═══════ ERROR ═══════ */
-        .error-state { text-align:center; padding:5rem 2rem; color:var(--text-muted); }
-        .error-state svg { width:64px; height:64px; margin:0 auto 1.5rem; opacity:0.3; }
-        .error-state p { font-size:1.05rem; font-weight:600; }
-
-        /* ═══════ SCROLLBAR ═══════ */
+        #back-to-top svg { width:22px;height:22px; }
+        @keyframes fadeInUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+        .animate-in { animation:fadeInUp .7s cubic-bezier(.16,1,.3,1) forwards;opacity:0; }
+        @keyframes scaleIn { from{opacity:0;transform:scale(.92)} to{opacity:1;transform:scale(1)} }
+        .animate-scale { animation:scaleIn .6s cubic-bezier(.16,1,.3,1) forwards; }
+        .error-state { text-align:center;padding:5rem 2rem;color:var(--text-muted); }
+        .error-state svg { width:64px;height:64px;margin:0 auto 1.5rem;opacity:.3; }
+        .error-state p { font-size:1.05rem;font-weight:600; }
         ::-webkit-scrollbar { width:8px; }
         ::-webkit-scrollbar-track { background:var(--bg-primary); }
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(var(--accent-1), var(--accent-3)); border-radius:10px;
-        }
-
-        /* ═══════ RESPONSIVE ═══════ */
+        ::-webkit-scrollbar-thumb { background:linear-gradient(var(--accent-1),var(--accent-3));border-radius:10px; }
         @media(max-width:768px) {
-            .navbar { padding:0 1rem; }
-            .main-container { padding:1.2rem 1rem 3rem; }
-            .detail-hero { height:280px; }
-            .detail-body { padding:1.5rem; }
-            .detail-hero-content { padding:1.5rem; }
-            .news-grid { gap:1.2rem; }
+            .navbar{padding:0 1rem} .main-container{padding:1.2rem 1rem 3rem}
+            .hero{padding:2rem 0 1.5rem} .hero-stats{gap:1.5rem}
+            .detail-hero{height:280px} .detail-body{padding:1.5rem} .detail-hero-content{padding:1.5rem}
+            .news-grid{gap:1.2rem}
         }
     </style>
 </head>
 <body>
-
     <div class="bg-animated"></div>
     <div class="particles" id="particles"></div>
     <div id="progress-bar"></div>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="navbar-brand">
-            <div class="dot"></div>
-            GÜNDEM
-        </div>
+        <div class="navbar-brand"><div class="dot"></div>GÜNDEM</div>
         <div class="navbar-right">
-            <div class="live-clock">
-                <span class="live-dot"></span>
-                <span id="clock">00:00:00</span>
-            </div>
+            <div class="live-clock"><span class="live-dot"></span><span id="clock">00:00:00</span></div>
             <button class="theme-toggle" id="theme-toggle" title="Tema Değiştir">🌙</button>
         </div>
     </nav>
 
-    <!-- TICKER: SON DAKİKA HABERLERİ -->
+    <!-- ═══════ CANLI PİYASALAR ŞERİDİ ═══════ -->
+    <div class="market-strip" id="market-strip">
+        <div class="market-strip-inner" id="market-strip-inner">
+            <div class="market-loading"><div class="spinner"></div> Piyasa verileri yükleniyor...</div>
+        </div>
+    </div>
+
+    <!-- ═══════ SON DAKİKA TICKER — 120 SANİYE ═══════ -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
     </div>
-    
-    <!-- TICKER: PİYASALAR VE DÖVİZ -->
-    <div class="ticker-wrap finans-wrap" id="finans-wrap" style="display:none;">
-        <span class="ticker-label finans-label">💰 Piyasalar</span>
-        <div class="ticker-track finans-track" id="finans-track"></div>
-    </div>
 
-    <!-- MAIN -->
     <div class="main-container">
-
-        <!-- ANA SAYFA -->
         <div id="ana-sayfa">
-            
+            <div class="hero animate-in">
+                <h1 class="hero-title">Gündemin Nabzını<br>Tutuyoruz</h1>
+                <p class="hero-sub">Yapay zekâ destekli botumuz, en son gelişmeleri sizin için derliyor. Tarafsız, hızlı ve kesintisiz haber akışı.</p>
+                <div class="hero-stats">
+                    <div class="stat-item"><div class="stat-number" id="stat-count">0</div><div class="stat-label">Haber</div></div>
+                    <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Takip</div></div>
+                    <div class="stat-item"><div class="stat-number">AI</div><div class="stat-label">Destekli</div></div>
+                </div>
+            </div>
             <div class="news-grid" id="haberler-listesi">
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
                 <div class="skeleton-card"><div class="skeleton-img"></div><div style="padding-top:1.2rem"><div class="skeleton-line w80"></div><div class="skeleton-line w100"></div><div class="skeleton-line w60"></div><div class="skeleton-btn"></div></div></div>
@@ -505,7 +374,6 @@
             </div>
         </div>
 
-        <!-- DETAY SAYFASI -->
         <div id="detay-sayfasi">
             <button class="back-btn" onclick="geriDon()">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
@@ -535,7 +403,6 @@
         </div>
     </div>
 
-    <!-- BACK TO TOP -->
     <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
     </button>
@@ -543,172 +410,156 @@
     <script>
         // ═══════ PARTICLES ═══════
         (function(){
-            const c = document.getElementById('particles');
-            const colors = ['#6c5ce7','#a855f7','#ec4899','#f43f5e','#3b82f6'];
+            const c=document.getElementById('particles');
+            const colors=['#6c5ce7','#a855f7','#ec4899','#f43f5e','#3b82f6'];
             for(let i=0;i<20;i++){
-                const p = document.createElement('div');
-                p.className='particle';
-                const size = Math.random()*6+3;
-                p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*20+15}s;animation-delay:${Math.random()*10}s;`;
+                const p=document.createElement('div'); p.className='particle';
+                const s=Math.random()*6+3;
+                p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*20+15}s;animation-delay:${Math.random()*10}s;`;
                 c.appendChild(p);
             }
         })();
 
         // ═══════ CLOCK ═══════
-        function updateClock(){
-            document.getElementById('clock').textContent =
-                new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
-        }
+        function updateClock(){ document.getElementById('clock').textContent=new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit',second:'2-digit'}); }
         setInterval(updateClock,1000); updateClock();
 
         // ═══════ THEME ═══════
-        const themeBtn = document.getElementById('theme-toggle');
-        const saved = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', saved);
-        themeBtn.textContent = saved==='dark' ? '🌙' : '☀️';
-        themeBtn.addEventListener('click', ()=>{
-            const next = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            themeBtn.textContent = next==='dark' ? '🌙' : '☀️';
+        const themeBtn=document.getElementById('theme-toggle');
+        const saved=localStorage.getItem('theme')||'dark';
+        document.documentElement.setAttribute('data-theme',saved);
+        themeBtn.textContent=saved==='dark'?'🌙':'☀️';
+        themeBtn.addEventListener('click',()=>{
+            const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+            document.documentElement.setAttribute('data-theme',next);
+            localStorage.setItem('theme',next);
+            themeBtn.textContent=next==='dark'?'🌙':'☀️';
         });
 
         // ═══════ PROGRESS + FAB ═══════
-        window.addEventListener('scroll', ()=>{
-            const st = window.scrollY;
-            const dh = document.documentElement.scrollHeight - window.innerHeight;
-            document.getElementById('progress-bar').style.width = (dh>0?(st/dh)*100:0)+'%';
-            document.getElementById('back-to-top').classList.toggle('visible', st>400);
+        window.addEventListener('scroll',()=>{
+            const st=window.scrollY, dh=document.documentElement.scrollHeight-window.innerHeight;
+            document.getElementById('progress-bar').style.width=(dh>0?(st/dh)*100:0)+'%';
+            document.getElementById('back-to-top').classList.toggle('visible',st>400);
         });
 
-        // ═══════ FETCH FİNANS (YENİ EKLENEN KISIM) ═══════
-        async function finansGetir(){
-            try {
-                // Türkiye geneli ücretsiz finans API'si (Döviz, Altın vs.)
-                const response = await fetch('https://api.genelpara.com/embed/para-birimleri.json');
-                const data = await response.json();
-                
-                if(data) {
-                    document.getElementById('finans-wrap').style.display = 'flex';
-                    
-                    // Göstermek istediğimiz kurları seçiyoruz
-                    const kurlar = [
-                        { ad: 'USD', veri: data.USD },
-                        { ad: 'EUR', veri: data.EUR },
-                        { ad: 'GRAM ALTIN', veri: data.GA },
-                        { ad: 'ÇEYREK', veri: data.C },
-                        { ad: 'GBP', veri: data.GBP },
-                        { ad: 'BIST 100', veri: data.BIST100 }
-                    ];
-
-                    const items = kurlar.map(k => {
-                        if(!k.veri) return '';
-                        const artis = parseFloat(k.veri.degisim) > 0;
-                        const renk = artis ? 'finans-up' : 'finans-down';
-                        const ok = artis ? '▲' : '▼';
-                        return `
-                        <span class="ticker-item finans-item">
-                            <span class="finans-name">${k.ad}:</span> 
-                            ${k.veri.satis} 
-                            <span class="${renk}">${ok} %${k.veri.degisim}</span>
-                        </span>`;
-                    }).join('');
-                    
-                    // Kesintisiz döngü için 3 kere yan yana basıyoruz
-                    document.getElementById('finans-track').innerHTML = items + items + items;
-                }
-            } catch(e) {
-                console.log('Finans verisi çekilemedi veya API geçici olarak meşgul.');
-            }
+        // ═══════ COUNTER ═══════
+        function animateCounter(el,target){
+            let cur=0; const step=Math.max(1,Math.floor(target/40));
+            const iv=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(iv);}el.textContent=cur;},30);
         }
 
-        // ═══════ FETCH NEWS ═══════
-        let globalHaberler = [];
+        // ═══════ CANLI PİYASALAR (API) ═══════
+        async function piyasalariGetir(){
+            const strip=document.getElementById('market-strip-inner');
+            let usdTry=0, eurTry=0, gbpTry=0, goldUsd=0, btcUsd=0;
 
-        async function haberleriGetir(){
-            const kapsayici = document.getElementById('haberler-listesi');
             try {
-                const response = await fetch('haberler.json');
-                globalHaberler = await response.json();
-
-                if(globalHaberler.length > 0){
-                    document.getElementById('ticker-wrap').style.display='flex';
-                    const items = globalHaberler.map((h, index) => 
-                        `<span class="ticker-item" onclick="haberOku(${index})">${h.baslik}</span>`
-                    ).join('');
-                    document.getElementById('ticker-track').innerHTML = items + items;
+                const r=await fetch('https://open.er-api.com/v6/latest/USD');
+                const d=await r.json();
+                if(d&&d.rates){
+                    usdTry=d.rates.TRY||0;
+                    eurTry=usdTry/(d.rates.EUR||1);
+                    gbpTry=usdTry/(d.rates.GBP||1);
                 }
+            } catch(e){}
 
-                kapsayici.innerHTML = globalHaberler.map((haber, index) => {
-                    const gecikme = index * 0.12;
+            try {
+                const r=await fetch('https://api.gold-api.com/price/XAU');
+                const d=await r.json();
+                if(d&&d.price) goldUsd=d.price;
+            } catch(e){}
+
+            try {
+                const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+                const d=await r.json();
+                if(d&&d.bitcoin) btcUsd=d.bitcoin.usd;
+            } catch(e){}
+
+            const goldGramTry=(goldUsd&&usdTry)?(goldUsd*usdTry/31.1035):0;
+
+            const items=[
+                {icon:'$',cls:'usd',name:'USD / TRY',price:usdTry?usdTry.toFixed(4)+' ₺':'—'},
+                {icon:'€',cls:'eur',name:'EUR / TRY',price:eurTry?eurTry.toFixed(4)+' ₺':'—'},
+                {icon:'£',cls:'gbp',name:'GBP / TRY',price:gbpTry?gbpTry.toFixed(4)+' ₺':'—'},
+                {icon:'Au',cls:'gold',name:'Altın Gram',price:goldGramTry?goldGramTry.toLocaleString('tr-TR',{maximumFractionDigits:2})+' ₺':'—'},
+                {icon:'₿',cls:'btc',name:'Bitcoin',price:btcUsd?'$'+btcUsd.toLocaleString('en-US'):'—'},
+            ];
+
+            const html=items.map(it=>`
+                <div class="market-item">
+                    <div class="market-icon ${it.cls}">${it.icon}</div>
+                    <div class="market-info">
+                        <span class="market-name">${it.name}</span>
+                        <span class="market-price">${it.price}</span>
+                    </div>
+                    <div class="market-live-dot"></div>
+                </div>`).join('');
+
+            strip.innerHTML=html.repeat(4); // 4 kopya → boşluksuz sonsuz döngü
+        }
+        piyasalariGetir();
+        setInterval(piyasalariGetir,300000); // 5 dakikada bir güncelle
+
+        // ═══════ HABERLER ═══════
+        let globalHaberler=[];
+        async function haberleriGetir(){
+            const kapsayici=document.getElementById('haberler-listesi');
+            try {
+                const response=await fetch('haberler.json');
+                globalHaberler=await response.json();
+                if(globalHaberler.length>0){
+                    document.getElementById('ticker-wrap').style.display='flex';
+                    const items=globalHaberler.map(h=>`<span class="ticker-item">${h.baslik}</span>`).join('');
+                    document.getElementById('ticker-track').innerHTML=items.repeat(4); // 4 kopya → boşluksuz sonsuz döngü
+                }
+                animateCounter(document.getElementById('stat-count'),globalHaberler.length);
+                kapsayici.innerHTML=globalHaberler.map((haber,index)=>{
+                    const gecikme=index*0.12;
                     return `
                     <div onclick="haberOku(${index})" class="news-card animate-in" style="animation-delay:${gecikme}s">
                         <div class="card-image-wrap">
-                            <img src="${haber.resim}" alt="${haber.baslik}"
-                                 onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/6c5ce7?text=Görsel+Yok'">
+                            <img src="${haber.resim}" alt="${haber.baslik}" onerror="this.src='https://via.placeholder.com/400x220/1a1a2e/6c5ce7?text=Görsel+Yok'">
                             <div class="card-image-overlay"></div>
                             <div class="card-date-badge">${new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'})}</div>
-                            <div class="card-read-arrow">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </div>
+                            <div class="card-read-arrow"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></div>
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">${haber.baslik}</h2>
                             <p class="card-desc">${haber.aciklama}</p>
                             <div class="card-footer">
-                                <button class="card-read-btn">
-                                    Haberi Oku
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
+                                <button class="card-read-btn">Haberi Oku <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
                             </div>
                         </div>
                     </div>`;
                 }).join('');
-
             } catch(hata){
-                kapsayici.innerHTML = `
-                    <div class="error-state" style="grid-column:1/-1">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                        <p>Haberler yüklenemedi veya bot henüz çalışmadı.</p>
-                    </div>`;
+                kapsayici.innerHTML=`<div class="error-state" style="grid-column:1/-1"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg><p>Haberler yüklenemedi veya bot henüz çalışmadı.</p></div>`;
             }
         }
 
-        // ═══════ DETAIL ═══════
         function haberOku(index){
-            const haber = globalHaberler[index];
-            document.getElementById('detay-resim').src = haber.resim;
-            document.getElementById('detay-baslik').innerText = haber.baslik;
-            document.getElementById('detay-tarih').innerText =
-                new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'});
-            document.getElementById('detay-icerik').innerHTML = haber.tam_metin;
-
-            const text = haber.tam_metin.replace(/<[^>]*>/g,'');
-            const mins = Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 200));
-            document.getElementById('detay-okuma-suresi').textContent = mins + ' dk okuma';
-
+            const haber=globalHaberler[index];
+            document.getElementById('detay-resim').src=haber.resim;
+            document.getElementById('detay-baslik').innerText=haber.baslik;
+            document.getElementById('detay-tarih').innerText=new Date(haber.tarih).toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'});
+            document.getElementById('detay-icerik').innerHTML=haber.tam_metin;
+            const text=haber.tam_metin.replace(/<[^>]*>/g,'');
+            document.getElementById('detay-okuma-suresi').textContent=Math.max(1,Math.ceil(text.trim().split(/\s+/).length/200))+' dk okuma';
             document.getElementById('ana-sayfa').classList.add('hidden-page');
-            const detay = document.getElementById('detay-sayfasi');
+            const detay=document.getElementById('detay-sayfasi');
             detay.classList.add('active');
-            const dc = detay.querySelector('.detail-container');
-            dc.classList.remove('animate-scale');
-            void dc.offsetWidth;
-            dc.classList.add('animate-scale');
+            const dc=detay.querySelector('.detail-container');
+            dc.classList.remove('animate-scale'); void dc.offsetWidth; dc.classList.add('animate-scale');
             window.scrollTo({top:0,behavior:'smooth'});
         }
-
         function geriDon(){
             document.getElementById('detay-sayfasi').classList.remove('active');
-            const ana = document.getElementById('ana-sayfa');
+            const ana=document.getElementById('ana-sayfa');
             ana.classList.remove('hidden-page');
-            ana.classList.remove('animate-in');
-            void ana.offsetWidth;
-            ana.classList.add('animate-in');
+            ana.classList.remove('animate-in'); void ana.offsetWidth; ana.classList.add('animate-in');
             window.scrollTo({top:0,behavior:'smooth'});
         }
-
-        // Başlangıçta fonksiyonları çalıştır
-        finansGetir();
         haberleriGetir();
     </script>
 </body>
