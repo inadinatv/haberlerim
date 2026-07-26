@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gündem — Premium Haber</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #0a0a1a;
@@ -27,14 +27,12 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.5);
             --navbar-bg: rgba(10,10,26,0.8);
             --ticker-bg: rgba(244,63,94,0.1);
+            --skeleton-base: rgba(255,255,255,0.04);
+            --skeleton-shine: rgba(255,255,255,0.08);
             --detail-bg: #0e0e22;
             --overlay-gradient: linear-gradient(to top, rgba(10,10,26,0.95) 0%, rgba(10,10,26,0.4) 50%, transparent 100%);
-            /* AA Tarzı Piyasalar İçin Renkler */
-            --aa-market-bg: #1e1e2d;
-            --aa-market-border: #2b2b40;
-            --aa-up: #16a34a; 
-            --aa-down: #dc2626; 
-            --aa-neutral: #9ca3af;
+            --market-bg: rgba(255,255,255,0.03);
+            --market-border: rgba(255,255,255,0.07);
         }
         [data-theme="light"] {
             --bg-primary: #f0f0f8;
@@ -53,18 +51,22 @@
             --shadow-card-hover: 0 20px 60px rgba(0,0,0,0.15);
             --navbar-bg: rgba(240,240,248,0.85);
             --ticker-bg: rgba(244,63,94,0.08);
+            --skeleton-base: rgba(0,0,0,0.04);
+            --skeleton-shine: rgba(0,0,0,0.08);
             --detail-bg: #ffffff;
             --overlay-gradient: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
-            /* AA Tarzı Piyasalar İçin Renkler (Light) */
-            --aa-market-bg: #ffffff;
-            --aa-market-border: #e5e7eb;
-            --aa-up: #16a34a; 
-            --aa-down: #dc2626; 
+            --market-bg: rgba(0,0,0,0.02);
+            --market-border: rgba(0,0,0,0.06);
         }
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Inter',-apple-system,sans-serif; background:var(--bg-primary); color:var(--text-primary); min-height:100vh; overflow-x:hidden; transition:background .5s,color .5s; }
-        
-        .bg-animated { position:fixed; inset:0; z-index:0; background:linear-gradient(135deg,#0a0a1a 0%,#1a1040 25%,#0d1b3e 50%,#1a0a2e 75%,#0a0a1a 100%); background-size:400% 400%; animation:gradientShift 15s ease infinite; }
+        body {
+            font-family:'Inter',-apple-system,sans-serif; background:var(--bg-primary); color:var(--text-primary);
+            min-height:100vh; overflow-x:hidden; transition:background .5s,color .5s;
+        }
+        .bg-animated {
+            position:fixed; inset:0; z-index:0; background:linear-gradient(135deg,#0a0a1a 0%,#1a1040 25%,#0d1b3e 50%,#1a0a2e 75%,#0a0a1a 100%);
+            background-size:400% 400%; animation:gradientShift 15s ease infinite;
+        }
         [data-theme="light"] .bg-animated { background:linear-gradient(135deg,#f0f0f8 0%,#e8e0f8 25%,#e0e8f8 50%,#f0e8f8 75%,#f0f0f8 100%); background-size:400% 400%; }
         @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
         
@@ -82,37 +84,19 @@
         .cat-btn:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
         .cat-btn.active { background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); color: #fff; border-color: transparent; box-shadow: 0 4px 15px var(--glow-1); }
 
-        /* AA TARZI PİYASALAR */
-        .market-strip { 
-            position:relative; z-index:10; 
-            background: var(--aa-market-bg); 
-            border-bottom: 1px solid var(--aa-market-border);
-            overflow:hidden; height: 38px;
-            display: flex; align-items: center;
-        }
-        .market-strip-inner { 
-            display:flex; align-items:stretch; animation: marketScroll 100s linear infinite; width:max-content; 
-        }
+        .market-strip { position:relative; z-index:10; background:var(--market-bg); border-bottom:1px solid var(--market-border); backdrop-filter:blur(12px); overflow:hidden; }
+        .market-strip-inner { display:flex; align-items:stretch; animation: marketScroll 90s linear infinite; width:max-content; }
         .market-strip-inner:hover { animation-play-state:paused; }
         @keyframes marketScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
-        
-        .market-item { 
-            display:flex; align-items:center; gap: 12px; 
-            padding: 0 24px; white-space:nowrap; 
-            border-right: 1px solid var(--aa-market-border); 
-            font-family: 'Inter', sans-serif;
-            height: 38px;
-        }
-        .market-name { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; }
-        .market-price { font-size: 0.9rem; font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; }
-        .market-change { display: flex; align-items: center; gap: 4px; font-size: 0.8rem; font-weight: 700; }
-        
-        .market-change.up { color: var(--aa-up); }
-        .market-change.down { color: var(--aa-down); }
-        .market-change.neutral { color: var(--aa-neutral); }
-        .market-loading { padding: 0 24px; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; height: 100%; }
+        .market-item { display:flex; align-items:center; gap:10px; padding:12px 28px; white-space:nowrap; border-right:1px solid var(--market-border); transition:background .3s; }
+        .market-icon { width:32px; height:32px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:.9rem; font-weight:800; flex-shrink:0; }
+        .market-icon.usd { background:linear-gradient(135deg,#22c55e22,#22c55e44); color:#22c55e; }
+        .market-icon.eur { background:linear-gradient(135deg,#3b82f622,#3b82f644); color:#3b82f6; }
+        .market-icon.gold { background:linear-gradient(135deg,#f59e0b22,#f59e0b44); color:#f59e0b; }
+        .market-info { display:flex; flex-direction:column; }
+        .market-name { font-size:.65rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+        .market-price { font-size:.92rem; font-weight:800; color:var(--text-primary); font-variant-numeric:tabular-nums; }
 
-        /* SON DAKİKA TICKER */
         .ticker-wrap { background:var(--ticker-bg); border-bottom:1px solid var(--border-color); overflow:hidden; height:42px; display:flex; align-items:center; position:relative; z-index:10; }
         .ticker-label { background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff; font-weight:800; font-size:.68rem; letter-spacing:1px; padding:4px 14px; border-radius:6px; margin-left:16px; white-space:nowrap; text-transform:uppercase; z-index:2; flex-shrink:0; }
         .ticker-track { display:flex; animation:tickerScroll 240s linear infinite; white-space:nowrap; margin-left:20px; }
@@ -120,6 +104,7 @@
         .ticker-item { color:var(--text-secondary);font-size:.82rem;font-weight:500;padding:0 2.5rem;position:relative; cursor:pointer; transition:color 0.3s; }
         .ticker-item:hover { color:var(--accent-2); }
         .ticker-item::before { content:'◆';position:absolute;left:0;color:var(--accent-2);font-size:.5rem;top:50%;transform:translateY(-50%); }
+        @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
         .main-container { position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:2rem 1.5rem 4rem; }
         .news-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.8rem;margin-top:1rem; }
@@ -150,23 +135,53 @@
         .detail-date { display:inline-block;background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff;font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:10px;margin-bottom:12px; }
         .detail-title { font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem); font-weight:900;color:#fff;line-height:1.25;text-shadow:0 2px 20px rgba(0,0,0,.3); }
         
-        /* DETAY SAYFASI ANATOMİSİ */
+        /* ═══════ DETAY SAYFASI ORİJİNAL ANATOMİ CSS'İ ═══════ */
         .detail-body { padding: 2.5rem; font-size: 1.08rem; line-height: 1.9; color: var(--text-secondary); }
-        .detail-body > p:first-of-type::first-letter { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; float: left; line-height: 1; margin-right: 12px; margin-top: 4px; background: linear-gradient(135deg, var(--accent-1), var(--accent-3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        
+        /* Baş harfi büyütme (Dergisi stili) - Sadece ilk paragrafa uygular */
+        .detail-body > p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900;
+            float: left; line-height: 1; margin-right: 12px; margin-top: 4px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        /* Paragraflar */
         .detail-body p { margin-bottom: 1.5rem; }
-        .detail-body p:empty { display: none; }
-        .detail-body h2, .detail-body h3, .detail-body h4 { font-family: 'Playfair Display', serif; color: var(--text-primary); font-weight: 800; margin: 2rem 0 1rem 0; line-height: 1.35; }
+        .detail-body p:empty { display: none; } /* AA'nın boş bıraktığı etiketleri gizle */
+
+        /* Alt Başlıklar (Orijinal mizanpaj) */
+        .detail-body h2, .detail-body h3, .detail-body h4 {
+            font-family: 'Playfair Display', serif; color: var(--text-primary);
+            font-weight: 800; margin: 2rem 0 1rem 0; line-height: 1.35;
+        }
         .detail-body h2 { font-size: 1.8rem; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
         .detail-body h3 { font-size: 1.5rem; color: var(--accent-1); }
         .detail-body h4 { font-size: 1.3rem; }
+
+        /* Vurgular ve Linkler */
         .detail-body strong, .detail-body b { color: var(--text-primary); font-weight: 700; }
         .detail-body a { color: var(--accent-1); text-decoration: none; border-bottom: 1px dashed var(--accent-2); }
+        
+        /* Listeler */
         .detail-body ul, .detail-body ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
-        .detail-body blockquote { border-left: 4px solid var(--accent-1); background: var(--bg-card); padding: 1.2rem; margin: 2rem 0; font-style: italic; border-radius: 0 12px 12px 0; color: var(--text-primary); }
-        .detail-body .inline-article-img, .detail-body img { width: 100% !important; height: auto !important; border-radius: 16px; margin: 2rem 0; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .detail-body li { margin-bottom: 0.5rem; position: relative; }
+        
+        /* Alıntılar */
+        .detail-body blockquote {
+            border-left: 4px solid var(--accent-1); background: var(--bg-card);
+            padding: 1.2rem; margin: 2rem 0; font-style: italic; border-radius: 0 12px 12px 0;
+            color: var(--text-primary);
+        }
+
+        /* İç Resimler ve İframe Çözümleri */
+        .detail-body .inline-article-img, .detail-body img {
+            width: 100% !important; height: auto !important; border-radius: 16px;
+            margin: 2rem 0; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Orijinal dışı iframe'ler için düzeltme */
         .detail-body iframe { max-width: 100%; border-radius: 12px; margin-bottom: 1.5rem; }
-        .detail-body div[style*="padding-top: 56.25%"] { position: relative; width: 100%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1.5rem; }
-        .detail-body div[style*="padding-top: 56.25%"] iframe { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; }
 
         .back-btn { display:inline-flex;align-items:center;gap:8px;padding:10px 22px;margin-bottom:1.5rem; background:var(--bg-glass);border:1px solid var(--border-color);border-radius:16px; color:var(--text-primary);font-weight:700;font-size:.88rem;cursor:pointer; transition:all .3s; }
         .back-btn:hover { border-color:var(--accent-2);color:var(--accent-2);transform:translateX(-4px); }
@@ -202,14 +217,10 @@
         <button class="cat-btn" onclick="kategoriSec('Yaşam & Sanat', this)">Yaşam & Sanat</button>
     </div>
 
-    <!-- PİYASA ŞERİDİ (GÜNCELLENDİ) -->
     <div class="market-strip" id="market-strip">
-        <div class="market-strip-inner" id="market-strip-inner">
-            <div class="market-loading">Veriler güncelleniyor...</div>
-        </div>
+        <div class="market-strip-inner" id="market-strip-inner"></div>
     </div>
 
-    <!-- SON DAKİKA ŞERİDİ -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
@@ -217,11 +228,7 @@
 
     <div class="main-container">
         <div id="ana-sayfa">
-            <div class="news-grid" id="haberler-listesi">
-                <div style="grid-column:1/-1; padding: 2rem; text-align: center; color: var(--text-muted);">
-                    Haberler yükleniyor...
-                </div>
-            </div>
+            <div class="news-grid" id="haberler-listesi"></div>
         </div>
 
         <div id="detay-sayfasi">
@@ -260,54 +267,30 @@
             document.getElementById('progress-bar').style.width=(dh>0?(st/dh)*100:0)+'%';
         });
 
-        // ═══════ PİYASA API (KÖPRÜ İLE GÜNCELLENDİ) ═══════
         async function piyasalariGetir(){
-            const strip = document.getElementById('market-strip-inner');
-            try {
-                // Tarayıcı CORS engeline takılmamak için proxy kullanıyoruz (allorigins)
-                const targetUrl = 'https://api.genelpara.com/embed/para-birimleri.json';
-                const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(targetUrl);
-                
-                const response = await fetch(proxyUrl);
-                const result = await response.json();
-                const data = JSON.parse(result.contents);
-                
-                if(data) {
-                    const kurlar = [
-                        { ad: 'BIST 100', veri: data.BIST100 },
-                        { ad: 'USD', veri: data.USD },
-                        { ad: 'EURO', veri: data.EUR },
-                        { ad: 'ALTIN', veri: data.GA }
-                    ];
-
-                    const items = kurlar.map(k => {
-                        if(!k.veri) return '';
-                        
-                        const degisim = parseFloat(k.veri.degisim);
-                        let yon = '', renk = 'neutral';
-                        
-                        if(degisim > 0) { yon = '▲'; renk = 'up'; }
-                        else if(degisim < 0) { yon = '▼'; renk = 'down'; }
-                        else { yon = '−'; }
-                        
-                        return `
-                        <div class="market-item">
-                            <span class="market-name">${k.ad}</span>
-                            <span class="market-price">${k.veri.satis}</span>
-                            <span class="market-change ${renk}">${yon} %${Math.abs(degisim)}</span>
-                        </div>`;
-                    }).join('');
-                    
-                    strip.innerHTML = items.repeat(6);
-                }
-            } catch(e) {
-                console.log("Piyasa verisi çekilemedi.");
-            }
+            const strip=document.getElementById('market-strip-inner');
+            let usdTry=0, eurTry=0, goldUsd=0;
+            try { const r=await fetch('https://open.er-api.com/v6/latest/USD'); const d=await r.json(); if(d&&d.rates){ usdTry=d.rates.TRY||0; eurTry=usdTry/(d.rates.EUR||1); } } catch(e){}
+            try { const r=await fetch('https://api.gold-api.com/price/XAU'); const d=await r.json(); if(d&&d.price) goldUsd=d.price; } catch(e){}
+            
+            const goldGramTry=(goldUsd&&usdTry)?(goldUsd*usdTry/31.1035):0;
+            const items=[
+                {icon:'$',cls:'usd',name:'USD',price:usdTry?usdTry.toFixed(4)+' ₺':'—'},
+                {icon:'€',cls:'eur',name:'EUR',price:eurTry?eurTry.toFixed(4)+' ₺':'—'},
+                {icon:'Au',cls:'gold',name:'Altın',price:goldGramTry?goldGramTry.toLocaleString('tr-TR',{maximumFractionDigits:2})+' ₺':'—'}
+            ];
+            const html=items.map(it=>`
+                <div class="market-item">
+                    <div class="market-icon ${it.cls}">${it.icon}</div>
+                    <div class="market-info">
+                        <span class="market-name">${it.name}</span>
+                        <span class="market-price">${it.price}</span>
+                    </div>
+                </div>`).join('');
+            strip.innerHTML=html.repeat(6);
         }
         piyasalariGetir();
-        setInterval(piyasalariGetir, 120000);
 
-        // ═══════ HABERLER VE SON DAKİKA (GÜNCELLENDİ) ═══════
         let globalHaberler=[];
         
         async function haberleriGetir(){
@@ -315,24 +298,16 @@
                 const response=await fetch('haberler.json');
                 globalHaberler=await response.json();
                 
-                // Gündem kategorisini bul, boşsa ilk 10 haberi Ticker'a koy (Boş kalmasını engeller)
-                let gundemHaberleri = globalHaberler.filter(h => h.kategori === 'Gündem');
-                if(gundemHaberleri.length === 0 && globalHaberler.length > 0) {
-                    gundemHaberleri = globalHaberler.slice(0, 10);
-                }
-
-                if(gundemHaberleri.length > 0){
-                    document.getElementById('ticker-wrap').style.display = 'flex';
-                    const items = gundemHaberleri.slice(0,10).map(h => `<span class="ticker-item" onclick="haberOkuLink('${h.link}')">${h.baslik}</span>`).join('');
-                    document.getElementById('ticker-track').innerHTML = items.repeat(4);
+                const gundemHaberleri = globalHaberler.filter(h => h.kategori === 'Gündem' || !h.kategori);
+                if(gundemHaberleri.length>0){
+                    document.getElementById('ticker-wrap').style.display='flex';
+                    const items = gundemHaberleri.slice(0,10).map(h=>`<span class="ticker-item" onclick="haberOkuLink('${h.link}')">${h.baslik}</span>`).join('');
+                    document.getElementById('ticker-track').innerHTML=items.repeat(4);
                 }
                 
                 haberleriEkranaCiz(globalHaberler);
             } catch(hata){
-                document.getElementById('haberler-listesi').innerHTML=`
-                <div class="error-state" style="grid-column:1/-1">
-                    <p><b>Veriler yüklenemedi.</b><br>Eğer dosyayı doğrudan (lokal olarak) açtıysanız tarayıcınız güvenlik (CORS) nedeniyle engellemiş olabilir. Siteyi Vercel üzerinden açtığınızda sorunsuz çalışacaktır.</p>
-                </div>`;
+                document.getElementById('haberler-listesi').innerHTML=`<div class="error-state" style="grid-column:1/-1"><p>Haberler yüklenemedi. Bot henüz çalışmamış olabilir.</p></div>`;
             }
         }
 
