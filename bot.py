@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 
 def temiz_metin(html_metin):
     if not html_metin: return ""
-    # HTML etiketlerini ve RSS resim taglerini temizle
     temiz = re.sub('<[^<]+?>', '', html_metin)
     return temiz.replace('&nbsp;', ' ').strip()
 
@@ -16,33 +15,32 @@ def haber_detayini_cek(url):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
         }
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as response:
+        with urllib.request.urlopen(req, timeout=10) as response:
             html = response.read().decode('utf-8', errors='ignore')
             
         soup = BeautifulSoup(html, 'html.parser')
         
-        # 1. Başlık Çekme
+        # 1. BAŞLIK ÇEKME
         sayfa_basligi = None
         meta_title = soup.find('meta', property='og:title')
-        if meta_title and meta_title.get('content'):
-            sayfa_basligi = meta_title.get('content').strip()
-        else:
-            h1 = soup.find('h1')
-            if h1: sayfa_basligi = h1.get_text(strip=True)
+        if meta_title: sayfa_basligi = meta_title.get('content').strip()
 
-        # 2. Video ve Medya Çekme
+        # 2. KUSURSUZ RESİM ÇEKME (AA Resim Sorununu Çözen Kısım)
+        detay_resim = None
+        meta_image = soup.find('meta', property='og:image')
+        if meta_image and meta_image.get('content'):
+            detay_resim = meta_image.get('content')
+
+        # 3. VİDEO VE MEDYA
         videolar_html = ""
         eklenen_videolar = set()
-
         for iframe in soup.find_all('iframe'):
             src = iframe.get('src', '')
             if src and not any(x in src for x in ['doubleclick', 'google', 'adsystem', 'facebook', 'twitter']):
                 if src.startswith('//'): src = 'https:' + src
                 elif src.startswith('/'): src = 'https://www.aa.com.tr' + src
-                
                 if src not in eklenen_videolar:
                     videolar_html += f'<div class="relative w-full overflow-hidden rounded-2xl mb-8 shadow-lg border border-gray-100" style="padding-top: 56.25%;"><iframe class="absolute top-0 left-0 w-full h-full" src="{src}" frameborder="0" allowfullscreen></iframe></div>'
                     eklenen_videolar.add(src)
@@ -52,95 +50,90 @@ def haber_detayini_cek(url):
                 videolar_html += f'<div class="w-full rounded-2xl overflow-hidden mb-8 shadow-lg"><video controls class="w-full" src="{mp4}"></video></div>'
                 eklenen_videolar.add(mp4)
 
-        # 3. Haber Metni Çekme
+        # 4. TEMİZ METİN
         metin_html = ""
         icerik_alani = soup.find('div', class_=lambda x: x and any(c in x for c in ['detay-icerik', 'content-detail', 'story', 'detail'])) or soup
-        
         for p in icerik_alani.find_all('p'):
             metin = p.get_text(strip=True)
             if len(metin) > 40 and not any(x in metin for x in ["Anadolu Ajansı", "Abone Ol", "İlgili Haber", "KAYNAK"]):
                 metin_html += f"<p class='mb-4'>{metin}</p>"
                 
         tam_icerik = videolar_html + metin_html
-        return sayfa_basligi, tam_icerik
+        return sayfa_basligi, tam_icerik, detay_resim
     except Exception as e:
-        return None, ""
+        return None, "", None
 
-def aa_haber_cek():
-    url = "https://www.aa.com.tr/tr/rss/default?cat=guncel"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+def aa_kategorili_haber_cek():
+    # Kategori URL'lerimiz
+    kategoriler = {
+        "Gündem": "https://www.aa.com.tr/tr/rss/default?cat=guncel",
+        "Ekonomi": "https://www.aa.com.tr/tr/rss/default?cat=ekonomi",
+        "Spor": "https://www.aa.com.tr/tr/rss/default?cat=spor",
+        "Dünya": "https://www.aa.com.tr/tr/rss/default?cat=dunya",
+        "Yaşam & Sanat": "https://www.aa.com.tr/tr/rss/default?cat=yasam"
+    }
     
-    try:
-        with urllib.request.urlopen(req, timeout=15) as response:
-            xml_data = response.read()
-    except Exception as e:
-        print(f"RSS akışına bağlanılamadı: {e}")
-        return
-        
-    try:
-        root = ET.fromstring(xml_data)
-    except Exception as e:
-        print(f"XML parse hatası: {e}")
-        return
-        
-    haberler = []
+    tum_haberler = []
     
-    for item in root.findall('.//item'):
+    for kategori_adi, url in kategoriler.items():
+        print(f"Kategori işleniyor: {kategori_adi}...")
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        
         try:
-            rss_baslik = item.find('title')
-            link = item.find('link')
-            aciklama = item.find('description')
-            pubDate = item.find('pubDate')
-            
-            resim_url = "https://via.placeholder.com/400x200?text=Görsel+Yok"
-            
-            # Enclosure kontrolü
-            enclosure = item.find('enclosure')
-            if enclosure is not None and enclosure.get('url'):
-                resim_url = enclosure.get('url')
-            elif aciklama is not None and aciklama.text:
-                # Description içindeki resmi yakala
-                img_match = re.search(r'src="([^"]+)"', aciklama.text)
-                if img_match:
-                    resim_url = img_match.group(1)
-            
-            haber_linki = link.text if link is not None and link.text else "#"
-            nihai_baslik = rss_baslik.text if rss_baslik is not None and rss_baslik.text else "Başlıksız"
-            uzun_metin = ""
-            
-            if haber_linki != "#":
-                sayfa_basligi, tam_icerik = haber_detayini_cek(haber_linki)
-                
-                if sayfa_basligi and len(sayfa_basligi) > 5:
-                    nihai_baslik = sayfa_basligi
-                if tam_icerik:
-                    uzun_metin = tam_icerik
-                    
-                time.sleep(0.5)
-            
-            temiz_ozet = temiz_metin(aciklama.text if aciklama is not None else "")
-            
-            if not uzun_metin:
-                uzun_metin = f"<p>{temiz_ozet}</p>"
-            
-            tarih_str = pubDate.text if pubDate is not None and pubDate.text else ""
-            
-            haberler.append({
-                "baslik": nihai_baslik,
-                "link": haber_linki,
-                "aciklama": temiz_ozet,
-                "tam_metin": uzun_metin,
-                "resim": resim_url,
-                "tarih": tarih_str
-            })
-        except Exception as item_err:
-            print(f"Bir haber işlenirken atlandı: {item_err}")
+            with urllib.request.urlopen(req, timeout=15) as response:
+                xml_data = response.read()
+            root = ET.fromstring(xml_data)
+        except:
+            print(f"{kategori_adi} kategorisine bağlanılamadı, atlanıyor.")
             continue
+            
+        # Sitemiz çok ağırlaşmasın diye her kategoriden en güncel 12 haberi alıyoruz
+        items = root.findall('.//item')[:12] 
         
+        for item in items:
+            try:
+                rss_baslik = item.find('title')
+                link = item.find('link')
+                aciklama = item.find('description')
+                pubDate = item.find('pubDate')
+                
+                haber_linki = link.text if link is not None and link.text else "#"
+                nihai_baslik = rss_baslik.text if rss_baslik is not None and rss_baslik.text else "Başlıksız"
+                uzun_metin = ""
+                resim_url = "https://via.placeholder.com/400x220/1a1a2e/6c5ce7?text=Görsel+Yok"
+                
+                if haber_linki != "#":
+                    # Örümcek sayfaya dalıyor!
+                    sayfa_basligi, tam_icerik, detay_resim = haber_detayini_cek(haber_linki)
+                    
+                    if sayfa_basligi and len(sayfa_basligi) > 5:
+                        nihai_baslik = sayfa_basligi
+                    if tam_icerik:
+                        uzun_metin = tam_icerik
+                    if detay_resim:
+                        resim_url = detay_resim # Yüksek kaliteli resmi aldık!
+                        
+                    time.sleep(0.3)
+                
+                temiz_ozet = temiz_metin(aciklama.text if aciklama is not None else "")
+                if not uzun_metin: uzun_metin = f"<p>{temiz_ozet}</p>"
+                
+                tum_haberler.append({
+                    "kategori": kategori_adi,  # Artık haberlerin etiketi var
+                    "baslik": nihai_baslik,
+                    "link": haber_linki,
+                    "aciklama": temiz_ozet,
+                    "tam_metin": uzun_metin,
+                    "resim": resim_url,
+                    "tarih": pubDate.text if pubDate is not None and pubDate.text else ""
+                })
+            except Exception as e:
+                continue
+
     with open('haberler.json', 'w', encoding='utf-8') as f:
-        json.dump(haberler, f, ensure_ascii=False, indent=4)
+        json.dump(tum_haberler, f, ensure_ascii=False, indent=4)
         
-    print(f"Anadolu Ajansı'ndan {len(haberler)} adet haber başarıyla işlendi ve kaydedildi.")
+    print(f"Toplam {len(tum_haberler)} adet haber başarıyla çekildi.")
 
 if __name__ == "__main__":
-    aa_haber_cek()
+    aa_kategorili_haber_cek()
