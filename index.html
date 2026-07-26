@@ -32,8 +32,8 @@
             /* AA Tarzı Piyasalar İçin Renkler */
             --aa-market-bg: #1e1e2d;
             --aa-market-border: #2b2b40;
-            --aa-up: #16a34a; /* Yeşil */
-            --aa-down: #dc2626; /* Kırmızı */
+            --aa-up: #16a34a; 
+            --aa-down: #dc2626; 
             --aa-neutral: #9ca3af;
         }
         [data-theme="light"] {
@@ -82,7 +82,7 @@
         .cat-btn:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
         .cat-btn.active { background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); color: #fff; border-color: transparent; box-shadow: 0 4px 15px var(--glow-1); }
 
-        /* ═══════ YENİ: AA TARZI KURUMSAL PİYASA ŞERİDİ ═══════ */
+        /* AA TARZI PİYASALAR */
         .market-strip { 
             position:relative; z-index:10; 
             background: var(--aa-market-bg); 
@@ -110,10 +110,9 @@
         .market-change.up { color: var(--aa-up); }
         .market-change.down { color: var(--aa-down); }
         .market-change.neutral { color: var(--aa-neutral); }
-        
         .market-loading { padding: 0 24px; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; height: 100%; }
 
-        /* ═══════ SON DAKİKA TICKER ═══════ */
+        /* SON DAKİKA TICKER */
         .ticker-wrap { background:var(--ticker-bg); border-bottom:1px solid var(--border-color); overflow:hidden; height:42px; display:flex; align-items:center; position:relative; z-index:10; }
         .ticker-label { background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff; font-weight:800; font-size:.68rem; letter-spacing:1px; padding:4px 14px; border-radius:6px; margin-left:16px; white-space:nowrap; text-transform:uppercase; z-index:2; flex-shrink:0; }
         .ticker-track { display:flex; animation:tickerScroll 240s linear infinite; white-space:nowrap; margin-left:20px; }
@@ -151,7 +150,7 @@
         .detail-date { display:inline-block;background:linear-gradient(135deg,var(--accent-4),var(--accent-3)); color:#fff;font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:10px;margin-bottom:12px; }
         .detail-title { font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem); font-weight:900;color:#fff;line-height:1.25;text-shadow:0 2px 20px rgba(0,0,0,.3); }
         
-        /* ═══════ DETAY SAYFASI ═══════ */
+        /* DETAY SAYFASI ANATOMİSİ */
         .detail-body { padding: 2.5rem; font-size: 1.08rem; line-height: 1.9; color: var(--text-secondary); }
         .detail-body > p:first-of-type::first-letter { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; float: left; line-height: 1; margin-right: 12px; margin-top: 4px; background: linear-gradient(135deg, var(--accent-1), var(--accent-3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .detail-body p { margin-bottom: 1.5rem; }
@@ -203,13 +202,14 @@
         <button class="cat-btn" onclick="kategoriSec('Yaşam & Sanat', this)">Yaşam & Sanat</button>
     </div>
 
-    <!-- ═══════ YENİ: AA TARZI KURUMSAL PİYASA ŞERİDİ ═══════ -->
+    <!-- PİYASA ŞERİDİ (GÜNCELLENDİ) -->
     <div class="market-strip" id="market-strip">
         <div class="market-strip-inner" id="market-strip-inner">
             <div class="market-loading">Veriler güncelleniyor...</div>
         </div>
     </div>
 
+    <!-- SON DAKİKA ŞERİDİ -->
     <div class="ticker-wrap" id="ticker-wrap" style="display:none;">
         <span class="ticker-label">⚡ Son Dakika</span>
         <div class="ticker-track" id="ticker-track"></div>
@@ -217,7 +217,11 @@
 
     <div class="main-container">
         <div id="ana-sayfa">
-            <div class="news-grid" id="haberler-listesi"></div>
+            <div class="news-grid" id="haberler-listesi">
+                <div style="grid-column:1/-1; padding: 2rem; text-align: center; color: var(--text-muted);">
+                    Haberler yükleniyor...
+                </div>
+            </div>
         </div>
 
         <div id="detay-sayfasi">
@@ -256,13 +260,17 @@
             document.getElementById('progress-bar').style.width=(dh>0?(st/dh)*100:0)+'%';
         });
 
-        // ═══════ YENİ: AA TARZI CANLI PİYASA API BAĞLANTISI ═══════
+        // ═══════ PİYASA API (KÖPRÜ İLE GÜNCELLENDİ) ═══════
         async function piyasalariGetir(){
             const strip = document.getElementById('market-strip-inner');
             try {
-                // Türkiye geneli en stabil döviz/altın API'si (yüzdelik değişimleri içerir)
-                const response = await fetch('https://api.genelpara.com/embed/para-birimleri.json');
-                const data = await response.json();
+                // Tarayıcı CORS engeline takılmamak için proxy kullanıyoruz (allorigins)
+                const targetUrl = 'https://api.genelpara.com/embed/para-birimleri.json';
+                const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(targetUrl);
+                
+                const response = await fetch(proxyUrl);
+                const result = await response.json();
+                const data = JSON.parse(result.contents);
                 
                 if(data) {
                     const kurlar = [
@@ -275,7 +283,6 @@
                     const items = kurlar.map(k => {
                         if(!k.veri) return '';
                         
-                        // Yüzdelik değişimi matematiksel olarak hesapla ve AA tarzı ok ekle
                         const degisim = parseFloat(k.veri.degisim);
                         let yon = '', renk = 'neutral';
                         
@@ -291,18 +298,16 @@
                         </div>`;
                     }).join('');
                     
-                    // Ekranı doldurup sonsuz döngü sağlaması için 6 kere yan yana basıyoruz
                     strip.innerHTML = items.repeat(6);
                 }
             } catch(e) {
                 console.log("Piyasa verisi çekilemedi.");
             }
         }
-        
         piyasalariGetir();
-        // Verileri AA gibi her 2 dakikada bir arka planda yenile
         setInterval(piyasalariGetir, 120000);
 
+        // ═══════ HABERLER VE SON DAKİKA (GÜNCELLENDİ) ═══════
         let globalHaberler=[];
         
         async function haberleriGetir(){
@@ -310,16 +315,24 @@
                 const response=await fetch('haberler.json');
                 globalHaberler=await response.json();
                 
-                const gundemHaberleri = globalHaberler.filter(h => h.kategori === 'Gündem' || !h.kategori);
-                if(gundemHaberleri.length>0){
-                    document.getElementById('ticker-wrap').style.display='flex';
-                    const items = gundemHaberleri.slice(0,10).map(h=>`<span class="ticker-item" onclick="haberOkuLink('${h.link}')">${h.baslik}</span>`).join('');
-                    document.getElementById('ticker-track').innerHTML=items.repeat(4);
+                // Gündem kategorisini bul, boşsa ilk 10 haberi Ticker'a koy (Boş kalmasını engeller)
+                let gundemHaberleri = globalHaberler.filter(h => h.kategori === 'Gündem');
+                if(gundemHaberleri.length === 0 && globalHaberler.length > 0) {
+                    gundemHaberleri = globalHaberler.slice(0, 10);
+                }
+
+                if(gundemHaberleri.length > 0){
+                    document.getElementById('ticker-wrap').style.display = 'flex';
+                    const items = gundemHaberleri.slice(0,10).map(h => `<span class="ticker-item" onclick="haberOkuLink('${h.link}')">${h.baslik}</span>`).join('');
+                    document.getElementById('ticker-track').innerHTML = items.repeat(4);
                 }
                 
                 haberleriEkranaCiz(globalHaberler);
             } catch(hata){
-                document.getElementById('haberler-listesi').innerHTML=`<div class="error-state" style="grid-column:1/-1"><p>Haberler yüklenemedi. Bot henüz çalışmamış olabilir.</p></div>`;
+                document.getElementById('haberler-listesi').innerHTML=`
+                <div class="error-state" style="grid-column:1/-1">
+                    <p><b>Veriler yüklenemedi.</b><br>Eğer dosyayı doğrudan (lokal olarak) açtıysanız tarayıcınız güvenlik (CORS) nedeniyle engellemiş olabilir. Siteyi Vercel üzerinden açtığınızda sorunsuz çalışacaktır.</p>
+                </div>`;
             }
         }
 
