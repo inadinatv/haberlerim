@@ -1,6 +1,15 @@
 [
     {
         "kategori": "Gündem",
+        "baslik": "Uluslararası İstanbul Arapça Kitap Fuarı, yerli ve yabancı kitapseverleri ağırlıyor",
+        "link": "https://www.aa.com.tr/tr/kultur/uluslararasi-istanbul-arapca-kitap-fuari-yerli-ve-yabanci-kitapseverleri-agirliyor/4028890",
+        "aciklama": "\"11. Uluslararası İstanbul Arapça Kitap Fuarı\" ikinci gününde çok sayıda yerli ve yabancı kitapsever tarafından ziyaret edildi.",
+        "tam_metin": "<p class='mb-4'>Türkiye'de eğitim gören öğrenci, akademisyen ve eğitimciler ile Arapçaya ilgi duyan farklı milletlerden okur, yazar, gazeteci ve araştırmacıların da arasında bulunduğu pek çok kişi fuarı gezme imkanı buldu.</p><p class='mb-4'>Ziyaretçiler, 30'dan fazla ülkeden 300'ü aşkın yayınevinin katıldığı fuara gelerek, stantlardaki kitapları inceledi ve eserlere ilişkin bilgi aldı.</p><p class='mb-4'>Bu yıl \"Hikaye devam ediyor\" temasıyla düzenlenen 11. Uluslararası İstanbul Arapça Kitap Fuarı, Arap dünyası dışındaki en büyük Arapça kitap fuarı olma özelliğini taşıyor.</p><p class='mb-4'>Organizasyon sayesinde yayıncılar, yazarlar, akademisyenler, çevirmenler, grafik tasarımcılar ve sektör temsilcileri bir araya gelerek yeni projeler, yayın hakları ve uluslararası işbirlikleri üzerine görüşmeler gerçekleştiriyor.</p><p class='mb-4'>Suriye, Katar, Umman, Fas, Kuveyt ve Cezayir'in de arasında bulunduğu pek çok ülkeden yetkililerin yanı sıra uluslararası sivil toplum kuruluşu temsilcileri ile kültür, sanat ve siyaset dünyasından isimlerin de katıldığı fuar, renkli görüntülere sahne oluyor.</p><p class='mb-4'>Merkezi Kahire'de bulunan Arap Yayıncılar Birliği tarafından da akredite edilen fuar, 23 Ağustos'a kadar ziyarete açık olacak.</p>",
+        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_d3e0efffe8b4ac0bd60cacedb460f181.jpg",
+        "tarih": "Sun, 16 Aug 2026 18:21:37 +0300"
+    },
+    {
+        "kategori": "Gündem",
         "baslik": "Papa 14. Leo, Batı Şeria'da İsrail'in Filistinlilere yönelik şiddetinin sonlandırılması çağrısı yaptı",
         "link": "https://www.aa.com.tr/tr/dunya/papa-14-leo-bati-seriada-israilin-filistinlilere-yonelik-siddetinin-sonlandirilmasi-cagrisi-yapti/4028874",
         "aciklama": "Vatikan Devlet Başkanı Papa 14. Leo, işgal altındaki Batı Şeria'da yaşayan Filistin halkına yönelik şiddete son verilmesi çağrısında bulundu.",
@@ -97,15 +106,6 @@
         "tam_metin": "<p class='mb-4'>Yunan basınında yer alan haberlere göre, dün dönüm başına 140 ton yağış alan bölgede altyapı sistemleri büyük hasar gördü.</p><p class='mb-4'>Yüze yakın araç sele kapılırken, itfaiyeye yardım için 50'nin üzerinde çağrı geldi.</p><p class='mb-4'>Dün meydana gelen selde, çok sayıda ev ve iş yeri hasar almış, şiddetli yağış yol ve köprülere zarar vermişti.</p><p class='mb-4'>Çok sayıda insan geceyi geçirmek üzere selden zarar görmeyen komşu bölgelerdeki spor salonlarında misafir edilmişti.</p><p class='mb-4'>İtilo köyünde otomobilinin içinde bir kadın ise yıldırım çarpması sonucu yaralanmıştı.</p>",
         "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_a5b91133aea084fd43e68fe2f3203c20.jpg",
         "tarih": "Sun, 16 Aug 2026 16:21:56 +0300"
-    },
-    {
-        "kategori": "Gündem",
-        "baslik": "Suriye'den Rusya'ya 1,5 yıl aradan sonra ilk yolcu uçağı indi",
-        "link": "https://www.aa.com.tr/tr/dunya/suriyeden-rusyaya-1-5-yil-aradan-sonra-ilk-yolcu-ucagi-indi/4028831",
-        "aciklama": "Rusya'nın başkenti Moskova'daki Şeremetyevo Havalimanı'na, bir buçuk yılı aşkın sürenin ardından Suriye'den ilk yolcu uçağı indi.",
-        "tam_metin": "<p class='mb-4'>Suriye'nin başkenti Şam'dan Syrian Airlines'a ait Airbus A320 tipi uçak, yerel saatle 02.14'te havalandı ve Şeremetyevo Havalimanı'na 06.44'te iniş yaptı. Moskova'dan da Şam'a uçuş gerçekleştirileceği belirtiliyor.</p><p class='mb-4'>Geçen yılın ocak ayından bu yana Rusya ile Suriye arasındaki karşılıklı hava ulaşımı askıya alınmıştı.</p>",
-        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_868be7600951ee07b5b2e404ccc76327.jpg",
-        "tarih": "Sun, 16 Aug 2026 16:40:07 +0300"
     },
     {
         "kategori": "Ekonomi",
