@@ -1,6 +1,24 @@
 [
     {
         "kategori": "Gündem",
+        "baslik": "Türkiye 17 Yaş Altı Kadın Milli Voleybol Takımı, dünya 2'ncisi oldu",
+        "link": "https://www.aa.com.tr/tr/spor/turkiye-17-yas-alti-kadin-milli-voleybol-takimi-dunya-2ncisi-oldu/4029060",
+        "aciklama": "Türkiye 17 Yaş Altı Kadın Milli Voleybol Takımı, dünya şampiyonası finalinde ABD'ye 3-0 yenildi.",
+        "tam_metin": "<p class='mb-4'>Türkiye Voleybol Federasyonunun açıklamasına göre ay-yıldızlılar, Şili'nin başkenti Santiago'da oynanan karşılaşmayı 25-23, 25-11 ve 25-23'lük setlerle kaybederek gümüş madalya aldı.</p><p class='mb-4'>Zeynep Doğa Alpay, en iyi smaçör, Nejla Guzonjic de en iyi orta oyuncu olarak turnuvanın rüya takımına seçildi.</p>",
+        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_0a784a7a2ab84056d1f92b872abaf97c.jpg",
+        "tarih": "Mon, 17 Aug 2026 08:23:08 +0300"
+    },
+    {
+        "kategori": "Gündem",
+        "baslik": "İsrail ordusunun Gazze kentinin doğusundaki saldırılarında yaralananlar oldu",
+        "link": "https://www.aa.com.tr/tr/dunya/israil-ordusunun-gazze-kentinin-dogusundaki-saldirilarinda-yaralananlar-oldu/4029051",
+        "aciklama": "İsrail ordusunun Gazze kentinin doğusundaki Tuffah Mahallesi'ne düzenlediği topçu saldırısında yaralananlar olduğu bildirildi.",
+        "tam_metin": "<p class='mb-4'>Gazze'deki Ambulans ve Acil Durum Müdürlüğünden yapılan açıklamada, İsrail ordusunun kontrolündeki bölgelerin dışında kalan Tuffah Mahallesi'ne yönelik topçu saldırısında bazı Filistinlilerin yaralandığı belirtildi.</p><p class='mb-4'>Öte yandan, yerel kaynaklar İsrail ordusunun Tuffah Mahallesi'nde kendi kontrolündeki bölgelere iki hava saldırısı düzenlediğini aktardı.</p>",
+        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_64eb0117e5de75038656b9eb2b9e2b2b.jpg",
+        "tarih": "Mon, 17 Aug 2026 07:37:10 +0300"
+    },
+    {
+        "kategori": "Gündem",
         "baslik": "TBMM Başkanı Kurtulmuş, Marmara Depremi’nde hayatını kaybedenleri andı",
         "link": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-kurtulmus-marmara-depremi-nde-hayatini-kaybedenleri-andi/4029040",
         "aciklama": "TBMM Başkanı Numan Kurtulmuş, 17 Ağustos 1999 Marmara Depremi'nin 27'nci yıl dönümünde felakette yaşamını yitirenleri andı.",
@@ -21,8 +39,8 @@
         "kategori": "Gündem",
         "baslik": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyine saldırı düzenledi",
         "link": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyine-saldiri-duzenledi/4029032",
-        "aciklama": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyindeki Bint Cubeyl ilçesine bağlı Hadasa beldesine silahlı saldırı düzenledi.",
-        "tam_metin": "<p class='mb-4'>Lübnan resmi haber ajansı NNA'nın haberine göre, İsrail askerleri Hadasa'nın Batı Mahallesi'ne otomatik silahlarla ateş açtı.</p><p class='mb-4'>Aynı sırada İsrail ordusuna ait askeri araçların belde içinde hareket ettiği belirtildi.</p><p class='mb-4'>İsrail ordusu, Lübnan'a 2 Mart'ta yoğun hava saldırıları başlatarak ülkenin güneyindeki birçok beldeyi işgal etmişti.</p><p class='mb-4'>Lübnan hükümeti, bu süreçte ülkede yerinden edilenlerin sayısının 1 milyonu aştığını açıklamıştı.</p><p class='mb-4'>Lübnan ile İsrail arasında 17 Nisan'da yürürlüğe giren ateşkes daha sonra birkaç kez uzatılmıştı. İsrail ordusu, ateşkese rağmen Lübnan'a 15 Ağustos'ta sabaha karşı hava saldırıları düzenlemişti.</p><p class='mb-4'>Lübnan Sağlık Bakanlığı, İsrail'in 2 Mart'tan bu yana ülkeye düzenlediği saldırılarda 4 bin 346 kişinin hayatını kaybettiğini bildirmişti.</p>",
+        "aciklama": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyindeki Bint Cubeyl ilçesine bağlı Hadasa beldesi, Huceyr Vadisi ve Hiyam beldesine saldırılar düzenledi.",
+        "tam_metin": "<p class='mb-4'>Lübnan resmi haber ajansı NNA'nın haberine göre, İsrail askerleri Hadasa'nın Batı Mahallesi'ne otomatik silahlarla ateş açtı.</p><p class='mb-4'>Aynı sırada İsrail ordusuna ait askeri araçların belde içinde hareket ettiği belirtildi.</p><p class='mb-4'>İsrail savaş uçakları, gece yarısından sonra Huceyr Vadisi'nin Kantara yönüne hava saldırısı gerçekleştirdi.</p><p class='mb-4'>İsrail güçleri, ayrıca Hiyam beldesini otomatik silahlarla taradı.</p><p class='mb-4'>İsrail ordusu, Lübnan'a 2 Mart'ta yoğun hava saldırıları başlatarak ülkenin güneyindeki birçok beldeyi işgal etmişti.</p><p class='mb-4'>Lübnan hükümeti, bu süreçte ülkede yerinden edilenlerin sayısının 1 milyonu aştığını açıklamıştı.</p><p class='mb-4'>Lübnan ile İsrail arasında 17 Nisan'da yürürlüğe giren ateşkes daha sonra birkaç kez uzatılmıştı. İsrail ordusu, ateşkese rağmen Lübnan'a 15 Ağustos'ta sabaha karşı hava saldırıları düzenlemişti.</p><p class='mb-4'>Lübnan Sağlık Bakanlığı, İsrail'in 2 Mart'tan bu yana ülkeye düzenlediği saldırılarda 4 bin 346 kişinin hayatını kaybettiğini bildirmişti.</p>",
         "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_c3123475a84a256afae7dfdb8929b87d.jpg",
         "tarih": "Mon, 17 Aug 2026 03:46:08 +0300"
     },
@@ -88,24 +106,6 @@
         "tam_metin": "<p class='mb-4'>ABD Başkanı Trump, sosyal medya hesabından, Mekke Ortak Savunma Anlaşması'na ilişkin paylaşımda bulundu.</p><p class='mb-4'>Paylaşımında, \"Suudi Arabistan, Türkiye ve Pakistan’ın Mekke Ortak Savunma Anlaşması’nı imzalamış olmalarını görmekten büyük mutluluk duyuyorum.\" ifadesini kullanan Trump, söz konusu anlaşmanın, Orta Doğu'nun bir araya geldiğini ve ülkelerin kendilerini daha etkili bir şekilde savunabileceklerini ortaya koyduklarını gösterdiğini belirtti.</p><p class='mb-4'>ABD Başkanı, \"Söz konusu üç ülkenin büyük liderlerini tebrik ediyorum. Bu büyük, cesur ve önemli bir ilk adım. İnanılmaz.\" değerlendirmesini yaptı.</p><p class='mb-4'>Trump, sosyal medya hesabından yaptığı paylaşımda, Pentagon'a Güney Kore ile yapılan ortak askeri tatbikatları önemli ölçüde azaltma talimatı verdiğini duyurdu.</p><p class='mb-4'>Trump, söz konusu kararına gerekçe olarak, \"Kuzey Kore lideri Kim Jong-un ile olan iyi ilişkilerini\" ve söz konusu askeri tatbikatların çok maliyetli olmasını ve bu masrafların çoğunun ABD tarafından karşılanmasını gösterdi.</p><p class='mb-4'>ABD Başkanı, söz konusu ortak askeri tatbikatların artık iptal edilmek için çok geç olduğundan önemli ölçüde azaltılmasını istediğini ifade etti.</p><p class='mb-4'>Trump ayrıca, Güney Kore'nin, İran'la savaşında ABD'ye destek olma konusunda \"hayır\" cevabını verdiğini de açıklamasına ekledi.</p>",
         "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_e7b1f8a5afe75116499aa8aca834aebe.jpg",
         "tarih": "Mon, 17 Aug 2026 00:38:13 +0300"
-    },
-    {
-        "kategori": "Gündem",
-        "baslik": "Aladağlar'ın eteğindeki Kapuzbaşı Şelaleleri bölge halkına gelir kapısı oluyor",
-        "link": "https://www.aa.com.tr/tr/ekonomi/aladaglarin-etegindeki-kapuzbasi-selaleleri-bolge-halkina-gelir-kapisi-oluyor/4029005",
-        "aciklama": "Kayseri'nin Yahyalı ilçesindeki Kapuzbaşı Şelaleleri'nin bulunduğu iki kırsal mahallenin sakinleri, geniş tarım arazisi bulunmayan memleketlerinde turizmi gelir kapısına dönüştürdü.",
-        "tam_metin": "<p class='mb-4'>Aladağlar'ın buzullarından beslenen takım şelalelerine adını veren Kapuzbaşı ve Büyükçakır mahallelerinde yaşayanlar, dağlık bölgede otelcilik ve restoran gibi sektörlere yöneldi.</p><p class='mb-4'>Kent merkezine yaklaşık 150 kilometre uzaklıktaki iki mahallenin girişimcileri, yurt içinden ve dışından gelen ziyaretçilerden bölgede kalmak isteyenleri oteller, pansiyonlar ve bungalovlarda ağırlıyor.</p><p class='mb-4'>Tarıma pek uygun olmayan ata topraklarını bırakmak istemeyen yöre sakinleri, imkanları ölçüsünde girişimlerde bulunarak turizmle ayakta kalmaya çalışıyor.</p><p class='mb-4'>Yahyalı Belediye Başkanı Esat Öztürk, AA muhabirine, ilçe için turizmin oldukça önemli olduğunu söyledi.</p><p class='mb-4'>Bu yıl Kapuzbaşı Şelaleleri'nin bulunduğu bölgeye gelen turist sayısında artış beklediklerini vurgulayan Öztürk, şöyle konuştu:</p><p class='mb-4'>\"İlçemiz adına gurur duyuyorum. Tabii 81 vilayetten ve yurt dışından gelenler var. 2026 turizm sezonu gerçekten yüzlerimizi güldürecek. İlçemizde turizm bakımından bir ivme yakaladık. Yıllık 1 milyon 500 bin ziyaretimiz olunca tabii yöre halkı bunu fırsata çeviriyor. Bu bölgede yaklaşık 30 pansiyonumuz, 15 restoranımız var. Ziyaretçiler burada yöre halkının hünerli ellerinde pişen yemekleri tatma imkanı buluyor. Alabalığımız başta olmak üzere ızgara çeşitleri ve bu yöreye ait bezdirmeyi tavsiye ediyorum. Bölge halkı trekking için gelenleri katırlarla gezdiriyor ve tabii bu ekonomilerine katkı da oluyor. Zaten coğrafya çok çetin, 3 bin 600 rakımı da 630 rakımı da görebiliyoruz. Bu müthiş bir zenginlik. Bölge halkımız gelen turistlerden dolayı mutlu. Ekonomilerine katkı oluyor. Kışın inşaat işiyle uğraşıyorlar ama yaz geldiği zaman yöre halkımız turistlere, pansiyon ve restoran gibi hizmetler veriyor.\"</p><p class='mb-4'>Öztürk, bölge halkının kısıtlı arazilerinde yetiştirdiği incir, nar ve cennet hurması gibi meyveleri turistlere sunduğunu sözlerine ekledi.</p><p class='mb-4'>Otel işleten Ahmet Apaydın da doğup büyüdüğü topraklarda turizm işiyle uğraşmanın keyifli olduğunu söyledi.</p><p class='mb-4'>Arazinin tarıma pek uygun olmaması nedeniyle turizme yöneldiklerini belirten Apaydın, \"Burada araziler sarp ama güzel bir şelalelerimiz var. Biz bu işe 2013 yılında başladık. Buranın şartları belli ve imkanlar kısıtlı. 14 odamızla hizmet veriyoruz. Sabah kahvaltısı ve akşam yemeği imkanı var. Çocukluğumdan beri buraya insanların geldiğini görüyordum. O zamanlar çadır kuruyorlardı. Şu anda tesisler var, aşağı yukarı bölgede 300 yatak var. Benimle birlikte eşim, çocuklarım ve yeğenlerim var. Yoğunluğa göre köyün gençleriyle çalışıyoruz.\" diye konuştu.</p><p class='mb-4'>Bölgede pansiyon işleten Mehmet Mil de aile işletmesi olarak bölgeye gelen turistlere hizmet verdiklerini ifade etti.</p><p class='mb-4'>Son yıllarda bölgeye gelen ziyaretçilerin çok arttığına dikkati çeken Mil, \"Burası 1994 yılından sonra ünlendi, daha öncesinde bilen yoktu. 1994 yılından sonra yerli halk daha çok gelmeye başladı. Boş bir alandı ve sadece fasulye ekerdik. Durum böyle olunca burada bu işin yürüyeceğine inandık. Biz de turizm işine yöneldik, memnunuz. Başka bir şey yapamazsın çünkü kanyonun arasındasın. Burada başka bir şey olma şansı yok. Turizmci olarak biz çok memnunuz.\" ifadelerini kullandı.</p><p class='mb-4'>Mil, şelalelerin bölgeye çok değer kattığını, bu yüzden turizme tutunduklarını kaydetti.</p><p class='mb-4'>Ali Baştürk ise bölgenin eşsiz bir manzaraya sahip olduğunu söyledi.</p><p class='mb-4'>Burada otel hizmeti verdiklerini anlatan Baştürk, \"Bizim bölgede arazi yok. Su kaynağı bol ama tarıma elverişli yer değil ve hayvancılık da zayıf. Ondan dolayı bu bölgede turizm aktif. İnsanlar ikliminden, havasından ve temizliğinden dolayı buraya yöneliyor. Biz de bunu değerlendirmek istiyoruz.\" dedi.</p>",
-        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_43ff2e564cc5b13a7ff892b92dd08e42.jpg",
-        "tarih": "Mon, 17 Aug 2026 00:08:06 +0300"
-    },
-    {
-        "kategori": "Gündem",
-        "baslik": "Klasik araçlar ve binlerce antika için 1000 metrekarelik alanı \"nostalji hangarı\"na çevirdi",
-        "link": "https://www.aa.com.tr/tr/gundem/klasik-araclar-ve-binlerce-antika-icin-1000-metrekarelik-alani-nostalji-hangarina-cevirdi/4029006",
-        "aciklama": "Samsun'da yaşayan restoran işletmecisi Cengiz Toprak, çocukluk yıllarında başlayan antika merakı ve klasik otomobil tutkusuyla biriktirdiği binlerce objeyi 1000 metrekarelik hangarda sergiliyor.",
-        "tam_metin": "<p class='mb-4'>Toprak, Samsun-Ankara kara yolunun Mahmutlu mevkisindeki restoranının karşısında bulunan boş alanı kiralayarak yaklaşık 1000 metrekare kapalı alana sahip \"nostalji hangarı\"na dönüştürdü.</p><p class='mb-4'>Toprak, 30 yılda topladığı binlerce antika eşyanın yanı sıra aralarında 1964 model Chevrolet Impala'nın da bulunduğu klasik otomobillerini bu alanda bir araya getirdi.</p><p class='mb-4'>Cengiz Toprak, AA muhabirine, babasını 4 yaşında kaybettiğini ve güç şartlar altında büyüdüğünü söyledi.</p><p class='mb-4'>Çocukluğunda evlerinde gaz lambası bulunmadığını, annesinin geceleri kandil ışığında kendilerini gezdirdiğini anlatan Toprak, yaşadığı yokluğun yıllar içinde antika tutkusuna dönüştüğünü belirtti.</p><p class='mb-4'>Yaklaşık 30 yıldır antika eşya biriktirdiğini dile getiren Toprak, \"Antikayı sevmeyenlere sevdirmeye çalışacağız. Özellikle yeni kuşak olan kardeşlerimize, çocuklarımıza bir meşgale olsun çünkü bu güzel bir sevda. Yeni aldığımız bir şey çok değer katmaz üzerine ama eski olan her şey yıllar geçtikçe daha çok değerleniyor. Ben de yaklaşık olarak 30 yıldır biriktiriyorum, alıyorum. Diyebilirim ki kazandığım bütün parayı hep bunlara harcadım.\" dedi.</p><p class='mb-4'>Toprak, klasik otomobillere de büyük ilgi duyduğunu, yapım aşamasında 7 aracının bulunduğunu, 3 klasik otomobilini ise hangarda muhafaza ettiğini anlattı.</p><p class='mb-4'>Klasik otomobil tutkusunun Samsun'da da yaygınlaşmasına katkı sağladığını ifade eden Toprak, \"Samsun'da diyebilirim ki 20-25 araç alan arkadaşlarımız, abilerimiz oldu. Bizim için bu çok vazgeçilmez bir sevda. Antika bende sınırsız bir aşktır. Beni tanıyanlar iyi bilir. Ben gerçekten eski olan her şeyi çok seviyorum.\" ifadelerini kullandı.</p><p class='mb-4'>Çocukluk yıllarında yaşadığı imkansızlıkların koleksiyonuna yansıdığını anlatan Toprak, \"Bende her şeyden bir tane yok. Mesela gaz lambası belki 1000 tane var, lüks çok fazla miktarda var. Radyo aynı şekilde fazla miktarda var. Bu, benim ölene kadar sevdamdır. Çok seviyorum.\" diye konuştu.</p><p class='mb-4'>Antika ve klasik otomobil tutkusunu gelecek nesillere aktarmayı istediğini belirten Toprak, yeni doğan torununa 1964 model Chevrolet Impala'yı bırakmayı planladığını söyledi.</p><p class='mb-4'>Toprak, \"Yeni torunum oldu. Torunum 18 yaşına geldiği zaman ömrüm olursa aracın anahtarını torunuma teslim edeceğim.\" dedi.</p>",
-        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_93fc28a32f49e9615af9363e3cac8ad5.jpg",
-        "tarih": "Mon, 17 Aug 2026 00:08:40 +0300"
     },
     {
         "kategori": "Ekonomi",
@@ -217,6 +217,15 @@
     },
     {
         "kategori": "Spor",
+        "baslik": "Türkiye 17 Yaş Altı Kadın Milli Voleybol Takımı, dünya 2'ncisi oldu",
+        "link": "https://www.aa.com.tr/tr/spor/turkiye-17-yas-alti-kadin-milli-voleybol-takimi-dunya-2ncisi-oldu/4029060",
+        "aciklama": "Türkiye 17 Yaş Altı Kadın Milli Voleybol Takımı, dünya şampiyonası finalinde ABD'ye 3-0 yenildi.",
+        "tam_metin": "<p class='mb-4'>Türkiye Voleybol Federasyonunun açıklamasına göre ay-yıldızlılar, Şili'nin başkenti Santiago'da oynanan karşılaşmayı 25-23, 25-11 ve 25-23'lük setlerle kaybederek gümüş madalya aldı.</p><p class='mb-4'>Zeynep Doğa Alpay, en iyi smaçör, Nejla Guzonjic de en iyi orta oyuncu olarak turnuvanın rüya takımına seçildi.</p>",
+        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_0a784a7a2ab84056d1f92b872abaf97c.jpg",
+        "tarih": "Mon, 17 Aug 2026 08:23:08 +0300"
+    },
+    {
+        "kategori": "Spor",
         "baslik": "Amed Sportif Faaliyetler konuk ettiği Erzurumspor FK'yi mağlup etti",
         "link": "https://www.aa.com.tr/tr/spor/amed-sportif-faaliyetler-konuk-ettigi-erzurumspor-fkyi-maglup-etti/4028980",
         "aciklama": "Amed Sportif Faaliyetler, konuk ettiği Erzurumspor FK'yi 3-0 mağlup etti.",
@@ -315,13 +324,13 @@
         "tarih": "Sun, 16 Aug 2026 17:16:42 +0300"
     },
     {
-        "kategori": "Spor",
-        "baslik": "Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı",
-        "link": "https://www.aa.com.tr/tr/spor/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi/4028779",
-        "aciklama": "Fenerbahçe, UEFA Şampiyonlar Ligi play-off turu ilk maçında 18 Ağustos Salı günü sahasında Fransa'nın Olimpik Lyon ekibiyle yapacağı mücadelenin hazırlıklarına başladı.",
-        "tam_metin": "<p class='mb-4'>Sarı-lacivertli kulübün açıklamasına göre Fenerbahçe Can Bartu Tesisleri'nde teknik direktör İsmail Kartal yönetimindeki antrenmanda, Trendyol Süper Lig'de dün akşam oynanan Gençlerbirliği maçında 60 dakika üzeri süre alan futbolcular, günü yenilenme ile tamamladı.</p><p class='mb-4'>Diğer futbolcular ise ısınma ve çabukluk hareketlerinin ardından pas çalışması yaptı. İdman, dayanıklılık koşuları ve bireysel çalışmalarla noktalandı.</p><p class='mb-4'>Fenerbahçe, müsabakanın hazırlıklarını yarın gerçekleştireceği antrenmanla tamamlayacak.</p>",
-        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_41ff55e33dd5b2696571e9b5655f7b4b.jpg",
-        "tarih": "Sun, 16 Aug 2026 15:19:52 +0300"
+        "kategori": "Dünya",
+        "baslik": "İsrail ordusunun Gazze kentinin doğusundaki saldırılarında yaralananlar oldu",
+        "link": "https://www.aa.com.tr/tr/dunya/israil-ordusunun-gazze-kentinin-dogusundaki-saldirilarinda-yaralananlar-oldu/4029051",
+        "aciklama": "İsrail ordusunun Gazze kentinin doğusundaki Tuffah Mahallesi'ne düzenlediği topçu saldırısında yaralananlar olduğu bildirildi.",
+        "tam_metin": "<p class='mb-4'>Gazze'deki Ambulans ve Acil Durum Müdürlüğünden yapılan açıklamada, İsrail ordusunun kontrolündeki bölgelerin dışında kalan Tuffah Mahallesi'ne yönelik topçu saldırısında bazı Filistinlilerin yaralandığı belirtildi.</p><p class='mb-4'>Öte yandan, yerel kaynaklar İsrail ordusunun Tuffah Mahallesi'nde kendi kontrolündeki bölgelere iki hava saldırısı düzenlediğini aktardı.</p>",
+        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_64eb0117e5de75038656b9eb2b9e2b2b.jpg",
+        "tarih": "Mon, 17 Aug 2026 07:37:10 +0300"
     },
     {
         "kategori": "Dünya",
@@ -336,8 +345,8 @@
         "kategori": "Dünya",
         "baslik": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyine saldırı düzenledi",
         "link": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyine-saldiri-duzenledi/4029032",
-        "aciklama": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyindeki Bint Cubeyl ilçesine bağlı Hadasa beldesine silahlı saldırı düzenledi.",
-        "tam_metin": "<p class='mb-4'>Lübnan resmi haber ajansı NNA'nın haberine göre, İsrail askerleri Hadasa'nın Batı Mahallesi'ne otomatik silahlarla ateş açtı.</p><p class='mb-4'>Aynı sırada İsrail ordusuna ait askeri araçların belde içinde hareket ettiği belirtildi.</p><p class='mb-4'>İsrail ordusu, Lübnan'a 2 Mart'ta yoğun hava saldırıları başlatarak ülkenin güneyindeki birçok beldeyi işgal etmişti.</p><p class='mb-4'>Lübnan hükümeti, bu süreçte ülkede yerinden edilenlerin sayısının 1 milyonu aştığını açıklamıştı.</p><p class='mb-4'>Lübnan ile İsrail arasında 17 Nisan'da yürürlüğe giren ateşkes daha sonra birkaç kez uzatılmıştı. İsrail ordusu, ateşkese rağmen Lübnan'a 15 Ağustos'ta sabaha karşı hava saldırıları düzenlemişti.</p><p class='mb-4'>Lübnan Sağlık Bakanlığı, İsrail'in 2 Mart'tan bu yana ülkeye düzenlediği saldırılarda 4 bin 346 kişinin hayatını kaybettiğini bildirmişti.</p>",
+        "aciklama": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyindeki Bint Cubeyl ilçesine bağlı Hadasa beldesi, Huceyr Vadisi ve Hiyam beldesine saldırılar düzenledi.",
+        "tam_metin": "<p class='mb-4'>Lübnan resmi haber ajansı NNA'nın haberine göre, İsrail askerleri Hadasa'nın Batı Mahallesi'ne otomatik silahlarla ateş açtı.</p><p class='mb-4'>Aynı sırada İsrail ordusuna ait askeri araçların belde içinde hareket ettiği belirtildi.</p><p class='mb-4'>İsrail savaş uçakları, gece yarısından sonra Huceyr Vadisi'nin Kantara yönüne hava saldırısı gerçekleştirdi.</p><p class='mb-4'>İsrail güçleri, ayrıca Hiyam beldesini otomatik silahlarla taradı.</p><p class='mb-4'>İsrail ordusu, Lübnan'a 2 Mart'ta yoğun hava saldırıları başlatarak ülkenin güneyindeki birçok beldeyi işgal etmişti.</p><p class='mb-4'>Lübnan hükümeti, bu süreçte ülkede yerinden edilenlerin sayısının 1 milyonu aştığını açıklamıştı.</p><p class='mb-4'>Lübnan ile İsrail arasında 17 Nisan'da yürürlüğe giren ateşkes daha sonra birkaç kez uzatılmıştı. İsrail ordusu, ateşkese rağmen Lübnan'a 15 Ağustos'ta sabaha karşı hava saldırıları düzenlemişti.</p><p class='mb-4'>Lübnan Sağlık Bakanlığı, İsrail'in 2 Mart'tan bu yana ülkeye düzenlediği saldırılarda 4 bin 346 kişinin hayatını kaybettiğini bildirmişti.</p>",
         "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/17/thumbs_b_c_c3123475a84a256afae7dfdb8929b87d.jpg",
         "tarih": "Mon, 17 Aug 2026 03:46:08 +0300"
     },
@@ -421,15 +430,6 @@
         "tam_metin": "<p class='mb-4'>Lübnan Sağlık Bakanlığından yapılan açıklamada, İsrail'in 2 Mart'tan itibaren düzenlediği saldırılara ilişkin ölü ve yaralı sayısına ilişkin son veriler paylaşıldı.</p><p class='mb-4'>Açıklamada, söz konusu dönemde İsrail saldırılarında yaşamını yitirenlerin sayısının 4 bin 346'ya ulaştığı, yaralı sayısının da 12 bin 301'e çıktığı kaydedildi.</p><p class='mb-4'>İsrail ordusu, Lübnan'a 2 Mart'ta yoğun hava saldırıları başlatarak ülkenin güneyindeki birçok beldeyi işgal etmişti.</p><p class='mb-4'>Lübnan hükümeti, bu süreçte ülkede yerinden edilenlerin sayısının 1 milyonu aştığını açıklamıştı.</p><p class='mb-4'>Lübnan ile İsrail arasında 17 Nisan'da yürürlüğe giren ateşkes daha sonra birkaç kez uzatılmıştı.</p><p class='mb-4'>Ancak İsrail ordusu, ateşkese rağmen çeşitli gerekçelerle ülkeye yönelik saldırılarını sürdürüyor.</p>",
         "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_231679f31996738c8a1985aafbfb14ba.jpg",
         "tarih": "Sun, 16 Aug 2026 16:49:26 +0300"
-    },
-    {
-        "kategori": "Dünya",
-        "baslik": "Yunanistan'ın Mora Yarımadası'nda dün meydana gelen sel büyük hasara neden oldu",
-        "link": "https://www.aa.com.tr/tr/dunya/yunanistanin-mora-yarimadasinda-dun-meydana-gelen-sel-buyuk-hasara-neden-oldu/4028813",
-        "aciklama": "Yunanistan'ın Mora Yarımadası'ndaki Mani ilinde dün meydana gelen selin bölgede büyük hasara yol açtığı belirtildi.",
-        "tam_metin": "<p class='mb-4'>Yunan basınında yer alan haberlere göre, dün dönüm başına 140 ton yağış alan bölgede altyapı sistemleri büyük hasar gördü.</p><p class='mb-4'>Yüze yakın araç sele kapılırken, itfaiyeye yardım için 50'nin üzerinde çağrı geldi.</p><p class='mb-4'>Dün meydana gelen selde, çok sayıda ev ve iş yeri hasar almış, şiddetli yağış yol ve köprülere zarar vermişti.</p><p class='mb-4'>Çok sayıda insan geceyi geçirmek üzere selden zarar görmeyen komşu bölgelerdeki spor salonlarında misafir edilmişti.</p><p class='mb-4'>İtilo köyünde otomobilinin içinde bir kadın ise yıldırım çarpması sonucu yaralanmıştı.</p>",
-        "resim": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/16/thumbs_b_c_a5b91133aea084fd43e68fe2f3203c20.jpg",
-        "tarih": "Sun, 16 Aug 2026 16:21:56 +0300"
     },
     {
         "kategori": "Yaşam & Sanat",
