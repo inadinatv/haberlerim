@@ -95,6 +95,7 @@ def test_besleme_cozyu_kisayla():
     assert len(haberler) >= 1
     assert haberler[0]["tam_metin"] == ""
     assert haberler[0]["tam"] is False
+    assert not bot.metin_yeterli(haberler[0]["tam_metin"])
 
 
 def test_haber_detayini_cek():
@@ -108,9 +109,15 @@ def test_haber_detayini_cek():
       <div class="haber-detail-icerik">
         <p>İçerik birinci paragrafı ve otuz karakterden uzun bir cümle ile devam ediyor burada.</p>
         <iframe src="https://video.haber.com.tr/embed/xyz"></iframe>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
         <p>İçerik ikinci paragrafı ve yine uzun bir metin ile devam ediyor test doğrulama için.</p>
         <img src="https://cdn.example.com/haber/foto.jpg" alt="">
         <img src="https://cdn.example.com/images/logo.png" alt="">
+        <ul>
+          <li>Facebook ile paylaş</li>
+          <li>Messenger ile gönder</li>
+          <li>E-posta ile gönder</li>
+        </ul>
       </div>
       <div class="related-news">
         <p>İlgili haberler bloğu ve uzun metin içerir ama içerik kabından ayrı bir yapıda durur.</p>
@@ -131,15 +138,167 @@ def test_haber_detayini_cek():
     assert "foto.jpg" in icerik, "içerik görseli çekilmedi"
     assert "logo.png" not in icerik, "logo süzülmedi"
     assert "video.haber.com.tr" in icerik, "video embed çekilmedi"
+    assert "youtube.com/embed/dQw4w9WgXcQ" in icerik, "YouTube haberi videosu çekilmedi"
     assert "Menü paragrafı" not in icerik, "menü içeriğe sızdı"
+    assert "İlgili haberler bloğu" not in icerik, "ilgili haber gürültüsü sızdı"
+    assert "Facebook ile paylaş" not in icerik, "paylaşım düğmeleri sızdı"
     assert not kisitli
+
+
+def test_rss_gorsel_tam_sayilmaz():
+    """RSS açıklamasında yalnız görsel varsa tam metin sayılmaz (kazıma atlanmamalı)."""
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0"><channel>
+      <item>
+        <title>Görselli kısa haber başlığı burada yeterince uzun</title>
+        <link>https://www.ntv.com.tr/turkiye/gorsel-haber,abcd</link>
+        <description><![CDATA[<img src="https://images.ntv.com.tr/foto.jpg"><p>Kısa özet.</p>]]></description>
+        <pubDate>Wed, 02 Sep 2026 18:55:00 +0300</pubDate>
+      </item>
+    </channel></rss>"""
+    haberler = bot.beslemeyi_cozyu(xml, {"kategori": "Gündem", "limit": 5},
+                                   {"ad": "NTV", "id": "ntv", "resim_tabani": None})
+    assert len(haberler) == 1
+    assert haberler[0]["tam"] is False
+    assert not bot.metin_yeterli(haberler[0]["tam_metin"])
+    assert "foto.jpg" in (haberler[0].get("resim") or "")
+
+
+def test_rss_ozette_youtube():
+    """Haber özetindeki YouTube videosu videolar listesine ve gövdeye eklenmeli."""
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0"><channel>
+      <item>
+        <title>Bakanlık açıklaması sonrası sahada inceleme başladı</title>
+        <link>https://www.example.com/haber/video-1</link>
+        <description><![CDATA[
+          <p>Bakanlık ekipleri bölgede incelemeye başladı ve ilk tespitler kamuoyuyla paylaşılacak.</p>
+          <iframe src="https://www.youtube.com/embed/abcdefghijk"></iframe>
+        ]]></description>
+        <enclosure url="https://cdn.example.com/klip.mp4" type="video/mp4"/>
+        <pubDate>Wed, 02 Sep 2026 18:55:00 +0300</pubDate>
+      </item>
+    </channel></rss>"""
+    haberler = bot.beslemeyi_cozyu(xml, {"kategori": "Gündem", "limit": 5},
+                                   {"ad": "NTV", "id": "ntv", "resim_tabani": None})
+    assert len(haberler) == 1
+    vids = haberler[0]["videolar"]
+    assert any("youtube.com/embed/abcdefghijk" in v for v in vids), vids
+    assert any("klip.mp4" in v for v in vids), vids
+    govde = haberler[0]["tam_metin"]
+    assert "youtube.com/embed/abcdefghijk" in govde
+    assert "video-frame" in govde
+
+
+def test_ilgili_haber_ve_telif_ayiklama():
+    """Paylaşım, telif ve alakasız 'ilgili haber' satırları gövdeye girmemeli."""
+    sayfa = """<html><head>
+      <meta property="og:title" content="Karadeniz'de şüpheli cisim alarmı SAS timleri imha etti">
+    </head><body>
+      <article class="article-body">
+        <p>Milli Savunma Bakanlığı, Karadeniz'de tespit edilen şüpheli cisimlerin SAS timleri tarafından imha edildiğini açıkladı.</p>
+        <p>Bakanlığın paylaşımında keşif ve gözetleme faaliyetlerinin kesintisiz sürdüğü belirtildi ve cisimlerin yerinde imha edildiği kaydedildi.</p>
+        <h3>İlgili Haberler</h3>
+        <ul>
+          <li>Stres, Tükenmişlik, Dikkat Dağınıklığı... Beyin Yorgunluğunun 3 İşareti</li>
+          <li>Keçiören Belediye Başkanı CNN TÜRK'te konuştu</li>
+          <li>İsrailli bakandan İran’a tehdit: uçaklarımız hazır</li>
+        </ul>
+        <p>Stres, Tükenmişlik, Dikkat Dağınıklığı... Beyin Yorgunluğunun 3 İşareti</p>
+        <p>www.sozcu.com.tr internet sitesinde yayınlanan yazı, haber ve fotoğrafların her türlü telif hakkı saklıdır. İzin alınmadan iktibas edilemez.</p>
+      </article>
+    </body></html>"""
+    if not bot.BSAVULUMU_VAR:
+        print("  (bs4 yok — atlandı)")
+        return
+    orijinal = bot.http_cek
+    bot.http_cek = lambda url, *a, **k: sayfa.encode("utf-8")
+    try:
+        _, icerik, _, _, _ = bot.haber_detayini_cek("https://ornek.test/sas")
+    finally:
+        bot.http_cek = orijinal
+    assert "SAS timleri" in icerik
+    assert "Tükenmişlik" not in icerik, icerik
+    assert "Keçiören" not in icerik
+    assert "telif hakkı" not in icerik
+    assert "iktibas" not in icerik
+
+
+def test_jsonld_articlebody():
+    """JSON-LD NewsArticle gövdesi HTML'den daha uzunsa tercih edilmeli."""
+    govde = ("Karadenizde tespit edilen supheli cisimler SAS timlerince imha edildi. " * 8
+             + "Bakanlik faaliyetlerin 7 gun 24 saat surdugunu bildirdi. " * 4)
+    sayfa = (
+        "<html><head><script type=\"application/ld+json\">"
+        '{"@type": "NewsArticle", "headline": "SAS imha",'
+        ' "articleBody": "' + govde + '",'
+        ' "video": {"@type": "VideoObject",'
+        ' "embedUrl": "https://www.youtube.com/embed/jsonldvide1"}}'
+        "</script></head><body>"
+        "<article><p>Kisa HTML ozeti burada duruyor ve kazima bunu tek basina yetmez saymali.</p></article>"
+        "</body></html>"
+    )
+    if not bot.BSAVULUMU_VAR:
+        print("  (bs4 yok — atlandı)")
+        return
+    orijinal = bot.http_cek
+    bot.http_cek = lambda url, *a, **k: sayfa.encode("utf-8")
+    try:
+        _, icerik, _, _, _ = bot.haber_detayini_cek("https://ornek.test/jsonld")
+    finally:
+        bot.http_cek = orijinal
+    assert "SAS timlerince imha" in icerik
+    assert "youtube.com/embed/jsonldvide1" in icerik
+    assert bot.metin_yeterli(icerik)
+
+
+def test_video_embed_url():
+    assert bot.video_embed_url("https://youtu.be/abcdefghijk") == "https://www.youtube.com/embed/abcdefghijk"
+    assert bot.video_embed_url("https://www.youtube.com/watch?v=abcdefghijk") == "https://www.youtube.com/embed/abcdefghijk"
+    assert bot.haber_videosu_mu("https://www.youtube.com/embed/abcdefghijk")
+    assert not bot.haber_videosu_mu("https://doubleclick.net/ad/video.mp4")
+    assert not bot.haber_videosu_mu("https://www.facebook.com/plugins/like.php")
+
+
+class _Args:
+    kaydirma = 0
+    verbose = False
+
+
+def test_kazi_hedefi_gorsel_html():
+    """Yalnızca img içeren tam_metin kazıma kuyruğuna girmeli."""
+    haberler = [{
+        "baslik": "Kısa", "link": "https://x.t/1", "tarih": "2026-09-02T10:00:00+00:00",
+        "tam_metin": '<img class="inline-article-img" src="https://cdn.example.com/a.jpg" alt="">',
+        "tam": True, "videolar": [], "aciklama": "özet",
+    }]
+    cagrildi = []
+
+    def sahte(*a, **k):
+        cagrildi.append(a)
+        govde = "<p>" + ("Uzun haber paragrafı ve devam eden cümle burada duruyor. " * 25) + "</p>"
+        return "B", govde, None, None, False
+
+    orijinal = bot.haber_detayini_cek
+    bot.haber_detayini_cek = sahte
+    try:
+        n = bot.kazi_tam_metin(haberler, 5, 5, 20000, 2, _Args())
+    finally:
+        bot.haber_detayini_cek = orijinal
+    assert cagrildi, "görsel-only haber kazınmalıydı"
+    assert n >= 1
+    assert bot.metin_yeterli(haberler[0]["tam_metin"])
+    assert haberler[0]["tam"] is True
 
 
 def test_metin_siniri():
     """Uzun sayfa -> metin sinirinde kesilmeli, kisitli=True."""
     if not bot.BSAVULUMU_VAR:
         return
-    paragraf = "<p>Uzun paragraf metni ve otuz karakterden fazla uzunlukta cümleler içeriyor.</p>" * 400
+    paragraf = "".join(
+        f"<p>Uzun paragraf metni ve otuz karakterden fazla uzunlukta cümleler içeriyor {i}.</p>"
+        for i in range(400)
+    )
     sayfa = f"<html><body><article>{paragraf}</article></body></html>"
     orijinal = bot.http_cek
     bot.http_cek = lambda url, *a, **k: sayfa.encode("utf-8")
