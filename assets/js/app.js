@@ -440,6 +440,7 @@ function kartHtml(h, i) {
         '</div></div>' +
         '<div class="kart-govde">' +
         '<div class="kart-meta"><span class="kart-kategori">' + kategoriIkonu(h.kategori) + ' ' + escapeHtml(h.kategori) + '</span>' +
+        (h.tam_metin ? '<span class="kart-tam" title="Bu haber sitede tam metin okunabilir">📖 Tam metin</span>' : '') +
         '<span class="kart-zaman">' + relativeZaman(h.tarih) + '</span></div>' +
         '<h2 class="kart-baslik">' + escapeHtml(h.baslik) + '</h2>' +
         '<p class="kart-aciklama">' + escapeHtml(h.aciklama) + '</p>' +
@@ -479,10 +480,17 @@ function detayAc(h) {
     }
 
     $('#detay-baslik').textContent = h.baslik;
+
+    /* okuma süresi */
+    const duz = (h.tam_metin ? h.tam_metin.replace(/<[^>]+>/g, ' ') : (h.aciklama || ''));
+    const sozSayisi = duz.split(/\s+/).filter(Boolean).length;
+    const okumaDk = Math.max(1, Math.round(sozSayisi / 180));
+
     $('#detay-meta').innerHTML =
         '<span class="detay-rozet kategori">' + kategoriIkonu(h.kategori) + ' ' + escapeHtml(h.kategori) + '</span>' +
         '<span class="detay-rozet kaynak kaynak-renk" data-kaynak="' + escapeHtml(h.kaynak_id || '') + '"><span class="kaynak-nokta"></span>' + escapeHtml(h.kaynak) + '</span>' +
-        '<span class="detay-rozet zaman">🕐 ' + uzunTarih(h.tarih) + '</span>';
+        '<span class="detay-rozet zaman">🕐 ' + uzunTarih(h.tarih) + '</span>' +
+        (h.tam_metin ? '<span class="detay-rozet zaman">⏱ ' + okumaDk + ' dk okuma</span>' : '');
 
     let govde = '';
     if (h.tam_metin) {
@@ -491,7 +499,10 @@ function detayAc(h) {
     if (h.aciklama && !h.tam_metin) {
         govde += '<p>' + escapeHtml(h.aciklama) + '</p>';
     }
-    govde += '<div class="kaynak-notu">📄 Bu haber <strong>' + escapeHtml(h.kaynak) + '</strong> kaynağından toplanmıştır. Tam metni ve güncel gelişmeleri: <a href="' + escapeHtml(h.link) + '" target="_blank" rel="noopener">kaynağa git →</a></div>';
+    const kisaltildi = h.tam === false && h.tam_metin;
+    govde += '<div class="kaynak-notu">📄 Bu haber <strong>' + escapeHtml(h.kaynak) + '</strong> kaynağından toplanmıştır.' +
+        (kisaltildi ? ' <em>Metin kısaltılmıştır — devamı</em> ' : ' Güncel gelişmeler: ') +
+        '<a href="' + escapeHtml(h.link) + '" target="_blank" rel="noopener">kaynağa git →</a></div>';
     $('#detay-icerik').innerHTML = govde;
 
     $('#detay-aksiyonlar').innerHTML =

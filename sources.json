@@ -9,7 +9,9 @@
     "maksimum_haber": 250,
     "son_dakika_suresi_dakika": 45,
     "tam_metin_kazimi": true,
-    "tam_metin_siniri": 12,
+    "tam_metin_siniri": 0,
+    "sayfa_metin_siniri": 20000,
+    "kazimi_calisani": 8,
     "feed_uret": true
   },
   "kategoriler": [
