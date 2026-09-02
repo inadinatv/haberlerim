@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Anadolu Ajansı Test</title>
+    <link>https://www.example.com</link>
+    <description>Anadolu Ajansı test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[A Milli Erkek Basketbol Takımı, dünya sıralamasında 2 basamak yükseldi]]></title>
+      <link>https://www.aa.com.tr/tr/spor/a-milli-erkek-basketbol-takimi-dunya-siralamasinda-2-basamak-yukseldi/4045606</link>
+      <description><![CDATA[A Milli Erkek Basketbol Takımı, FIBA dünya klasmanında 2 basamak yükselerek 9. sıraya çıktı.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 18:38:26 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

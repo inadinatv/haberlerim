@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sözcü Test</title>
+    <link>https://www.example.com</link>
+    <description>Sözcü test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[ABD saldırdı, piyasa hareketlendi: Altın düştü, petrol fırladı]]></title>
+      <link>https://www.sozcu.com.tr/abd-saldirdi-piyasa-hareketlendi-altin-dustu-petrol-firladi-p354575</link>
+      <description><![CDATA[Orta Doğu'daki gerilimle petrol fiyatları yükseldi, altın geriledi.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Tue, 01 Sep 2026 20:35:24 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Motorin, benzin LPG... Üçüne birden zam geliyor]]></title>
+      <link>https://www.sozcu.com.tr/lpg-ye-dev-zam-geliyor-p354677</link>
+      <description><![CDATA[Akaryakıt fiyatlarına yeni zam bekleniyor.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 09:32:03 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

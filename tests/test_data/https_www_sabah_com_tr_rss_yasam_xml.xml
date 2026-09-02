@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sabah Test</title>
+    <link>https://www.example.com</link>
+    <description>Sabah test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[KKTC Başbakanı Ünal Üstel'den önemli açıklamalar]]></title>
+      <link>https://www.sabah.com.tr/video/haber/kuzey-kibris-turk-cumhuriyeti-kktc-basbakani-unal-ustelden-onemli-aciklamalar</link>
+      <description><![CDATA[KKTC Başbakanı Üstel, gemi kazasına ilişkin açıklamalarda bulundu.]]></description>
+
+      <category>Yaşam</category>
+      <pubDate>Wed, 02 Sep 2026 19:13:21 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Girne'deki gemi kazasında yeni gelişme: Bir kişinin cenazesine ulaşıldı]]></title>
+      <link>https://www.sabah.com.tr/yasam/girnedeki-gemi-kazasinda-yeni-gelisme-kktc-basbakani-ustel-acikladi-bir-kisinin-cenazesine-ulasildi-7653160</link>
+      <description><![CDATA[Arama kurtarma ekipleri kayıp kişiden birinin cenazesine ulaştı.]]></description>
+
+      <category>Yaşam</category>
+      <pubDate>Wed, 02 Sep 2026 19:12:48 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

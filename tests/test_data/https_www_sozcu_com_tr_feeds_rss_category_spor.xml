@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sözcü Test</title>
+    <link>https://www.example.com</link>
+    <description>Sözcü test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Cumhur İttifakı ortağından zehir zemberek 'Amedspor' tepkisi]]></title>
+      <link>https://www.sozcu.com.tr/cumhur-ittifaki-ortagindan-zehir-zemberek-amedspor-tepkisi-p354762</link>
+      <description><![CDATA[Araştırma, spor dünyasında geniş yankı buldu.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 14:35:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

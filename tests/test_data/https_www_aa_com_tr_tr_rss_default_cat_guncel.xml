@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Anadolu Ajansı Test</title>
+    <link>https://www.example.com</link>
+    <description>Anadolu Ajansı test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[İsrail basınına göre, Tel Aviv'in çekilmeyi reddetmesi nedeniyle Suriye ile güvenlik anlaşması yapılamadı]]></title>
+      <link>https://www.aa.com.tr/tr/dunya/israil-basinina-gore-tel-avivin-cekilmeyi-reddetmesi-nedeniyle-suriye-ile-guvenlik-anlasmasi-yapilamadi/4045635</link>
+      <description><![CDATA[İsrail basınında, Tel Aviv yönetiminin Suriye'de işgal edilen bölgelerden çekilmeyi reddetmesi nedeniyle güvenlik anlaşmasına şu ana kadar varılamadığı öne sürüldü.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 18:55:00 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[KKTC'deki gemi kazasında kaybolan 20 kişiden birinin cenazesi bulundu]]></title>
+      <link>https://www.aa.com.tr/tr/gundem/kktcdeki-gemi-kazasinda-kaybolan-20-kisiden-birinin-cenazesi-bulundu/4045620</link>
+      <description><![CDATA[Girne açıklarında alabora olan yolcu gemisinden kaybolan 20 kişiden birinin cenazesine ulaşıldığı bildirildi.]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 19:04:21 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cumhurbaşkanı Erdoğan, Diyanet İşleri Başkanı Arpaguş'u kabul etti]]></title>
+      <link>https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-diyanet-isleri-baskani-arpagusu-kabul-etti/4045602</link>
+      <description><![CDATA[Cumhurbaşkanı Recep Tayyip Erdoğan, Diyanet İşleri Başkanı Safi Arpaguş'u kabul etti.]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 18:34:07 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

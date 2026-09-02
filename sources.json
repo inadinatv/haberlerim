@@ -1,0 +1,139 @@
+{
+  "bot": {
+    "ad": "GÜNDEM Haber Botu",
+    "surum": "2.0",
+    "zaman_asimi_saniye": 15,
+    "calisan_sayisi": 8,
+    "tekrar_dene": 1,
+    "kaydirma_saniye": 0.15,
+    "maksimum_haber": 250,
+    "son_dakika_suresi_dakika": 45,
+    "tam_metin_kazimi": true,
+    "tam_metin_siniri": 12,
+    "feed_uret": true
+  },
+  "kategoriler": [
+    "Gündem",
+    "Ekonomi",
+    "Spor",
+    "Dünya",
+    "Teknoloji",
+    "Sağlık",
+    "Yaşam & Sanat",
+    "Magaza"
+  ],
+  "kaynaklar": [
+    {
+      "id": "aa",
+      "ad": "Anadolu Ajansı",
+      "aktif": true,
+      "ogretici": true,
+      "resim_tabani": "https://www.aa.com.tr",
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel", "limit": 12 },
+        { "kategori": "Ekonomi", "url": "https://www.aa.com.tr/tr/rss/default?cat=ekonomi", "limit": 10 },
+        { "kategori": "Spor", "url": "https://www.aa.com.tr/tr/rss/default?cat=spor", "limit": 10 },
+        { "kategori": "Dünya", "url": "https://www.aa.com.tr/tr/rss/default?cat=dunya", "limit": 10 },
+        { "kategori": "Teknoloji", "url": "https://www.aa.com.tr/tr/rss/default?cat=bilim-teknoloji", "limit": 10 },
+        { "kategori": "Yaşam & Sanat", "url": "https://www.aa.com.tr/tr/rss/default?cat=yasam", "limit": 10 }
+      ]
+    },
+    {
+      "id": "ntv",
+      "ad": "NTV",
+      "aktif": true,
+      "ogretici": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.ntv.com.tr/son-dakika.rss", "limit": 12 },
+        { "kategori": "Gündem", "url": "https://www.ntv.com.tr/turkiye.rss", "limit": 8 },
+        { "kategori": "Ekonomi", "url": "https://www.ntv.com.tr/ekonomi.rss", "limit": 10 },
+        { "kategori": "Dünya", "url": "https://www.ntv.com.tr/dunya.rss", "limit": 8 },
+        { "kategori": "Spor", "url": "https://www.ntv.com.tr/sporskor.rss", "limit": 8 },
+        { "kategori": "Teknoloji", "url": "https://www.ntv.com.tr/teknoloji.rss", "limit": 8 },
+        { "kategori": "Sağlık", "url": "https://www.ntv.com.tr/saglik.rss", "limit": 8 },
+        { "kategori": "Yaşam & Sanat", "url": "https://www.ntv.com.tr/yasam.rss", "limit": 8 }
+      ]
+    },
+    {
+      "id": "trt",
+      "ad": "TRT Haber",
+      "aktif": true,
+      "ogretici": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.trthaber.com/sondakika.rss", "limit": 15 }
+      ]
+    },
+    {
+      "id": "sabah",
+      "ad": "Sabah",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.sabah.com.tr/rss/gundem.xml", "limit": 10 },
+        { "kategori": "Ekonomi", "url": "https://www.sabah.com.tr/rss/ekonomi.xml", "limit": 8 },
+        { "kategori": "Spor", "url": "https://www.sabah.com.tr/rss/spor.xml", "limit": 8 },
+        { "kategori": "Dünya", "url": "https://www.sabah.com.tr/rss/dunya.xml", "limit": 8 },
+        { "kategori": "Teknoloji", "url": "https://www.sabah.com.tr/rss/teknoloji.xml", "limit": 8 },
+        { "kategori": "Yaşam & Sanat", "url": "https://www.sabah.com.tr/rss/yasam.xml", "limit": 8 }
+      ]
+    },
+    {
+      "id": "hurriyet",
+      "ad": "Hürriyet",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "http://www.hurriyet.com.tr/rss/gundem", "limit": 10 },
+        { "kategori": "Ekonomi", "url": "http://www.hurriyet.com.tr/rss/ekonomi", "limit": 8 },
+        { "kategori": "Spor", "url": "http://www.hurriyet.com.tr/rss/spor", "limit": 8 },
+        { "kategori": "Dünya", "url": "http://www.hurriyet.com.tr/rss/dunya", "limit": 8 },
+        { "kategori": "Teknoloji", "url": "http://www.hurriyet.com.tr/rss/teknoloji", "limit": 8 },
+        { "kategori": "Sağlık", "url": "http://www.hurriyet.com.tr/rss/saglik", "limit": 8 },
+        { "kategori": "Magaza", "url": "http://www.hurriyet.com.tr/rss/magazin", "limit": 8 }
+      ]
+    },
+    {
+      "id": "cnnturk",
+      "ad": "CNN Türk",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.cnnturk.com/feed/rss/turkiye/news", "limit": 12 },
+        { "kategori": "Ekonomi", "url": "https://www.cnnturk.com/feed/rss/ekonomi/news", "limit": 8 },
+        { "kategori": "Dünya", "url": "https://www.cnnturk.com/feed/rss/dunya/news", "limit": 8 },
+        { "kategori": "Spor", "url": "https://www.cnnturk.com/feed/rss/spor/news", "limit": 8 },
+        { "kategori": "Teknoloji", "url": "https://www.cnnturk.com/feed/rss/bilim-teknoloji/news", "limit": 8 },
+        { "kategori": "Sağlık", "url": "https://www.cnnturk.com/feed/rss/saglik/news", "limit": 8 },
+        { "kategori": "Yaşam & Sanat", "url": "https://www.cnnturk.com/feed/rss/kultur-sanat/news", "limit": 8 },
+        { "kategori": "Magaza", "url": "https://www.cnnturk.com/feed/rss/magazin/news", "limit": 8 }
+      ]
+    },
+    {
+      "id": "sozcu",
+      "ad": "Sözcü",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.sozcu.com.tr/feeds-son-dakika", "limit": 12 },
+        { "kategori": "Ekonomi", "url": "https://www.sozcu.com.tr/feeds-rss-category-ekonomi", "limit": 8 },
+        { "kategori": "Dünya", "url": "https://www.sozcu.com.tr/feeds-rss-category-dunya", "limit": 8 },
+        { "kategori": "Spor", "url": "https://www.sozcu.com.tr/feeds-rss-category-spor", "limit": 8 },
+        { "kategori": "Teknoloji", "url": "https://www.sozcu.com.tr/feeds-rss-category-bilim-teknoloji", "limit": 8 },
+        { "kategori": "Sağlık", "url": "https://www.sozcu.com.tr/feeds-rss-category-saglik", "limit": 8 },
+        { "kategori": "Magaza", "url": "https://www.sozcu.com.tr/feeds-rss-category-magazin", "limit": 8 }
+      ]
+    },
+    {
+      "id": "bbcturkce",
+      "ad": "BBC Türkçe",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://feeds.bbci.co.uk/turkce/rss.xml", "limit": 10 }
+      ]
+    },
+    {
+      "id": "haberturk",
+      "ad": "Habertürk",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Gündem", "url": "https://www.haberturk.com/rss", "limit": 12 }
+      ]
+    }
+  ]
+}

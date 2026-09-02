@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sabah Test</title>
+    <link>https://www.example.com</link>
+    <description>Sabah test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Bakan Işıkhan: Engelli ve eski hükümlü vatandaşlarımızın yanında oluyoruz]]></title>
+      <link>https://www.sabah.com.tr/ekonomi/bakan-istikhan-7653155</link>
+      <description><![CDATA[Bakan Işıkhan, sosyal destek paketinin detaylarını paylaştı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:05:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Orta Vadeli Program 6 Eylül Pazar günü açıklanacak]]></title>
+      <link>https://www.cnnturk.com/video/ekonomi/orta-vadeli-program-6-eylul-pazar-gunu-aciklanacak-3462039</link>
+      <description><![CDATA[Hazine ve Maliye Bakanlığı'nın 2027-2029 Orta Vadeli Programı 6 Eylül'de kamuoyuyla paylaşılacak.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:40:05 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[SON DAKİKA | Borsa İstanbul çarşamba gününü düşüşle tamamladı]]></title>
+      <link>https://www.cnnturk.com/ekonomi/son-dakika-borsa-istanbul-carsamba-gununu-dususle-tamamladi-3462048</link>
+      <description><![CDATA[BIST 100 endeksi günü yüzde 1,25 değer kaybıyla kapattı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 19:03:43 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

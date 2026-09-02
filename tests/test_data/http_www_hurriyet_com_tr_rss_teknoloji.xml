@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Hürriyet Test</title>
+    <link>https://www.example.com</link>
+    <description>Hürriyet test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Microsoft'un küresel e-posta aksaklığı giderildi]]></title>
+      <link>https://www.hurriyet.com.tr/teknoloji/microsoft-aksaklik-43294050</link>
+      <description><![CDATA[Bulut altyapısındaki sorun nedeniyle durma noktasına gelen e-posta trafiği normale döndü.]]></description>
+
+      <category>Teknoloji</category>
+      <pubDate>Tue, 01 Sep 2026 09:40:32 Z</pubDate>
+    </item>
+  </channel>
+</rss>

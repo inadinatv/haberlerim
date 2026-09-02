@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Palantir CEO'su Karp'ın yeni yatırım hamlesi]]></title>
+      <link>https://www.cnnturk.com/bilim-teknoloji/palantir-karp-yatirim-3462020</link>
+      <description><![CDATA[Veri analizi devi Palantir'in yeni yatırımları gündemde.]]></description>
+
+      <category>Bilim Teknoloji</category>
+      <pubDate>Wed, 02 Sep 2026 18:46:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

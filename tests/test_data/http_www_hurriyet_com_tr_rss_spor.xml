@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Hürriyet Test</title>
+    <link>https://www.example.com</link>
+    <description>Hürriyet test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Süper Lig'de 4. hafta perdesi açılıyor]]></title>
+      <link>https://www.hurriyet.com.tr/spor/super-lig-4-hafta-43293950</link>
+      <description><![CDATA[Trendyol Süper Lig'de 4. hafta maçlarının programı belli oldu.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 10:00:00 Z</pubDate>
+    </item>
+  </channel>
+</rss>

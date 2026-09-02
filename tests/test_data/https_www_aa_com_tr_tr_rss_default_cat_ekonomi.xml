@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Anadolu Ajansı Test</title>
+    <link>https://www.example.com</link>
+    <description>Anadolu Ajansı test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Havacılık sektörünün liderleri İstanbul'da buluştu]]></title>
+      <link>https://www.aa.com.tr/tr/ekonomi/havacilik-sektorunun-liderleri-istanbulda-bulustu/4045609</link>
+      <description><![CDATA[Uluslararası Havalimanları Konseyi (ACI World) tarafından düzenlenen Dünya Havalimanları Deneyim Zirvesi 2026, küresel havacılığın liderlerini İstanbul'da bir araya getirdi.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:44:45 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Borsa günü düşüşle tamamladı]]></title>
+      <link>https://www.aa.com.tr/tr/ekonomi/borsa-gunu-dususle-tamamladi/4045596</link>
+      <description><![CDATA[Borsa İstanbul'da BIST 100 endeksi, günü yüzde 1,25 değer kaybederek 14.050,56 puandan tamamladı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:26:16 +0300</pubDate>
+    </item>
+  </channel>
+</rss>
