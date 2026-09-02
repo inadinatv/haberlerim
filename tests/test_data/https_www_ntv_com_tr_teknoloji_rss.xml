@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>NTV Test</title>
+    <link>https://www.example.com</link>
+    <description>NTV test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Türkiye, Artemis Anlaşmaları'na katıldı, ABD tebrik etti]]></title>
+      <link>https://www.ntv.com.tr/teknoloji/artemis-anlasmalari,abcd1240</link>
+      <description><![CDATA[Türkiye, uluslararası uzay işbirliği programı Artemis Anlaşmaları'na imza attı.]]></description>
+
+      <category>Teknoloji</category>
+      <pubDate>Wed, 02 Sep 2026 12:10:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

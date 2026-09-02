@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sözcü Test</title>
+    <link>https://www.example.com</link>
+    <description>Sözcü test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Girne'deki deniz faciasında bir kişinin cesedine ulaşıldı]]></title>
+      <link>https://www.sozcu.com.tr/girne-deki-deniz-faciasinda-bir-kisinin-cesedine-ulasildi-p354850</link>
+      <description><![CDATA[Arama kurtarma ekipleri, alabora olan gemiden bir kişinin cesedine ulaştı.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 18:46:50 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[KKTC'li Bakan'dan Türkiye'de örneğine ender rastlanacak karar]]></title>
+      <link>https://www.sozcu.com.tr/kktcli-bakandan-turkiyede-ornegine-ender-rastlanacak-karar-p354846</link>
+      <description><![CDATA[Ulaştırma Bakanı Erhan Arıklı görevden alındı.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 19:16:58 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Bursa'da fabrika yangını: İtfaiye ekipleri kurtarmak için çalışıyor]]></title>
+      <link>https://www.sozcu.com.tr/bursada-fabrika-yangini-itfaiye-ekipleri-kurtarmak-icin-calisiyor-p354771</link>
+      <description><![CDATA[Bursa'da bir fabrikada çıkan yangına müdahale sürüyor.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 14:10:24 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cumhurbaşkanı Erdoğan'dan Yunanistan'a sert uyarı! 'Gerekeni yaparız']]></title>
+      <link>https://www.sozcu.com.tr/erdogan-dan-yunanistan-a-sert-uyari-gerekeni-yapariz-p354758</link>
+      <description><![CDATA[Cumhurbaşkanı Erdoğan, Yunanistan'a yönelik sert uyarılarda bulundu.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 13:32:18 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

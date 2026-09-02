@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Gece çok düşünenler dikkat! Uzman isim 'Yanıltıcı olabilir' diyerek uyardı]]></title>
+      <link>https://www.cnnturk.com/saglik/gece-cok-dusunenler-dikkat-uzman-isim-yaniltici-olabilir-diyerek-uyardi-3462051</link>
+      <description><![CDATA[Uyku uzmanları gece saatlerinde zihinsel aktivitenin uykuyu bozduğunu söyledi.]]></description>
+
+      <category>Sağlık</category>
+      <pubDate>Wed, 02 Sep 2026 19:11:07 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TRT Haber Test</title>
+    <link>https://www.example.com</link>
+    <description>TRT Haber test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[MHP Genel Başkanı Bahçeli: Spor kisvesiyle Terörsüz Türkiye hedefini zehirlemeye kimsenin hakkı yok]]></title>
+      <link>https://www.trthaber.com/haber/gundem/mhp-genel-baskani-bahceli-spor-kisvesiyle-terorsuz-turkiye-hedefini-zehirlemeye-kimsinin-hakki-yok-955702.html</link>
+      <description><![CDATA[Bahçeli, Amedspor araştırmasına tepki gösterdi: "Spor; barışın, huzurun ve kardeşliğin en güçlü aracıdır."]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 19:07:00 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Karanlık maddenin ilk doğrudan kanıtı bulunmuş olabilir]]></title>
+      <link>https://www.trthaber.com/haber/dunya/karanlik-maddenin-ilk-dogrudan-kaniti-bulunmus-olabilir-955695.html</link>
+      <description><![CDATA[Bilim insanları, karanlık maddenin ilk doğrudan kanıtına ulaşılmış olabileceğini açıkladı.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 17:48:00 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Engelli ve eski hükümlülerin projelerine 161,5 milyon lira destek]]></title>
+      <link>https://www.trthaber.com/haber/ekonomi/engelli-ve-eski-hukumlulerin-projelerine-1615-milyon-lira-destek-955696.html</link>
+      <description><![CDATA[Sosyal projelere destek paketinde 161,5 milyon liralık kaynak ayrıldı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:04:00 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Üsküdar Belediyesi soruşturmasında 2 şüpheli daha gözaltına alındı]]></title>
+      <link>https://www.trthaber.com/haber/turkiye/uskudar-belediyesi-sorusturmasinda-2-supheli-daha-gozaltina-alindi-955694.html</link>
+      <description><![CDATA[Soruşturma kapsamında 2 şüpheli daha gözaltına alındı.]]></description>
+
+      <category>Türkiye</category>
+      <pubDate>Wed, 02 Sep 2026 17:39:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

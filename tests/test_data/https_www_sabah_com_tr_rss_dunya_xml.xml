@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sabah Test</title>
+    <link>https://www.example.com</link>
+    <description>Sabah test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Trump'tan dikkat çeken Hürmüz açıklaması: 'Trump Boğazı olarak değiştirmeli miyiz?']]></title>
+      <link>https://www.sabah.com.tr/dunya/trumptan-dikkat-ceken-hurmuz-aciklamasi-trump-bogazi-olarak-degistirmeli-miyiz-7653164</link>
+      <description><![CDATA[ABD Başkanı Trump'ın Hürmüz Boğazı adıyla ilgili açıklaması gündemde.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 19:24:33 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[İranlı yetkili, ABD'nin 'sivilleri asla hedef almayız' açıklamasını reddetti]]></title>
+      <link>https://www.sabah.com.tr/dunya/iranli-yetkili-abdnin-sivilleri-asla-hedef-almayiz-aciklamasini-reddetti-7653159</link>
+      <description><![CDATA[İran Dışişleri Sözcüsü Bekayi, ABD'nin açıklamasına tepki gösterdi.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 19:12:48 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

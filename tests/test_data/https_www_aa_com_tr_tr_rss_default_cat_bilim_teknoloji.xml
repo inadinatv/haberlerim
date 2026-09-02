@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Anadolu Ajansı Test</title>
+    <link>https://www.example.com</link>
+    <description>Anadolu Ajansı test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Palantir CEO'su Karp, eski Ukrayna Savunma Bakanı Fedorov'un şirketine yatırım yapacak]]></title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/palantir-ceosu-karp-eski-ukrayna-savunma-bakani-fedorovun-savunma-sirketine-yatirim-yapacak/4045611</link>
+      <description><![CDATA[ABD merkezli veri analizi şirketi Palantir'in kurucu ortaklarından Alex Karp'ın, Fedorov'un savunma teknolojileri şirketinin ana yatırımcısı olacağı duyuruldu.]]></description>
+
+      <category>Bilim Teknoloji</category>
+      <pubDate>Wed, 02 Sep 2026 18:46:18 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Milli elektrikli hızlı tren 250 km/s hızına ulaştı]]></title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/milli-elektrikli-hizli-tren-saatte-250-kilometreye-ulasarak-rekorunu-gelistirdi/4043307</link>
+      <description><![CDATA[Ulaştırma ve Altyapı Bakanı Uraloğlu, Türkiye'nin ilk milli elektrikli hızlı treninin test süreçlerinde 250 kilometre saate ulaştığını bildirdi.]]></description>
+
+      <category>Bilim Teknoloji</category>
+      <pubDate>Wed, 02 Sep 2026 12:10:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sabah Test</title>
+    <link>https://www.example.com</link>
+    <description>Sabah test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Batman Petrolspor, Vanspor'u 2 golle devirdi]]></title>
+      <link>https://www.sabah.com.tr/spor/futbol/2026-09-02/batman-petrolspor-vansporu-2-golle-devirdi</link>
+      <description><![CDATA[Trendyol 1. Lig'de Batman Petrolspor sahasında Vanspor'u 2-0 mağlup etti.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 19:22:20 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Galatasaray, Victor Nelsson'un sözleşmesini feshetti]]></title>
+      <link>https://www.sabah.com.tr/spor/futbol/2026-09-02/son-dakika-haberi-galatasaray-victor-nelssonun-sozlesmesini-feshetti</link>
+      <description><![CDATA[Sarı-kırmızılı kulüp, Nijeryalı defans oyuncusu Victor Nelsson ile yollarını ayırdı.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 19:24:52 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

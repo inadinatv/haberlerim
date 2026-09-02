@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sözcü Test</title>
+    <link>https://www.example.com</link>
+    <description>Sözcü test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Dünya yeni bir sıcak krizle karşı karşıya: Almanya ile Rusya arasında büyük gerilim]]></title>
+      <link>https://www.sozcu.com.tr/almanya-dan-zehir-zemberek-rusya-ya-cikisi-p354556</link>
+      <description><![CDATA[Leipzig-Halle Havalimanı'ndaki İHA krizi Avrupa'yı germeye devam ediyor.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Tue, 01 Sep 2026 20:16:50 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

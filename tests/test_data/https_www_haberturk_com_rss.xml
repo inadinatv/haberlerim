@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Habertürk Test</title>
+    <link>https://www.example.com</link>
+    <description>Habertürk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[İlk Evim konut kredisi başvuru takvimi]]></title>
+      <link>https://www.haberturk.com/120-faizli-ilk-evim-konut-kredisi-basvurulari-ne-zaman-baslayacak-120-faizli-ilk-evim-konut-kredisi-sartlari-neler-3909844</link>
+      <description><![CDATA[Yüzde 1,20 faizli İlk Evim konut kredisinin başvuru takvimi ve şartları gündemde.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 16:19:53 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Mars'ta gizemli 'denizanası' görüntüsü]]></title>
+      <link>https://www.haberturk.com/mars-ta-denizanasi-gorundu-curiosity-nin-karesi-yillar-sonra-viral-oldu-3909800</link>
+      <description><![CDATA[Curiosity'nin 2023'te çektiği karedeki denizanası biçimli şekil viral oldu.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 12:45:31 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[500 öğrenciye aylık 13 bin 750 TL burs verilecek]]></title>
+      <link>https://www.haberturk.com/tenmak-burs-basvuru-ekrani-2026-500-ogrenciye-aylik-13-bin-750-tl-burs-verilecek-enerji-bakanligi-burs-basvurusu-nasil-yapilir-sartlari-neler-3909711</link>
+      <description><![CDATA[Enerji Bakanlığı'nın TENMAK bursu başvuruları 1 Eylül'de başladı.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 13:45:43 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Intikam Vakti filmi Show TV'de]]></title>
+      <link>https://www.haberturk.com/intikam-vakti-wrath-of-man-filmi-konusu-nedir-oyunculari-kimler-intikam-vakti-ne-zaman-cekildi-3909833</link>
+      <description><![CDATA[Jason Statham'ın başrolünde yer aldığı Wrath of Man filmi bu akşam Show TV'de.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 15:27:55 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

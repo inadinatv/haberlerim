@@ -1,0 +1,86 @@
+{
+  "surum": "2.0",
+  "son_guncelleme": "2026-09-02T16:46:29.833785+00:00",
+  "sure_saniye": 0.0,
+  "toplam_haber": 73,
+  "kaynak_sayisi": 9,
+  "aktif_kaynak": 9,
+  "besleme_sayisi": 45,
+  "kazanilan_tam_metin": 0,
+  "kategoriler": {
+    "Gündem": 27,
+    "Ekonomi": 11,
+    "Spor": 7,
+    "Dünya": 10,
+    "Teknoloji": 7,
+    "Sağlık": 4,
+    "Yaşam & Sanat": 4,
+    "Magaza": 3
+  },
+  "kaynaklar": {
+    "Sabah": {
+      "haber": 11,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 0,
+      "hata": null
+    },
+    "Anadolu Ajansı": {
+      "haber": 11,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 0,
+      "hata": null
+    },
+    "NTV": {
+      "haber": 9,
+      "durum": "aktif",
+      "basarili": 8,
+      "hatali": 0,
+      "hata": null
+    },
+    "TRT Haber": {
+      "haber": 4,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Hürriyet": {
+      "haber": 7,
+      "durum": "aktif",
+      "basarili": 7,
+      "hatali": 0,
+      "hata": null
+    },
+    "CNN Türk": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 8,
+      "hatali": 0,
+      "hata": null
+    },
+    "Sözcü": {
+      "haber": 11,
+      "durum": "aktif",
+      "basarili": 7,
+      "hatali": 0,
+      "hata": null
+    },
+    "Habertürk": {
+      "haber": 4,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "BBC Türkçe": {
+      "haber": 4,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    }
+  },
+  "hatalar": []
+}

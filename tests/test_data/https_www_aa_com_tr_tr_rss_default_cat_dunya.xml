@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Anadolu Ajansı Test</title>
+    <link>https://www.example.com</link>
+    <description>Anadolu Ajansı test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Trump'tan Hürmüz Boğazı'nın adını değiştirme önerisi]]></title>
+      <link>https://www.aa.com.tr/tr/dunya/trumptan-hurmuz-bogazinin-adini-trump-bogazi-olarak-degistirme-onerisi/4045625</link>
+      <description><![CDATA[ABD Başkanı Donald Trump, Hürmüz Boğazı'nın ABD kontrolü altında olduğunu savunarak adını değiştirme önerdi.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 19:09:06 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Rusya: Almanya'nın eylemlerine sert karşılık verilecek]]></title>
+      <link>https://www.aa.com.tr/tr/dunya/rusya-almanyanin-eylemlerine-sert-karsilik-verilecek/4045588</link>
+      <description><![CDATA[Rusya Dışişleri Bakanlığı, Leipzig-Halle Havalimanı'nda insansız hava aracı (İHA) bulunması nedeniyle Rusya'ya yönelik kararlara sert karşılık verileceğini bildirdi.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 18:20:34 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

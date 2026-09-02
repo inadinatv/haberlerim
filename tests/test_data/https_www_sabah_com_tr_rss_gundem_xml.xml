@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sabah Test</title>
+    <link>https://www.example.com</link>
+    <description>Sabah test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Başsavcı Fatih Dönmez yeni adli yılda meslektaşlarına seslendi: Suç örgütlerinin ekonomik damarları hedefte]]></title>
+      <link>https://www.sabah.com.tr/yasam/bassavci-fatih-donmez-yeni-adli-yilda-meslektaslarina-seslendi-suc-orgutlerinin-ekonomik-damarlari-hedefte-7653139</link>
+      <description><![CDATA[Başsavcı Dönmez: "Suç örgütlerinin ekonomik damarları hedefte."]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 19:31:46 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Fındık işçilerini taşıyan traktör devrildi: 18 yaralı]]></title>
+      <link>https://www.sabah.com.tr/yasam/findik-iscilerini-tasiyan-tractr-devrildi-18-yarali-7653161</link>
+      <description><![CDATA[Fındık hasadı için çalışmaya giden fındık işçilerini taşıyan traktörün devrilmesi sonucu 18 kişi yaralandı.]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 19:15:21 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Muğla'da erkek arkadaşı tarafından katledilen Berfin Malatya'da toprağa verildi]]></title>
+      <link>https://www.sabah.com.tr/yasam/muglada-erkek-arkadasi-tarafindan-katledilen-28-yasindaki-berfin-zelal-kaya-malatyada-topraga-verildi-7653158</link>
+      <description><![CDATA[Muğla'da 28 yaşındaki Berfin Zelal Kaya'nın cenazesi, Malatya'da son yolculuğuna uğurlandı.]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 19:14:02 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

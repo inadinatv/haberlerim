@@ -1,0 +1,3 @@
+# GÜNDEM Haber Botu bağımlılıkları
+# (bot saf standart kütüphanede de çalışır; BeautifulSoup tam metin kazımını geliştirir)
+beautifulsoup4>=4.12

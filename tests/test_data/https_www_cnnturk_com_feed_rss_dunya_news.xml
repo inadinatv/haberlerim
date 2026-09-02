@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Nepal'de felaket göz göre göre mi geldi?]]></title>
+      <link>https://www.cnnturk.com/video/dunya/nepalde-felaket-goz-gore-gore-mi-geldi-3462049</link>
+      <description><![CDATA[Nepal'de çöken tünelde mahsur kalan işçiler için kurtarma çalışmaları devam ediyor.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 19:05:33 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[SON DAKİKA HABERİ: KKTC Ulaştırma Bakanı görevden alındı]]></title>
+      <link>https://www.cnnturk.com/dunya/son-dakika-haberi-kktc-ulastirma-bakani-gorevden-alindi-3462045</link>
+      <description><![CDATA[Gemi kazasının ardından KKTC Ulaştırma Bakanı Erhan Arıklı görevden alındı.]]></description>
+
+      <category>Dünya</category>
+      <pubDate>Wed, 02 Sep 2026 19:22:31 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

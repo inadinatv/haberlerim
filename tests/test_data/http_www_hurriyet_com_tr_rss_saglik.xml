@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Hürriyet Test</title>
+    <link>https://www.example.com</link>
+    <description>Hürriyet test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Sonbaharda grip mevsimi: Aşı takvimi belli oldu]]></title>
+      <link>https://www.hurriyet.com.tr/saglik/grip-asi-43294100</link>
+      <description><![CDATA[Sağlık Bakanlığı, sezonluk grip aşısının dağıtım takvimini açıkladı.]]></description>
+
+      <category>Sağlık</category>
+      <pubDate>Wed, 02 Sep 2026 08:00:00 Z</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>BBC Türkçe Test</title>
+    <link>https://www.example.com</link>
+    <description>BBC Türkçe test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Türkiye-İsrail gerilimi: Bölgesel rekabette çatışma riski var mı?]]></title>
+      <link>https://www.bbc.com/turkce/articles/cyvzenl81eno</link>
+      <description><![CDATA[Türkiye ile İsrail arasındaki ilişkilerde son gelişmeler ve bölgesel etkileri.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 11:28:39 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[İran: ABD düğüne saldırarak savaş suçu işledi]]></title>
+      <link>https://www.bbc.com/turkce/articles/c750znwyye5o</link>
+      <description><![CDATA[İran Dışişleri Bakanlığı, ABD'nin düğüne yönelik saldırısını savaş suçu olarak nitelendirdi.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 14:45:50 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp]]></title>
+      <link>https://www.bbc.com/turkce/articles/cx2z034d3pdo</link>
+      <description><![CDATA[İstanbul Marmara Denizi'nde iki geminin çarpışması sonucu bir gemi battı.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 09:11:02 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Kademeli emeklilik nedir, hükümetin bu yönde bir hazırlığı var mı?]]></title>
+      <link>https://www.bbc.com/turkce/articles/c7708zr3p5eo</link>
+      <description><![CDATA[Kademeli emeklilik tartışmaları ve hükümetin hazırlıkları.]]></description>
+
+      <pubDate>Wed, 02 Sep 2026 13:40:31 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

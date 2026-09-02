@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>NTV Test</title>
+    <link>https://www.example.com</link>
+    <description>NTV test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Gemi kazasında kayıp sayısı belli oldu]]></title>
+      <link>https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</link>
+      <description><![CDATA[Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor.]]></description>
+
+      <category>Türkiye</category>
+      <pubDate>Wed, 02 Sep 2026 18:55:00 +0300</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Borsa İstanbul çarşamba gününü düşüşle tamamladı]]></title>
+      <link>https://www.ntv.com.tr/ekonomi/borsa-dusus-ntv,abcd1235</link>
+      <description><![CDATA[BIST 100 endeksi günü yüzde 1,25 değer kaybıyla kapattı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 18:03:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

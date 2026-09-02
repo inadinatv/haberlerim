@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GÜNDEM Sağlık</title>
+    <link>./</link>
+    <description>GÜNDEM Sağlık RSS akışı</description>
+    <language>tr</language>
+    <lastBuildDate>Wed, 02 Sep 2026 16:46:29 +0000</lastBuildDate>
+    <item>
+      <title>Gece çok düşünenler dikkat! Uzman isim 'Yanıltıcı olabilir' diyerek uyardı</title>
+      <link>https://www.cnnturk.com/saglik/gece-cok-dusunenler-dikkat-uzman-isim-yaniltici-olabilir-diyerek-uyardi-3462051</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/saglik/gece-cok-dusunenler-dikkat-uzman-isim-yaniltici-olabilir-diyerek-uyardi-3462051</guid>
+      <category>Sağlık</category>
+      <description>Uyku uzmanları gece saatlerinde zihinsel aktivitenin uykuyu bozduğunu söyledi. — CNN Türk</description>
+      <pubDate>2026-09-02T19:11:07+00:00</pubDate>
+    </item>
+    <item>
+      <title>Uzmanlar gece düşünenlere uyardı: Yanıltıcı olabilir</title>
+      <link>https://www.ntv.com.tr/saglik/telefon-uyku,abcd1241</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/saglik/telefon-uyku,abcd1241</guid>
+      <category>Sağlık</category>
+      <description>Uyku uzmanları, gece saatlerinde yoğun düşünce aktivitesinin uykuyu bölerek sağlığı olumsuz etkilediği konusunda uyarıyor. — NTV</description>
+      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Sonbaharda grip mevsimi: Aşı takvimi belli oldu</title>
+      <link>https://www.hurriyet.com.tr/saglik/grip-asi-43294100</link>
+      <guid isPermaLink="true">https://www.hurriyet.com.tr/saglik/grip-asi-43294100</guid>
+      <category>Sağlık</category>
+      <description>Sağlık Bakanlığı, sezonluk grip aşısının dağıtım takvimini açıkladı. — Hürriyet</description>
+      <pubDate>2026-09-02T08:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Kene vakaları arttı: Uzmanlardan aşı çalışması açıklaması</title>
+      <link>https://www.sozcu.com.tr/kene-aasi-calismasi-p354600</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/kene-aasi-calismasi-p354600</guid>
+      <category>Sağlık</category>
+      <description>Kene ısırmaları sonrası vakalarda artış görülüyor, aşı çalışmaları sürüyor. — Sözcü</description>
+      <pubDate>2026-09-02T07:00:00+00:00</pubDate>
+    </item>
+  </channel>
+</rss>

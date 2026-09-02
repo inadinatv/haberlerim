@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>NTV Test</title>
+    <link>https://www.example.com</link>
+    <description>NTV test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[Uzmanlar gece düşünenlere uyardı: Yanıltıcı olabilir]]></title>
+      <link>https://www.ntv.com.tr/saglik/telefon-uyku,abcd1241</link>
+      <description><![CDATA[Uyku uzmanları, gece saatlerinde yoğun düşünce aktivitesinin uykuyu bölerek sağlığı olumsuz etkilediği konusunda uyarıyor.]]></description>
+
+      <category>Sağlık</category>
+      <pubDate>Wed, 02 Sep 2026 18:55:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

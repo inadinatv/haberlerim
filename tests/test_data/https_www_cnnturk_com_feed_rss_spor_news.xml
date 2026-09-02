@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[GÜNÜN MAÇLARI 2 EYLÜL 2026: Bugün kimlerin maçları var?]]></title>
+      <link>https://www.cnnturk.com/spor/gunun-maclari-2-eylul-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-2-eylul-gunun-maclari-3461829</link>
+      <description><![CDATA[Trendyol 1. Lig'de 5. hafta heyecanı bugün oynanacak 3 maçla devam ediyor.]]></description>
+
+      <category>Spor</category>
+      <pubDate>Wed, 02 Sep 2026 17:42:23 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

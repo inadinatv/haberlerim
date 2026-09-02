@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Hürriyet Test</title>
+    <link>https://www.example.com</link>
+    <description>Hürriyet test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[TCMB faiz kararını açıkladı]]></title>
+      <link>https://www.hurriyet.com.tr/ekonomi/tcmb-faiz-karari-43293900</link>
+      <description><![CDATA[Merkez Bankası, faiz kararını açıkladı.]]></description>
+
+      <category>Ekonomi</category>
+      <pubDate>Wed, 02 Sep 2026 14:00:00 Z</pubDate>
+    </item>
+  </channel>
+</rss>

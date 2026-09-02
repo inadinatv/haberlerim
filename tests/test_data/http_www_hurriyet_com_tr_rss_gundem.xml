@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Hürriyet Test</title>
+    <link>https://www.example.com</link>
+    <description>Hürriyet test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[MHP Lideri Bahçeli: Spor kisvesiyle Terörsüz Türkiye hedefini ve kardeşlik iklimini zehirlemeye kimsenin hakkı yok]]></title>
+      <link>https://www.hurriyet.com.tr/gundem/mhp-lideri-devlet-bahceli-spor-kisvesiyle-terorsuz-turkiye-hedefini-ve-kardeslik-iklimini-zehirlemeye-kimsenin-hakki-yok-43293838</link>
+      <description><![CDATA[Bahçeli, Amedspor algısı araştırmalarına sert tepki gösterdi.]]></description>
+
+      <category>Gündem</category>
+      <pubDate>Wed, 02 Sep 2026 16:06:00 Z</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CNN Türk Test</title>
+    <link>https://www.example.com</link>
+    <description>CNN Türk test beslemesi</description>
+    <language>tr</language>
+    <item>
+      <title><![CDATA[SON DAKİKA HABERİ: Bahçeli'den Terörsüz Türkiye açıklaması]]></title>
+      <link>https://www.cnnturk.com/turkiye/son-dakika-haberi-bahceliden-terorsuz-turkiye-aciklamasi-3462050</link>
+      <description><![CDATA[MHP lideri Bahçeli, Amedspor araştırmalarına sert tepki gösterdi.]]></description>
+
+      <category>Türkiye</category>
+      <pubDate>Wed, 02 Sep 2026 19:29:58 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Gemi kazasında ölenlere veda: Asker kardeşini ziyarete gitmiş]]></title>
+      <link>https://www.cnnturk.com/turkiye/gemi-kazasinda-olenlere-veda-asker-kardesini-ziyarete-gitmis-3462010</link>
+      <description><![CDATA[Marmara'da batan gemide hayatını kaybeden denizciler son yolculuklarına uğurlandı.]]></description>
+
+      <category>Türkiye</category>
+      <pubDate>Wed, 02 Sep 2026 17:52:01 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Erhan Arıklı kimdir, nereli ve kaç yaşında? KKTC Ulaştırma Bakanı görevden alındı]]></title>
+      <link>https://www.cnnturk.com/turkiye/erhan-arikli-kimdir-nereli-ve-kac-yasinda-kktc-ulastirma-bakani-erhan-arikli-gorevden-alindi-3462046</link>
+      <description><![CDATA[KKTC Ulaştırma Bakanı Erhan Arıklı görevden alındı.]]></description>
+
+      <category>Türkiye</category>
+      <pubDate>Wed, 02 Sep 2026 18:55:46 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
