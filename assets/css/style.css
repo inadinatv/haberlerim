@@ -628,7 +628,7 @@ button { font-family: inherit; }
 
 .kart-govde { padding: 1.25rem 1.35rem 1.3rem; flex: 1; display: flex; flex-direction: column; }
 .kart-meta {
-    display: flex; align-items: center; gap: 10px;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
     font-size: 0.7rem; font-weight: 700;
     margin-bottom: 9px;
 }
@@ -643,6 +643,13 @@ button { font-family: inherit; }
     font-size: 0.66rem; font-weight: 700;
     color: var(--accent);
     background: var(--glow);
+    border-radius: 8px; padding: 2px 8px;
+    letter-spacing: 0.3px;
+}
+.kart-video {
+    font-size: 0.66rem; font-weight: 700;
+    color: var(--accent-2);
+    background: var(--glow-2);
     border-radius: 8px; padding: 2px 8px;
     letter-spacing: 0.3px;
 }
@@ -868,9 +875,18 @@ button { font-family: inherit; }
     border-radius: 18px; overflow: hidden; margin: 1.6rem 0;
     border: 1px solid var(--border-color);
     background: #000;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.3);
 }
-.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
-.detail-body video { width: 100%; border-radius: 18px; margin: 1.6rem 0; }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.detail-body video, .detail-body .haber-video {
+    width: 100%; border-radius: 18px; margin: 1.6rem 0;
+    background: #000; border: 1px solid var(--border-color);
+}
+.detay-rozet.video {
+    background: linear-gradient(135deg, var(--accent-2), var(--neon-pink));
+    color: #fff;
+    box-shadow: 0 0 14px var(--glow-2);
+}
 
 .kaynak-notu {
     display: flex; align-items: center; gap: 10px;

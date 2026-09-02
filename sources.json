@@ -1,7 +1,7 @@
 {
   "bot": {
     "ad": "GÜNDEM Haber Botu",
-    "surum": "2.0",
+    "surum": "2.1",
     "zaman_asimi_saniye": 15,
     "calisan_sayisi": 8,
     "tekrar_dene": 1,

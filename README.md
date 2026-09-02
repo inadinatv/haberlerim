@@ -36,7 +36,7 @@ RSS beslemeleri ──► bot.py (birleştirme, tekilleştirme, tam metin kazım
 - **Paralel indirme**: 8 işçilik `ThreadPoolExecutor`, 15 sn zaman aşımı, otomatik yeniden deneme
 - **Tekilleştirme**: Türkçe karakter normalizasyonlu başlık + link eşleşmesi
 - **Kategori haritalama**: Kaynakların kendi kategori etiketleri (Türkiye→Gündem, Bilim Teknoloji→Teknoloji vb.) otomatik normalize edilir
-- **Tam metin kazanımı (iki kademeli)**: (1) Uzun açıklamalı beslemeler (ör. Hürriyet) doğrudan paragraflara bölünür; (2) kalanların sayfası sınırsız kazılır — kademeli içerik kabı seçimi, video embed, içerik görselleri, og alanları, karakter sınırı. Alan adı seçmez, her kaynağa çalışır
+- **Tam metin kazanımı (akıllı, iki kademeli)**: (1) Uzun açıklamalı beslemeler (ör. Hürriyet) doğrudan paragraflara bölünür; (2) metni yetersiz kalanların (yalnızca görsel içeren RSS dahil) sayfası kazılır. JSON-LD `articleBody`, `itemprop=articleBody`, yoğunluk skoru ve gürültü süzgeci (paylaşım düğmeleri, telif, ilgili haber listeleri, reklam) ile yalnızca haberle ilgili yazı alınır. Özetten ve sayfadan YouTube/Vimeo/mp4 videoları çıkarılıp haber sayfasına gömülür. Alan adı seçmez, her kaynağa çalışır
 - **Son dakika işareti**: Son 45 dakikadaki haberler `son_dakika: true` alır
 - **Kaynak sağlığı raporu**: Kaynak başına başarılı/hatalı besleme sayısı, süre, hata listesi
 - **Kendi RSS akışlarını üretir**: `feeds/*.xml` — site kendi kategorilerine göre RSS sunar
@@ -60,7 +60,7 @@ python bot.py --fixture tests/test_data   # Ağsız test (test beslemeleri)
 ```bash
 python3 tests/gen_fixtures.py                 # örnek XML beslemeleri üret
 python3 bot.py --fixture tests/test_data --crawl 0 -v   # ağsız uçtan uca
-python3 tests/test_bot.py                     # ünite testleri (ağsız, 10 test)
+python3 tests/test_bot.py                     # ünite testleri (ağsız)
 ```
 
 ## 🎨 Frontend — Bol Seçenekli Deneyim
