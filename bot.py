@@ -127,10 +127,12 @@ def norm_baslik(baslik):
     if not baslik:
         return ""
     b = baslik.casefold()
-    b = re.sub(r"[\u200b\ufeff]", "", b)
+    b = b.replace("\u0069\u0307", "i")  # İ casefold artefaktı (i + birleşik nokta)
+    b = re.sub(r"[\u200b\ufeff\u0307]", "", b)
+    b = b.replace("'", "").replace("\u2019", "").replace("\u0060", "")
     b = b.replace("ı", "i").replace("ğ", "g").replace("ü", "u").replace("ş", "s")
     b = b.replace("ö", "o").replace("ç", "c")
-    b = re.sub(r"[^a-z0-9çğıöşü]+", " ", b)
+    b = re.sub(r"[^a-z0-9]+", " ", b)
     return RE_WHITESPACE.sub(" ", b).strip()
 
 
@@ -218,17 +220,24 @@ def beslemeyi_cozyu(ham, besleme, kaynak):
                 continue
             link = mutlak_yap(link, kaynak.get("resim_tabani"))
             desc = alanlar.get("html") or alanlar.get("desc") or alanlar.get("summary") or ""
-            aciklama = temiz_metin(desc)[:400]
+            temiz_desc = temiz_metin(desc)
+            aciklama = temiz_desc[:400]
             resim = _resmi_bul(desc) or mutlak_yap(
                 alanlar.get("media") or alanlar.get("enclosure"), kaynak.get("resim_tabani"))
             ham_kat = (alanlar.get("kategorya") or "").strip().lower()
             kategori = KATEGORI_ESLEME.get(ham_kat) or besleme.get("kategori", "Gündem")
+            # 1) açıklamadaki görsel/video embed'leri
+            tam_metin = _html_icerik(desc)
+            # 2) açıklama uzunsa (ör. Hürriyet tam metin beslemesi) paragraflara böl
+            if not tam_metin:
+                tam_metin = aciklamadan_tam_metin(temiz_desc)
             haberler.append({
                 "kategori": kategori,
                 "baslik": baslik,
                 "link": link,
                 "aciklama": aciklama,
-                "tam_metin": _html_icerik(desc),
+                "tam_metin": tam_metin,
+                "tam": bool(tam_metin),
                 "resim": resim,
                 "tarih": tarihi_parsel(alanlar.get("tarih")) or datetime.now(timezone.utc).isoformat(),
                 "kaynak": kaynak["ad"],
@@ -282,6 +291,32 @@ def _html_icerik(html_metin):
     return "".join(parcalar)
 
 
+def paragraflara_bol(metin):
+    """Düz metni okunabilir paragraflara ayırır (RSS açıklamaları için)."""
+    parcalar = [p.strip() for p in re.split(r"\n\s*\n+", metin) if len(p.strip()) > 20]
+    if len(parcalar) <= 1:
+        tek = (parcalar or [metin])[0]
+        cumleler = re.split(r"(?<=[.!?])\s+(?=[A-ZÇĞİÖŞÜ\"'(])", tek)
+        gruplar, g = [], []
+        for c in cumleler:
+            g.append(c)
+            if len(" ".join(g)) > 350:
+                gruplar.append(" ".join(g).strip())
+                g = []
+        if g:
+            gruplar.append(" ".join(g).strip())
+        parcalar = gruplar
+    return parcalar
+
+
+def aciklamadan_tam_metin(temiz):
+    """Uzun RSS açıklamasını (ör. Hürriyet tam metin beslemesi) <p> bloklarına çevirir."""
+    if not temiz or len(temiz) < 500:
+        return ""
+    parcalar = paragraflara_bol(temiz)
+    return "\n".join(f"<p>{html.escape(p)}</p>" for p in parcalar)
+
+
 # ═══════════════════════════════════════════════════════════
 # TAM METİN KAZIMI (genel amaçlı, alan adı seçmez)
 # ═══════════════════════════════════════════════════════════
@@ -291,23 +326,115 @@ RE_ILAN = re.compile(
     re.I)
 
 
-def haber_detayini_cek(url, zaman_asimi=12):
-    """Haber sayfasından başlık, görsel, video ve paragrafları çıkar."""
+RE_GORSEL_GEcersiz = re.compile(r"(logo|icon|pixel|sprite|1x1|avatar|badge|banner|tracking|favicon|\.svg)", re.I)
+
+
+def _og_degisken(html_ham, ad):
+    m = re.search(
+        rf'<meta[^>]+(?:property|name)\s*=\s*["\']{ad}["\'][^>]+content\s*=\s*["\']([^"\']+)["\']',
+        html_ham, re.I) or re.search(
+        rf'<meta[^>]+content\s*=\s*["\']([^"\']+)["\'][^>]+(?:property|name)\s*=\s*["\']{ad}["\']',
+        html_ham, re.I)
+    return html.unescape(m.group(1)).strip() if m else None
+
+
+def _medya_cek(soup):
+    """Sayfadaki video embed'lerini ve mp4'leri toplar."""
+    medya, eklenen = "", set()
+    for iframe in soup.find_all("iframe"):
+        src = (iframe.get("src") or "").strip()
+        if src and not re.search(
+                r"(doubleclick|googlesyndication|adsystem|facebook\.com|twitter\.com|youtube\.com/embed)",
+                src, re.I) and src not in eklenen:
+            medya += (f'<div class="video-frame"><iframe src="{src}" frameborder="0" '
+                      f'allowfullscreen></iframe></div>')
+            eklenen.add(src)
+    for vid in soup.find_all("video"):
+        src = vid.get("src")
+        if not src:
+            s = vid.find("source")
+            src = s.get("src") if s else None
+        if src and src not in eklenen:
+            medya += f'<video controls src="{src}"></video>'
+            eklenen.add(src)
+    return medya
+
+
+RE_icerik_sinif = re.compile(
+    r"(icerik|content|story|detail|haber|article|post|metin|text-body|article-body|body-text)", re.I)
+
+
+def _gecerli_p_sayisi(kabi):
+    return sum(1 for p in kabi.find_all("p")
+               if len(p.get_text(strip=True)) >= 40 and not RE_ILAN.search(p.get_text(strip=True)))
+
+
+def _icerik_kabini_bul(soup):
+    """Haber gövdesinin kabını seçer (alan adı seçmez, kademeli strateji).
+
+    1) class/id'i içerik ipucuna uyan div/section (en çok geçerli p olan)
+    2) <article>  3) <main>  4) body (son çare)
+    """
+    adaylar = []
+    for el in soup.find_all(["div", "section"]):
+        siniflar = " ".join([el.get("id") or ""] + list(el.get("class") or []))
+        if RE_icerik_sinif.search(siniflar):
+            adaylar.append(el)
+    en_iyi = max(adaylar, key=_gecerli_p_sayisi, default=None)
+    if en_iyi is not None and _gecerli_p_sayisi(en_iyi) >= 2:
+        return en_iyi
+
+    for aday in [soup.find("article"), soup.find("main")]:
+        if aday is not None and _gecerli_p_sayisi(aday) >= 2:
+            return aday
+    if en_iyi is not None and _gecerli_p_sayisi(en_iyi) >= 1:
+        return en_iyi
+
+    v = soup.find("article")
+    if v is not None and _gecerli_p_sayisi(v) >= 1:
+        return v
+    m = soup.find("main")
+    if m is not None and _gecerli_p_sayisi(m) >= 1:
+        return m
+    return soup.body or soup
+
+
+def _icerik_cek(icerik_kabi):
+    """Seçili kabın içinden paragraf/başlık/liste bloklarını toplar."""
+    parcalar = []
+    for og_ele in icerik_kabi.find_all(["p", "h2", "h3", "h4", "ul", "ol", "blockquote"]):
+        metin = og_ele.get_text(strip=True)
+        if len(metin) < 40 or RE_ILAN.search(metin):
+            continue
+        ad = og_ele.name
+        if ad in ("h2", "h3", "h4"):
+            parcalar.append(f"<{ad}>{html.escape(metin)}</{ad}>")
+        elif ad in ("ul", "ol"):
+            liseler = "".join(f"<li>{html.escape(li.get_text(strip=True))}</li>"
+                              for li in og_ele.find_all("li") if li.get_text(strip=True))
+            if liseler:
+                parcalar.append(f"<{ad}>{liseler}</{ad}>")
+        elif ad == "blockquote":
+            parcalar.append(f"<blockquote>{html.escape(metin)}</blockquote>")
+        else:
+            parcalar.append(f"<p>{html.escape(metin)}</p>")
+    return "\n".join(parcalar)
+
+
+def haber_detayini_cek(url, zaman_asimi=12, metin_siniri=20000):
+    """Haber sayfasından başlık, özet, görsel, video ve paragrafları çıkar.
+
+    Dönüş: (baslik, tam_metin_html, resim, ozet, kisitli)
+    """
     try:
         html_ham = http_cek(url, zaman_asimi).decode("utf-8", errors="ignore")
     except Exception:
-        return None, "", None
+        return None, "", None, None, False
 
-    def og(ad):
-        m = re.search(
-            rf'<meta[^>]+(?:property|name)\s*=\s*["\']{ad}["\'][^>]+content\s*=\s*["\']([^"\']+)["\']',
-            html_ham, re.I) or re.search(
-            rf'<meta[^>]+content\s*=\s*["\']([^"\']+)["\'][^>]+(?:property|name)\s*=\s*["\']{ad}["\']',
-            html_ham, re.I)
-        return html.unescape(m.group(1)).strip() if m else None
-
-    baslik = og("og:title")
-    resim = og("og:image") or og("twitter:image")
+    baslik = _og_degisken(html_ham, "og:title")
+    resim = _og_degisken(html_ham, "og:image") or _og_degisken(html_ham, "twitter:image")
+    ozet = _og_degisken(html_ham, "og:description") or _og_degisken(html_ham, "description")
+    ozet = temiz_metin(ozet)[:400] if ozet else None
     medya, icerik_html = "", ""
 
     if BSAVULUMU_VAR:
@@ -315,46 +442,22 @@ def haber_detayini_cek(url, zaman_asimi=12):
         for t in soup(["script", "style", "noscript", "form", "nav", "footer", "aside"]):
             t.decompose()
 
-        eklenen = set()
-        for iframe in soup.find_all("iframe"):
-            src = (iframe.get("src") or "").strip()
-            if src and not re.search(
-                    r"(doubleclick|googlesyndication|adsystem|facebook\.com|twitter\.com|youtube\.com/embed)",
-                    src, re.I) and src not in eklenen:
-                medya += (f'<div class="video-frame"><iframe src="{src}" frameborder="0" '
-                          f'allowfullscreen></iframe></div>')
-                eklenen.add(src)
-        for vid in soup.find_all("video"):
-            src = vid.get("src")
-            if not src:
-                s = vid.find("source")
-                src = s.get("src") if s else None
-            if src and src not in eklenen:
-                medya += f'<video controls src="{src}"></video>'
-                eklenen.add(src)
+        medya = _medya_cek(soup)
+        icerik_kabi = _icerik_kabini_bul(soup)
+        icerik_html = _icerik_cek(icerik_kabi)
 
-        icerik = soup.find("article") or soup.find(
-            "div", class_=lambda x: x and re.search(
-                r"(icerik|content|story|detail|haber|article|post)", " ".join(x), re.I)) \
-            or soup.find("main") or soup
-        parcalar = []
-        for og_ele in icerik.find_all(["p", "h2", "h3", "h4", "ul", "ol", "blockquote"]):
-            metin = og_ele.get_text(strip=True)
-            if len(metin) < 40 or RE_ILAN.search(metin):
-                continue
-            ad = og_ele.name
-            if ad in ("h2", "h3", "h4"):
-                parcalar.append(f"<{ad}>{html.escape(metin)}</{ad}>")
-            elif ad in ("ul", "ol"):
-                liseler = "".join(f"<li>{html.escape(li.get_text(strip=True))}</li>"
-                                  for li in og_ele.find_all("li") if li.get_text(strip=True))
-                if liseler:
-                    parcalar.append(f"<{ad}>{liseler}</{ad}>")
-            elif ad == "blockquote":
-                parcalar.append(f"<blockquote>{html.escape(metin)}</blockquote>")
-            else:
-                parcalar.append(f"<p>{html.escape(metin)}</p>")
-        icerik_html = "\n".join(parcalar)
+        # içerik görselleri (ilk 3, izleme pikselleri hariç)
+        gorseller = []
+        for img in icerik_kabi.find_all("img"):
+            src = img.get("src") or img.get("data-src") or ""
+            if src.startswith("//"):
+                src = "https:" + src
+            if re.match(r"^https?://", src) and not RE_GORSEL_GEcersiz.search(src) \
+                    and src not in gorseller:
+                gorseller.append(f'<img class="inline-article-img" src="{html.escape(src)}" alt="">')
+            if len(gorseller) >= 3:
+                break
+        icerik_html = "\n".join(gorseller[:1]) + "\n" + icerik_html if gorseller else icerik_html
     else:
         for p, h, hm in re.findall(r"<p[^>]*>(.*?)</p>|<h([2-4])[^>]*>(.*?)</h[2-4]>",
                                    html_ham, re.S | re.I):
@@ -362,35 +465,48 @@ def haber_detayini_cek(url, zaman_asimi=12):
             if len(metin) >= 40 and not RE_ILAN.search(metin):
                 icerik_html += f"<p>{html.escape(metin)}</p>\n"
 
-    return baslik, medya + "\n" + icerik_html, resim
+    tam = (medya + "\n" + icerik_html).strip()
+    kisitli = False
+    if len(tam) > metin_siniri:
+        tam = tam[:metin_siniri]
+        kisitli = True
+    return baslik, tam, resim, ozet, kisitli
 
 
-def kazi_tam_metin(haberler, sinir, zaman_asimi, args):
-    """En yeni N habere tam metin kazımı uygula (görseli ve metni olmayan öncelikli)."""
+def kazi_tam_metin(haberler, sinir, zaman_asimi, metin_siniri, calisan, args):
+    """Tam metni olmayan haberlerin sayfasını kazır.
+
+    sinir: 0 veya negatif = sınırsız (tümü).
+    """
     hedefler = [h for h in haberler if not h["tam_metin"]]
     hedefler.sort(key=lambda h: h["tarih"], reverse=True)
-    hedefler = hedefler[:sinir]
+    if sinir and sinir > 0:
+        hedefler = hedefler[:sinir]
     if not hedefler:
         return 0
-    log(f"Tam metin kazımı: {len(hedefler)} haber...", False, args)
+    log(f"Tam metin kazımı: {len(hedefler)} haber ({calisan} işçi)...", False, args)
     kazinan = 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as havuz:
-        futures = {havuz.submit(haber_detayini_cek, h["link"], zaman_asimi): h for h in hedefler}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=calisan) as havuz:
+        futures = {havuz.submit(haber_detayini_cek, h["link"], zaman_asimi, metin_siniri): h
+                   for h in hedefler}
         for fut in concurrent.futures.as_completed(futures):
             h = futures[fut]
             try:
-                baslik, icerik, resim = fut.result()
+                baslik, icerik, resim, ozet, kisitli = fut.result()
             except Exception:
                 continue
             if baslik and len(baslik) > 8:
                 h["baslik"] = baslik
             if icerik:
                 h["tam_metin"] = (icerik + "\n" + h["tam_metin"]).strip()
+                h["tam"] = not kisitli
             if resim:
                 h["resim"] = resim
+            if ozet and len(ozet) > len(h.get("aciklama") or ""):
+                h["aciklama"] = ozet
             if icerik or resim:
                 kazinan += 1
-            time.sleep(getattr(args, "kaydirma", 0.2))
+            time.sleep(getattr(args, "kaydirma", 0.15))
     return kazinan
 
 
@@ -479,8 +595,13 @@ def calisdir(args):
 
     # ── Tam metin kazımı ─────────────────────────────────
     kazinan = 0
-    if ayarlar.get("tam_metin_kazimi") and args.crawl is not None:
-        kazinan = kazi_tam_metin(benzersiz, args.crawl, ayarlar.get("zaman_asimi_saniye", 12), args)
+    if ayarlar.get("tam_metin_kazimi") and args.crawl is not None and args.crawl >= 0:
+        kazinan = kazi_tam_metin(
+            benzersiz, args.crawl,
+            ayarlar.get("zaman_asimi_saniye", 12),
+            ayarlar.get("sayfa_metin_siniri", 20000),
+            ayarlar.get("kazimi_calisani", 8),
+            args)
 
     # ── Son dakika işareti + kimlik ──────────────────────
     sd_dakika = ayarlar.get("son_dakika_suresi_dakika", 45)
@@ -585,7 +706,7 @@ def main():
     p.add_argument("--rapor", default="bot-raporu.json")
     p.add_argument("--feed-dizini", default="feeds")
     p.add_argument("--crawl", type=int, default=None,
-                   help="Kaç haberin tam metni kazılsın (0=kapalı, varsayılan: yapılandırmadaki değer)")
+                   help="Kaç haberin tam metni kazılsın (0=sınırsız, -1=kapalı, varsayılan: yapılandırma)")
     p.add_argument("--limit", type=int, default=None, help="Besleme başına haber limiti (test)")
     p.add_argument("--no-feeds", action="store_true", help="RSS akışı üretme")
     p.add_argument("--fixture", default=None,

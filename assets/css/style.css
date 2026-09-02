@@ -639,6 +639,13 @@ button { font-family: inherit; }
 }
 .kart-zaman { color: var(--text-muted); font-weight: 600; }
 .kart-zaman::before { content: '•'; margin-right: 10px; color: var(--text-muted); }
+.kart-tam {
+    font-size: 0.66rem; font-weight: 700;
+    color: var(--accent);
+    background: var(--glow);
+    border-radius: 8px; padding: 2px 8px;
+    letter-spacing: 0.3px;
+}
 
 .kart-baslik {
     font-size: 1.06rem; font-weight: 800; line-height: 1.42;
