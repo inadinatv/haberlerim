@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Tüm Haberler RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 02 Sep 2026 16:46:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 16:47:35 +0000</lastBuildDate>
     <item>
       <title>SON DAKİKA HABERİ: Bahçeli'den Terörsüz Türkiye açıklaması</title>
       <link>https://www.cnnturk.com/turkiye/son-dakika-haberi-bahceliden-terorsuz-turkiye-aciklamasi-3462050</link>
@@ -215,6 +215,14 @@
       <pubDate>2026-09-02T16:04:21+00:00</pubDate>
     </item>
     <item>
+      <title>Üsküdar Belediyesi'ne operasyon: 2 başkan yardımcısı gözaltında</title>
+      <link>https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</guid>
+      <category>Gündem</category>
+      <description>İstanbul Cumhuriyet Başsavcılığı'nın başlattığı soruşturma kapsamında 2 başkan yardımcısı gözaltına alındı. — NTV</description>
+      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
+    </item>
+    <item>
       <title>Motorin, benzin ve LPG'ye zam geliyor</title>
       <link>https://www.ntv.com.tr/ekonomi/yakit-zami,abcd1237</link>
       <guid isPermaLink="true">https://www.ntv.com.tr/ekonomi/yakit-zami,abcd1237</guid>
@@ -231,6 +239,14 @@
       <pubDate>2026-09-02T15:55:00+00:00</pubDate>
     </item>
     <item>
+      <title>Gemi kazasında kayıp sayısı belli oldu</title>
+      <link>https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</guid>
+      <category>Gündem</category>
+      <description>Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor. — NTV</description>
+      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
+    </item>
+    <item>
       <title>Galatasaray, Victor Nelsson'un sözleşmesini feshetti</title>
       <link>https://www.ntv.com.tr/spor/galatasaray-nelsson,abcd1239</link>
       <guid isPermaLink="true">https://www.ntv.com.tr/spor/galatasaray-nelsson,abcd1239</guid>
@@ -244,22 +260,6 @@
       <guid isPermaLink="true">https://www.ntv.com.tr/saglik/telefon-uyku,abcd1241</guid>
       <category>Sağlık</category>
       <description>Uyku uzmanları, gece saatlerinde yoğun düşünce aktivitesinin uykuyu bölerek sağlığı olumsuz etkilediği konusunda uyarıyor. — NTV</description>
-      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Gemi kazasında kayıp sayısı belli oldu</title>
-      <link>https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</guid>
-      <category>Gündem</category>
-      <description>Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor. — NTV</description>
-      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Üsküdar Belediyesi'ne operasyon: 2 başkan yardımcısı gözaltında</title>
-      <link>https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</guid>
-      <category>Gündem</category>
-      <description>İstanbul Cumhuriyet Başsavcılığı'nın başlattığı soruşturma kapsamında 2 başkan yardımcısı gözaltına alındı. — NTV</description>
       <pubDate>2026-09-02T15:55:00+00:00</pubDate>
     </item>
     <item>
@@ -303,19 +303,19 @@
       <pubDate>2026-09-02T15:34:07+00:00</pubDate>
     </item>
     <item>
-      <title>Günün film önerileri: Sinema salonlarında bu hafta</title>
-      <link>https://www.cnnturk.com/kultur-sanat/gunun-film-onerileri-3462060</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/kultur-sanat/gunun-film-onerileri-3462060</guid>
-      <category>Yaşam &amp; Sanat</category>
-      <description>Bu hafta vizyona giren filmler ve dizi gündemi. — CNN Türk</description>
-      <pubDate>2026-09-02T15:27:55+00:00</pubDate>
-    </item>
-    <item>
       <title>Intikam Vakti filmi Show TV'de</title>
       <link>https://www.haberturk.com/intikam-vakti-wrath-of-man-filmi-konusu-nedir-oyunculari-kimler-intikam-vakti-ne-zaman-cekildi-3909833</link>
       <guid isPermaLink="true">https://www.haberturk.com/intikam-vakti-wrath-of-man-filmi-konusu-nedir-oyunculari-kimler-intikam-vakti-ne-zaman-cekildi-3909833</guid>
       <category>Gündem</category>
       <description>Jason Statham'ın başrolünde yer aldığı Wrath of Man filmi bu akşam Show TV'de. — Habertürk</description>
+      <pubDate>2026-09-02T15:27:55+00:00</pubDate>
+    </item>
+    <item>
+      <title>Günün film önerileri: Sinema salonlarında bu hafta</title>
+      <link>https://www.cnnturk.com/kultur-sanat/gunun-film-onerileri-3462060</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/kultur-sanat/gunun-film-onerileri-3462060</guid>
+      <category>Yaşam &amp; Sanat</category>
+      <description>Bu hafta vizyona giren filmler ve dizi gündemi. — CNN Türk</description>
       <pubDate>2026-09-02T15:27:55+00:00</pubDate>
     </item>
     <item>

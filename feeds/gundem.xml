@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Gündem RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 02 Sep 2026 16:46:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 16:47:35 +0000</lastBuildDate>
     <item>
       <title>SON DAKİKA HABERİ: Bahçeli'den Terörsüz Türkiye açıklaması</title>
       <link>https://www.cnnturk.com/turkiye/son-dakika-haberi-bahceliden-terorsuz-turkiye-aciklamasi-3462050</link>
@@ -95,6 +95,14 @@
       <pubDate>2026-09-02T16:04:21+00:00</pubDate>
     </item>
     <item>
+      <title>Üsküdar Belediyesi'ne operasyon: 2 başkan yardımcısı gözaltında</title>
+      <link>https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</guid>
+      <category>Gündem</category>
+      <description>İstanbul Cumhuriyet Başsavcılığı'nın başlattığı soruşturma kapsamında 2 başkan yardımcısı gözaltına alındı. — NTV</description>
+      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
+    </item>
+    <item>
       <title>İsrail basınına göre, Tel Aviv'in çekilmeyi reddetmesi nedeniyle Suriye ile güvenlik anlaşması yapılamadı</title>
       <link>https://www.aa.com.tr/tr/dunya/israil-basinina-gore-tel-avivin-cekilmeyi-reddetmesi-nedeniyle-suriye-ile-guvenlik-anlasmasi-yapilamadi/4045635</link>
       <guid isPermaLink="true">https://www.aa.com.tr/tr/dunya/israil-basinina-gore-tel-avivin-cekilmeyi-reddetmesi-nedeniyle-suriye-ile-guvenlik-anlasmasi-yapilamadi/4045635</guid>
@@ -108,14 +116,6 @@
       <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</guid>
       <category>Gündem</category>
       <description>Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor. — NTV</description>
-      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Üsküdar Belediyesi'ne operasyon: 2 başkan yardımcısı gözaltında</title>
-      <link>https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/uskudar-operasyon,abcd1236</guid>
-      <category>Gündem</category>
-      <description>İstanbul Cumhuriyet Başsavcılığı'nın başlattığı soruşturma kapsamında 2 başkan yardımcısı gözaltına alındı. — NTV</description>
       <pubDate>2026-09-02T15:55:00+00:00</pubDate>
     </item>
     <item>
