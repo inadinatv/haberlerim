@@ -20,6 +20,7 @@
     "Spor",
     "Dünya",
     "Teknoloji",
+    "Yapay Zeka",
     "Sağlık",
     "Yaşam & Sanat",
     "Magaza"
@@ -135,6 +136,46 @@
       "aktif": true,
       "beslemeler": [
         { "kategori": "Gündem", "url": "https://www.haberturk.com/rss", "limit": 12 }
+      ]
+    },
+    {
+      "id": "openai",
+      "ad": "OpenAI News",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Yapay Zeka", "url": "https://openai.com/news/rss.xml", "limit": 8 }
+      ]
+    },
+    {
+      "id": "mitai",
+      "ad": "MIT News AI",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Yapay Zeka", "url": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml", "limit": 8 }
+      ]
+    },
+    {
+      "id": "techcrunchai",
+      "ad": "TechCrunch AI",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Yapay Zeka", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "limit": 8 }
+      ]
+    },
+    {
+      "id": "googleai",
+      "ad": "Google AI Blog",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Yapay Zeka", "url": "https://blog.google/technology/ai/rss/", "limit": 8 }
+      ]
+    },
+    {
+      "id": "huggingface",
+      "ad": "Hugging Face Blog",
+      "aktif": true,
+      "beslemeler": [
+        { "kategori": "Yapay Zeka", "url": "https://huggingface.co/blog/feed.xml", "limit": 8 }
       ]
     }
   ]
