@@ -1,6 +1,6 @@
 {
   "surum": "2.0",
-  "son_guncelleme": "2026-09-02T16:47:35.144988+00:00",
+  "son_guncelleme": "2026-09-02T17:16:16.621714+00:00",
   "sure_saniye": 0.0,
   "toplam_haber": 73,
   "kaynak_sayisi": 9,
@@ -18,6 +18,13 @@
     "Magaza": 3
   },
   "kaynaklar": {
+    "Sabah": {
+      "haber": 11,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 0,
+      "hata": null
+    },
     "NTV": {
       "haber": 9,
       "durum": "aktif",
@@ -26,13 +33,6 @@
       "hata": null
     },
     "Anadolu Ajansı": {
-      "haber": 11,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
-    "Sabah": {
       "haber": 11,
       "durum": "aktif",
       "basarili": 6,
@@ -67,14 +67,14 @@
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "BBC Türkçe": {
       "haber": 4,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "BBC Türkçe": {
+    "Habertürk": {
       "haber": 4,
       "durum": "aktif",
       "basarili": 1,

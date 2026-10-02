@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════
-   GÜNDEM — Premium Haber v2
+   İNADINA TV — Premium Haber v2
    Uygulama mantığı: veri, görünüm, piyasa, ayarlar
    ═════════════════════════════════════════════════════════════ */
 'use strict';
@@ -101,7 +101,7 @@ function tutucuUri(emoji, kaynakAd, genis) {
         '<text x="50%" y="50%" font-size="' + (genis ? 150 : 92) + '" text-anchor="middle" dominant-baseline="middle">' + emoji + '</text>' +
         '<text x="50%" y="' + (h * 0.78) + '" font-family="Inter, sans-serif" font-size="' + (genis ? 24 : 19) +
         '" font-weight="700" letter-spacing="4" text-anchor="middle" fill="rgba(255,255,255,0.5)">' +
-        escapeHtml((kaynakAd || 'GÜNDEM').toUpperCase()) + '</text>' +
+        escapeHtml((kaynakAd || 'İnadına TV').toUpperCase()) + '</text>' +
         '</svg>';
     return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 }
@@ -428,10 +428,34 @@ function renderIcerik() {
     });
 }
 
+function haberinVideolari(h) {
+    const list = Array.isArray(h.videolar) ? h.videolar.filter(Boolean) : [];
+    if (list.length) return list;
+    const govde = h.tam_metin || '';
+    const bulunan = [];
+    const rx = /(?:src|href)=["'](https?:\/\/[^"']+)["']/gi;
+    let m;
+    while ((m = rx.exec(govde))) {
+        if (/(youtube\.com\/embed|youtu\.be|player\.vimeo|dailymotion\.com\/embed|\.mp4|\.webm|\/embed\/)/i.test(m[1])) {
+            if (!bulunan.includes(m[1])) bulunan.push(m[1]);
+        }
+    }
+    return bulunan;
+}
+
+function videoHtml(url) {
+    const u = escapeHtml(url);
+    if (/\.(mp4|webm|ogg|m3u8)(\?|$)/i.test(url)) {
+        return '<video class="haber-video" controls preload="metadata" src="' + u + '"></video>';
+    }
+    return '<div class="video-frame"><iframe src="' + u + '" title="Haber videosu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>';
+}
+
 function kartHtml(h, i) {
     const gorsel = ayarlar.gorsel && h.resim
         ? '<img src="' + escapeHtml(h.resim) + '" alt="" loading="lazy">'
         : '<div class="kart-tutucu" style="background-image:url(' + tutucuUri(kategoriIkonu(h.kategori), h.kaynak) + ');background-size:cover" data-kaynak="' + escapeHtml(h.kaynak) + '"></div>';
+    const videolu = haberinVideolari(h).length > 0;
     return '<article class="news-card gir-animasyon" data-index="' + i + '" style="animation-delay:' + (i % 10) * 0.05 + 's">' +
         '<div class="kart-resim-kenar">' + gorsel + '<div class="kart-ust-banti"></div>' +
         '<div class="kart-rozetler">' +
@@ -440,6 +464,8 @@ function kartHtml(h, i) {
         '</div></div>' +
         '<div class="kart-govde">' +
         '<div class="kart-meta"><span class="kart-kategori">' + kategoriIkonu(h.kategori) + ' ' + escapeHtml(h.kategori) + '</span>' +
+        (h.tam ? '<span class="kart-tam" title="Bu haber sitede tam metin okunabilir">📖 Tam metin</span>' : '') +
+        (videolu ? '<span class="kart-video" title="Bu haberde video var">▶ Video</span>' : '') +
         '<span class="kart-zaman">' + relativeZaman(h.tarih) + '</span></div>' +
         '<h2 class="kart-baslik">' + escapeHtml(h.baslik) + '</h2>' +
         '<p class="kart-aciklama">' + escapeHtml(h.aciklama) + '</p>' +
@@ -479,10 +505,19 @@ function detayAc(h) {
     }
 
     $('#detay-baslik').textContent = h.baslik;
+
+    /* okuma süresi */
+    const duz = (h.tam_metin ? h.tam_metin.replace(/<[^>]+>/g, ' ') : (h.aciklama || ''));
+    const sozSayisi = duz.split(/\s+/).filter(Boolean).length;
+    const okumaDk = Math.max(1, Math.round(sozSayisi / 180));
+
+    const videolar = haberinVideolari(h);
     $('#detay-meta').innerHTML =
         '<span class="detay-rozet kategori">' + kategoriIkonu(h.kategori) + ' ' + escapeHtml(h.kategori) + '</span>' +
         '<span class="detay-rozet kaynak kaynak-renk" data-kaynak="' + escapeHtml(h.kaynak_id || '') + '"><span class="kaynak-nokta"></span>' + escapeHtml(h.kaynak) + '</span>' +
-        '<span class="detay-rozet zaman">🕐 ' + uzunTarih(h.tarih) + '</span>';
+        '<span class="detay-rozet zaman">🕐 ' + uzunTarih(h.tarih) + '</span>' +
+        (h.tam_metin ? '<span class="detay-rozet zaman">⏱ ' + okumaDk + ' dk okuma</span>' : '') +
+        (videolar.length ? '<span class="detay-rozet video">▶ Video</span>' : '');
 
     let govde = '';
     if (h.tam_metin) {
@@ -491,7 +526,14 @@ function detayAc(h) {
     if (h.aciklama && !h.tam_metin) {
         govde += '<p>' + escapeHtml(h.aciklama) + '</p>';
     }
-    govde += '<div class="kaynak-notu">📄 Bu haber <strong>' + escapeHtml(h.kaynak) + '</strong> kaynağından toplanmıştır. Tam metni ve güncel gelişmeleri: <a href="' + escapeHtml(h.link) + '" target="_blank" rel="noopener">kaynağa git →</a></div>';
+    const eksikVideo = videolar.filter((u) => govde.indexOf(u) === -1);
+    if (eksikVideo.length) {
+        govde = eksikVideo.map(videoHtml).join('') + govde;
+    }
+    const kisaltildi = h.tam === false && h.tam_metin;
+    govde += '<div class="kaynak-notu">📄 Bu haber <strong>' + escapeHtml(h.kaynak) + '</strong> kaynağından toplanmıştır.' +
+        (kisaltildi ? ' <em>Metin kısaltılmıştır — devamı</em> ' : ' Güncel gelişmeler: ') +
+        '<a href="' + escapeHtml(h.link) + '" target="_blank" rel="noopener">kaynağa git →</a></div>';
     $('#detay-icerik').innerHTML = govde;
 
     $('#detay-aksiyonlar').innerHTML =
@@ -523,7 +565,7 @@ function detayAc(h) {
         });
     });
 
-    document.title = h.baslik + ' — GÜNDEM';
+    document.title = h.baslik + ' — İnadına TV';
     $('#ana-sayfa').style.display = 'none';
     $('#category-nav').style.display = 'none';
     $('#detay-sayfasi').style.display = 'block';
@@ -539,7 +581,7 @@ function detayYenidenCiz() {
 function detayKapat() {
     if ($('#detay-sayfasi').style.display === 'none') return;
     seciliDetay = null;
-    document.title = 'GÜNDEM — Premium Haber';
+    document.title = 'İnadına TV — Premium Haber';
     $('#detay-sayfasi').style.display = 'none';
     $('#ana-sayfa').style.display = 'block';
     $('#category-nav').style.display = 'flex';

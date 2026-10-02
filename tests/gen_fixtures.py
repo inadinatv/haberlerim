@@ -361,7 +361,10 @@ ornekler = {
     "http://www.hurriyet.com.tr/rss/gundem": [
         ("MHP Lideri Bahçeli: Spor kisvesiyle Terörsüz Türkiye hedefini ve kardeşlik iklimini zehirlemeye kimsenin hakkı yok",
          "https://www.hurriyet.com.tr/gundem/mhp-lideri-devlet-bahceli-spor-kisvesiyle-terorsuz-turkiye-hedefini-ve-kardeslik-iklimini-zehirlemeye-kimsenin-hakki-yok-43293838",
-         "Bahçeli, Amedspor algısı araştırmalarına sert tepki gösterdi.",
+         "Milliyetçi Hareket Partisi Genel Başkanı Devlet Bahçeli, Kürt Çalışmaları Merkezi (KSC) ile Rawest Araştırma işbirliği ve Friedrich-Ebert-Stiftung tarafından yürütülen \"Kürtlerde Amedspor Algısı ve Taraftarlığı\" başlıklı araştırmaya tepki gösterdi.\n\n"
+         "Bahçeli, \"Spor; barışın, huzurun, dayanışma ve toplumsal bütünleşmenin en güçlü araçlarından biridir. Bu nedenle spor alanının kimlik siyaseti, ayrıştırıcı söylem ve siyasi amaçlar için kullanımdan özenle kaçınmalıdır. Bu çerçevede Amedspor dahil olmak üzere bütün spor kulüpleri, sporun bütünleştirici ruhuna uygun davranmalı, toplumsal gerilimleri artıracak tutum ve söylemlerden uzak durmalıdır\" ifadelerini kullandı.\n\n"
+         "Araştırmanın, terörsüz Türkiye hedefinin oluşturduğu barış ve kardeşlik iklimini zehirlemeye yönelik bir girişim olduğunu savunan Bahçeli, çalışmanın 28 Ağustos 2026 tarihinde kamuoyuna yansıdığını ve taraftarlık ile kimlik arasındaki bağın manipüle edilmeye çalışıldığını öne sürdü.\n\n"
+         "Bahçeli, \"Türkiye terörün tasfiye edildiği, güvenliğin kalıcı olarak sağlandığı, şehirlerin ve kırsalın huzur ikliminde yeşerdiği terörsüz Türkiye'de kalkınma iradesinin önündeki en büyük engellerden birinin ortadan kalkacaktır. Terörsüz Türkiye, milletin barış, huzur ve refah ümidinin, Türk asırlarının müjdesidir\" dedi.",
          "Wed, 02 Sep 2026 16:06:00 Z", "Gündem"),
     ],
     "http://www.hurriyet.com.tr/rss/ekonomi": [

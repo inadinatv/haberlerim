@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Gündem RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 02 Sep 2026 16:47:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 17:16:16 +0000</lastBuildDate>
     <item>
       <title>SON DAKİKA HABERİ: Bahçeli'den Terörsüz Türkiye açıklaması</title>
       <link>https://www.cnnturk.com/turkiye/son-dakika-haberi-bahceliden-terorsuz-turkiye-aciklamasi-3462050</link>
@@ -83,7 +83,7 @@
       <link>https://www.hurriyet.com.tr/gundem/mhp-lideri-devlet-bahceli-spor-kisvesiyle-terorsuz-turkiye-hedefini-ve-kardeslik-iklimini-zehirlemeye-kimsenin-hakki-yok-43293838</link>
       <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/mhp-lideri-devlet-bahceli-spor-kisvesiyle-terorsuz-turkiye-hedefini-ve-kardeslik-iklimini-zehirlemeye-kimsenin-hakki-yok-43293838</guid>
       <category>Gündem</category>
-      <description>Bahçeli, Amedspor algısı araştırmalarına sert tepki gösterdi. — Hürriyet</description>
+      <description>Milliyetçi Hareket Partisi Genel Başkanı Devlet Bahçeli, Kürt Çalışmaları Merkezi (KSC) ile Rawest Araştırma işbirliği ve Friedrich-Ebert-Stiftung tarafından yürütülen &quot;Kürtlerde Amedspor Algısı ve Taraftarlığı&quot; başlıklı araştırmaya tepki gösterdi. Bahçeli, &quot;Spor; barışın, huzurun, dayanışma ve topl — Hürriyet</description>
       <pubDate>2026-09-02T16:06:00+00:00</pubDate>
     </item>
     <item>
@@ -93,6 +93,14 @@
       <category>Gündem</category>
       <description>Girne açıklarında alabora olan yolcu gemisinden kaybolan 20 kişiden birinin cenazesine ulaşıldığı bildirildi. — Anadolu Ajansı</description>
       <pubDate>2026-09-02T16:04:21+00:00</pubDate>
+    </item>
+    <item>
+      <title>Gemi kazasında kayıp sayısı belli oldu</title>
+      <link>https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</guid>
+      <category>Gündem</category>
+      <description>Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor. — NTV</description>
+      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
     </item>
     <item>
       <title>Üsküdar Belediyesi'ne operasyon: 2 başkan yardımcısı gözaltında</title>
@@ -108,14 +116,6 @@
       <guid isPermaLink="true">https://www.aa.com.tr/tr/dunya/israil-basinina-gore-tel-avivin-cekilmeyi-reddetmesi-nedeniyle-suriye-ile-guvenlik-anlasmasi-yapilamadi/4045635</guid>
       <category>Gündem</category>
       <description>İsrail basınında, Tel Aviv yönetiminin Suriye'de işgal edilen bölgelerden çekilmeyi reddetmesi nedeniyle güvenlik anlaşmasına şu ana kadar varılamadığı öne sürüldü. — Anadolu Ajansı</description>
-      <pubDate>2026-09-02T15:55:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Gemi kazasında kayıp sayısı belli oldu</title>
-      <link>https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/gemi-kazasi-kayip-sayisi,abcd1234</guid>
-      <category>Gündem</category>
-      <description>Marmara Denizi'nde çarpışan iki gemiden biri battı, 10 denizci kayıp. Arama kurtarma çalışmaları sürüyor. — NTV</description>
       <pubDate>2026-09-02T15:55:00+00:00</pubDate>
     </item>
     <item>
