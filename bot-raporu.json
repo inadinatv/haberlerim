@@ -1,86 +1,126 @@
 {
-  "surum": "2.0",
-  "son_guncelleme": "2026-09-02T17:16:16.621714+00:00",
-  "sure_saniye": 0.0,
-  "toplam_haber": 73,
-  "kaynak_sayisi": 9,
-  "aktif_kaynak": 9,
-  "besleme_sayisi": 45,
-  "kazanilan_tam_metin": 0,
+  "surum": "2.1",
+  "son_guncelleme": "2026-10-02T21:33:58.807348+00:00",
+  "sure_saniye": 35.9,
+  "toplam_haber": 250,
+  "kaynak_sayisi": 14,
+  "aktif_kaynak": 14,
+  "besleme_sayisi": 50,
+  "kazanilan_tam_metin": 209,
+  "tam_metin_haber": 204,
+  "video_haber": 22,
   "kategoriler": {
-    "Gündem": 27,
-    "Ekonomi": 11,
-    "Spor": 7,
-    "Dünya": 10,
-    "Teknoloji": 7,
-    "Sağlık": 4,
-    "Yaşam & Sanat": 4,
-    "Magaza": 3
+    "Gündem": 71,
+    "Ekonomi": 30,
+    "Spor": 50,
+    "Dünya": 47,
+    "Teknoloji": 10,
+    "Yapay Zeka": 13,
+    "Sağlık": 3,
+    "Yaşam & Sanat": 17,
+    "Magaza": 9
   },
   "kaynaklar": {
-    "Sabah": {
-      "haber": 11,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "NTV": {
-      "haber": 9,
+      "haber": 70,
       "durum": "aktif",
       "basarili": 8,
       "hatali": 0,
       "hata": null
     },
-    "Anadolu Ajansı": {
-      "haber": 11,
+    "Sabah": {
+      "haber": 45,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 0,
       "hata": null
     },
     "TRT Haber": {
-      "haber": 4,
+      "haber": 15,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 7,
+    "Anadolu Ajansı": {
+      "haber": 62,
       "durum": "aktif",
-      "basarili": 7,
+      "basarili": 6,
       "hatali": 0,
       "hata": null
     },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    },
     "CNN Türk": {
-      "haber": 12,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 8,
       "hatali": 0,
       "hata": null
     },
     "Sözcü": {
-      "haber": 11,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 7,
       "hatali": 0,
       "hata": null
     },
+    "TechCrunch AI": {
+      "haber": 8,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "MIT News AI": {
+      "haber": 8,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "BBC Türkçe": {
-      "haber": 4,
+      "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "OpenAI News": {
+      "haber": 8,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Hugging Face Blog": {
+      "haber": 8,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
     "Habertürk": {
-      "haber": 4,
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Google AI Blog": {
+      "haber": 8,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     }
   },
-  "hatalar": []
+  "hatalar": [
+    "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+  ]
 }
