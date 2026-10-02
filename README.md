@@ -1,6 +1,6 @@
-# ⚡ GÜNDEM — Premium Haber
+# ⚡ İnadına TV — Premium Haber
 
-**9 köklü haber kaynağından, her 30 dakikada bir otomatik güncellenen, anlık piyasa verili, çok temalı premium haber sitesi.**
+**İnadına TV; 9 köklü haber kaynağından, her 30 dakikada bir otomatik güncellenen, anlık piyasa verili, çok temalı premium haber sitesi.**
 
 ```
 RSS beslemeleri ──► bot.py (birleştirme, tekilleştirme, tam metin kazımı)

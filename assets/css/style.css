@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════
-   GÜNDEM — Premium Haber Design System v2
+   İNADINA TV — Premium Haber Design System v2
    Neon cam (glassmorphism) + vurgu renk teması
    ═════════════════════════════════════════════════════════════ */
 
@@ -155,7 +155,7 @@ button { font-family: inherit; }
     animation: splashBoll 2s ease-in-out infinite alternate, splashGel 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 .splash-logo::after {
-    content: 'GÜNDEM'; position: absolute; inset: 0; z-index: -1;
+    content: 'İNADINA TV'; position: absolute; inset: 0; z-index: -1;
     color: transparent;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
     -webkit-background-clip: text; background-clip: text;
@@ -739,6 +739,9 @@ button { font-family: inherit; }
 
 /* ── Detay sayfası ─────────────────────────────────────────── */
 .back-btn {
+    position: sticky;
+    top: calc(var(--nav-yukseklik) + 14px);
+    z-index: 180;
     display: inline-flex; align-items: center; gap: 10px;
     padding: 11px 24px; margin-bottom: 1.4rem;
     background: var(--bg-glass);
@@ -748,6 +751,7 @@ button { font-family: inherit; }
     cursor: pointer;
     transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
     backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 .back-btn:hover {
     border-color: var(--accent);
@@ -756,6 +760,10 @@ button { font-family: inherit; }
 }
 .back-btn svg { transition: transform 0.3s; }
 .back-btn:hover svg { transform: translateX(-3px); }
+.back-btn:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
 
 .detail-container {
     max-width: 880px; margin: 0 auto;

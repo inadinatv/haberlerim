@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════
-   GÜNDEM — Premium Haber v2
+   İNADINA TV — Premium Haber v2
    Uygulama mantığı: veri, görünüm, piyasa, ayarlar
    ═════════════════════════════════════════════════════════════ */
 'use strict';
@@ -101,7 +101,7 @@ function tutucuUri(emoji, kaynakAd, genis) {
         '<text x="50%" y="50%" font-size="' + (genis ? 150 : 92) + '" text-anchor="middle" dominant-baseline="middle">' + emoji + '</text>' +
         '<text x="50%" y="' + (h * 0.78) + '" font-family="Inter, sans-serif" font-size="' + (genis ? 24 : 19) +
         '" font-weight="700" letter-spacing="4" text-anchor="middle" fill="rgba(255,255,255,0.5)">' +
-        escapeHtml((kaynakAd || 'GÜNDEM').toUpperCase()) + '</text>' +
+        escapeHtml((kaynakAd || 'İnadına TV').toUpperCase()) + '</text>' +
         '</svg>';
     return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 }
@@ -565,7 +565,7 @@ function detayAc(h) {
         });
     });
 
-    document.title = h.baslik + ' — GÜNDEM';
+    document.title = h.baslik + ' — İnadına TV';
     $('#ana-sayfa').style.display = 'none';
     $('#category-nav').style.display = 'none';
     $('#detay-sayfasi').style.display = 'block';
@@ -581,7 +581,7 @@ function detayYenidenCiz() {
 function detayKapat() {
     if ($('#detay-sayfasi').style.display === 'none') return;
     seciliDetay = null;
-    document.title = 'GÜNDEM — Premium Haber';
+    document.title = 'İnadına TV — Premium Haber';
     $('#detay-sayfasi').style.display = 'none';
     $('#ana-sayfa').style.display = 'block';
     $('#category-nav').style.display = 'flex';
