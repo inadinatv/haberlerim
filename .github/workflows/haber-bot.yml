@@ -34,3 +34,5 @@ jobs:
           git add haberler.json
           git commit -m "Otomatik güncelleme: Tüm içerikler kazındı" || echo "Yeni haber yok"
           git push
+      - name: Canlı GitHub Pages dalını güncelle
+        run: git push origin HEAD:arena/01a062f8-haberlerim
