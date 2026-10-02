@@ -23,6 +23,7 @@ const AYARLAR_VARSAVLANAN = {
     tema: 'koyu',
     vurgu: 'cyan',
     yazi: 'orta',
+    okuma: 'standart',
     gorsel: true,
     ticker: true,
     piyasa: true,
@@ -134,6 +135,7 @@ function ayarlariUygula() {
     r.setAttribute('data-tema', ayarlar.tema);
     r.setAttribute('data-vurgu', ayarlar.vurgu);
     r.setAttribute('data-yazi', ayarlar.yazi);
+    r.setAttribute('data-okuma', ayarlar.okuma);
     $('#btn-tema').textContent = ayarlar.tema === 'koyu' ? '🌙' : '☀️';
     $('#market-strip').classList.toggle('gizli', !ayarlar.piyasa);
     if (!ayarlar.ticker) $('#ticker-wrap').style.display = 'none';
