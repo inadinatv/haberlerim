@@ -76,6 +76,31 @@ body {
 [data-yazi="kucuk"] body, html[data-yazi="kucuk"] { font-size: 14.5px; }
 html[data-yazi="buyuk"] { font-size: 18px; }
 
+/* ── Okuma erişilebilirliği ─────────────────────────────────── */
+html[data-okuma="rahat"] body {
+    line-height: 1.72;
+    letter-spacing: 0.01em;
+}
+html[data-okuma="rahat"] .detail-body {
+    line-height: 2.12;
+    letter-spacing: 0.012em;
+}
+html[data-okuma="belirgin"] body {
+    line-height: 1.65;
+    font-weight: 500;
+}
+html[data-okuma="belirgin"] .detail-body {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    line-height: 2.08;
+    font-weight: 500;
+    letter-spacing: 0.008em;
+}
+html[data-okuma="belirgin"] .detail-body a,
+html[data-okuma="belirgin"] .kart-aciklama {
+    color: var(--text-primary);
+}
+
 button { font-family: inherit; }
 ::selection { background: var(--glow); color: #fff; }
 

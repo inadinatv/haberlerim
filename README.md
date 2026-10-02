@@ -69,6 +69,7 @@ python3 tests/test_bot.py                     # ünite testleri (ağsız)
 - 🌙 Koyu / ☀️ Açık tema
 - 🎨 5 vurgu rengi: camgöbeği, mor, pembe, yeşil, turuncu
 - 🔤 3 yazı boyutu
+- 👓 Okuma rahatlığı: standart / rahat okuma / belirgin metin
 - 🖼 Haber görselleri aç/kapa (performans modu)
 - ⚡ Son dakika bandı aç/kapa
 - 📈 Piyasa bandı aç/kapa
