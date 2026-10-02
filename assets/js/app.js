@@ -11,6 +11,7 @@ const KATEGORILER = [
     { ad: 'Spor',           ikon: '⚽' },
     { ad: 'Dünya',          ikon: '🌍' },
     { ad: 'Teknoloji',      ikon: '🤖' },
+    { ad: 'Yapay Zeka',     ikon: '🧠' },
     { ad: 'Sağlık',         ikon: '🩺' },
     { ad: 'Yaşam & Sanat',  ikon: '🎭' },
     { ad: 'Magaza',         ikon: '✨' },

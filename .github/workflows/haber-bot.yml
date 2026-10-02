@@ -31,7 +31,7 @@ jobs:
         run: |
           git config --global user.name "Haber Botu"
           git config --global user.email "bot@habersistemi.com"
-          git add haberler.json
+          git add haberler.json bot-raporu.json feeds/
           git commit -m "Otomatik güncelleme: Tüm içerikler kazındı" || echo "Yeni haber yok"
           git push
       - name: Canlı GitHub Pages dalını güncelle
