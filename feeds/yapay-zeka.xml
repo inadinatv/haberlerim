@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 02 Oct 2026 22:49:47 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 01:41:59 +0000</lastBuildDate>
+    <item>
+      <title>Meta wants your next gadget to be Muse-infused | TechCrunch</title>
+      <link>https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/</guid>
+      <category>Yapay Zeka</category>
+      <description>Meta wants Muse in your TV and your toaster, so it's giving the code away for free. — TechCrunch AI</description>
+      <pubDate>2026-10-03T00:45:39+00:00</pubDate>
+    </item>
     <item>
       <title>Sean Parker is rebuilding Stability AI around music | TechCrunch</title>
       <link>https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/</link>
@@ -63,19 +71,19 @@
       <pubDate>2026-10-02T17:32:05+00:00</pubDate>
     </item>
     <item>
-      <title>Circuit Breaker Labs hopes to make AI safer for your kids (and you) | TechCrunch</title>
-      <link>https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/</guid>
-      <category>Yapay Zeka</category>
-      <description>With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created &quot;crash-test dummies&quot; to solve that. — TechCrunch AI</description>
-      <pubDate>2026-10-02T17:00:00+00:00</pubDate>
-    </item>
-    <item>
       <title>Documenting the tech worker movement</title>
       <link>https://news.mit.edu/2026/documenting-tech-worker-movement-0918</link>
       <guid isPermaLink="true">https://news.mit.edu/2026/documenting-tech-worker-movement-0918</guid>
       <category>Yapay Zeka</category>
       <description>Despite the “dot-com crash” in 2000, the tech industry remained an attractive career destination for many who believed technology represented the future. The digital age — defined by global connectivity and computers — had firmly taken hold, and over time, the tech industry emerged as a dominant for — MIT News AI</description>
+      <pubDate>2026-10-02T17:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Circuit Breaker Labs hopes to make AI safer for your kids (and you) | TechCrunch</title>
+      <link>https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/</guid>
+      <category>Yapay Zeka</category>
+      <description>With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created &quot;crash-test dummies&quot; to solve that. — TechCrunch AI</description>
       <pubDate>2026-10-02T17:00:00+00:00</pubDate>
     </item>
     <item>
@@ -85,14 +93,6 @@
       <category>Yapay Zeka</category>
       <description>Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production. — OpenAI News</description>
       <pubDate>2026-10-02T16:15:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Pope Leo XIV is not a fan of AI-generated art | TechCrunch</title>
-      <link>https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/</guid>
-      <category>Yapay Zeka</category>
-      <description>&quot;There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,&quot; the pope wrote. &quot;Algorithms lack the spark of humanity.&quot; — TechCrunch AI</description>
-      <pubDate>2026-10-02T15:39:41+00:00</pubDate>
     </item>
     <item>
       <title>Open-sourcing AstaBrief, the fast report-generation model in Asta</title>

@@ -1,19 +1,19 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-02T22:49:47.624223+00:00",
+  "son_guncelleme": "2026-10-03T01:41:59.059935+00:00",
   "sure_saniye": 36.3,
   "toplam_haber": 250,
   "kaynak_sayisi": 14,
   "aktif_kaynak": 14,
   "besleme_sayisi": 50,
   "kazanilan_tam_metin": 209,
-  "tam_metin_haber": 202,
+  "tam_metin_haber": 204,
   "video_haber": 21,
   "kategoriler": {
-    "Gündem": 83,
+    "Gündem": 81,
     "Ekonomi": 24,
     "Spor": 48,
-    "Dünya": 44,
+    "Dünya": 46,
     "Teknoloji": 9,
     "Yapay Zeka": 13,
     "Sağlık": 3,
@@ -43,10 +43,10 @@
       "hata": null
     },
     "Hürriyet": {
-      "haber": 50,
+      "haber": 42,
       "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
+      "basarili": 5,
+      "hatali": 2,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "Anadolu Ajansı": {
@@ -70,13 +70,6 @@
       "hatali": 0,
       "hata": null
     },
-    "TechCrunch AI": {
-      "haber": 8,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "MIT News AI": {
       "haber": 8,
       "durum": "aktif",
@@ -84,14 +77,21 @@
       "hatali": 0,
       "hata": null
     },
-    "OpenAI News": {
+    "TechCrunch AI": {
       "haber": 8,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Hugging Face Blog": {
+    "BBC Türkçe": {
+      "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "OpenAI News": {
       "haber": 8,
       "durum": "aktif",
       "basarili": 1,
@@ -105,8 +105,8 @@
       "hatali": 0,
       "hata": null
     },
-    "BBC Türkçe": {
-      "haber": 10,
+    "Hugging Face Blog": {
+      "haber": 8,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
@@ -121,6 +121,7 @@
     }
   },
   "hatalar": [
-    "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227",
+    "Hürriyet (http://www.hurriyet.com.tr/rss/magazin): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
   ]
 }
