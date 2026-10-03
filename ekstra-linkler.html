@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstra Linkler - INADINA TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hue: 345;
+            --hue-light: 210;
+            --hue-blue: 210;
+            --hue-green: 145;
+            --hue-purple: 285;
+            --hue-orange: 35;
+            /* Tek kaynak: menü, kart, buton ve arka plan bu paletten türetilir. */
+            --primary-color: hsl(var(--hue), 88%, 58%);
+            --primary-strong: hsl(var(--hue), 82%, 46%);
+            --primary-soft: hsla(var(--hue), 88%, 58%, .16);
+            --primary-faint: hsla(var(--hue), 88%, 58%, .08);
+            --primary-gradient: linear-gradient(135deg, hsl(var(--hue), 82%, 42%), hsl(var(--hue), 88%, 58%));
+            --bg-color: hsl(var(--hue), 34%, 7%);
+            --bg-gradient: radial-gradient(circle at 15% 0%, hsla(var(--hue), 80%, 45%, .20), transparent 34%), linear-gradient(160deg, hsl(var(--hue), 34%, 7%), hsl(calc(var(--hue) + 24), 30%, 10%));
+            --text-color: hsl(var(--hue), 18%, 94%);
+            --text-secondary: hsl(var(--hue), 12%, 68%);
+            --card-bg: hsla(var(--hue), 22%, 16%, .82);
+            --surface-light: hsl(var(--hue), 24%, 13%);
+            --surface-elevated: hsl(var(--hue), 24%, 18%);
+            --border-color: hsla(var(--hue), 88%, 65%, .20);
+            --card-shadow: 0 10px 30px hsla(var(--hue), 50%, 3%, .42);
+            --link-color: hsl(var(--hue), 72%, 52%);
+            --telegram-color: hsl(var(--hue), 88%, 62%);
+            --badge-text: hsl(var(--hue), 45%, 97%);
+        }
+        body.light-theme {
+            --bg-color: hsl(var(--hue), 35%, 96%);
+            --bg-gradient: radial-gradient(circle at 15% 0%, hsla(var(--hue), 80%, 65%, .22), transparent 34%), linear-gradient(160deg, hsl(var(--hue), 35%, 97%), hsl(calc(var(--hue) + 18), 32%, 91%));
+            --text-color: hsl(var(--hue), 28%, 18%);
+            --text-secondary: hsl(var(--hue), 16%, 42%);
+            --card-bg: hsla(var(--hue), 45%, 100%, .78);
+            --surface-light: hsl(var(--hue), 45%, 100%);
+            --surface-elevated: hsl(var(--hue), 38%, 97%);
+            --border-color: hsla(var(--hue), 65%, 38%, .18);
+            --card-shadow: 0 8px 24px hsla(var(--hue), 35%, 30%, .16);
+            --badge-text: hsl(var(--hue), 35%, 98%);
+        }
+        body[data-color="blue"] { --hue: var(--hue-blue); }
+        body[data-color="green"] { --hue: var(--hue-green); }
+        body[data-color="purple"] { --hue: var(--hue-purple); }
+        body[data-color="orange"] { --hue: var(--hue-orange); }
+        body[data-color="red"] { --hue: 345; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            /* --hue body üzerinde değiştiği için tüm türetilmiş renkler burada yeniden hesaplanır. */
+            --primary-color: hsl(var(--hue), 88%, 58%);
+            --primary-strong: hsl(var(--hue), 82%, 46%);
+            --primary-soft: hsla(var(--hue), 88%, 58%, .16);
+            --primary-faint: hsla(var(--hue), 88%, 58%, .08);
+            --primary-gradient: linear-gradient(135deg, hsl(var(--hue), 82%, 42%), hsl(var(--hue), 88%, 58%));
+            --bg-color: hsl(var(--hue), 34%, 7%);
+            --bg-gradient: radial-gradient(circle at 15% 0%, hsla(var(--hue), 80%, 45%, .20), transparent 34%), linear-gradient(160deg, hsl(var(--hue), 34%, 7%), hsl(calc(var(--hue) + 24), 30%, 10%));
+            --text-color: hsl(var(--hue), 18%, 94%);
+            --text-secondary: hsl(var(--hue), 12%, 68%);
+            --card-bg: hsla(var(--hue), 22%, 16%, .82);
+            --surface-light: hsl(var(--hue), 24%, 13%);
+            --surface-elevated: hsl(var(--hue), 24%, 18%);
+            --border-color: hsla(var(--hue), 88%, 65%, .20);
+            --card-shadow: 0 10px 30px hsla(var(--hue), 50%, 3%, .42);
+            --link-color: hsl(var(--hue), 72%, 52%);
+            --telegram-color: hsl(var(--hue), 88%, 62%);
+            --badge-text: hsl(var(--hue), 45%, 97%);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            overflow-x: hidden;
+            min-height: 100vh;
+            transition: background 0.4s ease, color 0.4s ease;
+            transition-property: background, color, border-color, box-shadow;
+        }
+        .app-container {
+            padding: 15px;
+            padding-top: 75px;
+            opacity: 0;
+            animation: fadeInApp 0.5s ease-out forwards 0.1s;
+        }
+        @keyframes fadeInApp {
+            to { opacity: 1; }
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 15px;
+            background: var(--surface-light);
+            box-shadow: 0 2px 12px hsla(var(--hue), 55%, 5%, .22);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+        }
+        .app-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .top-bar-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .control-button {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .control-button:hover {
+            transform: scale(1.1);
+            color: var(--primary-color);
+        }
+        .control-button.telegram-link:hover i {
+            color: var(--telegram-color) !important;
+        }
+        .dropdown-menu,
+        .channel-card,
+        .top-bar,
+        .notification,
+        .theme-option,
+        .apk-option,
+        .play-button {
+            transition: background .4s ease, color .4s ease, border-color .4s ease, box-shadow .4s ease, transform .3s ease;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            min-width: 200px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            animation: fadeInMenu 0.2s ease-out;
+        }
+        @keyframes fadeInMenu {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+        .theme-option, .apk-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 6px;
+            width: 100%;
+            text-decoration: none;
+            text-align: left;
+            position: relative;
+        }
+        .theme-option:hover, .apk-option:hover {
+            background: var(--primary-soft);
+            color: var(--primary-color);
+        }
+        .theme-option.active {
+            background: var(--primary-soft);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .theme-option.active::after {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 12px;
+            font-size: 0.8rem;
+        }
+        .apk-option i {
+            color: var(--primary-color);
+        }
+        .channels-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .channel-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--card-shadow);
+            opacity: 0;
+            animation: showCard 0.5s forwards;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+        }
+        @keyframes showCard {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .channel-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            border-color: var(--primary-color);
+            box-shadow: 0 12px 28px hsla(var(--hue), 65%, 35%, .20);
+        }
+        .channel-img-container {
+            position: relative;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .channel-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .badge {
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 6px;
+            border-radius: 4px;
+            z-index: 1;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .link-badge {
+            background: linear-gradient(135deg, var(--primary-strong), var(--primary-color));
+            color: var(--badge-text);
+        }
+        .new-badge {
+            background: linear-gradient(135deg, hsl(calc(var(--hue) + 28), 82%, 44%), hsl(calc(var(--hue) + 12), 92%, 62%));
+            color: var(--badge-text);
+            animation: pulse-new 1.2s infinite ease-out;
+        }
+        .adult-badge {
+            background: linear-gradient(135deg, hsl(calc(var(--hue) - 18), 78%, 35%), hsl(calc(var(--hue) + 8), 88%, 52%));
+            animation: pulse-new 1.2s infinite ease-out;
+        }
+        @keyframes pulse-new {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .channel-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .channel-name {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .channel-meta {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        .channel-meta .meta-separator {
+            margin: 0 6px;
+        }
+        .date-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .play-button {
+            background: var(--primary-gradient);
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px hsla(var(--hue), 75%, 42%, .38);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+        .play-button i {
+            color: white;
+            font-size: 0.9rem;
+        }
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+            background: linear-gradient(90deg, var(--primary-faint), transparent);
+        }
+        .category-title .item-count {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            margin-left: 8px;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(120%);
+            background: var(--surface-light);
+            color: var(--text-color);
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        .notification.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+        .notification i {
+            margin-right: 10px;
+        }
+        .dropdown-divider {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="notification" id="notification">
+        <i class="fas fa-info-circle"></i>
+        <div id="notificationMessage"></div>
+    </div>
+    <div class="top-bar" id="topBar">
+        <div class="app-logo">INADINA TV</div>
+        <div class="top-bar-controls">
+            <a href="https://t.me/inadinatv2" target="_blank" rel="noopener noreferrer" class="control-button telegram-link" title="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <div style="position: relative;">
+                <button class="control-button" id="apkDownloadToggle" title="APK İndir">
+                    <i class="fas fa-download"></i>
+                </button>
+                <div class="dropdown-menu" id="apkOptionsDropdown">
+                    <a href="https://pixeldrain.com/u/6NePiEmb" target="_blank" rel="noopener noreferrer" class="apk-option">
+                        <i class="fas fa-tv"></i> İNADINA TV İndir
+                    </a>
+                    <a href="https://devuploads.com/3v8tm7vfj5ha" target="_blank" rel="noopener noreferrer" class="apk-option">
+                        <i class="fas fa-cloud-download-alt"></i> Wuffy Player
+                    </a>
+                    <a href="https://devuploads.com/ukhl46vpvcqj" target="_blank" rel="noopener noreferrer" class="apk-option">
+                        <i class="fas fa-rocket"></i> Xpola Player
+                    </a>
+                </div>
+            </div>
+            <div style="position: relative;">
+                <button class="control-button" id="themeToggle" title="Tema">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <div class="dropdown-menu" id="themeOptionsDropdown">
+                    <button class="theme-option" data-mode="light">
+                        <i class="fas fa-sun"></i> Açık
+                    </button>
+                    <button class="theme-option" data-mode="dark">
+                        <i class="fas fa-moon"></i> Koyu
+                    </button>
+                    <button class="theme-option" data-mode="system">
+                        <i class="fas fa-desktop"></i> Sistem
+                    </button>
+                    <hr class="dropdown-divider">
+                    <button class="theme-option" data-color="red">
+                        <i class="fas fa-tint" style="color:var(--primary-color);"></i> Pembe (Varsayılan)
+                    </button>
+                    <button class="theme-option" data-color="blue">
+                        <i class="fas fa-tint" style="color:var(--primary-color);"></i> Mavi
+                    </button>
+                    <button class="theme-option" data-color="green">
+                        <i class="fas fa-leaf" style="color:var(--primary-color);"></i> Yeşil
+                    </button>
+                    <button class="theme-option" data-color="purple">
+                        <i class="fas fa-gem" style="color:var(--primary-color);"></i> Mor
+                    </button>
+                    <button class="theme-option" data-color="orange">
+                        <i class="fas fa-fire" style="color:var(--primary-color);"></i> Turuncu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-container" id="appContainer">
+        <div class="channels-container" id="channelsContainer"></div>
+    </div>
+    <script>
+        const contentLogo = (item) => {
+            const title = String(item.title || '').toUpperCase();
+            let colors = ['#4caf50', '#0b6b4b'], kicker = 'İNADINA TV', art = '<path d="M35 58h50M60 33v50" stroke="#fff" stroke-width="7" stroke-linecap="round"></path><circle cx="60" cy="58" r="19" fill="none" stroke="#fff" stroke-width="4"></circle>';
+            if (title.includes('ADULT')) {
+                colors = ['#ff1744', '#720018'];
+                kicker = 'ADULT';
+                art = '<path d="M60 16 96 29v28c0 24-15 39-36 49C39 96 24 81 24 57V29z" fill="#19050a" opacity=".45"></path><text x="60" y="68" fill="#fff" font-family="Arial" font-size="29" font-weight="900" text-anchor="middle">18+</text><path d="M43 80h34" stroke="#fff" stroke-width="5" stroke-linecap="round"></path>';
+            } else if (title.includes('HABER')) {
+                colors = ['#1565c0', '#0d47a1'];
+                kicker = 'HABERLER';
+                art = '<rect x="29" y="27" width="62" height="66" rx="6" fill="#fff"></rect><path d="M40 42h40M40 53h40M40 64h26M40 80h40" stroke="#1565c0" stroke-width="5" stroke-linecap="round"></path><circle cx="77" cy="75" r="7" fill="#42a5f5"></circle><path d="m74 75 3 3 6-7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>';
+            } else if (title.includes('KIBLE') || title.includes('PUSULA')) {
+                colors = ['#00bfa5', '#00695c'];
+                kicker = 'KIBLE';
+                art = '<circle cx="60" cy="56" r="32" fill="none" stroke="#d7fff7" stroke-width="3"></circle><path d="M60 25v62M29 56h62" stroke="#d7fff7" stroke-width="2" opacity=".45"></path><path d="m60 29 10 28-10 18-10-18z" fill="#fff"></path><path d="m60 18 6 13H54z" fill="#ffdf72"></path><circle cx="60" cy="56" r="5" fill="#ffdf72"></circle>';
+            } else if (title.includes('IPTV') || title.includes('M3U')) {
+                colors = ['#2196f3', '#123b8f'];
+                kicker = 'STREAM';
+                art = '<rect x="29" y="32" width="62" height="44" rx="7" fill="#081a3d" stroke="#fff" stroke-width="3"></rect><path d="m52 43 22 11-22 11z" fill="#fff"></path><path d="M39 87h42M47 78v9M73 78v9" stroke="#bde1ff" stroke-width="4" stroke-linecap="round"></path>';
+            } else if (title.includes('MAÇ') || title.includes('KANAL')) {
+                colors = ['#ff9800', '#ad3d00'];
+                kicker = 'CANLI SPOR';
+                art = '<circle cx="60" cy="57" r="30" fill="#fff"></circle><path d="m60 37 8 6-3 10h-10l-3-10zM42 54l9-1 6 8-6 8-10-5zM78 54l-9-1-6 8 6 8 10-5zM52 78l8-6 8 6-3 11H55z" fill="#ad3d00"></path><path d="M60 27v10M34 74l9-6M86 74l-9-6" stroke="#fff" stroke-width="3"></path>';
+            } else if (title.includes('FİLM')) {
+                colors = ['#9c27b0', '#4a146d'];
+                kicker = 'SİNEMA';
+                art = '<path d="M30 38h60v48H30z" fill="#16091e" stroke="#fff" stroke-width="3"></path><path d="M30 38 42 28h60L90 38z" fill="#d78cff"></path><path d="M42 28v10M57 28v10M72 28v10M87 28v10" stroke="#fff" stroke-width="3"></path><path d="m54 52 25 10-25 10z" fill="#fff"></path>';
+            } else if (title.includes('HAVA')) {
+                colors = ['#03a9f4', '#075985'];
+                kicker = 'HAVA';
+                art = '<circle cx="73" cy="43" r="14" fill="#ffdf72"></circle><path d="M39 75h43c8 0 12-16 1-19-3-12-21-15-28-3-15-4-22 18-9 22z" fill="#fff" opacity=".95"></path><path d="M31 89h58" stroke="#bdefff" stroke-width="4" stroke-linecap="round"></path>';
+            } else if (title.includes('GELİR') || title.includes('DÖVİZ')) {
+                colors = ['#26a69a', '#075e54'];
+                kicker = 'FİNANS';
+                art = '<path d="M31 83V64M48 83V52M65 83V42M82 83V30" stroke="#fff" stroke-width="9" stroke-linecap="round"></path><path d="m28 48 19-14 17 8 23-23" fill="none" stroke="#ffe082" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><text x="60" y="101" fill="#fff" font-family="Arial" font-size="9" font-weight="800" text-anchor="middle">₺ FİNANS</text>';
+            } else if (title.includes('OYUN') || title.includes('QUİZ')) {
+                colors = ['#7e57c2', '#3b1b70'];
+                kicker = 'OYUN / QUIZ';
+                art = '<rect x="30" y="39" width="60" height="40" rx="12" fill="#fff"></rect><circle cx="45" cy="59" r="5" fill="#7e57c2"></circle><path d="M38 59h14M45 52v14" stroke="#7e57c2" stroke-width="3"></path><circle cx="74" cy="54" r="4" fill="#ff1744"></circle><circle cx="82" cy="63" r="4" fill="#03a9f4"></circle><path d="M62 91h-5c-8 0-10-12-1-13h8c9 0 7 13-2 13z" fill="#ffe082"></path><text x="60" y="72" fill="#3b1b70" font-family="Arial" font-size="12" font-weight="900" text-anchor="middle">?</text>';
+            } else if (title.includes('RENK')) {
+                colors = ['#ec407a', '#7b1fa2'];
+                kicker = 'TASARIM';
+                art = '<circle cx="47" cy="52" r="17" fill="#ff1744"></circle><circle cx="72" cy="52" r="17" fill="#00c853"></circle><circle cx="60" cy="74" r="17" fill="#2979ff"></circle><circle cx="60" cy="60" r="8" fill="#fff" opacity=".9"></circle>';
+            } else if (title.includes('STB') || title.includes('PANEL')) {
+                colors = ['#607d8b', '#263238'];
+                kicker = 'ARAÇ';
+                art = '<rect x="27" y="36" width="66" height="42" rx="7" fill="#111b20" stroke="#fff" stroke-width="3"></rect><circle cx="42" cy="51" r="4" fill="#00e5ff"></circle><circle cx="55" cy="51" r="4" fill="#00e676"></circle><circle cx="68" cy="51" r="4" fill="#ffea00"></circle><path d="M39 66h42" stroke="#fff" stroke-width="4" stroke-linecap="round"></path>';
+            } else if (title.includes('DNS')) {
+                colors = ['#00b0ff', '#1245a0'];
+                kicker = 'DNS TARAMA';
+                art = '<circle cx="60" cy="58" r="28" fill="#081a3d" stroke="#fff" stroke-width="3"></circle><path d="M32 58h56M60 30v56M42 39c8 8 8 30 0 38M78 39c-8 8-8 30 0 38" fill="none" stroke="#bde1ff" stroke-width="3" stroke-linecap="round"></path><path d="m60 19 5 11h-10z" fill="#ffe082"></path>';
+            } else if (title.includes('HESAP') || title.includes('TARAMA')) {
+                colors = ['#ef5350', '#8e1b1b'];
+                kicker = 'HESAP ARAÇ';
+                art = '<rect x="31" y="33" width="58" height="48" rx="8" fill="#fff"></rect><circle cx="48" cy="51" r="9" fill="#ef5350"></circle><path d="M40 70c3-9 13-9 16 0M64 48h16M64 58h16M64 68h10" stroke="#8e1b1b" stroke-width="4" stroke-linecap="round"></path>';
+            }
+            const gid = 'g' + Math.random().toString(36).slice(2);
+            const safe = (v) => String(v).replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"');
+            return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${colors[0]}"></stop><stop offset="1" stop-color="${colors[1]}"></stop></linearGradient></defs><rect width="120" height="120" rx="24" fill="url(#${gid})"></rect>${art}<text x="60" y="108" fill="#fff" font-family="Arial" font-size="8" font-weight="700" letter-spacing=".7" text-anchor="middle">${safe(kicker)}</text></svg>`);
+        };
+
+        const categoryData = {
+            "ekstralinkler_3": {
+                "name": "Ekstra Linkler",
+                "icon": "link",
+                "items": [
+                    { "title": "TABİ HESAP TARAMA +", "url": "go:tabi", "image": "", "is_new": true, "added_date": "19.06.2025" },
+                    { "title": "SSPOR+ HESAP TARAMA +", "url": "go:sspor", "image": "", "is_new": true, "added_date": "19.06.2025" },
+                    { "title": "HABERLER", "url": "go:heber", "image": "", "is_new": true, "added_date": "03.10.2026" },
+                    { "title": "ADULT İÇERİK", "url": "go:adult", "image": "", "is_new": true, "is_adult": true, "added_date": "26.09.2026" },
+                    { "title": "MAÇ FİXTÜR +", "url": "go:fixtor", "image": "", "is_new": true, "added_date": "19.06.2025" },
+                    { "title": "FULL FİLM İZLE+", "url": "go:cehenem", "image": "", "is_new": true, "added_date": "19.06.2025" },
+                    { "title": "İPTV İZLE 1", "url": "go:iptv1", "image": "", "is_new": false, "added_date": "27.06.2025" },
+                    { "title": "İPTV İZLE 2", "url": "go:voo", "image": "", "is_new": false, "added_date": "27.06.2025" },
+                    { "title": "ALTIN DÖVİZ KURLARI", "url": "go:duviz", "image": "", "is_new": false, "added_date": "24.06.2025" },
+                    { "title": "STB M3U LİNK OLUŞTURUCU", "url": "go:stb", "image": "", "is_new": false, "added_date": "25.06.2025" },
+                    { "title": "HANGİ MAÇ HANGİ KANALDA", "url": "go:macozet", "image": "", "is_new": false, "added_date": "27.06.2025" },
+                    { "title": "İPTV M3U COMBO TARAMA 1", "url": "go:combo4", "image": "", "is_new": true, "added_date": "23.06.2025" },
+                    { "title": "İPTV M3U COMBO TARAMA 2", "url": "go:combo", "image": "", "is_new": false, "added_date": "23.06.2025" },
+                    { "title": "İPTV M3U COMBO TARAMA 3", "url": "go:combo5", "image": "", "is_new": true, "added_date": "23.06.2025" },
+                    { "title": "İPTV LİNK PANEL TARAMA", "url": "go:panel", "image": "", "is_new": false, "added_date": "23.06.2025" },
+                    { "title": "YAN DNS TARAMA PANEL", "url": "go:dns", "image": "", "is_new": true, "added_date": "01.10.2026" },
+                    { "title": "YAN DNS TARAMA USER:PAS", "url": "go:dns2", "image": "", "is_new": true, "added_date": "01.10.2026" },
+                    { "title": "YAN DNS TARAMA M3U LİNK", "url": "go:yan3", "image": "", "is_new": true, "added_date": "01.10.2026" },
+                    { "title": "OYUN OYNA/QUİZ", "url": "go:quiz", "image": "", "is_new": false, "added_date": "16.06.2025" },
+                    { "title": "HAVA DURUMU", "url": "https://hava-durumu-nine.vercel.app/", "image": "", "is_new": false, "added_date": "16.06.2025" },
+                    { "title": "GELİR GİDER TABLOSU", "url": "go:gider", "image": "", "is_new": false, "added_date": "16.06.2025" },
+                    { "title": "RENK KODU OLUŞTUR", "url": "go:renk", "image": "", "is_new": false, "added_date": "16.06.2025" },
+                    { "title": "KIBLE + PUSULA", "url": "https://hava-durumu-ldrv.vercel.app/", "image": "", "is_new": false, "added_date": "17.06.2025" }
+                ],
+                "item_count": 23
+            }
+        };
+
+        const activeCategoryKey = "ekstralinkler_3";
+
+        const showNotification = (msg, icon = 'info-circle') => {
+            const el = document.getElementById('notification');
+            el.querySelector('i').className = `fas fa-${icon}`;
+            el.querySelector('#notificationMessage').textContent = msg;
+            el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 3000);
+        };
+
+        const getThemeSettings = () => {
+            try {
+                return JSON.parse(localStorage.getItem('themeSettings')) || { mode: 'dark', color: 'red' };
+            } catch {
+                return { mode: 'dark', color: 'red' };
+            }
+        };
+
+        const saveThemeSettings = (settings) => {
+            localStorage.setItem('themeSettings', JSON.stringify(settings));
+        };
+
+        const applyTheme = (newMode, newColor) => {
+            const settings = getThemeSettings();
+            const mode = newMode ?? settings.mode ?? 'dark';
+            const color = newColor ?? settings.color ?? 'red';
+
+            saveThemeSettings({ mode, color });
+
+            document.body.classList.remove('light-theme', 'dark-theme');
+            if (mode === 'system') {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.body.classList.add(prefersDark ? 'dark-theme' : 'light-theme');
+            } else {
+                document.body.classList.add(mode === 'light' ? 'light-theme' : 'dark-theme');
+            }
+
+            document.body.dataset.color = color;
+
+            document.querySelectorAll('.theme-option').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.mode && btn.dataset.mode === mode) btn.classList.add('active');
+                if (btn.dataset.color && btn.dataset.color === color) btn.classList.add('active');
+            });
+        };
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            const settings = getThemeSettings();
+            if (settings.mode === 'system') applyTheme('system', settings.color);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyTheme();
+
+            const container = document.getElementById('channelsContainer');
+            const catInfo = categoryData[activeCategoryKey];
+            container.innerHTML = `<div class="category-title" style="grid-column: 1 / -1;">${catInfo.name} <span class="item-count">(${catInfo.item_count})</span></div>`;
+
+            if (catInfo.items.length === 0) {
+                container.innerHTML += '<p style="text-align:center;padding:20px;grid-column: 1 / -1;">Bu kategoride içerik yok.</p>';
+            } else {
+                catInfo.items.forEach((item, i) => {
+                    const card = document.createElement('div');
+                    card.className = 'channel-card';
+                    card.style.animationDelay = `${i * 0.03}s`;
+
+                    const badge = (item.is_adult || String(item.title).toUpperCase().includes('ADULT'))
+                        ? '<span class="badge adult-badge">18+</span>'
+                        : (item.is_new ? '<span class="badge new-badge">YENİ</span>' : '<span class="badge link-badge">LİNK</span>');
+
+                    const date = item.added_date
+                        ? `<span class="meta-separator">|</span><span class="date-meta"><i class="fas fa-calendar-alt"></i> ${item.added_date}</span>`
+                        : '';
+
+                    card.innerHTML = `
+                        <div class="channel-img-container">
+                            <img src="${contentLogo(item)}" class="channel-img" alt="${item.title}">
+                            ${badge}
+                        </div>
+                        <div class="channel-info">
+                            <div class="channel-name">${item.title}</div>
+                            <div class="channel-meta">
+                                <span><i class="fas fa-link"></i> Erişim</span>
+                                ${date}
+                            </div>
+                        </div>
+                        <button class="play-button" aria-label="${item.title} aç">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    `;
+
+                    const open = () => {
+                        if (item.url.startsWith('go:')) {
+                            showNotification(`${item.title} açılıyor...`, 'external-link-alt');
+                            window.location.href = item.url;
+                        } else {
+                            window.open(item.url, '_blank', 'noopener,noreferrer');
+                        }
+                    };
+
+                    card.addEventListener('click', open);
+                    card.querySelector('.play-button').addEventListener('click', e => {
+                        e.stopPropagation();
+                        open();
+                    });
+                    container.appendChild(card);
+                });
+            }
+
+            document.getElementById('themeToggle').addEventListener('click', (e) => {
+                e.stopPropagation();
+                document.getElementById('themeOptionsDropdown').classList.toggle('show');
+                document.getElementById('apkOptionsDropdown').classList.remove('show');
+            });
+
+            document.getElementById('apkDownloadToggle').addEventListener('click', (e) => {
+                e.stopPropagation();
+                document.getElementById('apkOptionsDropdown').classList.toggle('show');
+                document.getElementById('themeOptionsDropdown').classList.remove('show');
+            });
+
+            document.querySelectorAll('.theme-option[data-mode]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    applyTheme(btn.dataset.mode);
+                    document.getElementById('themeOptionsDropdown').classList.remove('show');
+                });
+            });
+
+            document.querySelectorAll('.theme-option[data-color]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    applyTheme(null, btn.dataset.color);
+                });
+            });
+
+            document.addEventListener('click', e => {
+                if (!e.target.closest('#themeToggle') && !e.target.closest('#themeOptionsDropdown')) {
+                    document.getElementById('themeOptionsDropdown').classList.remove('show');
+                }
+                if (!e.target.closest('#apkDownloadToggle') && !e.target.closest('#apkOptionsDropdown')) {
+                    document.getElementById('apkOptionsDropdown').classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
