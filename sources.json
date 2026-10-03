@@ -139,43 +139,19 @@
       ]
     },
     {
-      "id": "openai",
-      "ad": "OpenAI News",
+      "id": "webrazzi",
+      "ad": "Webrazzi",
       "aktif": true,
       "beslemeler": [
-        { "kategori": "Yapay Zeka", "url": "https://openai.com/news/rss.xml", "limit": 8 }
+        { "kategori": "Yapay Zeka", "url": "https://webrazzi.com/kategori/yapay-zeka/feed/", "limit": 12 }
       ]
     },
     {
-      "id": "mitai",
-      "ad": "MIT News AI",
+      "id": "shiftdelete",
+      "ad": "ShiftDelete.Net",
       "aktif": true,
       "beslemeler": [
-        { "kategori": "Yapay Zeka", "url": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml", "limit": 8 }
-      ]
-    },
-    {
-      "id": "techcrunchai",
-      "ad": "TechCrunch AI",
-      "aktif": true,
-      "beslemeler": [
-        { "kategori": "Yapay Zeka", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "limit": 8 }
-      ]
-    },
-    {
-      "id": "googleai",
-      "ad": "Google AI Blog",
-      "aktif": true,
-      "beslemeler": [
-        { "kategori": "Yapay Zeka", "url": "https://blog.google/technology/ai/rss/", "limit": 8 }
-      ]
-    },
-    {
-      "id": "huggingface",
-      "ad": "Hugging Face Blog",
-      "aktif": true,
-      "beslemeler": [
-        { "kategori": "Yapay Zeka", "url": "https://huggingface.co/blog/feed.xml", "limit": 8 }
+        { "kategori": "Yapay Zeka", "url": "https://shiftdelete.net/yapay-zeka/feed", "limit": 12 }
       ]
     }
   ]

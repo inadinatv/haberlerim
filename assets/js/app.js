@@ -19,6 +19,7 @@ const KATEGORILER = [
 const KAYNAK_ADLARI = {
     aa: 'AA', ntv: 'NTV', trt: 'TRT Haber', sabah: 'Sabah', hurriyet: 'Hürriyet',
     cnnturk: 'CNN Türk', sozcu: 'Sözcü', bbcturkce: 'BBC Türkçe', haberturk: 'Habertürk',
+    webrazzi: 'Webrazzi', shiftdelete: 'ShiftDelete.Net',
 };
 const AYARLAR_VARSAVLANAN = {
     tema: 'koyu',

@@ -27,13 +27,10 @@ RSS beslemeleri ──► bot.py (birleştirme, tekilleştirme, tam metin kazım
 | **Sözcü** (sozcu.com.tr) | 7 | Gündem, Ekonomi, Spor, Dünya, Teknoloji, Sağlık, Magaza |
 | **BBC Türkçe** (bbc.co.uk/turkce) | 1 | Gündem |
 | **Habertürk** (haberturk.com) | 1 | Gündem |
-| **OpenAI News** (openai.com) | 1 | Yapay Zeka |
-| **MIT News AI** (news.mit.edu) | 1 | Yapay Zeka |
-| **TechCrunch AI** (techcrunch.com) | 1 | Yapay Zeka |
-| **Google AI Blog** (blog.google) | 1 | Yapay Zeka |
-| **Hugging Face Blog** (huggingface.co) | 1 | Yapay Zeka |
+| **Webrazzi** (webrazzi.com) | 1 | Yapay Zeka — Türkçe |
+| **ShiftDelete.Net** (shiftdelete.net) | 1 | Yapay Zeka — Türkçe |
 
-**Toplam 51 RSS beslemesi** — `sources.json` içinde tek satırla açılıp kapanabilir.
+**Toplam 48 RSS beslemesi** — `sources.json` içinde tek satırla açılıp kapanabilir.
 
 ## ⚙️ Gelişmiş Bot Sistemi (`bot.py`)
 

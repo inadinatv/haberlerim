@@ -1,35 +1,42 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-03T01:41:59.059935+00:00",
-  "sure_saniye": 36.3,
+  "son_guncelleme": "2026-10-03T07:02:30.736282+00:00",
+  "sure_saniye": 171.9,
   "toplam_haber": 250,
-  "kaynak_sayisi": 14,
-  "aktif_kaynak": 14,
-  "besleme_sayisi": 50,
-  "kazanilan_tam_metin": 209,
-  "tam_metin_haber": 204,
-  "video_haber": 21,
+  "kaynak_sayisi": 11,
+  "aktif_kaynak": 9,
+  "besleme_sayisi": 47,
+  "kazanilan_tam_metin": 229,
+  "tam_metin_haber": 199,
+  "video_haber": 28,
   "kategoriler": {
-    "Gündem": 81,
-    "Ekonomi": 24,
-    "Spor": 48,
-    "Dünya": 46,
-    "Teknoloji": 9,
-    "Yapay Zeka": 13,
-    "Sağlık": 3,
-    "Yaşam & Sanat": 17,
-    "Magaza": 9
+    "Gündem": 71,
+    "Ekonomi": 27,
+    "Spor": 34,
+    "Dünya": 36,
+    "Teknoloji": 22,
+    "Yapay Zeka": 24,
+    "Sağlık": 8,
+    "Yaşam & Sanat": 20,
+    "Magaza": 8
   },
   "kaynaklar": {
-    "NTV": {
-      "haber": 70,
+    "Anadolu Ajansı": {
+      "haber": 62,
       "durum": "aktif",
-      "basarili": 8,
+      "basarili": 6,
       "hatali": 0,
       "hata": null
     },
+    "NTV": {
+      "haber": 0,
+      "durum": "hata",
+      "basarili": 0,
+      "hatali": 8,
+      "hata": "HTTP Error 403: Forbidden"
+    },
     "Sabah": {
-      "haber": 45,
+      "haber": 46,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 0,
@@ -42,20 +49,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 42,
-      "durum": "aktif",
-      "basarili": 5,
-      "hatali": 2,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
-    },
-    "Anadolu Ajansı": {
-      "haber": 62,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "CNN Türk": {
       "haber": 60,
       "durum": "aktif",
@@ -63,26 +56,19 @@
       "hatali": 0,
       "hata": null
     },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    },
     "Sözcü": {
-      "haber": 60,
-      "durum": "aktif",
-      "basarili": 7,
-      "hatali": 0,
-      "hata": null
-    },
-    "MIT News AI": {
-      "haber": 8,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
-    "TechCrunch AI": {
-      "haber": 8,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
+      "haber": 0,
+      "durum": "hata",
+      "basarili": 0,
+      "hatali": 7,
+      "hata": "HTTP Error 403: Forbidden"
     },
     "BBC Türkçe": {
       "haber": 10,
@@ -91,8 +77,8 @@
       "hatali": 0,
       "hata": null
     },
-    "OpenAI News": {
-      "haber": 8,
+    "ShiftDelete.Net": {
+      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
@@ -105,15 +91,8 @@
       "hatali": 0,
       "hata": null
     },
-    "Hugging Face Blog": {
-      "haber": 8,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
-    "Google AI Blog": {
-      "haber": 8,
+    "Webrazzi": {
+      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
@@ -121,7 +100,21 @@
     }
   },
   "hatalar": [
+    "NTV (https://www.ntv.com.tr/son-dakika.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/turkiye.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/ekonomi.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/yasam.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/sporskor.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/teknoloji.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/dunya.rss): HTTP Error 403: Forbidden",
+    "NTV (https://www.ntv.com.tr/saglik.rss): HTTP Error 403: Forbidden",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227",
-    "Hürriyet (http://www.hurriyet.com.tr/rss/magazin): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    "Sözcü (https://www.sozcu.com.tr/feeds-son-dakika): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-ekonomi): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-spor): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-dunya): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-bilim-teknoloji): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-saglik): HTTP Error 403: Forbidden",
+    "Sözcü (https://www.sozcu.com.tr/feeds-rss-category-magazin): HTTP Error 403: Forbidden"
   ]
 }
