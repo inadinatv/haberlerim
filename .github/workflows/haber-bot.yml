@@ -27,6 +27,17 @@ jobs:
       - name: Botu Çalıştır ve JSON Üret
         run: python bot.py
 
+      - name: Yapay Zeka verisini doğrula
+        run: |
+          python - <<'PY'
+          import json
+          with open('haberler.json', encoding='utf-8') as f:
+              haberler = json.load(f)
+          ai = [h for h in haberler if h.get('kategori') == 'Yapay Zeka']
+          if not ai:
+              raise SystemExit('Yapay Zeka verisi boş; mevcut canlı veri korunuyor.')
+          print(f'Yapay Zeka haberi: {len(ai)}')
+
       - name: Güncel Haberleri GitHub'a Gönder
         run: |
           git config --global user.name "Haber Botu"
