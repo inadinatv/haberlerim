@@ -1,37 +1,30 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-04T04:04:16.050466+00:00",
-  "sure_saniye": 36.8,
+  "son_guncelleme": "2026-10-04T10:52:27.526609+00:00",
+  "sure_saniye": 35.4,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 215,
-  "tam_metin_haber": 209,
-  "video_haber": 23,
+  "kazanilan_tam_metin": 207,
+  "tam_metin_haber": 206,
+  "video_haber": 15,
   "kategoriler": {
-    "Gündem": 83,
-    "Ekonomi": 25,
-    "Spor": 48,
-    "Dünya": 50,
-    "Teknoloji": 12,
-    "Yapay Zeka": 2,
-    "Sağlık": 4,
-    "Yaşam & Sanat": 14,
-    "Magaza": 12
+    "Gündem": 74,
+    "Ekonomi": 33,
+    "Spor": 44,
+    "Dünya": 48,
+    "Teknoloji": 18,
+    "Yapay Zeka": 1,
+    "Sağlık": 2,
+    "Yaşam & Sanat": 15,
+    "Magaza": 15
   },
   "kaynaklar": {
     "NTV": {
       "haber": 70,
       "durum": "aktif",
       "basarili": 8,
-      "hatali": 0,
-      "hata": null
-    },
-    "TRT Haber": {
-      "haber": 15,
-      "durum": "aktif",
-      "basarili": 1,
       "hatali": 0,
       "hata": null
     },
@@ -42,11 +35,18 @@
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 42,
+    "TRT Haber": {
+      "haber": 15,
       "durum": "aktif",
-      "basarili": 5,
-      "hatali": 2,
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "Anadolu Ajansı": {
@@ -70,13 +70,6 @@
       "hatali": 0,
       "hata": null
     },
-    "BBC Türkçe": {
-      "haber": 10,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "Habertürk": {
       "haber": 12,
       "durum": "aktif",
@@ -97,10 +90,16 @@
       "basarili": 1,
       "hatali": 0,
       "hata": null
+    },
+    "BBC Türkçe": {
+      "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
     }
   },
   "hatalar": [
-    "Hürriyet (http://www.hurriyet.com.tr/rss/magazin): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
   ]
 }
