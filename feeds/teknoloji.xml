@@ -5,7 +5,47 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sun, 04 Oct 2026 10:52:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 15:38:30 +0000</lastBuildDate>
+    <item>
+      <title>Güneş ışığı ve sudan hidrojen üreten yeni malzeme geliştirildi</title>
+      <link>https://www.ntv.com.tr/teknoloji/gunes-isigi-ve-sudan-hidrojen-ureten-yeni-malzeme-gelistirildi-1744807</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/gunes-isigi-ve-sudan-hidrojen-ureten-yeni-malzeme-gelistirildi-1744807</guid>
+      <category>Teknoloji</category>
+      <description>Bilim insanları pahalı metallere ihtiyaç duymadan güneş ışığıyla suyu ayrıştırıp temiz hidrojen gazı üreten yeni bir kristal malzeme geliştirdi. ABD'deki Oregon Eyalet Üniversitesi'nden kimya mühendisleri, güneş ışığını doğrudan kullanarak suyu ayrıştıran ve pahalı metal katalizörlere ihtiyaç duymad — NTV</description>
+      <pubDate>2026-10-04T17:46:14+03:00</pubDate>
+    </item>
+    <item>
+      <title>Türk mühendislerin geliştirdiği pozisyoner hava araçlarını ve uyduları takip ediyor</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/turk-muhendislerin-gelistirdigi-pozisyoner-hava-araclarini-ve-uydulari-takip-ediyor/4077679</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/turk-muhendislerin-gelistirdigi-pozisyoner-hava-araclarini-ve-uydulari-takip-ediyor/4077679</guid>
+      <category>Teknoloji</category>
+      <description>Türk mühendisler tarafından geliştirilen yüksek hızlı pozisyoner, hareketli hava araçları ile alçak yörüngedeki uyduların kesintisiz ve hassas şekilde takip edilmesine imkan sağlıyor. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-04T13:23:30+00:00</pubDate>
+    </item>
+    <item>
+      <title>Denizi olmayan Konya'da geliştirilen insansız deniz aracı TEKNOFEST'te dereceye girdi</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/denizi-olmayan-konyada-gelistirilen-insansiz-deniz-araci-teknofestte-dereceye-girdi/4077678</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/denizi-olmayan-konyada-gelistirilen-insansiz-deniz-araci-teknofestte-dereceye-girdi/4077678</guid>
+      <category>Teknoloji</category>
+      <description>TEKNOFEST İnsansız Deniz Aracı Yarışması'nda ikinci olarak kürsüye çıkan Selçuk Üniversitesi MYS Kapsül Yavuz Takımı Kaptanı Beyza Akkoç, &quot;Denizi olmayan bir şehir olan Konya'da insansız deniz aracımızı ürettik.&quot; dedi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-04T13:23:20+00:00</pubDate>
+    </item>
+    <item>
+      <title>TEKNOFEST'te gençlere hava trafik kontrolörlüğü deneyimi</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/teknofestte-genclere-hava-trafik-kontrolorlugu-deneyimi/4077542</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/teknofestte-genclere-hava-trafik-kontrolorlugu-deneyimi/4077542</guid>
+      <category>Teknoloji</category>
+      <description>TEKNOFEST Güneydoğu'ya katılan gençler, Devlet Hava Meydanları İşletmesi (DHMİ) tarafından kurulan simülatör sayesinde hava trafik kontrolörlüğü mesleğini uygulamalı olarak deneyimliyor. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-04T11:08:07+00:00</pubDate>
+    </item>
+    <item>
+      <title>İnsansı robot &quot;Civan&quot;, TEKNOFEST Güneydoğu'da AA standını ziyaret etti</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/insansi-robot-civan-teknofest-guneydoguda-aa-standini-ziyaret-etti/4077523</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/insansi-robot-civan-teknofest-guneydoguda-aa-standini-ziyaret-etti/4077523</guid>
+      <category>Teknoloji</category>
+      <description>Şanlıurfa'da düzenlenen TEKNOFEST Güneydoğu'nun son gününde, yazılımı firmalar tarafından geliştirilen insansı robot &quot;Civan&quot;, Anadolu Ajansının (AA) standını ziyaret etti. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-04T10:42:01+00:00</pubDate>
+    </item>
     <item>
       <title>Eski OpenAI güvenlik sorumlusundan &quot;yapay zeka güvenlik testlerinden kaçabilir&quot; uyarısı</title>
       <link>https://www.ntv.com.tr/teknoloji/eski-openai-guvenlik-sorumlusundan-yapay-zeka-guvenlik-testlerinden-kacabilir-uyarisi-1744722</link>
@@ -21,30 +61,6 @@
       <category>Teknoloji</category>
       <description>OpenAI'de üç buçuk yıl güvenlik ekiplerinde görev yapan David Robinson, şirketin hız odaklı geliştirme kültürüne karşı çıkarak istifa ettiğini duyurdu. Robinson, The Atlantic'te yayımladığı açık mektupta, yapay zeka sistemlerinin artık &quot;deneme-yanılma&quot; yöntemiyle geliştirilemeyeceğini söyledi. — Sözcü</description>
       <pubDate>2026-10-04T09:39:19+00:00</pubDate>
-    </item>
-    <item>
-      <title>Bakan Kacır: 5-9 Ekim tarihleri küresel uzay gündeminin kalbinin Türkiye'de attığı günler olacak</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-5-9-ekim-tarihleri-kuresel-uzay-gundeminin-kalbinin-turkiyede-attigi-gunler-olacak/4077484</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-5-9-ekim-tarihleri-kuresel-uzay-gundeminin-kalbinin-turkiyede-attigi-gunler-olacak/4077484</guid>
-      <category>Teknoloji</category>
-      <description>Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, 77. Uluslararası Uzay Kongresi'ne (IAC 2026) ilişkin, &quot;Uluslararası Uzay Kongresi yarın başlayacak ve 5-9 Ekim tarihleri, küresel uzay gündeminin kalbinin Türkiye'de attığı günler olacak.&quot; dedi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T09:32:04+00:00</pubDate>
-    </item>
-    <item>
-      <title>TEKNOFEST Güneydoğu'nun son gününde hava gösterileri yapıldı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-guneydogunun-son-gununde-hava-gosterileri-yapildi/4077482</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-guneydogunun-son-gununde-hava-gosterileri-yapildi/4077482</guid>
-      <category>Teknoloji</category>
-      <description>Şanlıurfa'da düzenlenen TEKNOFEST Güneydoğu, son gününde hava gösterileriyle devam ediyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T09:28:28+00:00</pubDate>
-    </item>
-    <item>
-      <title>TEKNOFEST gençlerde sivil havacılık farkındalığını artırıyor</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-genclerde-sivil-havacilik-farkindaligini-artiriyor/4077465</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-genclerde-sivil-havacilik-farkindaligini-artiriyor/4077465</guid>
-      <category>Teknoloji</category>
-      <description>Sivil Havacılık Genel Müdürü Yüksek, TEKNOFEST'in gençlerde sivil havacılığa yönelik farkındalığı artırdığını söyledi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T09:08:12+00:00</pubDate>
     </item>
     <item>
       <title>GTA 6'yı ücretsiz oynamak isteyenler için kötü haber geldi - Sözcü Gazetesi</title>
@@ -69,86 +85,6 @@
       <category>Teknoloji</category>
       <description>Endonezya ve farklı ülkelerde kullanılmayan eski akıllı telefonlar, güneş enerjisiyle çalışan dinleme cihazlarına dönüştürülerek ormanlara yerleştirildi. Sistemler, motorlu testere gibi sesleri algılayarak kaçak ağaç kesiminin fark edilmesine yardımcı oluyor. — Sözcü</description>
       <pubDate>2026-10-04T08:24:03+00:00</pubDate>
-    </item>
-    <item>
-      <title>ASELSAN &quot;Çipten Takım Uyduya&quot; vizyonuyla yetkinliklerini IAC 2026'da sergileyecek</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/aselsan-cipten-takim-uyduya-vizyonuyla-yetkinliklerini-iac-2026da-sergileyecek/4077435</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/aselsan-cipten-takim-uyduya-vizyonuyla-yetkinliklerini-iac-2026da-sergileyecek/4077435</guid>
-      <category>Teknoloji</category>
-      <description>Şirket, Uluslararası Uzay Kongresi'nde, farklı yörüngelerde ve görevlerde kullanılan Astralink'in yanı sıra Türksat 6A ve 7A ile Göktürk-3 uydu programlarını öne çıkaracak. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T08:22:54+00:00</pubDate>
-    </item>
-    <item>
-      <title>Dünya Dron Şampiyonası finalistleri gelecek yıl kıyasıya rekabeti sürdürecek</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/dunya-dron-sampiyonasi-finalistleri-gelecek-yil-kiyasiya-rekabeti-surdurecek/4077428</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/dunya-dron-sampiyonasi-finalistleri-gelecek-yil-kiyasiya-rekabeti-surdurecek/4077428</guid>
-      <category>Teknoloji</category>
-      <description>TEKNOFEST Güneydoğu'da 3 gün süren Dünya Dron Şampiyonası'nda ilk üçe giren Güney Koreli ve Bulgaristanlı dron pilotları gelecek sene tekrar yarışmayı hedefliyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T08:18:10+00:00</pubDate>
-    </item>
-    <item>
-      <title>KVKK, 72 bin 500 başvurudan 69 binini sonuçlandırdı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/kvkk-72-bin-500-basvurudan-69-binini-sonuclandirdi/4077418</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/kvkk-72-bin-500-basvurudan-69-binini-sonuclandirdi/4077418</guid>
-      <category>Teknoloji</category>
-      <description>Kişisel Verileri Koruma Kurumu (KVKK) Başkanı Faruk Bilir, 2017 yılından bugüne kadar CİMER üzerinden gelenler de dahil kişisel verilerin korunmasına ilişkin 72 bin 500 başvuru aldıklarını, bunların yaklaşık 69 binini sonuçlandırdıklarını bildirdi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T08:08:10+00:00</pubDate>
-    </item>
-    <item>
-      <title>İletişim sektörüne yönelik şikayetlerde ilk sırayı internet hizmetleri aldı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/iletisim-sektorune-yonelik-sikayetlerde-ilk-sirayi-internet-hizmetleri-aldi/4077411</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/iletisim-sektorune-yonelik-sikayetlerde-ilk-sirayi-internet-hizmetleri-aldi/4077411</guid>
-      <category>Teknoloji</category>
-      <description>Bilgi Teknolojileri ve İletişim Kurumuna, ocak-haziran döneminde mobil iletişim, internet sağlayıcılığı, uydu platformu, sabit telefon ve Kablo TV gibi hizmetler için 164 bin 733 şikayet iletildi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T08:03:41+00:00</pubDate>
-    </item>
-    <item>
-      <title>Trump'ın &quot;yapay zeka ekibi&quot;, 120 gün içinde bu teknolojinin risk ve faydalarına ilişkin rapor sunacak</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/trumpin-yapay-zeka-ekibi-120-gun-icinde-bu-teknolojinin-risk-ve-faydalarina-iliskin-rapor-sunacak/4077371</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/trumpin-yapay-zeka-ekibi-120-gun-icinde-bu-teknolojinin-risk-ve-faydalarina-iliskin-rapor-sunacak/4077371</guid>
-      <category>Teknoloji</category>
-      <description>ABD Başkanı Donald Trump'ın yapay zeka yarışında ülkenin yerini korumak için oluşturduğu ekibin, 120 gün içinde bu teknolojinin risklerini ve sunduğu fırsatları değerlendirdiği, hükümetin sorumluluklarını belirlediği bir rapor sunacağı belirtildi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T07:01:33+00:00</pubDate>
-    </item>
-    <item>
-      <title>'SGK primi' robotlar için de ödensin teklifi - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/bill-gatesten-robotlara-vergi-onerisi-p365956</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/bill-gatesten-robotlara-vergi-onerisi-p365956</guid>
-      <category>Teknoloji</category>
-      <description>Microsoft'un kurucusu Bill Gates, insan çalışanların yerini alan robotların vergi ödemesi gerektiğini söyledi. Gates, robotların insan çalışanlar gibi FICA vergisine tabi tutulmasını önerdi. — Sözcü</description>
-      <pubDate>2026-10-04T06:59:22+00:00</pubDate>
-    </item>
-    <item>
-      <title>Bu bilgisayar parçaları artık kimlik kontrolüyle satılacak - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/bu-bilgisayar-parcalari-artik-kimlik-kontroluyle-satilacak-p365953</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/bu-bilgisayar-parcalari-artik-kimlik-kontroluyle-satilacak-p365953</guid>
-      <category>Teknoloji</category>
-      <description>ABD'nin gelişmiş bilgi işlem donanımlarına yönelik ihracat kısıtlamaları perakende mağazalarına kadar uzandı. Dünyanın en güçlü tüketici ekran kartlarından biri olan Nvidia GeForce RTX 5090'ı satın almak isteyen bazı müşterilerden artık kimlik göstermeleri ve ürünü ABD dışına çıkarmayacaklarına — Sözcü</description>
-      <pubDate>2026-10-04T06:53:38+00:00</pubDate>
-    </item>
-    <item>
-      <title>TEKNOFEST Güneydoğu'da son gün etkinlikleri başladı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-guneydoguda-son-gun-etkinlikleri-basladi/4077360</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-guneydoguda-son-gun-etkinlikleri-basladi/4077360</guid>
-      <category>Teknoloji</category>
-      <description>Şanlıurfa'da düzenlenen dünyanın en büyük havacılık, uzay ve teknoloji festivali TEKNOFEST Güneydoğu son gününde yarışmalardan hava gösterilerine kadar birçok etkinlikle tamamlanacak. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-04T06:26:59+00:00</pubDate>
-    </item>
-    <item>
-      <title>Efsane film gerçek oldu: Kendini 'erimiş çeliğe' atarak yok etti - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/figure-robotlarini-erimis-celige-atarak-imha-etti-p365934</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/figure-robotlarini-erimis-celige-atarak-imha-etti-p365934</guid>
-      <category>Teknoloji</category>
-      <description>Yapay zeka ve robotik şirketi Figure, emekliye ayırdığı Figure 02 robotlarını imha etti. Şirket, robotları Finlandiya'daki bir çelik tesisindeki erimiş çeliğe atarak ortadan kaldırdı. — Sözcü</description>
-      <pubDate>2026-10-04T06:17:18+00:00</pubDate>
-    </item>
-    <item>
-      <title>Ödüllere doymayan oyun veda ediyor - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/odullere-doymayan-oyun-veda-ediyor-p365930</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/odullere-doymayan-oyun-veda-ediyor-p365930</guid>
-      <category>Teknoloji</category>
-      <description>Ekim ayında Game Pass'e veda edecek oyunlar belli oldu. Son yılların en iyi oyunlarından biri olan Clair Obscur: Expedition 33 15 Ekim'de platformdan ayrılacak. — Sözcü</description>
-      <pubDate>2026-10-04T06:13:17+00:00</pubDate>
     </item>
   </channel>
 </rss>
