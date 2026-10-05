@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Ekonomi RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sun, 04 Oct 2026 22:16:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 01:32:51 +0000</lastBuildDate>
+    <item>
+      <title>Havada zam - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/havada-zam-p366142</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/havada-zam-p366142</guid>
+      <category>Ekonomi</category>
+      <description>Kurulduğu günden bu yana rötar ve hizmet kalitesi nedeniyle eleştirilen THY’nin yan kuruluşu Ajet, yurt dışı seferlerinde satışa sunduğu yiyecek ve içeceklere zam yaptı. Şikayetlere rağmen bazı ülkelere THY yerine sadece Ajet seferinin olması ve Ankara’dan da direk seferlerin Ajet ile yapılması — Sözcü</description>
+      <pubDate>2026-10-05T01:31:22+00:00</pubDate>
+    </item>
     <item>
       <title>Eylül ayı enflasyonu bugün açıklanacak</title>
       <link>https://www.trthaber.com/haber/ekonomi/eylul-ayi-enflasyonu-bugun-aciklanacak-959101.html</link>
@@ -143,14 +151,6 @@
       <pubDate>2026-10-04T09:59:52+00:00</pubDate>
     </item>
     <item>
-      <title>Salı günü İstanbul’da toplu ulaşım ücretsiz olacak - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/sali-gunu-istanbul-da-toplu-ulasim-ucretsiz-olacak-p366011</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/sali-gunu-istanbul-da-toplu-ulasim-ucretsiz-olacak-p366011</guid>
-      <category>Ekonomi</category>
-      <description>İstanbul’un düşman işgalinden kurtuluşunun 103. yıl dönümü dolayısıyla 6 Ekim’de İstanbulkart entegrasyonuna dahil toplu ulaşım araçları gün boyunca ücretsiz hizmet verecek. — Sözcü</description>
-      <pubDate>2026-10-04T09:59:51+00:00</pubDate>
-    </item>
-    <item>
       <title>TOKİ'ye borcu olanlar, bu tarihe dikkat - Sözcü Gazetesi</title>
       <link>https://www.sozcu.com.tr/tokiye-borcu-olanlar-bu-tarihe-dikkat-p366008</link>
       <guid isPermaLink="true">https://www.sozcu.com.tr/tokiye-borcu-olanlar-bu-tarihe-dikkat-p366008</guid>
@@ -213,14 +213,6 @@
       <category>Ekonomi</category>
       <description>Genç MÜSİAD Başkanı Mağsum Usta, Türkiye açısından önceliğin, üretim kabiliyetini daha yüksek katma değerle ve güçlü uluslararası işbirlikleriyle desteklemek olduğuna inandığını söyledi. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-04T08:38:30+00:00</pubDate>
-    </item>
-    <item>
-      <title>Piyasalarda tahvil rüzgarı: Altında sert satış! İşte detaylar...</title>
-      <link>https://www.sabah.com.tr/ekonomi/piyasalarda-tahvil-ruzgari-altinda-sert-satis-iste-detaylar-7673454</link>
-      <guid isPermaLink="true">https://www.sabah.com.tr/ekonomi/piyasalarda-tahvil-ruzgari-altinda-sert-satis-iste-detaylar-7673454</guid>
-      <category>Ekonomi</category>
-      <description>Emtia piyasalarında tamamlanan haftada, güçlenen dolar ve yükselen ABD tahvil faizleri metallere satış getirdi. Altının ons fiyatı, hafta başındaki satışlarla 4 bin 111 dolara kadar gerileyerek 5 Ağustos'tan bu yana en düşük seviyesini gördü. Enflasyonun hedeflerin üzerinde seyretmesi ve yüksek... — Sabah</description>
-      <pubDate>2026-10-04T08:18:47+00:00</pubDate>
     </item>
   </channel>
 </rss>
