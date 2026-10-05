@@ -5,14 +5,30 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Mon, 05 Oct 2026 01:32:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 08:13:04 +0000</lastBuildDate>
     <item>
-      <title>Google Gemini Kullanıcılarına Dev Kısıtlama: Model Erişimi Değişiyor - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/google-gemini-uygulamasi-model-erisim-sinirlari</link>
-      <guid isPermaLink="true">https://shiftdelete.net/google-gemini-uygulamasi-model-erisim-sinirlari</guid>
+      <title>Apple Gizlilik Odaklı Bir Güvenlik Kamerasını Geliştiriyor - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/apple-video-kaydetmeyen-akilli-ev-kamerasi</link>
+      <guid isPermaLink="true">https://shiftdelete.net/apple-video-kaydetmeyen-akilli-ev-kamerasi</guid>
       <category>Yapay Zeka</category>
-      <description>Google Gemini uygulaması, 9 Ekim itibarıyla ücretsiz ve AI Plus kullanıcıları için model erişimini güncelliyor. İşte yeni model sınırlamaları. — ShiftDelete.Net</description>
-      <pubDate>2026-10-04T12:00:26+00:00</pubDate>
+      <description>Apple, video kaydetmek yerine yapay zeka ile analiz yapan yeni akıllı ev kamerası J450 üzerinde çalışıyor. Detaylar haberimizde. — ShiftDelete.Net</description>
+      <pubDate>2026-10-05T07:30:48+00:00</pubDate>
+    </item>
+    <item>
+      <title>Google, Gemini'da ücretsiz ve AI Plus kullanıcılarının model erişimini kısıtlıyor</title>
+      <link>https://webrazzi.com/2026/10/05/google-gemini-da-ucretsiz-ve-ai-plus-kullanicilarinin-model-erisimini-kisitliyor/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/05/google-gemini-da-ucretsiz-ve-ai-plus-kullanicilarinin-model-erisimini-kisitliyor/</guid>
+      <category>Yapay Zeka</category>
+      <description>Google, Gemini uygulamasında abonelik planlarına göre erişilebilen yapay zeka modellerini değiştiriyor. Yeni düzenlemeyle ücretsiz kullanıcılar yalnızca Flash-Lite modelini kullanabilecek, AI Plus abonelerinin ise Pro modeline erişimi kaldırılacak. Google AI Pro abonelerine de Deep Think özelliği su — Webrazzi</description>
+      <pubDate>2026-10-05T07:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>TÜİK 2026 Raporu: Türkiye'de Yapay Zeka Kullanımı Hızla Artıyor - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/turkiyede-yapay-zeka-kullanimi-iki-katina-cikti</link>
+      <guid isPermaLink="true">https://shiftdelete.net/turkiyede-yapay-zeka-kullanimi-iki-katina-cikti</guid>
+      <category>Yapay Zeka</category>
+      <description>TÜİK 2026 verilerine göre Türkiye'de yapay zeka kullanımı bir yılda iki katına çıktı. İşte bireylerin ve şirketlerin yapay zeka tercihleri. — ShiftDelete.Net</description>
+      <pubDate>2026-10-05T05:12:56+00:00</pubDate>
     </item>
   </channel>
 </rss>
