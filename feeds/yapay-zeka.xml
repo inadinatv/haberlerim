@@ -5,7 +5,23 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Tue, 06 Oct 2026 17:50:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 22:15:02 +0000</lastBuildDate>
+    <item>
+      <title>AMD'den Nvidia RTX Spark'a Yanıt: Rekabet Kızışıyor - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/amd-gorgon-halo-rtx-spark-rekabeti</link>
+      <guid isPermaLink="true">https://shiftdelete.net/amd-gorgon-halo-rtx-spark-rekabeti</guid>
+      <category>Yapay Zeka</category>
+      <description>AMD, yeni Gorgon Halo işlemcileri için performans verilerini paylaştı. Nvidia RTX Spark rekabeti öncesinde yaşanan bu gelişmenin detayları haberimizde. — ShiftDelete.Net</description>
+      <pubDate>2026-10-06T21:00:52+00:00</pubDate>
+    </item>
+    <item>
+      <title>Yapay Zeka Yatırımları Faiz Oranlarını Yükseltebilir mi? - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/yapay-zeka-faiz-politikalari-japonya-merkez-bankasi</link>
+      <guid isPermaLink="true">https://shiftdelete.net/yapay-zeka-faiz-politikalari-japonya-merkez-bankasi</guid>
+      <category>Yapay Zeka</category>
+      <description>Japonya Merkez Bankası Başkan Yardımcısı Shinichi Uchida, yapay zeka faiz politikaları üzerindeki etkilerini ve nötr faiz oranını değerlendirdi. — ShiftDelete.Net</description>
+      <pubDate>2026-10-06T18:30:13+00:00</pubDate>
+    </item>
     <item>
       <title>Mistral AI, 1 trilyon parametreli Mistral Large 4'ü tanıttı</title>
       <link>https://webrazzi.com/2026/10/06/mistral-ai-1-trilyon-parametreli-mistral-large-4-u-tanitti/</link>
@@ -21,14 +37,6 @@
       <category>Yapay Zeka</category>
       <description>Yapay zeka destekli siber güvenlik girişimi Hadrian , 40 milyon dolar yatırım aldı. Şirketin 40 milyon dolarlık yatırım turuna Forgepoint Capital International ve Smart Fin ortaklaşa liderlik etti. Hollanda merkezli Hadrian'ın yatırım turunda HV Capital, Motive Partners, Picus Capital ve Oetker Vent — Webrazzi</description>
       <pubDate>2026-10-06T13:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Cohere, kurumsal yapay zeka ajan platformu North 2'yi tanıttı</title>
-      <link>https://webrazzi.com/2026/10/06/cohere-kurumsal-yapay-zeka-ajan-platformu-north-2-yi-tanitti/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/cohere-kurumsal-yapay-zeka-ajan-platformu-north-2-yi-tanitti/</guid>
-      <category>Yapay Zeka</category>
-      <description>Yapay zeka şirketi Cohere , kurumsal kullanıma odaklanan yapay zeka ajan platformu North'un yeni sürümü North 2'yi tanıttı . Şirketin bugüne kadarki en kapsamlı North güncellemesi olarak konumlandırdığı North 2; yeniden tasarlanan ajan orkestrasyon sistemi, maliyet kontrolleri, güvenlik özellikleri  — Webrazzi</description>
-      <pubDate>2026-10-06T12:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
