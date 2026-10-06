@@ -5,46 +5,30 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Tue, 06 Oct 2026 11:44:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 17:50:46 +0000</lastBuildDate>
     <item>
-      <title>Reflection AI'dan 501 milyar parametreli açık ağırlıklı yapay zeka modeli: Beam</title>
-      <link>https://webrazzi.com/2026/10/06/reflection-ai-dan-501-milyar-parametreli-acik-agirlikli-yapay-zeka-modeli-beam/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/reflection-ai-dan-501-milyar-parametreli-acik-agirlikli-yapay-zeka-modeli-beam/</guid>
+      <title>Mistral AI, 1 trilyon parametreli Mistral Large 4'ü tanıttı</title>
+      <link>https://webrazzi.com/2026/10/06/mistral-ai-1-trilyon-parametreli-mistral-large-4-u-tanitti/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/mistral-ai-1-trilyon-parametreli-mistral-large-4-u-tanitti/</guid>
       <category>Yapay Zeka</category>
-      <description>Reflection AI , ilk açık ağırlıklı yapay zeka modeli Beam 'i tanıttı . Sparse Mixture-of-Experts (MoE) mimarisini kullanan Beam, t oplam 501 milyar parametreye sahipken her token işlenirken bunların 23 milyarı aktif hale geliyor. Model özellikle kodlama, akıl yürütme ve agentic görevler için gelişti — Webrazzi</description>
-      <pubDate>2026-10-06T11:00:00+00:00</pubDate>
+      <description>Fransa merkezli yapay zeka girişimi Mistral AI , bugüne kadarki en büyük ve yetenekli modeli olarak konumlandırdığı Mistral Large 4'ü (ML4) tanıttı. Şirket içinde “Le Chonk” olarak adlandırılan model, 1 trilyon toplam parametreye sahipken her işlemde 49 milyar aktif parametre kullanıyor. Modelin her — Webrazzi</description>
+      <pubDate>2026-10-06T14:04:47+00:00</pubDate>
     </item>
     <item>
-      <title>OpenAI, Avrupa Birliği'nde ChatGPT içeriklerine dijital filigran ekleyecek</title>
-      <link>https://webrazzi.com/2026/10/06/openai-avrupa-birliginde-chatgpt-iceriklerine-dijital-filigran-ekleyecek/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/openai-avrupa-birliginde-chatgpt-iceriklerine-dijital-filigran-ekleyecek/</guid>
+      <title>Yapay zeka destekli siber güvenlik girişimi Hadrian, 40 milyon dolar yatırım aldı</title>
+      <link>https://webrazzi.com/2026/10/06/yapay-zeka-destekli-siber-guvenlik-girisimi-hadrian-40-milyon-dolar-yatirim-aldi/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/yapay-zeka-destekli-siber-guvenlik-girisimi-hadrian-40-milyon-dolar-yatirim-aldi/</guid>
       <category>Yapay Zeka</category>
-      <description>OpenAI , Avrupa Birliği'nde ChatGPT ile oluşturulan metin ve kodlara dijital filigran eklemeye hazırlanıyor . Şirket, bu uygulamanın yapay zeka tarafından oluşturulan içeriklerin kaynağının belirlenmesini kolaylaştırmayı ve içeriklerin izlenebilirliğini artırmayı hedeflediğini belirtiyor. Uygulamanı — Webrazzi</description>
-      <pubDate>2026-10-06T10:00:00+00:00</pubDate>
+      <description>Yapay zeka destekli siber güvenlik girişimi Hadrian , 40 milyon dolar yatırım aldı. Şirketin 40 milyon dolarlık yatırım turuna Forgepoint Capital International ve Smart Fin ortaklaşa liderlik etti. Hollanda merkezli Hadrian'ın yatırım turunda HV Capital, Motive Partners, Picus Capital ve Oetker Vent — Webrazzi</description>
+      <pubDate>2026-10-06T13:00:00+00:00</pubDate>
     </item>
     <item>
-      <title>Google Gemini Sizin Yerinize Arkadaşlarınızı Arayabilecek - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/google-call-for-me-ozelligi-kisisel-aramalar</link>
-      <guid isPermaLink="true">https://shiftdelete.net/google-call-for-me-ozelligi-kisisel-aramalar</guid>
+      <title>Cohere, kurumsal yapay zeka ajan platformu North 2'yi tanıttı</title>
+      <link>https://webrazzi.com/2026/10/06/cohere-kurumsal-yapay-zeka-ajan-platformu-north-2-yi-tanitti/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/cohere-kurumsal-yapay-zeka-ajan-platformu-north-2-yi-tanitti/</guid>
       <category>Yapay Zeka</category>
-      <description>Google'ın Pixel 11 serisindeki Call for Me özelliği, Gemini desteğiyle arkadaş ve aile üyeleriyle yapılan görüşmeleri yönetebilir hale gelebilir. — ShiftDelete.Net</description>
-      <pubDate>2026-10-06T09:30:07+00:00</pubDate>
-    </item>
-    <item>
-      <title>Valon, 2,3 milyar dolar değerleme üzerinden 150 milyon dolar yatırım aldı</title>
-      <link>https://webrazzi.com/2026/10/06/valon-2-3-milyar-dolar-degerleme-uzerinden-150-milyon-dolar-yatirim-aldi/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/valon-2-3-milyar-dolar-degerleme-uzerinden-150-milyon-dolar-yatirim-aldi/</guid>
-      <category>Yapay Zeka</category>
-      <description>Yapay zeka destekli dijital mortgage girişimi Valon , 150 milyon dolar yatırım aldı. Şirketin 150 milyon dolarlık D serisi yatırım turunda Ribbit Capital ve Andreessen Horowitz (a16z) yer aldı. 2019 yılında kurulan Valon'un değerlemesi 2,3 milyar dolara yükseldi. ABD merkezli şirket yeni gelen yatır — Webrazzi</description>
-      <pubDate>2026-10-06T09:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Anthropic Claude’a Türkçe Arayüz Desteği Getirdi - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/anthropic-claudea-turkce-arayuz-destegi-getirdi</link>
-      <guid isPermaLink="true">https://shiftdelete.net/anthropic-claudea-turkce-arayuz-destegi-getirdi</guid>
-      <category>Yapay Zeka</category>
-      <description>Anthropic, yapay zeka modeli Claude için Türkçe arayüz desteğini resmen duyurdu. Artık kullanıcılar Claude'u tamamen Türkçe menülerle kullanabiliyor. — ShiftDelete.Net</description>
-      <pubDate>2026-10-06T08:32:40+00:00</pubDate>
+      <description>Yapay zeka şirketi Cohere , kurumsal kullanıma odaklanan yapay zeka ajan platformu North'un yeni sürümü North 2'yi tanıttı . Şirketin bugüne kadarki en kapsamlı North güncellemesi olarak konumlandırdığı North 2; yeniden tasarlanan ajan orkestrasyon sistemi, maliyet kontrolleri, güvenlik özellikleri  — Webrazzi</description>
+      <pubDate>2026-10-06T12:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
