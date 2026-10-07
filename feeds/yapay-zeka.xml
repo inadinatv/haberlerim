@@ -5,38 +5,30 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 07 Oct 2026 02:02:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 09:43:11 +0000</lastBuildDate>
     <item>
-      <title>AMD'den Nvidia RTX Spark'a Yanıt: Rekabet Kızışıyor - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/amd-gorgon-halo-rtx-spark-rekabeti</link>
-      <guid isPermaLink="true">https://shiftdelete.net/amd-gorgon-halo-rtx-spark-rekabeti</guid>
+      <title>Mistral Large 4 Tanıtıldı: 1 Trilyon Parametreli Avrupalı Yapay Zeka Modeli - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/mistral-large-4-ozellikleri-tanitildi</link>
+      <guid isPermaLink="true">https://shiftdelete.net/mistral-large-4-ozellikleri-tanitildi</guid>
       <category>Yapay Zeka</category>
-      <description>AMD, yeni Gorgon Halo işlemcileri için performans verilerini paylaştı. Nvidia RTX Spark rekabeti öncesinde yaşanan bu gelişmenin detayları haberimizde. — ShiftDelete.Net</description>
-      <pubDate>2026-10-06T21:00:52+00:00</pubDate>
+      <description>Mistral AI'ın yeni modeli Mistral Large 4 özellikleri, 1 trilyon parametre yapısı ve yasal süreçlerdeki başarısıyla öne çıkıyor. Detaylar haberimizde. — ShiftDelete.Net</description>
+      <pubDate>2026-10-07T09:00:02+00:00</pubDate>
     </item>
     <item>
-      <title>Yapay Zeka Yatırımları Faiz Oranlarını Yükseltebilir mi? - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/yapay-zeka-faiz-politikalari-japonya-merkez-bankasi</link>
-      <guid isPermaLink="true">https://shiftdelete.net/yapay-zeka-faiz-politikalari-japonya-merkez-bankasi</guid>
+      <title>Anthropic, Claude'u Google Workspace'e entegre etti</title>
+      <link>https://webrazzi.com/2026/10/07/anthropic-claudeu-google-workspacee-entegre-etti/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/07/anthropic-claudeu-google-workspacee-entegre-etti/</guid>
       <category>Yapay Zeka</category>
-      <description>Japonya Merkez Bankası Başkan Yardımcısı Shinichi Uchida, yapay zeka faiz politikaları üzerindeki etkilerini ve nötr faiz oranını değerlendirdi. — ShiftDelete.Net</description>
-      <pubDate>2026-10-06T18:30:13+00:00</pubDate>
+      <description>Anthropic , Claude 'u Google Docs, Sheets ve Slides'a doğrudan entegre eden Claude for Google Workspace eklentisini kullanıma sundu. Kamuya açık beta olarak sunulan eklenti, ücretli Claude planlarına sahip kullanıcıların Google Workspace dosyaları üzerinde Claude'u doğrudan kullanmasına imkan tanıyo — Webrazzi</description>
+      <pubDate>2026-10-07T09:00:00+00:00</pubDate>
     </item>
     <item>
-      <title>Mistral AI, 1 trilyon parametreli Mistral Large 4'ü tanıttı</title>
-      <link>https://webrazzi.com/2026/10/06/mistral-ai-1-trilyon-parametreli-mistral-large-4-u-tanitti/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/mistral-ai-1-trilyon-parametreli-mistral-large-4-u-tanitti/</guid>
+      <title>Anthropic, girişimlere bir yıl ücretsiz Claude Team ve 1.000 dolar API kredisi sunuyor</title>
+      <link>https://webrazzi.com/2026/10/07/anthropic-girisimlere-bir-yil-ucretsiz-claude-team-ve-1000-dolar-api-kredisi-sunuyor/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/07/anthropic-girisimlere-bir-yil-ucretsiz-claude-team-ve-1000-dolar-api-kredisi-sunuyor/</guid>
       <category>Yapay Zeka</category>
-      <description>Fransa merkezli yapay zeka girişimi Mistral AI , bugüne kadarki en büyük ve yetenekli modeli olarak konumlandırdığı Mistral Large 4'ü (ML4) tanıttı. Şirket içinde “Le Chonk” olarak adlandırılan model, 1 trilyon toplam parametreye sahipken her işlemde 49 milyar aktif parametre kullanıyor. Modelin her — Webrazzi</description>
-      <pubDate>2026-10-06T14:04:47+00:00</pubDate>
-    </item>
-    <item>
-      <title>Yapay zeka destekli siber güvenlik girişimi Hadrian, 40 milyon dolar yatırım aldı</title>
-      <link>https://webrazzi.com/2026/10/06/yapay-zeka-destekli-siber-guvenlik-girisimi-hadrian-40-milyon-dolar-yatirim-aldi/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/06/yapay-zeka-destekli-siber-guvenlik-girisimi-hadrian-40-milyon-dolar-yatirim-aldi/</guid>
-      <category>Yapay Zeka</category>
-      <description>Yapay zeka destekli siber güvenlik girişimi Hadrian , 40 milyon dolar yatırım aldı. Şirketin 40 milyon dolarlık yatırım turuna Forgepoint Capital International ve Smart Fin ortaklaşa liderlik etti. Hollanda merkezli Hadrian'ın yatırım turunda HV Capital, Motive Partners, Picus Capital ve Oetker Vent — Webrazzi</description>
-      <pubDate>2026-10-06T13:00:00+00:00</pubDate>
+      <description>Anthropic , girişimlerin Claude tabanlı ürünler geliştirmesini destekleyen Claude Startups programına yeni avantajlar ekledi. Şirketin 6 Ekim'de duyurduğu güncelleme, ücretsiz abonelik ve API kredisinin yanı sıra farklı yazılım araçlarında indirimleri ve teknik destek görüşmelerini kapsıyor. Program — Webrazzi</description>
+      <pubDate>2026-10-07T07:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
