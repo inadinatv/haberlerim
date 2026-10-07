@@ -1,23 +1,23 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-06T22:15:02.941089+00:00",
-  "sure_saniye": 38.0,
+  "son_guncelleme": "2026-10-07T02:02:13.677798+00:00",
+  "sure_saniye": 36.8,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 213,
-  "tam_metin_haber": 213,
-  "video_haber": 14,
+  "kazanilan_tam_metin": 215,
+  "tam_metin_haber": 216,
+  "video_haber": 16,
   "kategoriler": {
-    "Gündem": 76,
+    "Gündem": 82,
     "Ekonomi": 28,
-    "Spor": 49,
-    "Dünya": 57,
-    "Teknoloji": 7,
+    "Spor": 48,
+    "Dünya": 55,
+    "Teknoloji": 5,
     "Yapay Zeka": 4,
     "Sağlık": 3,
-    "Yaşam & Sanat": 15,
+    "Yaşam & Sanat": 14,
     "Magaza": 11
   },
   "kaynaklar": {
@@ -57,10 +57,10 @@
       "hata": null
     },
     "Hürriyet": {
-      "haber": 50,
+      "haber": 42,
       "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
+      "basarili": 5,
+      "hatali": 2,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "Sözcü": {
@@ -77,14 +77,14 @@
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
@@ -100,6 +100,7 @@
     }
   },
   "hatalar": [
-    "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227",
+    "Hürriyet (http://www.hurriyet.com.tr/rss/teknoloji): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
   ]
 }
