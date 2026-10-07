@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-07T09:43:11.092793+00:00",
-  "sure_saniye": 37.9,
+  "son_guncelleme": "2026-10-07T17:11:43.854158+00:00",
+  "sure_saniye": 39.5,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 213,
-  "tam_metin_haber": 201,
-  "video_haber": 20,
+  "kazanilan_tam_metin": 209,
+  "tam_metin_haber": 206,
+  "video_haber": 19,
   "kategoriler": {
-    "Gündem": 79,
-    "Ekonomi": 32,
-    "Spor": 43,
-    "Dünya": 54,
-    "Teknoloji": 11,
+    "Gündem": 82,
+    "Ekonomi": 30,
+    "Spor": 45,
+    "Dünya": 50,
+    "Teknoloji": 7,
     "Yapay Zeka": 3,
-    "Sağlık": 4,
+    "Sağlık": 5,
     "Yaşam & Sanat": 16,
-    "Magaza": 8
+    "Magaza": 12
   },
   "kaynaklar": {
     "NTV": {
@@ -42,6 +42,13 @@
       "hatali": 0,
       "hata": null
     },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
+    },
     "Anadolu Ajansı": {
       "haber": 62,
       "durum": "aktif",
@@ -56,13 +63,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 50,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
-    },
     "Sözcü": {
       "haber": 60,
       "durum": "aktif",
@@ -70,15 +70,15 @@
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
-      "haber": 12,
+    "BBC Türkçe": {
+      "haber": 10,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "BBC Türkçe": {
-      "haber": 10,
+    "Habertürk": {
+      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
