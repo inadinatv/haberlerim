@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 07 Oct 2026 17:11:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 22:36:52 +0000</lastBuildDate>
     <item>
       <title>Avrupa'nın uzay keşif hedefleri IAC 2026'da ele alındı</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/avrupanin-uzay-kesif-hedefleri-iac-2026da-ele-alindi/4081258</link>
@@ -13,6 +13,14 @@
       <category>Teknoloji</category>
       <description>Uluslararası Uzay Federasyonu (IAF) tarafından yapılan 77. Uluslararası Uzay Kongresi'nde (IAC) Avrupa'nın uzay keşif faaliyetlerinin yol haritası ele alındı. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-07T15:47:46+00:00</pubDate>
+    </item>
+    <item>
+      <title>Uzay Keşfi Konferansı GLEX, 2028'de Japonya'da düzenlenecek</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/uzay-kesfi-konferansi-glex-2028de-japonyada-duzenlenecek/4081246</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/uzay-kesfi-konferansi-glex-2028de-japonyada-duzenlenecek/4081246</guid>
+      <category>Teknoloji</category>
+      <description>Japonya, IAF Küresel Uzay Keşfi Konferansı olan GLEX 2028'i 16-18 Mayıs 2028'de ülkesinde gerçekleştirmek üzere Uluslararası Uzay Federasyonu (IAF) ile anlaştı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-07T15:32:00+00:00</pubDate>
     </item>
     <item>
       <title>77. Uluslararası Uzay Kongresi için Antalya'ya gelen astronotlar öğrencilerle buluştu</title>
@@ -53,14 +61,6 @@
       <category>Teknoloji</category>
       <description>Uluslararası Uzay Federasyonu (IAF) tarafından Antalya'da düzenlenen 77. Uluslararası Uzay Kongresi (IAC) kapsamında &quot;Artemis Anlaşmaları&quot; bilgilendirme toplantısı gerçekleştirildi. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-07T12:06:16+00:00</pubDate>
-    </item>
-    <item>
-      <title>Almanya uzaydaki güvenlik altyapısını artırmak için 35 milyar avro yatırım yapacak</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/almanya-uzaydaki-guvenlik-altyapisini-artirmak-icin-35-milyar-avro-yatirim-yapacak/4080875</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/almanya-uzaydaki-guvenlik-altyapisini-artirmak-icin-35-milyar-avro-yatirim-yapacak/4080875</guid>
-      <category>Teknoloji</category>
-      <description>OHB Yönetim Kurulu Üyesi Sabine von der Recke, Almanya'nın uzaydaki güvenlik altyapısını artırmak için 2030'a kadar 35 milyar avro yatırım yapacağını belirtti. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-07T10:47:11+00:00</pubDate>
     </item>
   </channel>
 </rss>
