@@ -5,222 +5,86 @@
     <link>./</link>
     <description>GÜNDEM Gündem RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Thu, 08 Oct 2026 09:54:08 +0000</lastBuildDate>
-    <item>
-      <title>Maltepe'de çöken binadan kurtarılan vatandaş: Binamız çatlaktı, çatır çatır ses duyuluyordu</title>
-      <link>https://www.ntv.com.tr/turkiye/maltepede-coken-binadan-kurtarilan-vatandas-binamiz-catlakti-catir-catir-ses-duyuluyordu-1745369</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/maltepede-coken-binadan-kurtarilan-vatandas-binamiz-catlakti-catir-catir-ses-duyuluyordu-1745369</guid>
-      <category>Gündem</category>
-      <description>İstanbul Maltepe'de çöken 7 katlı binadan kurtarılan vatandaş, binanın çatlak olduğunu ve ses duyduklarını dile getirdi. Cevizli Mahallesi Doğu Sokak'taki 7 katlı binada çökme meydana geldi. Binanın 3 katındaki çökmenin nedeni bilinmezken enkazda kalan 14 kişiden 10'u sağ olarak kurtarıldı. Enkazdan — NTV</description>
-      <pubDate>2026-10-08T12:43:09+03:00</pubDate>
-    </item>
-    <item>
-      <title>SON DAKİKA! Maltepe'de 7 katlı binanın alttaki iki katı çöktü! 2 kişi hayatını kaybetti,2 kişi aranıyor</title>
-      <link>https://www.cnnturk.com/turkiye/live-son-dakika-maltepede-6-katli-binanin-alttaki-iki-kati-coktu-3476469</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/live-son-dakika-maltepede-6-katli-binanin-alttaki-iki-kati-coktu-3476469</guid>
-      <category>Gündem</category>
-      <description>Son dakika haberine göre; İstanbul Maltepe'de 7 katlı bina çöktü. Olay yerine çok sayıda arama kurtarma ekibi sevk edilirken, olay yerindeki çalışmalar sürüyor. Valilik'ten yapılan açıklamada 2 kişinin hayatını kaybettiği, 2 kişiye ulaşılmaya çalışıldığı belirtildi. — CNN Türk</description>
-      <pubDate>2026-10-08T12:37:51+00:00</pubDate>
-    </item>
-    <item>
-      <title>Tezgahlar bereketli. Fiyatı düştü, yüzler güldü</title>
-      <link>https://www.ntv.com.tr/turkiye/galeri-tezgahlar-bereketli-fiyati-dustu-yuzler-guldu-1745396</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/galeri-tezgahlar-bereketli-fiyati-dustu-yuzler-guldu-1745396</guid>
-      <category>Gündem</category>
-      <description>Sinop’un Türkeli ilçesinde balık tezgâhlarında yaşanan palamut bolluğu, fiyatlara da yansıdı. Balık tezgahlarında bu yıl palamut bolluğu yaşanıyor. Vatandaşlar tarafından yoğun ilgi gören palamut uygun fiyatıyla da dikkat çekiyor. Denizlerde palamut avının artmasıyla birlikte tezgâhlarda bolca yer b — NTV</description>
-      <pubDate>2026-10-08T12:37:09+03:00</pubDate>
-    </item>
-    <item>
-      <title>Maltepe'deki enkazda 2 yeğeni kaldı! &quot;Binaları problemliydi, çatlaklar vardı&quot;</title>
-      <link>https://www.cnnturk.com/video/turkiye/maltepedeki-enkazda-2-yegeni-kaldi-binalari-problemliydi-catlaklar-vardi-3476610</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/maltepedeki-enkazda-2-yegeni-kaldi-binalari-problemliydi-catlaklar-vardi-3476610</guid>
-      <category>Gündem</category>
-      <description>İstanbul Maltepe'de 7 katlı binanın 3 katı çöktü. Olay yerine çok sayıda arama kurtarma ekibi sevk edildi. Arama kurtarma çalışmalarında şu ana kadar 10 kişi sağ olarak kurtarıldı, 2 kişi hayatını kaybetti. 2 kişiyi arama kurtarma çalışmaları devam ediyor. Fatma İnan ise enkazda kalan 2 yeğeninin ku — CNN Türk</description>
-      <pubDate>2026-10-08T12:36:21+00:00</pubDate>
-    </item>
-    <item>
-      <title>Maltepe'de enkazdan çıkan kişi çökme anını anlattı: &quot;Binamız çatlaktı, komşular sesler duyuyordu&quot;</title>
-      <link>https://www.cnnturk.com/video/turkiye/maltepede-enkazdan-cikan-kisi-cokme-anini-anlatti-binamiz-catlakti-komsular-sesler-duyuyordu-3476611</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/maltepede-enkazdan-cikan-kisi-cokme-anini-anlatti-binamiz-catlakti-komsular-sesler-duyuyordu-3476611</guid>
-      <category>Gündem</category>
-      <description>İstanbul Maltepe'de 7 katlı binanın alttaki 3 katı çöktü. Binadan çıkan Tolga Gürpınar, &quot;Binamız çatlaktı, ufak tefek çatır çatır ses duyuyordu komşularımız&quot; dedi. — CNN Türk</description>
-      <pubDate>2026-10-08T12:31:24+00:00</pubDate>
-    </item>
+    <lastBuildDate>Thu, 08 Oct 2026 17:09:42 +0000</lastBuildDate>
     <item>
       <title>Son dakika deprem mi oldu? Az önce deprem nerede oldu? İstanbul, Ankara, İzmir ve il il AFAD son depremler 08 Ekim 2026</title>
       <link>https://www.ntv.com.tr/turkiye/son-dakika-deprem-mi-oldu-az-once-deprem-nerede-oldu-istanbul-ankara-izmir-ve-il-il-afad-son-depremler-08-ekim-2026-1745303</link>
       <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/son-dakika-deprem-mi-oldu-az-once-deprem-nerede-oldu-istanbul-ankara-izmir-ve-il-il-afad-son-depremler-08-ekim-2026-1745303</guid>
       <category>Gündem</category>
       <description>Son depremler... Son dakika deprem mi oldu? Az önce deprem nerede oldu? İstanbul, Ankara, İzmir ve il il AFAD son depremler.. 08 Ekim 2026 deprem son dakika haberleri haberin detayında... Artçı deprem mi oldu? Son deprem büyüklüğü ne kadar? Yakınımdaki depremler nelerdir? Anlık deprem mi oldu? Son d — NTV</description>
-      <pubDate>2026-10-08T12:30:00+03:00</pubDate>
+      <pubDate>2026-10-08T20:00:00+03:00</pubDate>
     </item>
     <item>
-      <title>MSB açıkladı. Türk askeri Riyad'a gidecek mi?</title>
-      <link>https://www.ntv.com.tr/turkiye/msb-acikladi-turk-askeri-riyada-gidecek-mi-1745391</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/msb-acikladi-turk-askeri-riyada-gidecek-mi-1745391</guid>
+      <title>Aile Bakanı Göktaş CNN TÜRK</title>
+      <link>https://www.cnnturk.com/video/turkiye/aile-bakani-goktas-cnn-turkte-fon-iddialari-bastan-sona-yalandir-3476862</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/aile-bakani-goktas-cnn-turkte-fon-iddialari-bastan-sona-yalandir-3476862</guid>
       <category>Gündem</category>
-      <description>Milli Savunma Bakanlığı (MSB), Mekke Savunma İttifakı toplantısında Türkiye'nin Suudi Arabistan'a asker konuşlandırma kararına ilişkin &quot;Kuvvet süreci Anayasa yürütülecek.&quot; açıklamasında bulundu. Milli Savunma Bakanlığı (MSB), haftalık bilgilendirme toplantısında, gündeme ilişkin bilgilendirmelerde b — NTV</description>
-      <pubDate>2026-10-08T12:17:36+03:00</pubDate>
+      <description>Fon iddialarına CNN Türk'te cevap veren Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, &quot;İddia değil iftira. Böyle bir iftirayı ailemden hiç bir kimsenin hak etmediğini vurgulamak istiyorum. Fon meselesinde şahsımı ve ailemi hedef alan iddialar baştan sona yalandır ve iftiradır.&quot; dedi. — CNN Türk</description>
+      <pubDate>2026-10-08T19:52:40+00:00</pubDate>
     </item>
     <item>
-      <title>MSB: Askeri kuvvetlerin Suudi Arabistan</title>
-      <link>https://www.cnnturk.com/turkiye/msb-duyurdu-hudutlarda-bir-haftada-660-kisi-yakalandi-3476596</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/msb-duyurdu-hudutlarda-bir-haftada-660-kisi-yakalandi-3476596</guid>
+      <title>Binanın çökmesinde girişteki iş yerinin etkisi ne? - Son Dakika Haberleri Bugün | Video</title>
+      <link>https://www.cnnturk.com/video/turkiye/binanin-cokmesinde-giristeki-is-yerinin-etkisi-ne-3476861</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/binanin-cokmesinde-giristeki-is-yerinin-etkisi-ne-3476861</guid>
       <category>Gündem</category>
-      <description>Millî Savunma Bakanlığı (MSB), haftalık basın bilgilendirme toplantısını Gölcük Tersanesi Komutanlığının 100'üncü kuruluş yıl dönümü dolayısıyla Gölcük'te gerçekleştirdi. Toplantıda savunma sanayisindeki yeni teslimatlar, terörle mücadele, hudut güvenliği, uluslararası temaslar, Suudi Arabistan'ın b — CNN Türk</description>
-      <pubDate>2026-10-08T12:12:20+00:00</pubDate>
+      <description>Herkesin aklında tek bir soru var: Bu bina neden çöktü? Facianın perde arkası aralandıkça, ihmaller zinciri de gün yüzüne çıkmaya başladı. Binanın mimar ve şantiye şefi gözaltında. İlk belirlemelere göre, taşıyıcı kolonların yıllar içinde yorulduğu ve binanın ilave kat yükünü daha fazla taşıyamadığı — CNN Türk</description>
+      <pubDate>2026-10-08T19:36:25+00:00</pubDate>
     </item>
     <item>
-      <title>8 Ekim Perşembe 2026 gününün son dakika önemli gelişmeleri! (CNN TÜRK 11.30 bülteni) - Son Dakika Haberler CNN Türk</title>
-      <link>https://www.cnnturk.com/turkiye/8-ekim-persembe-2026-gununun-son-dakika-onemli-gelismeleri-cnn-turk-11-30-bulteni-3476504</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/8-ekim-persembe-2026-gununun-son-dakika-onemli-gelismeleri-cnn-turk-11-30-bulteni-3476504</guid>
+      <title>Girnedeki gemi kazasında 2 kişinin kimliği belli oldu - Son Dakika Haberler CNN Türk</title>
+      <link>https://www.cnnturk.com/turkiye/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belli-oldu-3476844</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belli-oldu-3476844</guid>
       <category>Gündem</category>
-      <description>8 Ekim Perşembe 2026 gününde Türkiye'de ve dünyada öne çıkan haberler... Yaşanan önemli gelişmeler sizler için derlediğimiz haberimizde. — CNN Türk</description>
-      <pubDate>2026-10-08T11:30:25+00:00</pubDate>
+      <description>Kuzey Kıbrıs Türk Cumhuriyeti (KKTC) Başbakanlığı, 30 Ağustos’ta Girne açıklarında meydana gelen gemi kazasının ardından cesetlerine ulaşılan iki kişinin kimliklerinin DNA incelemesiyle belirlendiğini açıkladı. Cenazelerin Mehmet Nuri Ayran ve Saliha Miray Biçer’e ait olduğu tespit edilirken, kayıp  — CNN Türk</description>
+      <pubDate>2026-10-08T18:14:56+00:00</pubDate>
     </item>
     <item>
-      <title>Örnek sigara yasağı uygulaması başladı: Yere beyaz çizgiler çekildi</title>
-      <link>https://www.ntv.com.tr/turkiye/galeri-ornek-sigara-yasagi-uygulamasi-basladi-yere-beyaz-cizgiler-cekildi-1745379</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/galeri-ornek-sigara-yasagi-uygulamasi-basladi-yere-beyaz-cizgiler-cekildi-1745379</guid>
+      <title>ATİLLA TAŞ</title>
+      <link>https://www.cnnturk.com/turkiye/atilla-tasin-kizi-sezen-tas-kimdir-ve-neden-oldu-atilla-tasin-kizi-sezen-tas-kac-yasindaydi-3476809</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/atilla-tasin-kizi-sezen-tas-kimdir-ve-neden-oldu-atilla-tasin-kizi-sezen-tas-kac-yasindaydi-3476809</guid>
       <category>Gündem</category>
-      <description>Van'da Yüzüncü Yıl Üniversitesi Yabancı Diller Yüksekokulu'nda bina ve çevresindeki 20 metrelik alanda sigara içilmesi yasaklandı. Van Yüzüncü Yıl Üniversitesi Yabancı Diller Yüksekokulu'nda hayata geçirilen uygulamayla bina ve çevresindeki 20 metrelik alanda sigara içilmesi yasaklandı. YYÜ yerleşke — NTV</description>
-      <pubDate>2026-10-08T11:25:23+03:00</pubDate>
+      <description>Şarkıcı ve köşe yazarı olan Atilla Taş'ın kızı Sezen Taş hayatını kaybetti. Olayla ilgili soruşturma başlatıldı. Sezen Taş'ın ölüm haberini alan vatandaşlar konuya ilişkin araştırmalarını hızlandırdı. Peki Atilla Taş'ın kızı neden öldü? Sezen Taş, Mersin’in Erdemli ilçesinde bir apartmanın 14. katın — CNN Türk</description>
+      <pubDate>2026-10-08T18:08:22+00:00</pubDate>
     </item>
     <item>
-      <title>Milli Eğitim Bakanlığı'ndan 81 ile yazı: Ruhsatları iptal edilecek</title>
-      <link>https://www.ntv.com.tr/turkiye/milli-egitim-bakanligindan-81-ile-yazi-ruhsatlari-iptal-edilecek-1745377</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/milli-egitim-bakanligindan-81-ile-yazi-ruhsatlari-iptal-edilecek-1745377</guid>
+      <title>Bakan Kacır, Türk ve yabancı astronotlar ile Salda Gölünde bilim merkezi açtı - CNN TÜRK En Son Haberler</title>
+      <link>https://www.cnnturk.com/turkiye/bakan-kacir-turk-ve-yabanci-astronotlar-ile-salda-golunde-bilim-merkezi-acti-3476818</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/bakan-kacir-turk-ve-yabanci-astronotlar-ile-salda-golunde-bilim-merkezi-acti-3476818</guid>
       <category>Gündem</category>
-      <description>Milli Eğitim Bakanlığı, özel eğitim kurumlarını yakın takibe aldı. Ruhsatında olmayan farklı alanda eğitim verdiği tespit edilen kurumlara, ruhsat iptaline varan cezalar verilecek. Milli Eğitim Bakanlığı, özel öğretim kurumlarının ruhsatlarında belirtilen kurum türü ve faaliyet alanı dışında öğretim — NTV</description>
-      <pubDate>2026-10-08T11:12:02+03:00</pubDate>
+      <description>Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, &quot;2027'nin ilk aylarında uzaya uğurlamayı öngördüğümüz, millî kabiliyetlerimizin eseri uzay aracımızla Ay yörüngesinde bilimsel araştırmalar gerçekleştireceğiz. Bütün bu iddialı projelerin arkasında kararlı bir irade; bilim insanlarımızın, mühendislerimi — CNN Türk</description>
+      <pubDate>2026-10-08T18:07:34+00:00</pubDate>
     </item>
     <item>
-      <title>Maltepe’deki çöken bina: Aile yakınları ve görgü tanıkları NTV’ye konuştu | NTV Haber</title>
-      <link>https://www.ntv.com.tr/turkiye/video-maltepedeki-coken-bina-aile-yakinlari-ve-gorgu-taniklari-ntvye-konustu-1745366</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/video-maltepedeki-coken-bina-aile-yakinlari-ve-gorgu-taniklari-ntvye-konustu-1745366</guid>
+      <title>Türkiye Yemen'de savaşa mı girecek? Meclis'e &quot;Yemen Tezkeresi&quot; mi gelecek?</title>
+      <link>https://www.cnnturk.com/video/turkiye/turkiye-yemende-savasa-mi-girecek-meclise-yemen-tezkeresi-mi-gelecek-3476722</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/turkiye-yemende-savasa-mi-girecek-meclise-yemen-tezkeresi-mi-gelecek-3476722</guid>
       <category>Gündem</category>
-      <description>İstanbul Maltepe’de çöken binada arama kurtarma çalışmaları sürerken, göçük altında kalanların yakınları ve görgü tanıkları yaşananları NTV’den Baran Bila’ya anlattı. — NTV</description>
-      <pubDate>2026-10-08T10:40:58+03:00</pubDate>
+      <description>Suudi Arabistan ve Husiler arasındaki hareketlilik sürerken gözler, son dönemin en kritik güvenlik başlıklarından biri olan Mekke İttifakı'na çevrilmiş durumda. &quot;Türkiye bölgede bir çatışmaya mı dahil oluyor, Suudi Arabistan'a Mehmetçik konuşlandırılacak mı?&quot; soruları kamuoyunda yankı bulurken, Anka — CNN Türk</description>
+      <pubDate>2026-10-08T17:29:10+00:00</pubDate>
     </item>
     <item>
-      <title>Yeni Parti</title>
-      <link>https://www.cnnturk.com/video/turkiye/yeni-partiden-aymye-isim-savunmasi-3476518</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/yeni-partiden-aymye-isim-savunmasi-3476518</guid>
+      <title>17 fonun tasfiyesi yapıldı, paralar hesaplara aktarıldı</title>
+      <link>https://www.ntv.com.tr/ntvpara/17-fonun-tasfiyesi-yapildi-paralar-hesaplara-aktarildi-1745429</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/ntvpara/17-fonun-tasfiyesi-yapildi-paralar-hesaplara-aktarildi-1745429</guid>
       <category>Gündem</category>
-      <description>Yeni Parti, isim benzerliği tartışmasında Anayasa Mahkemesi'ne savunmasını verdi. Savunmada, Yenilik Partisi ile isim benzerliği bulunmadığı ifade edildi. Ayrıca, &quot;yeni&quot; kelimesinin geçtiği diğer parti isimleri de örnek gösterildi. — CNN Türk</description>
-      <pubDate>2026-10-08T10:21:54+00:00</pubDate>
+      <description>Hazine ve Maliye Bakanı Mehmet Şimşek 17 fonun tasfiyesi yapıldığını, 43 bin fon yatırımcısının paralarının ilgili bankalara transferinin yapıldığını açıkladı. İletişim Başkanlığı listeyi açıkladı. Fon yatırımcılarını ilgilendiren gelişmeyi Hazine ve Maliye Bakanı Mehmet Şimşek açıkladı. Bakan Şimşe — NTV</description>
+      <pubDate>2026-10-08T17:23:21+03:00</pubDate>
     </item>
     <item>
-      <title>KKTC'deki gemi faciasında bir cesede daha ulaşıldı, can kaybı 27'ye yükseldi</title>
-      <link>https://www.ntv.com.tr/turkiye/kktcdeki-gemi-faciasinda-bir-cesede-daha-ulasildi-can-kaybi-27ye-yukseldi-1745358</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/kktcdeki-gemi-faciasinda-bir-cesede-daha-ulasildi-can-kaybi-27ye-yukseldi-1745358</guid>
+      <title>Donald Trump: Kongre seçimlerine kadar İran'a saldırı düzenlemeyeceğiz - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/donald-trump-iran-aciklamasi-8-ekim-2026-p367434</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/donald-trump-iran-aciklamasi-8-ekim-2026-p367434</guid>
       <category>Gündem</category>
-      <description>KKTC'de batan gemideki yolculardan birinin daha cesedine ulaşıldı. Can kaybı 26'ya yükseldi. Kayıp 1 kişiyi arama çalışmaları devam ediyor. Kuzey Kıbrıs Türk Cumhuriyeti'nin (KKTC) Girne açıklarında 30 Ağustos'ta batan yolcu gemisindeki kayıpları arama çalışmaları sürüyor. KKTC Başbakanlığından yapı — NTV</description>
-      <pubDate>2026-10-08T10:16:07+03:00</pubDate>
+      <description>ABD Başkanı Trump, İran ile ilgili yaptığı son açıklamasında 3 Kasım'da yapılacak Kongre ara seçimlerine kadar ülkeye saldırı düzenlemeyeceklerini duyurdu. — Sözcü</description>
+      <pubDate>2026-10-08T17:07:07+00:00</pubDate>
     </item>
     <item>
-      <title>Maltepe Belediye Başkanı açıkladı: Çöken binanın 2 katı kaçakmış! - Son Dakika Haberler CNN Türk</title>
-      <link>https://www.cnnturk.com/turkiye/maltepe-belediye-baskani-acikladi-coken-binanin-2-kati-kacakmis-3476512</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/maltepe-belediye-baskani-acikladi-coken-binanin-2-kati-kacakmis-3476512</guid>
+      <title>Maltepe'deki binada duvardaki çatakları görüntüleyen işletmeci: &quot;Kolon kesme durumu yok&quot;</title>
+      <link>https://www.ntv.com.tr/turkiye/video-maltepedeki-binada-duvardaki-cataklari-goruntuleyen-isletmeci-kolon-kesme-durumu-yok-1745442</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/video-maltepedeki-binada-duvardaki-cataklari-goruntuleyen-isletmeci-kolon-kesme-durumu-yok-1745442</guid>
       <category>Gündem</category>
-      <description>Sabah saatlerinde İstanbul'un Maltepe'de 7 katlı bir binanın 3 katında çökme meydana geldi. Arama kurtarma çalışmalarının sürdüğü binaya ilişkin katıldığı bir canlı yayında olaya dair açıklamalarda bulunan Maltepe Belediye Başkanı Esin Köymen, &quot;80'li yıllarda yapılmış bir bina ve projesini arşivden  — CNN Türk</description>
-      <pubDate>2026-10-08T10:13:16+00:00</pubDate>
-    </item>
-    <item>
-      <title>İstanbul'da hava iki günde değişecek: Önce yaz, sonra sonbahar</title>
-      <link>https://www.ntv.com.tr/turkiye/galeri-istanbulda-hava-iki-gunde-degisecek-once-yaz-sonra-sonbahar-1745353</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/galeri-istanbulda-hava-iki-gunde-degisecek-once-yaz-sonra-sonbahar-1745353</guid>
-      <category>Gündem</category>
-      <description>İstanbul'da hafta sonu yazdan kalma günler yaşanacak. Megakent yeni haftaya ise gök gürültülü sağanakla giriş yapacak. İstanbul'da hava sıcaklığı yaz değerlerine yaklaştı. Meteoroloji Genel Müdürlüğü'nün son tahminlerine göre, İstanbul'da bugün parçalı bulutlu bir hava hakim olacak. Megakentte hava  — NTV</description>
-      <pubDate>2026-10-08T10:01:38+03:00</pubDate>
-    </item>
-    <item>
-      <title>SON DAKİKA HABER: TIR parkına kaya yağdı! Acı haber geldi | Artvin haberleri | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-haberi-tir-parkina-kaya-yagdi-aci-haber-geldi-artvin-haberleri-3918045</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-haberi-tir-parkina-kaya-yagdi-aci-haber-geldi-artvin-haberleri-3918045</guid>
-      <category>Gündem</category>
-      <description>Artvin'in Hopa ilçesindeki Esenkıyı TIR Parkı'nda yamaçtan kopan dev kaya parçalarının park halindeki araçların üzerine düşmesi sonucu 45 yaşındaki Kasım Topaloğlu hayatını kaybetti. Topaloğlu'nun, aracını kurtardıktan sonra dönüp arkadaşlarına yardım etmeye çalışırken meydana gelen ikinci heyelanda — Habertürk</description>
-      <pubDate>2026-10-08T09:41:41+00:00</pubDate>
-    </item>
-    <item>
-      <title>ABD'de 2026 ara seçimleri: Kongre dengesi, İran Savaşı ve 2028 hesapları</title>
-      <link>https://www.aa.com.tr/tr/analiz/abdde-2026-ara-secimleri-kongre-dengesi-iran-savasi-ve-2028-hesaplari/4082014</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/analiz/abdde-2026-ara-secimleri-kongre-dengesi-iran-savasi-ve-2028-hesaplari/4082014</guid>
-      <category>Gündem</category>
-      <description>Ara seçimlerde çıkacak sonuç, partilerin 2028 yılındaki başkanlık seçimi hesaplarını etkileyecek. ABD’de ana siyasi kırılım, Demokratlar ile Cumhuriyetçiler arasında olsa da bu iki parti içinde son yıllarda ciddi kırılmalar ve siyasi tartışmalar var. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-08T09:39:27+00:00</pubDate>
-    </item>
-    <item>
-      <title>Beşiktaş'ta futbol komitesi geri döndü!</title>
-      <link>https://www.haberturk.com/spor/besiktas-ta-futbol-komitesi-geri-dondu-3918155</link>
-      <guid isPermaLink="true">https://www.haberturk.com/spor/besiktas-ta-futbol-komitesi-geri-dondu-3918155</guid>
-      <category>Gündem</category>
-      <description>Beşiktaş'ta hafta sonunda gerçekleştirilen olağanüstü seçimli genel kurulun ardından mazbatasını alan yeni yönetimde görev dağılımı yapıldı. Siyah-beyazlılarda geçen sezonun ardından futbol komitesi de yeniden oluşturuldu. Serdal Adalı başkanlığındaki komitede Murat Kılıç, Mithat Görkem Aksoy, Aykan — Habertürk</description>
-      <pubDate>2026-10-08T09:39:01+00:00</pubDate>
-    </item>
-    <item>
-      <title>İstanbul’da 7 katlı bina çöktü: Enkazdan kurtarılanlar o dehşet anlarını anlattı! ‘Binadan sesler geldi’</title>
-      <link>https://www.hurriyet.com.tr/gundem/istanbulda-7-katli-bina-coktu-enkazdan-kurtarilanlar-o-dehset-anlarini-anlatti-binada-sesler-geldi-43333860</link>
-      <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/istanbulda-7-katli-bina-coktu-enkazdan-kurtarilanlar-o-dehset-anlarini-anlatti-binada-sesler-geldi-43333860</guid>
-      <category>Gündem</category>
-      <description>İstanbul, Maltepe’deki Cevizli Mahallesi'nde 3 katı çöken binada arama kurtarma çalışmaları sürerken, sağ kurtarılan bina sakinleri yaşananları paylaştı. Kentsel dönüşümün komşular arasında konuşulduğunu ancak sonuçlanmadığını belirten ev sahipleri, binadan sesler geldiğini ifade etti. — Hürriyet</description>
-      <pubDate>2026-10-08T09:38:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Silifke Belediyesi</title>
-      <link>https://www.trthaber.com/haber/turkiye/silifke-belediyesine-yolsuzluk-operasyonu-genisliyor-7-gozalti-959528.html</link>
-      <guid isPermaLink="true">https://www.trthaber.com/haber/turkiye/silifke-belediyesine-yolsuzluk-operasyonu-genisliyor-7-gozalti-959528.html</guid>
-      <category>Gündem</category>
-      <description>Mersin'de Silifke Belediyesinin imar ve ruhsat işlemlerinde yolsuzluk yaptıkları gerekçesiyle aralarında belediye başkan yardımcılarının da bulunduğu 7 şüpheli gözaltına alındı. — TRT Haber</description>
-      <pubDate>2026-10-08T09:36:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Samsung’tan tarihe geçen rekor - Yapay zeka çip patlamasıyla 80 milyar dolarlık kâr</title>
-      <link>https://www.haberturk.com/ekonomi/samsungtan-tarihe-gecen-rekor-yapay-zeka-cip-patlamasiyla-80-milyar-dolarlik-kr-3918083</link>
-      <guid isPermaLink="true">https://www.haberturk.com/ekonomi/samsungtan-tarihe-gecen-rekor-yapay-zeka-cip-patlamasiyla-80-milyar-dolarlik-kr-3918083</guid>
-      <category>Gündem</category>
-      <description>Samsung Electronics, yapay zeka çiplerine olan rekor talebin etkisiyle üçüncü çeyrekte 107,4 trilyon won (yaklaşık 80,17 milyar dolar) faaliyet kârı açıkladı. Bu rakam, bir teknoloji şirketinin tek bir çeyrekte ulaştığı en yüksek kâr olarak tarihe geçerken, şirketin üst üste dördüncü rekor kâr dönem — Habertürk</description>
-      <pubDate>2026-10-08T09:33:19+00:00</pubDate>
-    </item>
-    <item>
-      <title>Maltepe'de bina çöktü: 2 kişi hayatını kaybetti - BBC News Türkçe</title>
-      <link>https://www.bbc.com/turkce/articles/cj93zg0k2p97o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="true">https://www.bbc.com/turkce/articles/cj93zg0k2p97o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <category>Gündem</category>
-      <description>İstanbul'un Maltepe ilçesinde yedi katlı bir binadaki çökme sonucu iki kişi hayatını kaybetti. Binanın üç katının çökmesinin ardından enkaz altındaki iki kişi aranıyor. — BBC Türkçe</description>
-      <pubDate>2026-10-08T09:32:09+00:00</pubDate>
-    </item>
-    <item>
-      <title>İran savaşında, ABD'nin 81 askeri hava aracı ya kayboldu ya da kalıcı hasar gördü</title>
-      <link>https://www.aa.com.tr/tr/dunya/iran-savasinda-abdnin-81-askeri-hava-araci-ya-kayboldu-ya-da-kalici-hasar-gordu/4081999</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/dunya/iran-savasinda-abdnin-81-askeri-hava-araci-ya-kayboldu-ya-da-kalici-hasar-gordu/4081999</guid>
-      <category>Gündem</category>
-      <description>ABD Kongre Araştırma Hizmetleri raporunda, ülkenin 28 Şubat'tan bu yana İran savaşında 81 hava aracını kaybettiği ya da bu araçlarda kalıcı hasar oluştuğu belirtildi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-08T09:30:45+00:00</pubDate>
-    </item>
-    <item>
-      <title>Rusya, Yars kıtalararası balistik füze sistemleriyle tatbikat yapıyor</title>
-      <link>https://www.aa.com.tr/tr/dunya/rusya-yars-kitalararasi-balistik-fuze-sistemleriyle-tatbikat-yapiyor/4081997</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/dunya/rusya-yars-kitalararasi-balistik-fuze-sistemleriyle-tatbikat-yapiyor/4081997</guid>
-      <category>Gündem</category>
-      <description>Rusya Savunma Bakanlığı, Yars kıtalararası balistik füze sistemlerinin katılımıyla askeri tatbikat düzenlediğini bildirdi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-08T09:29:26+00:00</pubDate>
-    </item>
-    <item>
-      <title>Son dakika haberler: Mersin’in Silifke Belediyesi’nde 2'nci dalga operasyon: 7 gözaltı | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-haberler-mersinin-silifke-belediyesinde-2-nci-dalga-operasyon-7-gozalti-3918151</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-haberler-mersinin-silifke-belediyesinde-2-nci-dalga-operasyon-7-gozalti-3918151</guid>
-      <category>Gündem</category>
-      <description>Mersin’in Silifke Belediyesi’ne yönelik yürütülen yolsuzluk soruşturmasının ikinci dalgasında, Belediye Başkan Yardımcıları Osman Şen ve Rahile Demren’in de aralarında bulunduğu 7 şüpheli gözaltına alındı — Habertürk</description>
-      <pubDate>2026-10-08T09:24:08+00:00</pubDate>
-    </item>
-    <item>
-      <title>Konya'da korkunç kaza: 3 kişi hayatını kaybetti</title>
-      <link>https://www.hurriyet.com.tr/gundem/konyada-korkunc-kaza-3-kisi-hayatini-kaybetti-43333837</link>
-      <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/konyada-korkunc-kaza-3-kisi-hayatini-kaybetti-43333837</guid>
-      <category>Gündem</category>
-      <description>Konya’nın Hüyük ilçesinde otomobil ile hafif ticari aracın çarpıştı. Feci kazada 3 kişi hayatını kaybetti, 1 kişi yaralandı. — Hürriyet</description>
-      <pubDate>2026-10-08T09:22:05+00:00</pubDate>
+      <description>Maltepe’de 7 katlı binanın 3 katı çöktü: 2 kişi hayatını kaybetti, 3’ü çocuk 10 kişi yaralandı. Çatlakları kaydeden Fatma Kaya’nın görüntüleri ortaya çıktı. Cevizli Mahallesi Doğu Sokak’ta 7 katlı binanın alttaki 3 katı henüz belirlenemeyen nedenle sabah erken saatlerde çöktü. İhbar üzerine olay yer — NTV</description>
+      <pubDate>2026-10-08T16:54:17+03:00</pubDate>
     </item>
     <item>
       <title>Maltepe'de 7 katlı bina çöktü! Arama kurtarma çalışmaları başladı</title>
@@ -228,103 +92,239 @@
       <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-maltepe-de-7-katli-bina-coktu-arama-kurtarma-calismalari-basladi-3918035</guid>
       <category>Gündem</category>
       <description>Maltepe'de 7 katlı bina çöktü. Olay yerine çok sayıda arama kurtarma ekibi sevk edilirken, olay yerindeki çalışmalar sürüyor. Binanın alt katında tekstil atölyesi olduğu öğrenilirken, alt 3 katının çöktüğü ortaya çıktı. Üst katta bina sakinleri kurtarıldı, alt kattakileri kurtarma çalışmaları sürüyo — Habertürk</description>
-      <pubDate>2026-10-08T09:20:35+00:00</pubDate>
+      <pubDate>2026-10-08T16:54:11+00:00</pubDate>
     </item>
     <item>
-      <title>Hopa'da TIR parkında heyelan: 1 ölü</title>
-      <link>https://www.cnnturk.com/turkiye/hopada-tir-parkinda-heyelan-1-olu-3476490</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/hopada-tir-parkinda-heyelan-1-olu-3476490</guid>
+      <title>AK Parti ve DEM Parti İmralı heyetinden Terörsüz Türkiye görüşmesi</title>
+      <link>https://www.ntv.com.tr/turkiye/ak-parti-ve-dem-parti-imrali-heyetinden-terorsuz-turkiye-gorusmesi-1745439</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/ak-parti-ve-dem-parti-imrali-heyetinden-terorsuz-turkiye-gorusmesi-1745439</guid>
       <category>Gündem</category>
-      <description>Artvin'in Hopa ilçesinde TIR parkına yamaçtan kopan kaya kütleleri düştü. Heyelanda kayaların altında kalan 45 yaşındaki Kasım Topaloğlu hayatını kaybetti. — CNN Türk</description>
-      <pubDate>2026-10-08T09:20:31+00:00</pubDate>
+      <description>AK Parti ve DEM Parti İmralı heyeti arasında Terörsüz Türkiye sürecine ilişkin görüşme yapıldı. İmralı Heyeti AK Parti ile görüştü. DEM Parti İmralı heyeti üyeleri Pervin Buldan ve Mithat Sancar; AK Parti Genel Başkanvekili Efkan Ala, Grup Başkanı Abdullah Güler ve Parti Sözcüsü Ömer Çelik ile bir g — NTV</description>
+      <pubDate>2026-10-08T16:49:39+03:00</pubDate>
     </item>
     <item>
-      <title>Rıza Kayaalp, yüksek irtifadaki antrenmanların mükafatını alacağından emin</title>
-      <link>https://www.aa.com.tr/tr/spor/riza-kayaalp-yuksek-irtifadaki-antrenmanlarin-mukafatini-alacagindan-emin/4081984</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/spor/riza-kayaalp-yuksek-irtifadaki-antrenmanlarin-mukafatini-alacagindan-emin/4081984</guid>
+      <title>Donald Trump: Kongre seçimlerine kadar İran'a saldırı düzenlemeyeceğiz | Dış Haberler</title>
+      <link>https://www.haberturk.com/dunya/donald-trump-kongre-secimlerine-kadar-iran-a-saldiri-duzenlemeyecegiz-3918278</link>
+      <guid isPermaLink="true">https://www.haberturk.com/dunya/donald-trump-kongre-secimlerine-kadar-iran-a-saldiri-duzenlemeyecegiz-3918278</guid>
       <category>Gündem</category>
-      <description>Kariyerinde 5 dünya ve 13 Avrupa şampiyonluğu bulunan milli güreşçi Rıza Kayaalp, 2026 Dünya Şampiyonası öncesi Erzurum'da gerçekleştirdiği yüksek irtifa kampının karşılığını alacağına inanıyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-08T09:19:55+00:00</pubDate>
+      <description>ABD Başkanı Trump, 3 Kasım'da yapılacak Kongre ara seçimlerine kadar İran'a herhangi bir saldırı düzenlemeyeceklerini açıkladı — Habertürk</description>
+      <pubDate>2026-10-08T16:46:59+00:00</pubDate>
     </item>
     <item>
-      <title>Son dakika: MSB'den Mekke Savunma İttifakı açıklaması</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-msb-den-mekke-savunma-ittifaki-aciklamasi-3918143</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-msb-den-mekke-savunma-ittifaki-aciklamasi-3918143</guid>
+      <title>Maltepe'de çöken binada kontrollü yıkım sürüyor | NTV Haber</title>
+      <link>https://www.ntv.com.tr/turkiye/video-maltepede-coken-binada-kontrollu-yikim-suruyor-1745441</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/video-maltepede-coken-binada-kontrollu-yikim-suruyor-1745441</guid>
       <category>Gündem</category>
-      <description>Milli Savunma Bakanlığı, Mekke Savunma İttifakı'na ilişkin, &quot;Mekke Savunma İttifakı Stratejik Siyasi ve Savunma Komitesi, 5 Ekim 2026 tarihinde Riyad’da toplanmıştır. Toplantıda; bölgesel gelişmeler ve kolektif savunma tedbirleri ele alınmış, Sekretaryanın başlangıç yapılanması belirlenmiş, savunma  — Habertürk</description>
-      <pubDate>2026-10-08T09:19:16+00:00</pubDate>
+      <description>Maltepe’de 3 katı çöken 7 katlı binada kontrollü yıkım sürüyor. Binanın bir bölümü kepçeyle yıkılırken, çevrede geniş güvenlik önlemleri alındı. — NTV</description>
+      <pubDate>2026-10-08T16:44:29+03:00</pubDate>
     </item>
     <item>
-      <title>SON DAKİKA HABERİ: Emel kurtarılamadı... Bir kadına daha kıydılar | Aydın haberleri | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-haberi-emel-kurtarilamadi-bir-kadina-daha-kiydilar-aydin-haberleri-3918142</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-haberi-emel-kurtarilamadi-bir-kadina-daha-kiydilar-aydin-haberleri-3918142</guid>
+      <title>SEDDK, BES'i saatlik takip ediyor</title>
+      <link>https://www.haberturk.com/ekonomi/sigorta-sektoru-cop31-yolunda-turkiyenin-dayanikliligi-icin-bulustu-3918257</link>
+      <guid isPermaLink="true">https://www.haberturk.com/ekonomi/sigorta-sektoru-cop31-yolunda-turkiyenin-dayanikliligi-icin-bulustu-3918257</guid>
       <category>Gündem</category>
-      <description>SON DAKİKA HABERLER: Aydın'ın İncirliova ilçesinde, birlikte yaşadığı Salih S.'nin tüfekle vurduğu 40 yaşındaki Emel Bozkuş, kaldırıldığı hastanede hayatını kaybetti. Olayın ardından kaçan Salih S. ise dron destekli operasyonla saklandığı zeytinlikte yakalandı — Habertürk</description>
-      <pubDate>2026-10-08T09:17:57+00:00</pubDate>
+      <description>SEDDK Başkanı Davut Menteş, 5. Uluslararası Sigorta Zirvesi’nde yaptığı konuşmada Bireysel Emeklilik Sistemi’ndeki (BES) son gelişmelere ilişkin önemli değerlendirmelerde bulundu. BES’te 2,6 trilyon liraya yaklaşan fon büyüklüğüne ve 16 milyonu aşan tekil katılımcı sayısına ulaşıldığını belirten Men — Habertürk</description>
+      <pubDate>2026-10-08T16:41:44+00:00</pubDate>
     </item>
     <item>
-      <title>Son dakika: Korkunç kazada 3 can kaybı! | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-korkunc-kazada-3-can-kaybi-3918148</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-korkunc-kazada-3-can-kaybi-3918148</guid>
+      <title>Bakan Göktaş CNN Türk</title>
+      <link>https://www.hurriyet.com.tr/gundem/bakan-goktas-cnn-turke-konustu-fon-meselesi-iddialari-bastan-sona-yalan-43334540</link>
+      <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/bakan-goktas-cnn-turke-konustu-fon-meselesi-iddialari-bastan-sona-yalan-43334540</guid>
       <category>Gündem</category>
-      <description>Konya'da meydana gelen korkunç kazada, otomobil ile hafif ticari aracın çarpışması sonucu 3 kişi hayatını kaybetti, 1 kişi yaralandı — Habertürk</description>
-      <pubDate>2026-10-08T09:17:31+00:00</pubDate>
+      <description>Fon iddialarına CNN Türk'te cevap veren Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, &quot;İddia değil iftira. Böyle bir iftirayı ailemden hiç bir kimsenin hak etmediğini vurgulamak istiyorum. Fon meselesinde şahsımı ve ailemi hedef alan iddialar baştan sona yalandır ve iftiradır. Ben hiç tere — Hürriyet</description>
+      <pubDate>2026-10-08T16:37:00+00:00</pubDate>
     </item>
     <item>
-      <title>'Çin ve AB, ekonomik ve ticari ilişkilerde yol ayrımında'</title>
-      <link>https://www.haberturk.com/ekonomi/cin-ve-ab-ekonomik-ve-ticari-iliskilerde-yol-ayriminda-3918150</link>
-      <guid isPermaLink="true">https://www.haberturk.com/ekonomi/cin-ve-ab-ekonomik-ve-ticari-iliskilerde-yol-ayriminda-3918150</guid>
+      <title>Kamu Personeli Danışma Kurulu, Bakan Işıkhan'ın başkanlığında toplandı</title>
+      <link>https://www.aa.com.tr/tr/gundem/kamu-personeli-danisma-kurulu-bakan-isikhanin-baskanliginda-toplandi/4082619</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/gundem/kamu-personeli-danisma-kurulu-bakan-isikhanin-baskanliginda-toplandi/4082619</guid>
       <category>Gündem</category>
-      <description>Avrupa Birliği (AB), aleyhinde büyüyen dış ticaret açığı, ekonomik bağımlılık, güvenlik ve sanayisizleşme endişeleri nedeniyle Çin ile ekonomik ve ticari ilişkilerini gözden geçirerek, ekonomik ve ticari korunma araçlarının devreye sokulduğu yeni bir zemine oturtma arayışında — Habertürk</description>
-      <pubDate>2026-10-08T09:17:00+00:00</pubDate>
+      <description>Çalışma ve Sosyal Güvenlik Bakanı Işıkhan, &quot;Kamu personel sisteminde ihtiyaç duyulan düzenlemeleri sosyal tarafların görüş ve önerilerini dikkate alarak, ortak akıl ve istişare anlayışı içerisinde şekillendirmeyi önemsiyoruz.&quot; ifadesini kullandı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-08T16:36:08+00:00</pubDate>
     </item>
     <item>
-      <title>Son dakika haberler: Gaziantep'te 5 katlı binanın teras katından düşen 4 yaşındaki Müslüm Efe hayatını kaybetti | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/son-dakika-haberler-gaziantep-te-5-katli-binanin-teras-katindan-dusen-4-yasindaki-muslum-efe-hayatini-kaybetti-3918147</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/son-dakika-haberler-gaziantep-te-5-katli-binanin-teras-katindan-dusen-4-yasindaki-muslum-efe-hayatini-kaybetti-3918147</guid>
+      <title>Özgür Özel'in fon iddialarına Adalet Bakanlığı'ndan açıklama</title>
+      <link>https://www.ntv.com.tr/turkiye/ozgur-ozelin-fon-iddialarina-adalet-bakanligindan-aciklama-1745437</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/ozgur-ozelin-fon-iddialarina-adalet-bakanligindan-aciklama-1745437</guid>
       <category>Gündem</category>
-      <description>Gaziantep’te 5 katlı binanın teras katından düşen 4 yaşındaki Müslüm Efe Aslan, kaldırıldığı hastanede hayatını kaybetti. Ailesiyle yaşadığı binanın terasından aşağıya bakmaya çalışırken dengesini kaybettiği belirtilen Aslan’ın cenazesi, adli tıp işlemlerinin ardından defnedilmek üzere ailesine tesl — Habertürk</description>
-      <pubDate>2026-10-08T09:16:28+00:00</pubDate>
+      <description>Yeni Parti Genel Başkanı Özgür Özel'in fon soruşturmasına ilişkin söylemlerine Adalet Bakanlığı &quot;Bakanlıktan sızdırılma iddiası iftira.&quot; diyerek açıklama yaptı. Yeni Parti Genel Başkanı Özgür Özel, fon soruşturmasına ilişkin iddialarda bulundu. Fon krizinde Meclis'in görevinin denetim olduğunu ifade — NTV</description>
+      <pubDate>2026-10-08T16:34:57+03:00</pubDate>
     </item>
     <item>
-      <title>&quot;Medeni Haller&quot; filmi sinemaseverlerle buluşacak</title>
-      <link>https://www.aa.com.tr/tr/kultur/medeni-haller-filmi-sinemaseverlerle-bulusacak/4081981</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/kultur/medeni-haller-filmi-sinemaseverlerle-bulusacak/4081981</guid>
+      <title>BBC'nin araştırmasıyla tacizci öğretmen yeniden hapiste  - BBC News Türkçe</title>
+      <link>https://www.bbc.com/turkce/articles/cwq63p09n2qgo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="true">https://www.bbc.com/turkce/articles/cwq63p09n2qgo?at_medium=RSS&amp;at_campaign=rss</guid>
       <category>Gündem</category>
-      <description>Özge Gürel, Gökhan Alkan, Burak Çelik ve Jessica May'in oynadığı &quot;Medeni Haller&quot; filminin romantik komedi meraklılarından ilgi görmesi bekleniyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-08T09:16:23+00:00</pubDate>
+      <description>Endonezya'da, bir öğrenciye cinsel saldırıda bulunan eski bir öğretmen, BBC'nin gizlice erken tahliye edildiğini ortaya çıkaran araştırmasının ardından yeniden cezaevine gönderildi. — BBC Türkçe</description>
+      <pubDate>2026-10-08T16:33:00+00:00</pubDate>
     </item>
     <item>
-      <title>Yaşlı çiftin üzüm hasadını gençler yaptı | Son dakika haberleri</title>
-      <link>https://www.haberturk.com/gundem/foto/yasli-ciftin-uzum-hasadini-gencler-yapti-3918145</link>
-      <guid isPermaLink="true">https://www.haberturk.com/gundem/foto/yasli-ciftin-uzum-hasadini-gencler-yapti-3918145</guid>
+      <title>Ordu'da yalnız yaşayan kişinin evinden ve bahçesinden kamyonlarca atık çıkarıldı</title>
+      <link>https://www.haberturk.com/gundem/ordu-da-yalniz-yasayan-kisinin-evinden-ve-bahcesinden-kamyonlarca-atik-cikarildi-3918277</link>
+      <guid isPermaLink="true">https://www.haberturk.com/gundem/ordu-da-yalniz-yasayan-kisinin-evinden-ve-bahcesinden-kamyonlarca-atik-cikarildi-3918277</guid>
       <category>Gündem</category>
-      <description>Bitlis'in Hizan ilçesinde sağlık sorunları nedeniyle üzüm hasadını yapamayan yaşlı çiftin yardımına gönüllü gençler yetişti — Habertürk</description>
-      <pubDate>2026-10-08T09:12:43+00:00</pubDate>
+      <description>Ordu'da çevreye yayılan kötü koku üzerine harekete geçen belediye ekipleri, 69 yaşındaki kişinin yalnız yaşadığı ev ve bahçesinde çöp yığınlarıyla karşılaştı. Yaklaşık 6 saat süren temizlik çalışmasında evden ve bahçeden 20 kamyon çöp ve atık çıkarıldı — Habertürk</description>
+      <pubDate>2026-10-08T16:32:13+00:00</pubDate>
     </item>
     <item>
-      <title>Cemil Tugay'ın AKP'ye katılımı sonrası şehirde protestolar - BBC News Türkçe</title>
-      <link>https://www.bbc.com/turkce/articles/cmlyl2rx4xjvo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="true">https://www.bbc.com/turkce/articles/cmlyl2rx4xjvo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <title>8 Ekim 2026 Perşembe gününün son dakika önemli gelişmeleri! (CNN TÜRK 16.30 bülteni) - CNN Türk Sondakika Haberler</title>
+      <link>https://www.cnnturk.com/turkiye/8-ekim-2026-persembe-gununun-son-dakika-onemli-gelismeleri-cnn-turk-16-30-bulteni-3476714</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/8-ekim-2026-persembe-gununun-son-dakika-onemli-gelismeleri-cnn-turk-16-30-bulteni-3476714</guid>
       <category>Gündem</category>
-      <description>Mutlak butlan kararı sonrası Haziran ayında CHP'den istifa eden İzmir Büyükşehir Belediye Başkanı Cemil Tugay AKP'ye katıldı. — BBC Türkçe</description>
-      <pubDate>2026-10-08T09:11:24+00:00</pubDate>
+      <description>8 Ekim 2026 Perşembe gününde Türkiye'de ve dünyada öne çıkan haberler... Yaşanan önemli gelişmeler sizler için derlediğimiz haberimizde. — CNN Türk</description>
+      <pubDate>2026-10-08T16:26:02+00:00</pubDate>
     </item>
     <item>
-      <title>7 Katlı Binanın 3 Katı Böyle Çöktü! - Son Dakika Haberleri CNN Türk | Video</title>
-      <link>https://www.cnnturk.com/video/turkiye/7-katli-binanin-3-kati-boyle-coktu-3476484</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/7-katli-binanin-3-kati-boyle-coktu-3476484</guid>
+      <title>Baba ve oğulu öldürdü, evine gönderildi | Son dakika haberleri</title>
+      <link>https://www.haberturk.com/gundem/baba-ve-ogulu-oldurdu-evine-gonderildi-3918276</link>
+      <guid isPermaLink="true">https://www.haberturk.com/gundem/baba-ve-ogulu-oldurdu-evine-gonderildi-3918276</guid>
       <category>Gündem</category>
-      <description>İstanbul Maltepe'de sabaha karşı yürekleri ağza getiren bir bina faciası yaşandı. 7 katlı binanın alt bölümündeki 3 kat çöktü. Çökme anı kameralara yansıdı. — CNN Türk</description>
-      <pubDate>2026-10-08T09:10:46+00:00</pubDate>
+      <description>Kocaeli’nin Karamürsel ilçesinde otomobil satışında kendisini dolandırmakla suçladığı Mehmet Canımoğlu ve oğlu Aykut Canımoğlu’nu tabancayla öldüren 76 yaşındaki İzzet Kalyoncu, 27 yıl 6 ay hapis cezasına çarptırıldı. Kanser hastası olan Kalyoncu, adli tıp raporları doğrultusunda cezaevine gönderilm — Habertürk</description>
+      <pubDate>2026-10-08T16:25:08+00:00</pubDate>
     </item>
     <item>
-      <title>Eskişehir’de 15 yaşındaki kız çocuğu kayıplara karıştı: Acılı anne gözyaşlarıyla yardım istedi</title>
-      <link>https://www.hurriyet.com.tr/gundem/eskisehirde-15-yasindaki-kiz-cocugu-kayiplara-karisti-acili-anne-gozyaslariyla-yardim-istedi-43333804</link>
-      <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/eskisehirde-15-yasindaki-kiz-cocugu-kayiplara-karisti-acili-anne-gozyaslariyla-yardim-istedi-43333804</guid>
+      <title>Girne’deki gemi kazasında 2 kişinin kimliği belirlendi</title>
+      <link>https://www.haberturk.com/gundem/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belirlendi-3918275</link>
+      <guid isPermaLink="true">https://www.haberturk.com/gundem/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belirlendi-3918275</guid>
       <category>Gündem</category>
-      <description>Eskişehir’de hafta başından bu yana 15 yaşındaki kızı K.A.’dan haber alamayan anne Zekiye Akay, polise kayıp başvurusunda bulunarak kızının bulunması için yardım istedi. — Hürriyet</description>
-      <pubDate>2026-10-08T09:10:33+00:00</pubDate>
+      <description>Girne açıklarında meydana gelen gemi faciasının ardından sürdürülen arama çalışmalarında ulaşılan iki naaşın Mehmet Nuri Ayran ve Saliha Miray Biçer’e ait olduğu belirlendi. Dört naaşın DNA incelemesi sürerken, kayıp bir kişiyi arama çalışmaları devam ediyor. — Habertürk</description>
+      <pubDate>2026-10-08T16:21:40+00:00</pubDate>
+    </item>
+    <item>
+      <title>SON DAKİKA | Adalet Bakanlığı: Özgür Özel</title>
+      <link>https://www.cnnturk.com/turkiye/son-dakika-adalet-bakanligi-ozgur-ozelin-bilgiler-sizdirildi-aciklamasi-iftiradir-3476712</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/son-dakika-adalet-bakanligi-ozgur-ozelin-bilgiler-sizdirildi-aciklamasi-iftiradir-3476712</guid>
+      <category>Gündem</category>
+      <description>Adalet Bakanlığı, İstanbul Cumhuriyet Başsavcılığı tarafından yürütülen fon soruşturmasının somut suç şüphesi ve mali veriler doğrultusunda yürütüldüğünü belirterek, Özgür Özel’in &quot;bilgi sızdırıldı&quot; iddialarının mesnetsiz birer iftira olduğunu bildirdi. — CNN Türk</description>
+      <pubDate>2026-10-08T16:14:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Bakan Çiftçi’den Yunan Bakan’a iade tepkisi! ''Yunanistan suçluların sığınağı olmasın''</title>
+      <link>https://www.sabah.com.tr/gundem/2026/10/08/bakan-ciftciden-yunan-bakana-iade-tepkisi-yunanistan-suclularin-siginagi-olmasin</link>
+      <guid isPermaLink="true">https://www.sabah.com.tr/gundem/2026/10/08/bakan-ciftciden-yunan-bakana-iade-tepkisi-yunanistan-suclularin-siginagi-olmasin</guid>
+      <category>Gündem</category>
+      <description>Son dakika haberler - İçişleri Bakanı Mustafa Çiftçi, resmi ziyareti kapsamında bulunduğu Atina’da Yunanistan Vatandaşı Koruma Bakanı Michalis Chrisochoidis ile görüştü. Bakan Çiftçi, “Umut ediyorum ki, bugünkü görüşmemiz güvenlik ve kolluk iş birliği alanlarındaki iş birliğimizin güçlenmesi adına.. — Sabah</description>
+      <pubDate>2026-10-08T16:12:56+00:00</pubDate>
+    </item>
+    <item>
+      <title>Bakan Bolat</title>
+      <link>https://www.cnnturk.com/turkiye/bakan-bolattan-saymaz-ve-agirel-hakkinda-suc-duyurusu-3476700</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/turkiye/bakan-bolattan-saymaz-ve-agirel-hakkinda-suc-duyurusu-3476700</guid>
+      <category>Gündem</category>
+      <description>Ticaret Bakanlığı, fon soruşturması kapsamında Bakan Ömer Bolat'a yönelik ifadeleri ve sanal medya paylaşımları nedeniyle İsmail Saymaz ve Murat Ağırel hakkında Ankara Cumhuriyet Başsavcılığına suç duyurusunda bulundu. — CNN Türk</description>
+      <pubDate>2026-10-08T16:08:41+00:00</pubDate>
+    </item>
+    <item>
+      <title>Küçükçekmece'deki silahlı saldırıda polis memuru da hayatını kaybetti, 8 şüpheli yakalandı | Son dakika haberleri</title>
+      <link>https://www.haberturk.com/gundem/kucukcekmece-deki-silahli-saldirida-polis-memuru-da-hayatini-kaybetti-8-supheli-yakalandi-3918273</link>
+      <guid isPermaLink="true">https://www.haberturk.com/gundem/kucukcekmece-deki-silahli-saldirida-polis-memuru-da-hayatini-kaybetti-8-supheli-yakalandi-3918273</guid>
+      <category>Gündem</category>
+      <description>İstanbul Küçükçekmece'de bir eğlence mekanına düzenlenen silahlı saldırıda, aralarında istirahatli bir polis memurunun da bulunduğu 2 kişi hayatını kaybetti, 3 kişi yaralandı. Saldırı anları güvenlik kameralarına yansırken, polis ekipleri olayın üzerinden 12 saat geçmeden 8 şüpheliyi yakaladı — Habertürk</description>
+      <pubDate>2026-10-08T16:08:18+00:00</pubDate>
+    </item>
+    <item>
+      <title>İran: Uranyum zenginleştirme hakkımızdan vazgeçmeyeceğiz | Dış Haberler</title>
+      <link>https://www.haberturk.com/dunya/iran-uranyum-zenginlestirme-hakkimizdan-vazgecmeyecegiz-3918263</link>
+      <guid isPermaLink="true">https://www.haberturk.com/dunya/iran-uranyum-zenginlestirme-hakkimizdan-vazgecmeyecegiz-3918263</guid>
+      <category>Gündem</category>
+      <description>İran Atom Enerjisi Kurumu Başkanı Muhammed İslami, ülkesinin uranyum zenginleştirme faaliyetlerinden geri adım atmayacağını söyledi. — Habertürk</description>
+      <pubDate>2026-10-08T16:07:20+00:00</pubDate>
+    </item>
+    <item>
+      <title>UEFA'da Aleksander Ceferin yeniden başkan adayı!</title>
+      <link>https://www.haberturk.com/spor/uefa-da-aleksander-ceferin-yeniden-baskan-adayi-3918274</link>
+      <guid isPermaLink="true">https://www.haberturk.com/spor/uefa-da-aleksander-ceferin-yeniden-baskan-adayi-3918274</guid>
+      <category>Gündem</category>
+      <description>UEFA Başkanı Aleksander Ceferin, dördüncü dönem için seçimde yeniden başkan adayı olacağını açıkladı. — Habertürk</description>
+      <pubDate>2026-10-08T16:04:58+00:00</pubDate>
+    </item>
+    <item>
+      <title>65 bin öğrenciye ayakkabı desteği | Son dakika haberleri</title>
+      <link>https://www.haberturk.com/gundem/65-bin-ogrenciye-ayakkabi-destegi-3918272</link>
+      <guid isPermaLink="true">https://www.haberturk.com/gundem/65-bin-ogrenciye-ayakkabi-destegi-3918272</guid>
+      <category>Gündem</category>
+      <description>Gaziantep Valiliği ile iş insanları arasından 65 bin öğrenciye ayakkabı dağıtılması için protokol imzalandı — Habertürk</description>
+      <pubDate>2026-10-08T15:58:42+00:00</pubDate>
+    </item>
+    <item>
+      <title>Benin'den Arjantin'e 'Messi' tepkisi! &quot;Tek bir forma bile alamadık&quot;</title>
+      <link>https://www.haberturk.com/spor/benin-den-arjantin-e-messi-tepkisi-tek-bir-forma-bile-alamadik-3918267</link>
+      <guid isPermaLink="true">https://www.haberturk.com/spor/benin-den-arjantin-e-messi-tepkisi-tek-bir-forma-bile-alamadik-3918267</guid>
+      <category>Gündem</category>
+      <description>Lionel Messi'nin milli takıma veda maçında Arjantin ile karşılaşan Benin'de teknik direktör Gernot Rohr, mücadele sonrası Arjantinlilere tepki gösterdi. Messi ile fotoğraf çektirmek isteyen oyuncularına izin verilmediğini belirten Rohr, &quot;Arjantinliler oyuncularımıza hiçbir şey vermedi, Messi ile bir — Habertürk</description>
+      <pubDate>2026-10-08T15:56:09+00:00</pubDate>
+    </item>
+    <item>
+      <title>Maltepe'de çöken bina yıkılıyor, kurtarma sürüyor!</title>
+      <link>https://www.cnnturk.com/video/turkiye/maltepede-coken-bina-yikiliyor-kurtarma-suruyor-3476697</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/maltepede-coken-bina-yikiliyor-kurtarma-suruyor-3476697</guid>
+      <category>Gündem</category>
+      <description>Maltepe'de bazı katları çöken 7 katlı binada iki kişi hayatını kaybetti. İstanbul Valisi Davut Gül, yaralıların hayati tehlikesinin bulunmadığını ve enkaz altında 3 kişi olduğunu değerlendirdiklerini açıkladı. Ekiplerin enkaz altındaki çalışmaları sürerken, binanın yıkımı kontrollü bir şekilde gerçe — CNN Türk</description>
+      <pubDate>2026-10-08T15:43:08+00:00</pubDate>
+    </item>
+    <item>
+      <title>SON DAKİKA! Atilla Taş'ın kızı Sezen Taş 14'üncü kattan düşerek hayatını kaybetti - Magazin Haberleri</title>
+      <link>https://www.haberturk.com/magazin/atilla-tas-in-kizi-14-uncu-kattan-duserek-hayatini-kaybetti-3918247</link>
+      <guid isPermaLink="true">https://www.haberturk.com/magazin/atilla-tas-in-kizi-14-uncu-kattan-duserek-hayatini-kaybetti-3918247</guid>
+      <category>Gündem</category>
+      <description>Şarkıcı Atilla Taş’ın kızı Sezen Taş, Mersin’de hayatını kaybetti. Sezen Taş’ın bir binanın 14'üncü katından düştüğü belirtildi — Habertürk</description>
+      <pubDate>2026-10-08T15:30:28+00:00</pubDate>
+    </item>
+    <item>
+      <title>Nobel Edebiyat Ödülü'nün sahibi belli oldu. Rüzgarın sesini dinlerken öğrenmiş</title>
+      <link>https://www.ntv.com.tr/dunya/nobel-edebiyat-odulunun-sahibi-belli-oldu-1745389</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/dunya/nobel-edebiyat-odulunun-sahibi-belli-oldu-1745389</guid>
+      <category>Gündem</category>
+      <description>2026 Nobel Edebiyat Ödülü'nü Kanadalı şair, deneme yazarı, çevirmen ve klasik edebiyat profesörü Anne Carson kazandı. Şairin, &quot;İzlanda'da rüzgarı dinlerken haberi aldığı&quot; öğrenildi. Merakla beklenen 2026 Nobel Edebiyat Ödülü'nün kazananı açıklandı. Ödüle bu yıl, Kanadalı bir şair, deneme yazarı, çev — NTV</description>
+      <pubDate>2026-10-08T15:29:56+03:00</pubDate>
+    </item>
+    <item>
+      <title>Son dakika... Berna Laçin serbest bırakıldı - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/berna-lacin-e-tutuklama-talebi-p367370</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/berna-lacin-e-tutuklama-talebi-p367370</guid>
+      <category>Gündem</category>
+      <description>Son dakika... Sosyal medya paylaşımı nedeniyle tutuklama talebiyle sulh ceza hâkimliğine sevk edilen Berna Laçin serbest bırakıldı. — Sözcü</description>
+      <pubDate>2026-10-08T15:29:32+00:00</pubDate>
+    </item>
+    <item>
+      <title>Girne’deki gemi kazasında 2 kişinin kimliği belirlendi</title>
+      <link>https://www.hurriyet.com.tr/gundem/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belirlendi-43334484</link>
+      <guid isPermaLink="true">https://www.hurriyet.com.tr/gundem/girnedeki-gemi-kazasinda-2-kisinin-kimligi-belirlendi-43334484</guid>
+      <category>Gündem</category>
+      <description>KUZEY Kıbrıs Türk Cumhuriyeti Başbakanlığı, 30 Ağustos'ta Girne açıklarında meydana gelen gemi kazasının ardından sürdürülen arama çalışmalarında cesedi bulunan iki kişinin kimlik tespit işlemlerinin tamamlandığını duyurdu. — Hürriyet</description>
+      <pubDate>2026-10-08T15:22:49+00:00</pubDate>
+    </item>
+    <item>
+      <title>Tasfiye edilen fonlardaki yatırımcılara ödemeler nasıl yapılacak?  - BBC News Türkçe</title>
+      <link>https://www.bbc.com/turkce/articles/ckgeljxrzx9xo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="true">https://www.bbc.com/turkce/articles/ckgeljxrzx9xo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <category>Gündem</category>
+      <description>Fon krizinde 1 milyon TL'ye kadar yatırımcı ödemelerinin bugün başlaması bekleniyor. Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, 7 Ekim'de TBMM Genel Kurulu'nda bu konuda bilgi verdi. — BBC Türkçe</description>
+      <pubDate>2026-10-08T15:16:50+00:00</pubDate>
+    </item>
+    <item>
+      <title>Özgür Özel'den Cemil Tugay'a tepki: &quot;Bilsem selam bile vermezdim&quot;</title>
+      <link>https://www.ntv.com.tr/turkiye/ozgur-ozelden-cemil-tugaya-tepki-bilsem-selam-bile-vermezdim-1745424</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/turkiye/ozgur-ozelden-cemil-tugaya-tepki-bilsem-selam-bile-vermezdim-1745424</guid>
+      <category>Gündem</category>
+      <description>Yeni Parti Genel Başkanı Özgür Özel, AK Parti'ye katılan İzmir Büyükşehir Belediye Başkanı Cemil Tugay için &quot;Adayın yanlış olduğunu bilsem selam bile vermezdim.&quot; dedi. CHP'den istifa ettiğinde yoluna bağımsız devam edeceğini açıklayan İzmir Büyükşehir Belediye Başkanı Cemil Tugay, bu kararından üç a — NTV</description>
+      <pubDate>2026-10-08T15:15:33+03:00</pubDate>
+    </item>
+    <item>
+      <title>43 bin yatırımcı için ödeme günü bugün! 17 fonda ödemeler başladı; Yatırımcı parasını nasıl alacak? - Son Dakika Flaş Haberler | Video</title>
+      <link>https://www.cnnturk.com/video/turkiye/43-bin-yatirimci-icin-odeme-gunu-bugun-17-fonda-odemeler-basladi-yatirimci-parasini-nasil-alacak-3476665</link>
+      <guid isPermaLink="true">https://www.cnnturk.com/video/turkiye/43-bin-yatirimci-icin-odeme-gunu-bugun-17-fonda-odemeler-basladi-yatirimci-parasini-nasil-alacak-3476665</guid>
+      <category>Gündem</category>
+      <description>Fon soruşturması kapsamında 1 milyon liraya kadar parası bulunan küçük yatırımcıların ödemeleri bugün başlıyor. Peki ödemeler nasıl yapılacak, ne kadar sürecek? CNN TÜRK ekibinden Nisan Korkmaz, uzman konuğuna sordu. — CNN Türk</description>
+      <pubDate>2026-10-08T15:14:02+00:00</pubDate>
+    </item>
+    <item>
+      <title>Maltepe'de bina çöktü: 2 kişi hayatını kaybetti - BBC News Türkçe</title>
+      <link>https://www.bbc.com/turkce/articles/cj93zg0k2p97o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="true">https://www.bbc.com/turkce/articles/cj93zg0k2p97o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <category>Gündem</category>
+      <description>İstanbul'un Maltepe ilçesinde yedi katlı bir binadaki çökme sonucu iki kişi hayatını kaybetti. Binanın üç katının çökmesinin ardından enkaz altındaki iki kişi aranıyor. — BBC Türkçe</description>
+      <pubDate>2026-10-08T15:05:32+00:00</pubDate>
     </item>
   </channel>
 </rss>
