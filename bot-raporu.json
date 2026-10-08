@@ -1,23 +1,23 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-08T02:26:27.016652+00:00",
-  "sure_saniye": 36.4,
+  "son_guncelleme": "2026-10-08T09:54:08.408265+00:00",
+  "sure_saniye": 75.5,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 212,
-  "tam_metin_haber": 207,
-  "video_haber": 15,
+  "kazanilan_tam_metin": 209,
+  "tam_metin_haber": 206,
+  "video_haber": 22,
   "kategoriler": {
-    "Gündem": 79,
-    "Ekonomi": 29,
-    "Spor": 45,
-    "Dünya": 55,
+    "Gündem": 77,
+    "Ekonomi": 36,
+    "Spor": 42,
+    "Dünya": 52,
     "Teknoloji": 7,
-    "Yapay Zeka": 3,
-    "Sağlık": 5,
-    "Yaşam & Sanat": 16,
+    "Yapay Zeka": 8,
+    "Sağlık": 2,
+    "Yaşam & Sanat": 15,
     "Magaza": 11
   },
   "kaynaklar": {
@@ -35,12 +35,12 @@
       "hatali": 0,
       "hata": null
     },
-    "TRT Haber": {
-      "haber": 15,
+    "Hürriyet": {
+      "haber": 50,
       "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "Anadolu Ajansı": {
       "haber": 62,
@@ -48,13 +48,6 @@
       "basarili": 6,
       "hatali": 0,
       "hata": null
-    },
-    "Hürriyet": {
-      "haber": 50,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "CNN Türk": {
       "haber": 60,
@@ -67,13 +60,6 @@
       "haber": 60,
       "durum": "aktif",
       "basarili": 7,
-      "hatali": 0,
-      "hata": null
-    },
-    "BBC Türkçe": {
-      "haber": 10,
-      "durum": "aktif",
-      "basarili": 1,
       "hatali": 0,
       "hata": null
     },
@@ -91,8 +77,22 @@
       "hatali": 0,
       "hata": null
     },
+    "BBC Türkçe": {
+      "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "ShiftDelete.Net": {
       "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "TRT Haber": {
+      "haber": 15,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
