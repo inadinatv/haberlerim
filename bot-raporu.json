@@ -1,22 +1,22 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-09T16:50:51.882599+00:00",
-  "sure_saniye": 38.0,
+  "son_guncelleme": "2026-10-09T21:26:52.871655+00:00",
+  "sure_saniye": 36.2,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 209,
-  "tam_metin_haber": 205,
-  "video_haber": 24,
+  "kazanilan_tam_metin": 204,
+  "tam_metin_haber": 202,
+  "video_haber": 17,
   "kategoriler": {
-    "Gündem": 84,
-    "Ekonomi": 30,
-    "Spor": 50,
-    "Dünya": 42,
-    "Teknoloji": 9,
-    "Yapay Zeka": 4,
-    "Sağlık": 1,
+    "Gündem": 88,
+    "Ekonomi": 24,
+    "Spor": 49,
+    "Dünya": 47,
+    "Teknoloji": 7,
+    "Yapay Zeka": 5,
+    "Sağlık": 0,
     "Yaşam & Sanat": 17,
     "Magaza": 13
   },
@@ -63,13 +63,6 @@
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
-    "Sözcü": {
-      "haber": 60,
-      "durum": "aktif",
-      "basarili": 7,
-      "hatali": 0,
-      "hata": null
-    },
     "BBC Türkçe": {
       "haber": 10,
       "durum": "aktif",
@@ -77,14 +70,21 @@
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "Sözcü": {
+      "haber": 56,
+      "durum": "aktif",
+      "basarili": 7,
+      "hatali": 0,
+      "hata": null
+    },
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
