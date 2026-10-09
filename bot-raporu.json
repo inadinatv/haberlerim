@@ -1,23 +1,23 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-09T02:43:44.075577+00:00",
-  "sure_saniye": 38.8,
+  "son_guncelleme": "2026-10-09T09:57:31.590428+00:00",
+  "sure_saniye": 37.1,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
-  "aktif_kaynak": 11,
+  "aktif_kaynak": 10,
   "besleme_sayisi": 47,
   "kazanilan_tam_metin": 211,
-  "tam_metin_haber": 209,
-  "video_haber": 12,
+  "tam_metin_haber": 206,
+  "video_haber": 23,
   "kategoriler": {
-    "Gündem": 85,
-    "Ekonomi": 31,
-    "Spor": 47,
-    "Dünya": 46,
-    "Teknoloji": 4,
-    "Yapay Zeka": 3,
-    "Sağlık": 2,
-    "Yaşam & Sanat": 16,
+    "Gündem": 72,
+    "Ekonomi": 32,
+    "Spor": 50,
+    "Dünya": 45,
+    "Teknoloji": 10,
+    "Yapay Zeka": 7,
+    "Sağlık": 1,
+    "Yaşam & Sanat": 17,
     "Magaza": 16
   },
   "kaynaklar": {
@@ -28,17 +28,17 @@
       "hatali": 0,
       "hata": null
     },
+    "TRT Haber": {
+      "haber": 0,
+      "durum": "hata",
+      "basarili": 0,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 404, column 203"
+    },
     "Sabah": {
       "haber": 45,
       "durum": "aktif",
       "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
-    "TRT Haber": {
-      "haber": 15,
-      "durum": "aktif",
-      "basarili": 1,
       "hatali": 0,
       "hata": null
     },
@@ -64,7 +64,7 @@
       "hata": null
     },
     "Sözcü": {
-      "haber": 58,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 7,
       "hatali": 0,
@@ -72,6 +72,13 @@
     },
     "BBC Türkçe": {
       "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Habertürk": {
+      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
@@ -90,16 +97,10 @@
       "basarili": 1,
       "hatali": 0,
       "hata": null
-    },
-    "Habertürk": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
     }
   },
   "hatalar": [
+    "TRT Haber (https://www.trthaber.com/sondakika.rss): XML çözümlenemedi: not well-formed (invalid token): line 404, column 203",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
   ]
 }
