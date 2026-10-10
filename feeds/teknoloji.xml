@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 09 Oct 2026 21:26:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 01:28:32 +0000</lastBuildDate>
+    <item>
+      <title>Yapay zeka, polise sahte cinayet ihbarı gönderdi</title>
+      <link>https://www.ntv.com.tr/teknoloji/yapay-zeka-polise-sahte-cinayet-ihbari-gonderdi-1745610</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/yapay-zeka-polise-sahte-cinayet-ihbari-gonderdi-1745610</guid>
+      <category>Teknoloji</category>
+      <description>Anthropic’in kontrolden çıkan bir yapay zeka modelinin Philadelphia polisine sahte faili meçhul cinayet ihbarı göndermesi, tartışmaları alevlendirdi. Son dönemde &quot;ya kontrolden çıkarsa &quot; endişelerini artıran siber saldırı ve sızma girişimleriyle gündemden düşmeyen yapay zeka ajanları, ilginç vakalar — NTV</description>
+      <pubDate>2026-10-10T03:52:57+03:00</pubDate>
+    </item>
     <item>
       <title>Sanayi ve Teknoloji Bakanı Kacır: Uzay teknolojileri insanlığın ortak geleceği açısından önemli</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/sanayi-ve-teknoloji-bakani-kacir-uzay-teknolojileri-insanligin-ortak-gelecegi-acisindan-onemli-/4083934</link>
@@ -53,14 +61,6 @@
       <category>Teknoloji</category>
       <description>Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır ile T3 Vakfı Mütevelli Heyeti ve Baykar Yönetim Kurulu Başkanı Selçuk Bayraktar, &quot;Uluslararası Uzay Kongresi (IAC 2026) Halk Günü&quot;nde katılımcı şirketlerin stantlarını ziyaret etti. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-09T12:01:33+00:00</pubDate>
-    </item>
-    <item>
-      <title>Üniversiteliler NASA verileriyle Ay ve Mars'ın sırlarını araştırıyor</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/universiteliler-nasa-verileriyle-ay-ve-marsin-sirlarini-arastiriyor/4083377</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/universiteliler-nasa-verileriyle-ay-ve-marsin-sirlarini-arastiriyor/4083377</guid>
-      <category>Teknoloji</category>
-      <description>Üniversite öğrencileri, Space Apps Challenge programı kapsamında NASA'nın açık verilerini kullanarak Ay ve Mars araştırmalarından yapay zekaya kadar uzanan alanlarda gerçek problemlere çözüm geliştirmek için proje hazırlıyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-09T11:01:25+00:00</pubDate>
     </item>
   </channel>
 </rss>
