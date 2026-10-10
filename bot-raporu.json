@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-10T01:28:32.896898+00:00",
-  "sure_saniye": 37.1,
+  "son_guncelleme": "2026-10-10T08:02:36.489759+00:00",
+  "sure_saniye": 38.4,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 207,
-  "tam_metin_haber": 206,
-  "video_haber": 17,
+  "kazanilan_tam_metin": 211,
+  "tam_metin_haber": 208,
+  "video_haber": 20,
   "kategoriler": {
-    "Gündem": 82,
-    "Ekonomi": 26,
-    "Spor": 49,
+    "Gündem": 77,
+    "Ekonomi": 35,
+    "Spor": 48,
     "Dünya": 52,
-    "Teknoloji": 7,
-    "Yapay Zeka": 6,
-    "Sağlık": 0,
-    "Yaşam & Sanat": 16,
-    "Magaza": 12
+    "Teknoloji": 4,
+    "Yapay Zeka": 3,
+    "Sağlık": 1,
+    "Yaşam & Sanat": 17,
+    "Magaza": 13
   },
   "kaynaklar": {
     "NTV": {
@@ -50,10 +50,10 @@
       "hata": null
     },
     "Hürriyet": {
-      "haber": 50,
+      "haber": 40,
       "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
+      "basarili": 5,
+      "hatali": 2,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
     "CNN Türk": {
@@ -64,7 +64,7 @@
       "hata": null
     },
     "Sözcü": {
-      "haber": 58,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 7,
       "hatali": 0,
@@ -84,14 +84,14 @@
       "hatali": 0,
       "hata": null
     },
-    "ShiftDelete.Net": {
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "ShiftDelete.Net": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
@@ -100,6 +100,7 @@
     }
   },
   "hatalar": [
+    "Hürriyet (http://www.hurriyet.com.tr/rss/gundem): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
   ]
 }

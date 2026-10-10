@@ -5,7 +5,14 @@
     <link>./</link>
     <description>GÜNDEM Sağlık RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sat, 10 Oct 2026 01:28:32 +0000</lastBuildDate>
-
+    <lastBuildDate>Sat, 10 Oct 2026 08:02:36 +0000</lastBuildDate>
+    <item>
+      <title>Beyni genç tutan besinler - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/beyni-genc-tutan-besinler-p367773</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/beyni-genc-tutan-besinler-p367773</guid>
+      <category>Sağlık</category>
+      <description>Bilimsel çalışmalara göre sadece fazla kilo ve kronik hastalıklar değil hafıza zihinsel dayanıklılık hatta Alzheimer ve demans riski bile doğrudan yediklerimizle bağlantılı. — Sözcü</description>
+      <pubDate>2026-10-10T02:30:17+00:00</pubDate>
+    </item>
   </channel>
 </rss>
