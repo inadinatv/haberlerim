@@ -5,38 +5,22 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Tue, 13 Oct 2026 05:14:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 13:27:27 +0000</lastBuildDate>
     <item>
-      <title>Norveç'ten Microsoft'a 12 milyon euro ceza</title>
-      <link>https://www.hurriyet.com.tr/teknoloji/norvecten-microsofta-12-milyon-euro-ceza-43338914</link>
-      <guid isPermaLink="true">https://www.hurriyet.com.tr/teknoloji/norvecten-microsofta-12-milyon-euro-ceza-43338914</guid>
+      <title>Yerli ve milli 6G şebeke çözümleri ilk kez sahada denendi</title>
+      <link>https://www.hurriyet.com.tr/teknoloji/yerli-ve-milli-6g-sebeke-cozumleri-ilk-kez-sahada-denendi-43340200</link>
+      <guid isPermaLink="true">https://www.hurriyet.com.tr/teknoloji/yerli-ve-milli-6g-sebeke-cozumleri-ilk-kez-sahada-denendi-43340200</guid>
       <category>Teknoloji</category>
-      <description>Norveç Veri Koruma Kurumu, kişisel verileri izinsiz paylaştığı gerekçesiyle ABD'li teknoloji devi Microsoft'un reklam platformu Xandr'e 12 milyon euro para cezası verdiğini açıkladı. — Hürriyet</description>
-      <pubDate>2026-10-12T12:43:24+00:00</pubDate>
+      <description>TÜBİTAK ile Turkcell, 6G’ye hazırlık kapsamında stratejik bir iş birliğine imza attı. Her iki kurum, yerli ve milli imkânlarla 6G'nin temel yapı taşlarından olan yeni nesil şebeke çözümlerinin ilk prototiplerini geliştirdi. Söz konusu çözümler, ilk kez ticari nitelikli test altyapısında sahada denen — Hürriyet</description>
+      <pubDate>2026-10-13T13:05:58+00:00</pubDate>
     </item>
     <item>
-      <title>Güney Kore ordusu sahadaki operasyonel verimliliği artırmak için robotlardan yararlanacak</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/guney-kore-ordusu-sahadaki-operasyonel-verimliligi-artirmak-icin-robotlardan-yararlanacak/4086136</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/guney-kore-ordusu-sahadaki-operasyonel-verimliligi-artirmak-icin-robotlardan-yararlanacak/4086136</guid>
+      <title>Veri merkezine gerek yok. Ev aletleri yapay zekanın yuvası olabilir</title>
+      <link>https://www.ntv.com.tr/teknoloji/galeri-veri-merkezine-gerek-yok-ev-aletleri-yapay-zekanin-yuvasi-olabilir-1746121</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-veri-merkezine-gerek-yok-ev-aletleri-yapay-zekanin-yuvasi-olabilir-1746121</guid>
       <category>Teknoloji</category>
-      <description>Güney Kore ordusu, operasyonel verimliliği artırmak ve sahada görev yapan askerlere duyulan ihtiyacı azaltmak için yapay zeka tarafından özel olarak eğitilmiş insansı ve çok bacaklı robotlardan faydalanacak. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-12T12:29:17+00:00</pubDate>
-    </item>
-    <item>
-      <title>İnternet devi patlamalarda çöktü: Erişim durdu - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/yandex-in-veri-merkezine-iha-saldirisi-tesislerde-faaliyetler-durduruldu-p368083</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/yandex-in-veri-merkezine-iha-saldirisi-tesislerde-faaliyetler-durduruldu-p368083</guid>
-      <category>Teknoloji</category>
-      <description>Rus teknoloji devi Yandex’in Vladimir bölgesindeki veri merkezi İHA saldırısıyla vurularak tamamen hizmet dışı kaldı. Ardışık saldırılar sonrası çöken altyapı Türkiye’yi de etkilerken, Yandex Go üzerinden taksi çağırma ve konum servislerinde erişim kesildi. — Sözcü</description>
-      <pubDate>2026-10-12T12:13:20+00:00</pubDate>
-    </item>
-    <item>
-      <title>İnsansız hava ve deniz araçları &quot;ortak akılda&quot; buluştu</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/insansiz-hava-ve-deniz-araclari-ortak-akilda-bulustu-/4086042</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/insansiz-hava-ve-deniz-araclari-ortak-akilda-bulustu-/4086042</guid>
-      <category>Teknoloji</category>
-      <description>Türk savunma sanayisinde yazılım tabanlı çözümlere imza atan HAVELSAN, komuta kontrol ve entegrasyon yetenekleriyle insansız deniz ve hava araçlarının koordineli şekilde görev yapmasını sağladı. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-12T11:15:36+00:00</pubDate>
+      <description>Yapay zeka devi Anthropic, küçük yapay zeka modellerinin merkezi veri merkezlerine ihtiyaç duymadan akıllı ev aletleri ve televizyon kutuları üzerinden kendi kendini kopyalayabileceğini duyurdu. Yapay zeka araştırma şirketi Anthropic, görece küçük yapay zeka modellerinin veri merkezlerine ihtiyaç du — NTV</description>
+      <pubDate>2026-10-13T12:15:00+03:00</pubDate>
     </item>
   </channel>
 </rss>
