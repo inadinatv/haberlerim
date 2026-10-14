@@ -1,23 +1,23 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-14T11:05:11.425949+00:00",
-  "sure_saniye": 35.3,
+  "son_guncelleme": "2026-10-14T16:25:12.008027+00:00",
+  "sure_saniye": 35.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 204,
-  "tam_metin_haber": 203,
-  "video_haber": 18,
+  "kazanilan_tam_metin": 206,
+  "tam_metin_haber": 206,
+  "video_haber": 14,
   "kategoriler": {
-    "Gündem": 69,
-    "Ekonomi": 37,
-    "Spor": 50,
-    "Dünya": 43,
-    "Teknoloji": 11,
-    "Yapay Zeka": 8,
+    "Gündem": 77,
+    "Ekonomi": 35,
+    "Spor": 43,
+    "Dünya": 49,
+    "Teknoloji": 9,
+    "Yapay Zeka": 4,
     "Sağlık": 3,
-    "Yaşam & Sanat": 16,
+    "Yaşam & Sanat": 17,
     "Magaza": 13
   },
   "kaynaklar": {
@@ -42,19 +42,19 @@
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 42,
-      "durum": "aktif",
-      "basarili": 5,
-      "hatali": 2,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
-    },
     "Anadolu Ajansı": {
       "haber": 62,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 0,
       "hata": null
+    },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
     },
     "CNN Türk": {
       "haber": 60,
@@ -77,14 +77,14 @@
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
@@ -100,7 +100,6 @@
     }
   },
   "hatalar": [
-    "Hürriyet (http://www.hurriyet.com.tr/rss/dunya): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
   ]
 }
