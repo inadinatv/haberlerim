@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Sağlık RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:06:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 05:45:13 +0000</lastBuildDate>
+    <item>
+      <title>Bunamayı erken başlatan 3 önemli neden - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/bunamayi-erken-baslatan-3-onemli-neden-p368933</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/bunamayi-erken-baslatan-3-onemli-neden-p368933</guid>
+      <category>Sağlık</category>
+      <description>Orta yaşta görülen damarla ilgili (vasküler) risk faktörleri demansın erken dönemde ortaya çıkmasına yol açabiliyor. — Sözcü</description>
+      <pubDate>2026-10-14T02:51:03+00:00</pubDate>
+    </item>
     <item>
       <title>Her görünen damar varis değildir - Sağlık Haberleri</title>
       <link>https://www.cnnturk.com/saglik/her-gorunen-damar-varis-degildir-3478689</link>
@@ -29,14 +37,6 @@
       <category>Sağlık</category>
       <description>Estetik, Plastik ve Rekonstrüktif Cerrahi Uzmanı Doç. Dr. Güncel Öztürk, yaz aylarında artan güneş maruziyetinin ciltte oluşturabileceği değişikliklerin neden sonbaharla birlikte daha belirgin hale gelebildiğini ve bu dönemde cildin nasıl değerlendirilmesi gerektiğini anlattı. — CNN Türk</description>
       <pubDate>2026-10-13T15:45:09+00:00</pubDate>
-    </item>
-    <item>
-      <title>Cildiniz Soğuk Havalara Hazır mı? - Sağlık Haberleri</title>
-      <link>https://www.cnnturk.com/saglik/cildiniz-soguk-havalara-hazir-mi-3478573</link>
-      <guid isPermaLink="true">https://www.cnnturk.com/saglik/cildiniz-soguk-havalara-hazir-mi-3478573</guid>
-      <category>Sağlık</category>
-      <description>Havaların serinlemesi ve nem oranının düşmesiyle birlikte ciltte kuruluk, pullanma ve kaşıntı şikayetleri artabiliyor. Özellikle çocuklar, ileri yaştakiler ve kronik deri hastalığı bulunan kişiler bu durumdan daha fazla etkilenebiliyor. Dermatoloji Uzmanı Prof. Dr. Sevilay Oğuz Kılıç, sonbahar ve kı — CNN Türk</description>
-      <pubDate>2026-10-13T14:08:50+00:00</pubDate>
     </item>
   </channel>
 </rss>

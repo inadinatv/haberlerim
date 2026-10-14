@@ -1,20 +1,20 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-14T00:06:04.881041+00:00",
-  "sure_saniye": 37.3,
+  "son_guncelleme": "2026-10-14T05:45:13.977690+00:00",
+  "sure_saniye": 37.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 209,
-  "tam_metin_haber": 210,
-  "video_haber": 12,
+  "kazanilan_tam_metin": 210,
+  "tam_metin_haber": 217,
+  "video_haber": 16,
   "kategoriler": {
-    "Gündem": 78,
-    "Ekonomi": 28,
-    "Spor": 48,
-    "Dünya": 54,
-    "Teknoloji": 6,
+    "Gündem": 77,
+    "Ekonomi": 26,
+    "Spor": 46,
+    "Dünya": 60,
+    "Teknoloji": 5,
     "Yapay Zeka": 2,
     "Sağlık": 4,
     "Yaşam & Sanat": 15,
@@ -28,6 +28,13 @@
       "hatali": 0,
       "hata": null
     },
+    "TRT Haber": {
+      "haber": 15,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "Sabah": {
       "haber": 42,
       "durum": "aktif",
@@ -35,10 +42,10 @@
       "hatali": 0,
       "hata": null
     },
-    "TRT Haber": {
-      "haber": 15,
+    "Anadolu Ajansı": {
+      "haber": 62,
       "durum": "aktif",
-      "basarili": 1,
+      "basarili": 6,
       "hatali": 0,
       "hata": null
     },
@@ -49,13 +56,6 @@
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5227"
     },
-    "Anadolu Ajansı": {
-      "haber": 62,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "CNN Türk": {
       "haber": 60,
       "durum": "aktif",
@@ -64,7 +64,7 @@
       "hata": null
     },
     "Sözcü": {
-      "haber": 57,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 7,
       "hatali": 0,
@@ -72,13 +72,6 @@
     },
     "BBC Türkçe": {
       "haber": 10,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
-    "Habertürk": {
-      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
@@ -92,6 +85,13 @@
       "hata": null
     },
     "ShiftDelete.Net": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,

@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:06:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 05:45:13 +0000</lastBuildDate>
+    <item>
+      <title>OpenAI'da Dinleme Cihazı Skandalı: FBI Devreye Girdi - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/openai-ofisinde-gizli-dinleme-cihazi-skandali</link>
+      <guid isPermaLink="true">https://shiftdelete.net/openai-ofisinde-gizli-dinleme-cihazi-skandali</guid>
+      <category>Yapay Zeka</category>
+      <description>OpenAI'ın San Francisco ofisinde gizli bir dinleme cihazı bulundu. Olayla ilgili bir mühendis tutuklanırken, veri sızıntısı olmadığı açıklandı. — ShiftDelete.Net</description>
+      <pubDate>2026-10-14T04:00:09+00:00</pubDate>
+    </item>
     <item>
       <title>Google Gemini 4 Argon Modelini Kullanıma Açtı - ShiftDelete.Net</title>
       <link>https://shiftdelete.net/gemini-4-argon-ozellikleri-ve-fiyatlandirmasi</link>
@@ -13,14 +21,6 @@
       <category>Yapay Zeka</category>
       <description>Google, yeni Gemini 4 Argon modelini kullanıma sundu. Gemini 4 Argon özellikleri ve abonelik planları hakkındaki detaylar haberimizde. — ShiftDelete.Net</description>
       <pubDate>2026-10-13T18:11:47+00:00</pubDate>
-    </item>
-    <item>
-      <title>Yapay zeka destekli kişisel asistanlar geliştiren Ambi, 26 milyon dolar yatırım aldı</title>
-      <link>https://webrazzi.com/2026/10/13/yapay-zeka-destekli-kisisel-asistanlar-gelistiren-ambi-26-milyon-dolar-yatirim-aldi/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/13/yapay-zeka-destekli-kisisel-asistanlar-gelistiren-ambi-26-milyon-dolar-yatirim-aldi/</guid>
-      <category>Yapay Zeka</category>
-      <description>Yapay zeka destekli kişisel asistanlar geliştiren Ambi , 26 milyon dolar yatırım aldı. Şirketin 26 milyon dolarlık seri A öncesi yatırım turuna Luminous Ventures ve Huaqin Technology ortaklaşa liderlik etti. ABD merkezli Ambi, yeni yatırımı yapay zeka ajanını geliştirmek, konuşma tanıma modelleri üz — Webrazzi</description>
-      <pubDate>2026-10-13T13:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
