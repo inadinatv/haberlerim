@@ -5,7 +5,23 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Tue, 13 Oct 2026 20:02:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:06:04 +0000</lastBuildDate>
+    <item>
+      <title>OpenAI'ın ofisinde gizli dinleme cihazı bulundu: Bir çalışan tutuklandı</title>
+      <link>https://www.ntv.com.tr/teknoloji/galeri-openaiin-ofisinde-gizli-dinleme-cihazi-bulundu-bir-calisan-tutuklandi-1746200</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-openaiin-ofisinde-gizli-dinleme-cihazi-bulundu-bir-calisan-tutuklandi-1746200</guid>
+      <category>Teknoloji</category>
+      <description>ChatGPT'nin geliştiricisi OpenAI, ofislerinden birinde gizli dinleme cihazı tespit edildiğini açıkladı. Yapay zeka şirketi OpenAI, ABD'nin San Francisco kentindeki ofislerinden birinde gizli kayıt cihazı bulunduğunu duyurdu. ChatGPT'nin geliştiricisi olan şirket, gelişmiş bir dinleme cihazının çalış — NTV</description>
+      <pubDate>2026-10-14T01:51:40+03:00</pubDate>
+    </item>
+    <item>
+      <title>Google'dan yapay zeka yarışında yeni hamle: Gemini 4 Argon</title>
+      <link>https://www.ntv.com.tr/teknoloji/galeri-googledan-yapay-zeka-yarisinda-yeni-hamle-gemini-4-argon-1746196</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-googledan-yapay-zeka-yarisinda-yeni-hamle-gemini-4-argon-1746196</guid>
+      <category>Teknoloji</category>
+      <description>Google, yeni nesil yapay zeka modeli Gemini 4 Argon'u dünya genelinde geliştiricilerin, işletmelerin ve ücretli abonelerin kullanımına açtı. ABD merkezli teknoloji devi Google, en gelişmiş yapay zeka modeli olarak tanıttığı Gemini 4 Argon'u dünya genelinde kullanıma sundu. Alphabet çatısı altında fa — NTV</description>
+      <pubDate>2026-10-14T00:19:12+03:00</pubDate>
+    </item>
     <item>
       <title>Apple'dan akıllı ev hamlesi: HomeView tanıtıldı</title>
       <link>https://www.ntv.com.tr/teknoloji/galeri-appledan-akilli-ev-hamlesi-homeview-tanitildi-1746189</link>
@@ -37,14 +53,6 @@
       <category>Teknoloji</category>
       <description>TÜBİTAK ile Turkcell, 6G’ye hazırlık kapsamında stratejik bir iş birliğine imza attı. Her iki kurum, yerli ve milli imkânlarla 6G'nin temel yapı taşlarından olan yeni nesil şebeke çözümlerinin ilk prototiplerini geliştirdi. Söz konusu çözümler, ilk kez ticari nitelikli test altyapısında sahada denen — Hürriyet</description>
       <pubDate>2026-10-13T13:05:58+00:00</pubDate>
-    </item>
-    <item>
-      <title>Veri merkezine gerek yok. Ev aletleri yapay zekanın yuvası olabilir</title>
-      <link>https://www.ntv.com.tr/teknoloji/galeri-veri-merkezine-gerek-yok-ev-aletleri-yapay-zekanin-yuvasi-olabilir-1746121</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-veri-merkezine-gerek-yok-ev-aletleri-yapay-zekanin-yuvasi-olabilir-1746121</guid>
-      <category>Teknoloji</category>
-      <description>Yapay zeka devi Anthropic, küçük yapay zeka modellerinin merkezi veri merkezlerine ihtiyaç duymadan akıllı ev aletleri ve televizyon kutuları üzerinden kendi kendini kopyalayabileceğini duyurdu. Yapay zeka araştırma şirketi Anthropic, görece küçük yapay zeka modellerinin veri merkezlerine ihtiyaç du — NTV</description>
-      <pubDate>2026-10-13T12:15:00+03:00</pubDate>
     </item>
   </channel>
 </rss>
