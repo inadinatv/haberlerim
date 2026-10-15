@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-15T08:06:53.115273+00:00",
-  "sure_saniye": 38.7,
+  "son_guncelleme": "2026-10-15T13:53:26.511946+00:00",
+  "sure_saniye": 47.9,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 211,
-  "tam_metin_haber": 204,
-  "video_haber": 16,
+  "kazanilan_tam_metin": 207,
+  "tam_metin_haber": 202,
+  "video_haber": 22,
   "kategoriler": {
-    "Gündem": 84,
-    "Ekonomi": 34,
+    "Gündem": 81,
+    "Ekonomi": 33,
     "Spor": 48,
-    "Dünya": 48,
-    "Teknoloji": 4,
-    "Yapay Zeka": 5,
-    "Sağlık": 4,
-    "Yaşam & Sanat": 13,
-    "Magaza": 10
+    "Dünya": 42,
+    "Teknoloji": 7,
+    "Yapay Zeka": 8,
+    "Sağlık": 3,
+    "Yaşam & Sanat": 17,
+    "Magaza": 11
   },
   "kaynaklar": {
     "NTV": {
@@ -28,17 +28,17 @@
       "hatali": 0,
       "hata": null
     },
-    "Sabah": {
-      "haber": 42,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "TRT Haber": {
       "haber": 15,
       "durum": "aktif",
       "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Sabah": {
+      "haber": 42,
+      "durum": "aktif",
+      "basarili": 6,
       "hatali": 0,
       "hata": null
     },
@@ -77,6 +77,13 @@
       "hatali": 0,
       "hata": null
     },
+    "Webrazzi": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "Habertürk": {
       "haber": 12,
       "durum": "aktif",
@@ -85,13 +92,6 @@
       "hata": null
     },
     "ShiftDelete.Net": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
-    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
