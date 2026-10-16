@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 16 Oct 2026 19:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:27:48 +0000</lastBuildDate>
+    <item>
+      <title>AMD CEO'su Lisa Su: İşlemci Pazarı 2030'a Kadar 10 Kat Büyüyecek - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/amd-ceo-lisa-su-islemci-pazari-2030-beklentisi</link>
+      <guid isPermaLink="true">https://shiftdelete.net/amd-ceo-lisa-su-islemci-pazari-2030-beklentisi</guid>
+      <category>Yapay Zeka</category>
+      <description>AMD CEO'su Lisa Su, yapay zeka ajanlarının etkisiyle işlemci pazarının 2030'a kadar 10 kat büyüyeceğini ve yeni EPYC Verano işlemcisini duyurdu. — ShiftDelete.Net</description>
+      <pubDate>2026-10-16T20:00:21+00:00</pubDate>
+    </item>
     <item>
       <title>Yapay zeka altyapısı geliştiren Mueon, 65 milyon dolar yatırım aldı</title>
       <link>https://webrazzi.com/2026/10/16/yapay-zeka-altyapisi-gelistiren-mueon-65-milyon-dolar-yatirim-aldi/</link>
@@ -37,14 +45,6 @@
       <category>Yapay Zeka</category>
       <description>OpenAI , ChatGPT'nin Google Chrome uzantısını yeni özelliklerle güncelledi . Güncellemeyle birlikte ChatGPT, kullanıcıların açık Chrome sekmelerini görebiliyor, sekmelerdeki bilgileri yanıtlarına dahil edebiliyor ve belirli görevlerde tarayıcı üzerinde işlem yapabiliyor. Kullanıcılar ChatGPT'nin web — Webrazzi</description>
       <pubDate>2026-10-16T12:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Amazon'dan konuşmaları özetleyen iki yeni kişisel yapay zeka cihazı: Bee Frontier ve Bee Eclipse</title>
-      <link>https://webrazzi.com/2026/10/16/amazon-dan-konusmalari-ozetleyen-iki-yeni-kisisel-yapay-zeka-cihazi-bee-frontier-ve-bee-eclipse/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/16/amazon-dan-konusmalari-ozetleyen-iki-yeni-kisisel-yapay-zeka-cihazi-bee-frontier-ve-bee-eclipse/</guid>
-      <category>Yapay Zeka</category>
-      <description>Amazon , kişisel yapay zeka cihazları geliştiren Bee markası altında iki yeni ürününü tanıttı. Şirketin geçtiğimiz yıl satın aldığı girişimin yeni cihazları Bee Frontier ve Bee Eclipse , günlük konuşmaları notlara dönüştürerek özetler, hatırlatmalar ve yapılacaklar listeleri oluşturmayı amaçlıyor. Ü — Webrazzi</description>
-      <pubDate>2026-10-16T11:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>

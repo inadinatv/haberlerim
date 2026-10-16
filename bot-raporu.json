@@ -1,20 +1,20 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-16T19:15:00.245025+00:00",
-  "sure_saniye": 36.7,
+  "son_guncelleme": "2026-10-16T22:27:48.700507+00:00",
+  "sure_saniye": 46.0,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 207,
-  "tam_metin_haber": 215,
-  "video_haber": 14,
+  "kazanilan_tam_metin": 210,
+  "tam_metin_haber": 208,
+  "video_haber": 12,
   "kategoriler": {
-    "Gündem": 94,
+    "Gündem": 92,
     "Ekonomi": 28,
-    "Spor": 45,
-    "Dünya": 46,
-    "Teknoloji": 4,
+    "Spor": 44,
+    "Dünya": 50,
+    "Teknoloji": 3,
     "Yapay Zeka": 5,
     "Sağlık": 1,
     "Yaşam & Sanat": 17,
@@ -28,17 +28,17 @@
       "hatali": 0,
       "hata": null
     },
-    "TRT Haber": {
-      "haber": 15,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "Sabah": {
       "haber": 42,
       "durum": "aktif",
       "basarili": 6,
+      "hatali": 0,
+      "hata": null
+    },
+    "TRT Haber": {
+      "haber": 15,
+      "durum": "aktif",
+      "basarili": 1,
       "hatali": 0,
       "hata": null
     },
@@ -49,19 +49,19 @@
       "hatali": 0,
       "hata": null
     },
-    "CNN Türk": {
-      "haber": 60,
-      "durum": "aktif",
-      "basarili": 8,
-      "hatali": 0,
-      "hata": null
-    },
     "Hürriyet": {
       "haber": 50,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
+    },
+    "CNN Türk": {
+      "haber": 60,
+      "durum": "aktif",
+      "basarili": 8,
+      "hatali": 0,
+      "hata": null
     },
     "Sözcü": {
       "haber": 60,
@@ -77,13 +77,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "Habertürk": {
       "haber": 12,
       "durum": "aktif",
@@ -92,6 +85,13 @@
       "hata": null
     },
     "ShiftDelete.Net": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
