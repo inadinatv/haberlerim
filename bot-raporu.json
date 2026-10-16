@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-16T00:02:33.290901+00:00",
-  "sure_saniye": 38.8,
+  "son_guncelleme": "2026-10-16T05:22:57.646039+00:00",
+  "sure_saniye": 36.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 203,
+  "kazanilan_tam_metin": 208,
   "tam_metin_haber": 213,
   "video_haber": 13,
   "kategoriler": {
-    "Gündem": 84,
-    "Ekonomi": 24,
-    "Spor": 48,
-    "Dünya": 55,
-    "Teknoloji": 3,
-    "Yapay Zeka": 4,
-    "Sağlık": 2,
-    "Yaşam & Sanat": 17,
-    "Magaza": 13
+    "Gündem": 78,
+    "Ekonomi": 27,
+    "Spor": 50,
+    "Dünya": 61,
+    "Teknoloji": 4,
+    "Yapay Zeka": 3,
+    "Sağlık": 1,
+    "Yaşam & Sanat": 14,
+    "Magaza": 12
   },
   "kaynaklar": {
     "NTV": {
@@ -42,19 +42,19 @@
       "hatali": 0,
       "hata": null
     },
-    "Anadolu Ajansı": {
-      "haber": 62,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "Hürriyet": {
       "haber": 50,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
+    },
+    "Anadolu Ajansı": {
+      "haber": 62,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 0,
+      "hata": null
     },
     "CNN Türk": {
       "haber": 60,
@@ -77,13 +77,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "ShiftDelete.Net": {
       "haber": 12,
       "durum": "aktif",
@@ -92,6 +85,13 @@
       "hata": null
     },
     "Habertürk": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
