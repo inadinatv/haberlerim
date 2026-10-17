@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-17T17:44:15.112541+00:00",
-  "sure_saniye": 37.5,
+  "son_guncelleme": "2026-10-17T20:01:43.530405+00:00",
+  "sure_saniye": 39.3,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 10,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 213,
-  "tam_metin_haber": 200,
-  "video_haber": 26,
+  "kazanilan_tam_metin": 214,
+  "tam_metin_haber": 204,
+  "video_haber": 21,
   "kategoriler": {
     "Gündem": 77,
     "Ekonomi": 34,
-    "Spor": 50,
+    "Spor": 49,
     "Dünya": 50,
     "Teknoloji": 4,
     "Yapay Zeka": 2,
     "Sağlık": 2,
     "Yaşam & Sanat": 18,
-    "Magaza": 13
+    "Magaza": 14
   },
   "kaynaklar": {
     "NTV": {
@@ -40,12 +40,19 @@
       "durum": "hata",
       "basarili": 0,
       "hatali": 1,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 346, column 86"
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 388, column 86"
     },
     "Anadolu Ajansı": {
       "haber": 62,
       "durum": "aktif",
       "basarili": 6,
+      "hatali": 0,
+      "hata": null
+    },
+    "CNN Türk": {
+      "haber": 60,
+      "durum": "aktif",
+      "basarili": 8,
       "hatali": 0,
       "hata": null
     },
@@ -55,13 +62,6 @@
       "basarili": 6,
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
-    },
-    "CNN Türk": {
-      "haber": 60,
-      "durum": "aktif",
-      "basarili": 8,
-      "hatali": 0,
-      "hata": null
     },
     "Sözcü": {
       "haber": 60,
@@ -100,7 +100,7 @@
     }
   },
   "hatalar": [
-    "TRT Haber (https://www.trthaber.com/sondakika.rss): XML çözümlenemedi: not well-formed (invalid token): line 346, column 86",
+    "TRT Haber (https://www.trthaber.com/sondakika.rss): XML çözümlenemedi: not well-formed (invalid token): line 388, column 86",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
   ]
 }
