@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-17T10:04:51.642170+00:00",
-  "sure_saniye": 38.3,
+  "son_guncelleme": "2026-10-17T14:02:36.928041+00:00",
+  "sure_saniye": 39.3,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
-  "aktif_kaynak": 11,
+  "aktif_kaynak": 10,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 211,
-  "tam_metin_haber": 206,
-  "video_haber": 21,
+  "kazanilan_tam_metin": 210,
+  "tam_metin_haber": 202,
+  "video_haber": 30,
   "kategoriler": {
-    "Gündem": 84,
-    "Ekonomi": 37,
+    "Gündem": 75,
+    "Ekonomi": 34,
     "Spor": 50,
-    "Dünya": 46,
-    "Teknoloji": 2,
-    "Yapay Zeka": 1,
+    "Dünya": 50,
+    "Teknoloji": 4,
+    "Yapay Zeka": 2,
     "Sağlık": 2,
     "Yaşam & Sanat": 18,
-    "Magaza": 10
+    "Magaza": 15
   },
   "kaynaklar": {
     "NTV": {
@@ -36,11 +36,11 @@
       "hata": null
     },
     "TRT Haber": {
-      "haber": 15,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
+      "haber": 0,
+      "durum": "hata",
+      "basarili": 0,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 192, column 86"
     },
     "Anadolu Ajansı": {
       "haber": 62,
@@ -77,6 +77,13 @@
       "hatali": 0,
       "hata": null
     },
+    "Webrazzi": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "Habertürk": {
       "haber": 12,
       "durum": "aktif",
@@ -90,16 +97,10 @@
       "basarili": 1,
       "hatali": 0,
       "hata": null
-    },
-    "Webrazzi": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
     }
   },
   "hatalar": [
+    "TRT Haber (https://www.trthaber.com/sondakika.rss): XML çözümlenemedi: not well-formed (invalid token): line 192, column 86",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
   ]
 }
