@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sat, 17 Oct 2026 17:44:15 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 20:01:43 +0000</lastBuildDate>
+    <item>
+      <title>Dell CEO’su: Bellek Kıtlığı 2027 Yılında Daha da Kötüleşecek - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/dell-bellek-kitligi-2027</link>
+      <guid isPermaLink="true">https://shiftdelete.net/dell-bellek-kitligi-2027</guid>
+      <category>Yapay Zeka</category>
+      <description>Dell CEO'su Michael Dell, yapay zeka sunucularındaki bellek kıtlığı sorununun 2027 yılında daha da derinleşeceği konusunda uyardı. — ShiftDelete.Net</description>
+      <pubDate>2026-10-17T20:00:47+00:00</pubDate>
+    </item>
     <item>
       <title>NVIDIA RTX Spark Türkiye’de Sahneye Çıktı - ShiftDelete.Net</title>
       <link>https://shiftdelete.net/nvidia-rtx-spark-turkiyede-sahneye-cikti</link>
@@ -13,14 +21,6 @@
       <category>Yapay Zeka</category>
       <description>NVIDIA’nın yeni nesil yapay zeka ve grafik mimarisini buluşturan RTX Spark serisi, küresel lansman turu kapsamında İstanbul’da teknoloji meraklılarıyla buluştu. Vatan Bilgisayar Topkapı mağazasında gerçekleşen etkinlikte, 1.200’ü aşkın katılımcı yeni nesil yapay zeka destekli donanımları ilk elden d — ShiftDelete.Net</description>
       <pubDate>2026-10-17T12:54:10+00:00</pubDate>
-    </item>
-    <item>
-      <title>AMD CEO'su Lisa Su: İşlemci Pazarı 2030'a Kadar 10 Kat Büyüyecek - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/amd-ceo-lisa-su-islemci-pazari-2030-beklentisi</link>
-      <guid isPermaLink="true">https://shiftdelete.net/amd-ceo-lisa-su-islemci-pazari-2030-beklentisi</guid>
-      <category>Yapay Zeka</category>
-      <description>AMD CEO'su Lisa Su, yapay zeka ajanlarının etkisiyle işlemci pazarının 2030'a kadar 10 kat büyüyeceğini ve yeni EPYC Verano işlemcisini duyurdu. — ShiftDelete.Net</description>
-      <pubDate>2026-10-16T20:00:21+00:00</pubDate>
     </item>
   </channel>
 </rss>
