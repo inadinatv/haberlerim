@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sat, 17 Oct 2026 14:02:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 17:44:15 +0000</lastBuildDate>
+    <item>
+      <title>Yapay zeka ajanlarının siber güvenlikte kullanımı eğitimi</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zeka-ajanlarinin-siber-guvenlikte-kullanimi-egitimi/4092108</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zeka-ajanlarinin-siber-guvenlikte-kullanimi-egitimi/4092108</guid>
+      <category>Teknoloji</category>
+      <description>Kamu Siber Güvenlik Derneği tarafından Ankara Yıldırım Beyazıt Üniversitesi ev sahipliğinde düzenlenen &quot;Siber Güvenlik Eğitim Serisi - 6&quot; kapsamında, &quot;Uygulamalı Agentic Siber Güvenlik Eğitimi&quot; gerçekleştirildi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-17T14:59:44+00:00</pubDate>
+    </item>
     <item>
       <title>ABD'li şirket Meta, Brezilya'da Devlet Başkanı Lula karşıtı siyasi ön yargı suçlamalarını reddetti</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/abdli-sirket-meta-brezilyada-devlet-baskani-lula-karsiti-siyasi-on-yargi-suclamalarini-reddetti/4091925</link>
@@ -29,14 +37,6 @@
       <category>Teknoloji</category>
       <description>Yapay zeka sistemleri geliştirme konusunda ülkeler ve şirketler arasında büyüyen rekabet, geri kalma korkusunu tetiklemekle kalmıyor, bu teknolojinin tehlikeler göze alınarak geliştirilmesi ve yavaşlama çağrılarının göz ardı edilmesine neden oluyor. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-17T08:19:59+00:00</pubDate>
-    </item>
-    <item>
-      <title>İnternet reklamlarında casus yazılım tehlikesi: Tıklamak gerekmiyor</title>
-      <link>https://www.ntv.com.tr/teknoloji/galeri-internet-reklamlarinda-casus-yazilim-tehlikesi-tiklamaya-bile-gerek-yok-1746626</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-internet-reklamlarinda-casus-yazilim-tehlikesi-tiklamaya-bile-gerek-yok-1746626</guid>
-      <category>Teknoloji</category>
-      <description>İsrailli bir reklam şirketinin, milyonlarca internet kullanıcısına gösterilen reklamlar aracılığıyla hedefli casus yazılım saldırılarına zemin hazırladığı ortaya çıktı. Kanada'daki Toronto Üniversitesi bünyesinde faaliyet gösteren dijital araştırma kuruluşu Citizen Lab, İsrailli reklam ajansı Discov — NTV</description>
-      <pubDate>2026-10-16T18:37:06+03:00</pubDate>
     </item>
   </channel>
 </rss>
