@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sun, 18 Oct 2026 17:46:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 20:00:59 +0000</lastBuildDate>
+    <item>
+      <title>Sarımsak kabuklarından elektrik üretmeyi başardılar - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/sarimsak-kabuklarindan-elektrik-uretmeyi-basardilar-p370415</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/sarimsak-kabuklarindan-elektrik-uretmeyi-basardilar-p370415</guid>
+      <category>Teknoloji</category>
+      <description>Mutfaklarda genellikle çöpe atılan sarımsak kabukları, elektrik üretiminde kullanılabilecek bir malzemeye dönüştürüldü. Araştırmacılar, geliştirdikleri düzenekle laboratuvar ortamında 400 volta kadar gerilim elde etti. — Sözcü</description>
+      <pubDate>2026-10-18T18:44:56+00:00</pubDate>
+    </item>
     <item>
       <title>PlayStation 6'nın fiyatı tüm dünyada dudak uçuklatacak - Sözcü Gazetesi</title>
       <link>https://www.sozcu.com.tr/playstation-6nin-fiyati-tum-dunyada-dudak-ucuklatacak-p370336</link>
@@ -37,14 +45,6 @@
       <category>Teknoloji</category>
       <description>İstanbul'daki üç üniversiteden bilim insanları, cilt kanserinin agresif türlerinden melanomun tedavisi için kemoterapi ile fototermal tedaviyi birleştiren, 3 boyutlu biyoyazıcıyla üretilen mikroiğne temelli yama sistemi geliştirdi. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-18T08:14:42+00:00</pubDate>
-    </item>
-    <item>
-      <title>IURES 2026 Kongresi'nde ürolojik cerrahide yapay zeka destekli teknolojiler konuşuldu</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/iures-2026-kongresinde-urolojik-cerrahide-yapay-zeka-destekli-teknolojiler-konusuldu/4092416</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/iures-2026-kongresinde-urolojik-cerrahide-yapay-zeka-destekli-teknolojiler-konusuldu/4092416</guid>
-      <category>Teknoloji</category>
-      <description>Uluslararası Üroloji Araştırmaları Derneğinin (IURES) Aydın Didim'de düzenlediği IURES 2026 Kongresi'nde ürolojik cerrahide, yapay zeka destekli teknolojiler ve yeni nesil robotik uygulamalar tartışıldı. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-18T07:40:43+00:00</pubDate>
     </item>
   </channel>
 </rss>
