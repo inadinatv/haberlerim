@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sat, 17 Oct 2026 22:51:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:35:58 +0000</lastBuildDate>
+    <item>
+      <title>İlkokul öğrencileri madencilerin sağlık durumunu takip eden akıllı bileklik geliştirdi</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/ilkokul-ogrencileri-madencilerin-saglik-durumunu-takip-eden-akilli-bileklik-gelistirdi/4092312</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/ilkokul-ogrencileri-madencilerin-saglik-durumunu-takip-eden-akilli-bileklik-gelistirdi/4092312</guid>
+      <category>Teknoloji</category>
+      <description>Malatya'da ilkokul öğrencileri, yer altında çalışan madencilerin sağlık durumlarını takip ederek olası tehlikelerde kontrol merkezine uyarı gönderen akıllı bileklik geliştirdi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-17T21:23:12+00:00</pubDate>
+    </item>
     <item>
       <title>Yapay zeka ajanlarının siber güvenlikte kullanımı eğitimi</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zeka-ajanlarinin-siber-guvenlikte-kullanimi-egitimi/4092108</link>
@@ -37,14 +45,6 @@
       <category>Teknoloji</category>
       <description>Yapay zeka sistemleri geliştirme konusunda ülkeler ve şirketler arasında büyüyen rekabet, geri kalma korkusunu tetiklemekle kalmıyor, bu teknolojinin tehlikeler göze alınarak geliştirilmesi ve yavaşlama çağrılarının göz ardı edilmesine neden oluyor. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-17T08:19:59+00:00</pubDate>
-    </item>
-    <item>
-      <title>İnternet reklamlarında casus yazılım tehlikesi: Tıklamak gerekmiyor</title>
-      <link>https://www.ntv.com.tr/teknoloji/galeri-internet-reklamlarinda-casus-yazilim-tehlikesi-tiklamaya-bile-gerek-yok-1746626</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-internet-reklamlarinda-casus-yazilim-tehlikesi-tiklamaya-bile-gerek-yok-1746626</guid>
-      <category>Teknoloji</category>
-      <description>İsrailli bir reklam şirketinin, milyonlarca internet kullanıcısına gösterilen reklamlar aracılığıyla hedefli casus yazılım saldırılarına zemin hazırladığı ortaya çıktı. Kanada'daki Toronto Üniversitesi bünyesinde faaliyet gösteren dijital araştırma kuruluşu Citizen Lab, İsrailli reklam ajansı Discov — NTV</description>
-      <pubDate>2026-10-16T18:37:06+03:00</pubDate>
     </item>
   </channel>
 </rss>
