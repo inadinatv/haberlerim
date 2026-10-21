@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-21T01:14:16.679469+00:00",
-  "sure_saniye": 38.7,
+  "son_guncelleme": "2026-10-21T06:59:00.924482+00:00",
+  "sure_saniye": 37.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 214,
-  "tam_metin_haber": 210,
-  "video_haber": 6,
+  "kazanilan_tam_metin": 216,
+  "tam_metin_haber": 212,
+  "video_haber": 16,
   "kategoriler": {
-    "Gündem": 77,
-    "Ekonomi": 30,
+    "Gündem": 84,
+    "Ekonomi": 33,
     "Spor": 50,
-    "Dünya": 55,
-    "Teknoloji": 8,
-    "Yapay Zeka": 3,
+    "Dünya": 46,
+    "Teknoloji": 5,
+    "Yapay Zeka": 1,
     "Sağlık": 5,
-    "Yaşam & Sanat": 12,
-    "Magaza": 10
+    "Yaşam & Sanat": 13,
+    "Magaza": 13
   },
   "kaynaklar": {
     "NTV": {
@@ -63,13 +63,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Sözcü": {
-      "haber": 60,
-      "durum": "aktif",
-      "basarili": 7,
-      "hatali": 0,
-      "hata": null
-    },
     "BBC Türkçe": {
       "haber": 10,
       "durum": "aktif",
@@ -77,14 +70,21 @@
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "Sözcü": {
+      "haber": 60,
+      "durum": "aktif",
+      "basarili": 7,
+      "hatali": 0,
+      "hata": null
+    },
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
