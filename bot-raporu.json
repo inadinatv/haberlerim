@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-20T22:03:16.495998+00:00",
+  "son_guncelleme": "2026-10-21T01:14:16.679469+00:00",
   "sure_saniye": 38.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 213,
+  "kazanilan_tam_metin": 214,
   "tam_metin_haber": 210,
-  "video_haber": 7,
+  "video_haber": 6,
   "kategoriler": {
-    "Gündem": 86,
-    "Ekonomi": 31,
+    "Gündem": 77,
+    "Ekonomi": 30,
     "Spor": 50,
-    "Dünya": 44,
+    "Dünya": 55,
     "Teknoloji": 8,
     "Yapay Zeka": 3,
     "Sağlık": 5,
     "Yaşam & Sanat": 12,
-    "Magaza": 11
+    "Magaza": 10
   },
   "kaynaklar": {
     "NTV": {
@@ -35,13 +35,6 @@
       "hatali": 0,
       "hata": null
     },
-    "Anadolu Ajansı": {
-      "haber": 62,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 0,
-      "hata": null
-    },
     "TRT Haber": {
       "haber": 15,
       "durum": "aktif",
@@ -49,10 +42,10 @@
       "hatali": 0,
       "hata": null
     },
-    "CNN Türk": {
-      "haber": 60,
+    "Anadolu Ajansı": {
+      "haber": 62,
       "durum": "aktif",
-      "basarili": 8,
+      "basarili": 6,
       "hatali": 0,
       "hata": null
     },
@@ -62,6 +55,13 @@
       "basarili": 6,
       "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
+    },
+    "CNN Türk": {
+      "haber": 60,
+      "durum": "aktif",
+      "basarili": 8,
+      "hatali": 0,
+      "hata": null
     },
     "Sözcü": {
       "haber": 60,
@@ -77,14 +77,14 @@
       "hatali": 0,
       "hata": null
     },
-    "Habertürk": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "Habertürk": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
