@@ -5,14 +5,54 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 21 Oct 2026 17:52:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 21:11:31 +0000</lastBuildDate>
+    <item>
+      <title>Siber Güvenlik Başkanlığı'ndan ulusal çapta güvenlik uyarısı</title>
+      <link>https://www.ntv.com.tr/teknoloji/siber-guvenlik-baskanligindan-ulusal-capta-guvenlik-uyarisi-1747391</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/siber-guvenlik-baskanligindan-ulusal-capta-guvenlik-uyarisi-1747391</guid>
+      <category>Teknoloji</category>
+      <description>Siber Güvenlik Başkanlığı, dünya genelinde internet sitelerindeki kritik güvenlik açığına yönelik ulusal ölçekte uyarı yayımladı ve önleyici güvenlik çalışmalarını devreye aldı. Cumhurbaşkanlığı Siber Güvenlik Başkanlığı, internet siteleri ve kurumsal uygulamalarda yaygın olarak kullanılan PHP yazıl — NTV</description>
+      <pubDate>2026-10-21T23:54:57+03:00</pubDate>
+    </item>
     <item>
       <title>İnternetin altyapısında kritik açık: Dünya alarma geçti, Avrupa'da devlet siteleri kapatıldı</title>
       <link>https://www.ntv.com.tr/teknoloji/galeri-internetin-altyapisinda-kritik-acik-dunya-alarma-gecti-avrupada-devlet-siteleri-kapatildi-1747361</link>
       <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-internetin-altyapisinda-kritik-acik-dunya-alarma-gecti-avrupada-devlet-siteleri-kapatildi-1747361</guid>
       <category>Teknoloji</category>
-      <description>Dünya genelinde internet sitelerinin büyük bölümünde kullanılan PHP yazılımında iki kritik güvenlik açığı tespit edildi. Avrupa'da çok sayıda kamu kurumunun internet sitesi erişime kapatıldı. İnternetin altyapısında yaygın olarak kullanılan PHP programlama dilinde tespit edilen iki kritik güvenlik a — NTV</description>
-      <pubDate>2026-10-21T20:02:04+03:00</pubDate>
+      <description>Dünya genelinde internette kullanılan PHP yazılımında iki kritik güvenlik açığı tespit edildi. Avrupa'da çok sayıda kamu kurumunun internet sitesi erişime kapatıldı. Türkiye'de de uyarı yapıldı. İnternetin altyapısında yaygın olarak kullanılan PHP programlama dilinde tespit edilen iki kritik güvenli — NTV</description>
+      <pubDate>2026-10-21T23:49:03+03:00</pubDate>
+    </item>
+    <item>
+      <title>Siber Güvenlik Başkanlığınca kritik güvenlik zafiyetlerine karşı ulusal ölçekte tarama başlatıldı</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/siber-guvenlik-baskanliginca-kritik-guvenlik-zafiyetlerine-karsi-ulusal-olcekte-tarama-baslatildi/4096515</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/siber-guvenlik-baskanliginca-kritik-guvenlik-zafiyetlerine-karsi-ulusal-olcekte-tarama-baslatildi/4096515</guid>
+      <category>Teknoloji</category>
+      <description>Cumhurbaşkanlığı Siber Güvenlik Başkanlığı, internet siteleri ve kurumsal uygulamalarda yaygın olarak kullanılan PHP yazılım altyapısındaki kritik güvenlik zafiyetlerine karşı ulusal düzeyde önleyici güvenlik çalışmalarını devreye aldı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-21T20:47:45+00:00</pubDate>
+    </item>
+    <item>
+      <title>Dünya çapında PHP kaynaklı güvenlik açığının giderilmesi için çok sayıda internet sitesi erişime kapatıldı</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/dunya-capinda-php-kaynakli-guvenlik-aciginin-giderilmesi-icin-cok-sayida-internet-sitesi-erisime-kapatildi/4096454</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/dunya-capinda-php-kaynakli-guvenlik-aciginin-giderilmesi-icin-cok-sayida-internet-sitesi-erisime-kapatildi/4096454</guid>
+      <category>Teknoloji</category>
+      <description>Bir programlama dili olan PHP'deki &quot;ciddi güvenlik açıklarına&quot; ilişkin haberlerin ardından dünya çapında hükümet siteleri de dahil olmak üzere çok sayıda internet sitesine tedbir amacıyla erişim kısmen ya da tamamen askıya alındı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-21T19:43:18+00:00</pubDate>
+    </item>
+    <item>
+      <title>Hollanda'da güvenlik açığı nedeniyle vatandaşlık hizmeti sunulan siteler erişime kapatıldı</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/hollandada-guvenlik-acigi-nedeniyle-vatandaslik-hizmeti-sunulan-siteler-erisime-kapatildi/4096418</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/hollandada-guvenlik-acigi-nedeniyle-vatandaslik-hizmeti-sunulan-siteler-erisime-kapatildi/4096418</guid>
+      <category>Teknoloji</category>
+      <description>Hollanda'da, yaygın kullanılan PHP programlama dilinde tespit edilen kritik güvenlik açıkları nedeniyle vatandaşların devlet hizmetlerine eriştiği DigiD ve MijnOverheid gibi internet siteleri geçici olarak kapatıldı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-21T19:12:57+00:00</pubDate>
+    </item>
+    <item>
+      <title>ABD'de mahkeme, kullanıcıları gizlilik konusunda yanılttığı için Meta'ya 25 milyar dolar ceza verdi</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/abdde-mahkeme-kullanicilari-gizlilik-konusunda-yanilttigi-icin-metaya-25-milyar-dolar-ceza-verdi-/4096413</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/abdde-mahkeme-kullanicilari-gizlilik-konusunda-yanilttigi-icin-metaya-25-milyar-dolar-ceza-verdi-/4096413</guid>
+      <category>Teknoloji</category>
+      <description>ABD'nin New Mexico eyaletinde bir mahkeme, kullanıcıları gizlilik ve içerik denetimi politikaları konusunda yanılttığı gerekçesiyle sosyal medya şirketi Meta'nın eyalete 25 milyar dolar ceza ödemesine hükmetti. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-21T19:08:58+00:00</pubDate>
     </item>
     <item>
       <title>TÜSEB İDEA, yerli sağlık teknolojilerinin geliştirilmesi ve test edilmesine imkan sağlıyor</title>
@@ -37,30 +77,6 @@
       <category>Teknoloji</category>
       <description>Bayraktar AKINCI mühimmat atış testlerinde, ROKETSAN işbirliğiyle ateşlenen iki MAM-L ve bir Otonom LAÇİN TV mühimmatı hedefleri tam isabetle vurdu. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-21T12:30:20+00:00</pubDate>
-    </item>
-    <item>
-      <title>KAYI SAVUNMA mühimmat çözümlerini Çekya'da küresel vitrine çıkardı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/kayi-savunma-muhimmat-cozumlerini-cekyada-kuresel-vitrine-cikardi/4095796</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/kayi-savunma-muhimmat-cozumlerini-cekyada-kuresel-vitrine-cikardi/4095796</guid>
-      <category>Teknoloji</category>
-      <description>Türk savunma sanayisinin stratejik mühimmat üreticilerinden KAYI SAVUNMA, Prag'daki uluslararası savunma sanayisi fuarında yerli ve milli imkanlarla geliştirdiği ürünleri sergiliyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-21T11:08:06+00:00</pubDate>
-    </item>
-    <item>
-      <title>Enerji Çevrimi Projesi üniversitelilere TEKNOFEST'te ödül kazandırdı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/enerji-cevrimi-projesi-universitelilere-teknofestte-odul-kazandirdi/4095576</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/enerji-cevrimi-projesi-universitelilere-teknofestte-odul-kazandirdi/4095576</guid>
-      <category>Teknoloji</category>
-      <description>Sinop Üniversitesi öğrencilerince nükleer enerjinin daha verimli ve etkin kullanılması amacıyla hazırlanan proje, TEKNOFEST 2026 Nükleer Enerji Teknolojileri Tasarım Yarışması'nda enerji çevrimi tasarımı kategorisinde birincilik elde etti | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-21T09:44:10+00:00</pubDate>
-    </item>
-    <item>
-      <title>Türkiye'nin uzay ve havacılık faaliyetleri için gelecek 3 yılda 100 milyar liraya yakın ödenek</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/turkiyenin-uzay-ve-havacilik-faaliyetleri-icin-gelecek-3-yilda-100-milyar-liraya-yakin-odenek/4095452</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/turkiyenin-uzay-ve-havacilik-faaliyetleri-icin-gelecek-3-yilda-100-milyar-liraya-yakin-odenek/4095452</guid>
-      <category>Teknoloji</category>
-      <description>Türkiye'nin uzay ve havacılık faaliyetlerinin geliştirilmesi amacıyla gelecek 3 yılda 100 milyar liraya yakın kaynak kullanılması öngörülüyor. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-21T08:29:49+00:00</pubDate>
     </item>
   </channel>
 </rss>
