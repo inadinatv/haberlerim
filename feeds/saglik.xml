@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Sağlık RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 21 Oct 2026 01:14:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 06:59:00 +0000</lastBuildDate>
+    <item>
+      <title>Kalp gerçekten kırılır mı? - Sözcü Gazetesi</title>
+      <link>https://www.sozcu.com.tr/kalp-gercekten-kirilir-mi-p371155</link>
+      <guid isPermaLink="true">https://www.sozcu.com.tr/kalp-gercekten-kirilir-mi-p371155</guid>
+      <category>Sağlık</category>
+      <description>Yoğun stres ve duygusal travmalar, kalbe fiziki olarak da zarar veriyor. Kırık Kalp Sendromu olarak adlandırılan hastalık kalp kasını bir süreliğine felç ediyor. — Sözcü</description>
+      <pubDate>2026-10-21T04:08:07+00:00</pubDate>
+    </item>
     <item>
       <title>ELEKTRONİK SİGARANIN 10 ZARARI! Selena Gomez isyan etti:</title>
       <link>https://www.cnnturk.com/saglik/elektronik-sigaranin-10-zarari-selena-gomez-isyan-etti-sesimi-degistirdi-3482150</link>
@@ -37,14 +45,6 @@
       <category>Sağlık</category>
       <description>Kadın Hastalıkları ve Doğum Uzmanı Doç. Dr. İrem Alyazıcı, 40 yaşından sonra kadın bedeninde yaşanan hormonal ve fiziksel değişimleri, cinsel sağlık üzerindeki etkilerini, hormon replasman tedavisinin hangi durumlarda değerlendirilebileceğini ve bu dönemde önem kazanan sağlık kontrollerini anlattı. — CNN Türk</description>
       <pubDate>2026-10-20T14:24:01+00:00</pubDate>
-    </item>
-    <item>
-      <title>Tansiyon, şeker ve kolesterole iyi geliyormuş. Kurutularak çay gibi içiliyor</title>
-      <link>https://www.ntv.com.tr/saglik/galeri-tansiyon-seker-ve-kolesterole-iyi-geliyormus-kurutularak-cay-gibi-iciliyor-1747155</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/saglik/galeri-tansiyon-seker-ve-kolesterole-iyi-geliyormus-kurutularak-cay-gibi-iciliyor-1747155</guid>
-      <category>Sağlık</category>
-      <description>Karamuk meyvesi, tezgahta yerini aldı. Birçok hastalığa iyi geldiğine inanılan bu meyvenin kilosu 70-100 TL arasında değişiyor. Sivas'ın ilçe ve köylerinde dağlık bölgelerde ve yüksek kesimlerde yetişen karamuk meyvesi, kısa süren hasat dönemi sonrası tezgahta yerini aldı . Yaklaşık bir aylık tüketi — NTV</description>
-      <pubDate>2026-10-20T12:44:15+03:00</pubDate>
     </item>
   </channel>
 </rss>
