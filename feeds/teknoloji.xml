@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Thu, 22 Oct 2026 20:24:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 23:51:23 +0000</lastBuildDate>
     <item>
       <title>Dünyada panik büyüyor, Türkiye de alarma geçti. İnternetin Kara Ekim'iyle ilgili neler biliniyor?</title>
       <link>https://www.ntv.com.tr/teknoloji/galeri-dunyada-panik-buyuyor-turkiye-de-alarma-gecti-internetin-kara-ekimiyle-ilgili-neler-biliniyor-1747438</link>
@@ -61,22 +61,6 @@
       <category>Teknoloji</category>
       <description>Yapay zekâ teknolojilerinin bilgisayar donanımlarına entegre edilmesi, bilgisayar seçimindeki öncelikleri yeniden şekillendiriyor. — Sözcü</description>
       <pubDate>2026-10-22T12:26:44+00:00</pubDate>
-    </item>
-    <item>
-      <title>15 milyar dolarlık yatırımla halka arza hazırlanıyorlar</title>
-      <link>https://www.ntv.com.tr/teknoloji/galeri-15-milyar-dolarlik-yatirimla-halka-arza-hazirlaniyorlar-1747458</link>
-      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/galeri-15-milyar-dolarlik-yatirimla-halka-arza-hazirlaniyorlar-1747458</guid>
-      <category>Teknoloji</category>
-      <description>Çinli yapay zeka girişimi DeepSeek, aralarında CATL ve Tencent'in de yer aldığı yatırımcılardan yaklaşık 15 milyar dolar fon topladı. Çinli yapay zeka girişimi DeepSeek , mevcut ve yeni yatırımcılarından yaklaşık 100 milyar yuan (14,98 milyar dolar) kaynak sağladığı son finansman turunu tamamlamaya  — NTV</description>
-      <pubDate>2026-10-22T11:36:52+03:00</pubDate>
-    </item>
-    <item>
-      <title>5 soruda yazılım altyapısı PHP'deki güvenlik krizi</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/5-soruda-yazilim-altyapisi-phpdeki-guvenlik-krizi/4097131</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/5-soruda-yazilim-altyapisi-phpdeki-guvenlik-krizi/4097131</guid>
-      <category>Teknoloji</category>
-      <description>İnternet siteleri ve kurumsal uygulamalarda kullanılan PHP programlama dilinde tespit edilen iki kritik güvenlik açığına karşı dünya genelinde yeni önlemler devreye alınırken kurum ve kuruluşlar açıkların giderilmesi için güncellemelere odaklandı. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-22T11:31:43+00:00</pubDate>
     </item>
   </channel>
 </rss>

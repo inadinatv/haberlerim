@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-22T20:24:06.021387+00:00",
-  "sure_saniye": 44.6,
+  "son_guncelleme": "2026-10-22T23:51:23.248740+00:00",
+  "sure_saniye": 37.7,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 209,
-  "tam_metin_haber": 213,
-  "video_haber": 10,
+  "kazanilan_tam_metin": 212,
+  "tam_metin_haber": 210,
+  "video_haber": 8,
   "kategoriler": {
-    "Gündem": 84,
+    "Gündem": 86,
     "Ekonomi": 29,
-    "Spor": 45,
+    "Spor": 46,
     "Dünya": 49,
-    "Teknoloji": 9,
-    "Yapay Zeka": 2,
-    "Sağlık": 3,
+    "Teknoloji": 7,
+    "Yapay Zeka": 1,
+    "Sağlık": 2,
     "Yaşam & Sanat": 15,
-    "Magaza": 14
+    "Magaza": 15
   },
   "kaynaklar": {
     "NTV": {
@@ -64,20 +64,13 @@
       "hata": null
     },
     "Sözcü": {
-      "haber": 60,
+      "haber": 59,
       "durum": "aktif",
       "basarili": 7,
       "hatali": 0,
       "hata": null
     },
     "Habertürk": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
-    "ShiftDelete.Net": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
@@ -93,6 +86,13 @@
     },
     "BBC Türkçe": {
       "haber": 10,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "ShiftDelete.Net": {
+      "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
