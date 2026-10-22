@@ -1,23 +1,23 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-21T21:11:31.377251+00:00",
-  "sure_saniye": 38.7,
+  "son_guncelleme": "2026-10-22T00:24:20.763931+00:00",
+  "sure_saniye": 37.8,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 212,
-  "tam_metin_haber": 207,
-  "video_haber": 14,
+  "kazanilan_tam_metin": 211,
+  "tam_metin_haber": 210,
+  "video_haber": 15,
   "kategoriler": {
-    "Gündem": 83,
-    "Ekonomi": 30,
+    "Gündem": 74,
+    "Ekonomi": 28,
     "Spor": 49,
-    "Dünya": 52,
-    "Teknoloji": 9,
+    "Dünya": 59,
+    "Teknoloji": 11,
     "Yapay Zeka": 1,
     "Sağlık": 3,
-    "Yaşam & Sanat": 14,
+    "Yaşam & Sanat": 16,
     "Magaza": 9
   },
   "kaynaklar": {
@@ -50,10 +50,10 @@
       "hata": null
     },
     "Hürriyet": {
-      "haber": 34,
+      "haber": 50,
       "durum": "aktif",
-      "basarili": 4,
-      "hatali": 3,
+      "basarili": 6,
+      "hatali": 1,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
     },
     "CNN Türk": {
@@ -84,14 +84,14 @@
       "hatali": 0,
       "hata": null
     },
-    "Webrazzi": {
+    "ShiftDelete.Net": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
       "hata": null
     },
-    "ShiftDelete.Net": {
+    "Webrazzi": {
       "haber": 12,
       "durum": "aktif",
       "basarili": 1,
@@ -100,8 +100,6 @@
     }
   },
   "hatalar": [
-    "Hürriyet (http://www.hurriyet.com.tr/rss/ekonomi): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252",
-    "Hürriyet (http://www.hurriyet.com.tr/rss/teknoloji): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
   ]
 }

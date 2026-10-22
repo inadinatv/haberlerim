@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Wed, 21 Oct 2026 21:11:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:24:20 +0000</lastBuildDate>
+    <item>
+      <title>Yapay zekanın karanlık yüzü: Su ve elektrik sistemleri risk altında</title>
+      <link>https://www.ntv.com.tr/teknoloji/yapay-zekanin-karanlik-yuzu-su-ve-elektrik-sistemleri-risk-altinda-1747394</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/yapay-zekanin-karanlik-yuzu-su-ve-elektrik-sistemleri-risk-altinda-1747394</guid>
+      <category>Teknoloji</category>
+      <description>Elektrik şebekeleri ve su sistemlerine yönelik siber saldırıları planlama becerisi test edilen yapay zeka modellerinden bazıları, yüzde 90'a varan başarı gösterdi. Axios'un haberine göre, siber güvenlik şirketi Frenos tarafından yapılan araştırma, gelişmiş yapay zeka modellerinin endüstriyel sisteml — NTV</description>
+      <pubDate>2026-10-22T00:27:49+03:00</pubDate>
+    </item>
     <item>
       <title>Siber Güvenlik Başkanlığı'ndan ulusal çapta güvenlik uyarısı</title>
       <link>https://www.ntv.com.tr/teknoloji/siber-guvenlik-baskanligindan-ulusal-capta-guvenlik-uyarisi-1747391</link>
@@ -21,6 +29,14 @@
       <category>Teknoloji</category>
       <description>Dünya genelinde internette kullanılan PHP yazılımında iki kritik güvenlik açığı tespit edildi. Avrupa'da çok sayıda kamu kurumunun internet sitesi erişime kapatıldı. Türkiye'de de uyarı yapıldı. İnternetin altyapısında yaygın olarak kullanılan PHP programlama dilinde tespit edilen iki kritik güvenli — NTV</description>
       <pubDate>2026-10-21T23:49:03+03:00</pubDate>
+    </item>
+    <item>
+      <title>Microsoft, Çin bağlantılı aktörün yapay zeka kullanarak yüzlerce kuruluşu hedef aldığını belirtti</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/microsoft-cin-baglantili-aktorun-yapay-zeka-kullanarak-yuzlerce-kurulusu-hedef-aldigini-belirtti/4096573</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/microsoft-cin-baglantili-aktorun-yapay-zeka-kullanarak-yuzlerce-kurulusu-hedef-aldigini-belirtti/4096573</guid>
+      <category>Teknoloji</category>
+      <description>ABD'li teknoloji şirketi Microsoft, Çin devletiyle bağlantılı bir siber aktörün yapay zeka destekli araçlar kullanarak dünya genelinde yüzlerce kuruluşu hedef aldığını bildirdi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-21T22:40:45+00:00</pubDate>
     </item>
     <item>
       <title>Siber Güvenlik Başkanlığınca kritik güvenlik zafiyetlerine karşı ulusal ölçekte tarama başlatıldı</title>
