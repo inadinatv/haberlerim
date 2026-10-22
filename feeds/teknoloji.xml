@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Thu, 22 Oct 2026 16:32:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 20:24:06 +0000</lastBuildDate>
     <item>
       <title>Dünyada panik büyüyor, Türkiye de alarma geçti. İnternetin Kara Ekim'iyle ilgili neler biliniyor?</title>
       <link>https://www.ntv.com.tr/teknoloji/galeri-dunyada-panik-buyuyor-turkiye-de-alarma-gecti-internetin-kara-ekimiyle-ilgili-neler-biliniyor-1747438</link>
@@ -13,6 +13,22 @@
       <category>Teknoloji</category>
       <description>Dünya genelinde internet altyapısında kullanılan PHP yazılımındaki güvenlik açıkları nedeniyle Türkiye dahil birçok ülke alarma geçti. Peki nedir bu PHP? Korsanlar nasıl zararlar verebilir? Dün gece dünya çapında büyük bir siber güvenlik alarmı yaşandı. İnternet sitelerinin neredeyse yüzde 70'inde k — NTV</description>
       <pubDate>2026-10-22T16:31:55+03:00</pubDate>
+    </item>
+    <item>
+      <title>HAVELSAN, Trabzon'un köy okullarında 500 öğrenciyi teknolojiyle buluşturdu</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/havelsan-trabzonun-koy-okullarinda-500-ogrenciyi-teknolojiyle-bulusturdu/4097649</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/havelsan-trabzonun-koy-okullarinda-500-ogrenciyi-teknolojiyle-bulusturdu/4097649</guid>
+      <category>Teknoloji</category>
+      <description>HAVELSAN'ın bilim ve teknoloji etkinliklerine katılma imkanı bulamayan çocuklara ulaşmak amacıyla başlattığı &quot;Mühendis Çocuk Yollarda&quot; projesi, Şanlıurfa'nın ardından Trabzon'da devam etti. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-22T16:18:21+00:00</pubDate>
+    </item>
+    <item>
+      <title>Bakan Kacır: Yerli harita ve navigasyon uygulamasını 2027 başından itibaren kullanmaya hazırlanıyoruz</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-yerli-harita-ve-navigasyon-uygulamasini-2027-basindan-itibaren-kullanmaya-hazirlaniyoruz/4097593</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-yerli-harita-ve-navigasyon-uygulamasini-2027-basindan-itibaren-kullanmaya-hazirlaniyoruz/4097593</guid>
+      <category>Teknoloji</category>
+      <description>Sanayi ve Teknoloji Bakanı Kacır, veri güvenliği açısından stratejik gördükleri yerli harita ve navigasyon uygulamasını 2027 başından itibaren kullanmaya hazırlandıklarını söyledi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-22T15:42:38+00:00</pubDate>
     </item>
     <item>
       <title>BilimFest Trabzon başladı</title>
@@ -61,14 +77,6 @@
       <category>Teknoloji</category>
       <description>İnternet siteleri ve kurumsal uygulamalarda kullanılan PHP programlama dilinde tespit edilen iki kritik güvenlik açığına karşı dünya genelinde yeni önlemler devreye alınırken kurum ve kuruluşlar açıkların giderilmesi için güncellemelere odaklandı. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-22T11:31:43+00:00</pubDate>
-    </item>
-    <item>
-      <title>Avustralya'da, platformlarının çocuklara zarar verdiği gerekçesiyle Meta'ya toplu dava açıldı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/avustralyada-platformlarinin-cocuklara-zarar-verdigi-gerekcesiyle-metaya-toplu-dava-acildi/4097094</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/avustralyada-platformlarinin-cocuklara-zarar-verdigi-gerekcesiyle-metaya-toplu-dava-acildi/4097094</guid>
-      <category>Teknoloji</category>
-      <description>Avustralya'da, Facebook ve Instagram'ın bağımlılığa yol açan tasarımları ve zararlı içerikleri nedeniyle çocukların zarar gördüğü iddiasıyla Meta'ya karşı toplu dava açıldı. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-22T11:12:16+00:00</pubDate>
     </item>
   </channel>
 </rss>
