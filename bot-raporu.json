@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-22T00:24:20.763931+00:00",
-  "sure_saniye": 37.8,
+  "son_guncelleme": "2026-10-22T11:04:18.019490+00:00",
+  "sure_saniye": 36.9,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 211,
-  "tam_metin_haber": 210,
-  "video_haber": 15,
+  "kazanilan_tam_metin": 201,
+  "tam_metin_haber": 208,
+  "video_haber": 30,
   "kategoriler": {
-    "Gündem": 74,
-    "Ekonomi": 28,
-    "Spor": 49,
-    "Dünya": 59,
-    "Teknoloji": 11,
-    "Yapay Zeka": 1,
-    "Sağlık": 3,
-    "Yaşam & Sanat": 16,
-    "Magaza": 9
+    "Gündem": 75,
+    "Ekonomi": 38,
+    "Spor": 50,
+    "Dünya": 49,
+    "Teknoloji": 8,
+    "Yapay Zeka": 4,
+    "Sağlık": 2,
+    "Yaşam & Sanat": 17,
+    "Magaza": 7
   },
   "kaynaklar": {
     "NTV": {

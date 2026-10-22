@@ -5,14 +5,38 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:24:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 11:04:18 +0000</lastBuildDate>
     <item>
-      <title>ChatGPT Artık Sohbetleri Kilitlemenize İzin Veriyor - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/chatgpt-sohbet-kilitleme-ozelligi-pin-face-id</link>
-      <guid isPermaLink="true">https://shiftdelete.net/chatgpt-sohbet-kilitleme-ozelligi-pin-face-id</guid>
+      <title>Windows 11 Kullanıcılarına Müjde: Copilot Dönemi Bitiyor - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/windows-11-copilot-sadelestirmesi</link>
+      <guid isPermaLink="true">https://shiftdelete.net/windows-11-copilot-sadelestirmesi</guid>
       <category>Yapay Zeka</category>
-      <description>ChatGPT sohbet kilitleme özelliği ile konuşmalarınızı PIN, Face ID veya Touch ID ile koruyun. Tüm kullanıcılar için yeni güvenlik dönemi başladı. — ShiftDelete.Net</description>
-      <pubDate>2026-10-21T14:30:30+00:00</pubDate>
+      <description>Microsoft, Windows 11 Copilot sadeleştirmesi kapsamında Dosya Gezgini'ndeki 8 farklı yapay zeka eylemini kaldırmaya hazırlanıyor. — ShiftDelete.Net</description>
+      <pubDate>2026-10-22T10:00:11+00:00</pubDate>
+    </item>
+    <item>
+      <title>Recursive, yapay zeka desteğiyle geliştirdiği kodlama modeli Flint'i tanıttı</title>
+      <link>https://webrazzi.com/2026/10/22/recursive-yapay-zeka-destegiyle-gelistirdigi-kodlama-modeli-flinti-tanitti/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/22/recursive-yapay-zeka-destegiyle-gelistirdigi-kodlama-modeli-flinti-tanitti/</guid>
+      <category>Yapay Zeka</category>
+      <description>Recursive , yerel donanımlarda çalışmak üzere tasarladığı kodlama modeli Flint ’i kullanıma sundu . Şirketin açıklamasına göre model, insan ve yapay zeka ajanlarından oluşan küçük bir ekip tarafından dört aydan kısa sürede sıfırdan geliştirildi. Şirket, modelin geliştirilmesinde otomatik araştırma s — Webrazzi</description>
+      <pubDate>2026-10-22T10:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Legora, 8,8 milyar dolar değerleme üzerinden 550 milyon dolar yatırım aldı</title>
+      <link>https://webrazzi.com/2026/10/22/legora-8-8-milyar-dolar-degerleme-uzerinden-550-milyon-dolar-yatirim-aldi/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/22/legora-8-8-milyar-dolar-degerleme-uzerinden-550-milyon-dolar-yatirim-aldi/</guid>
+      <category>Yapay Zeka</category>
+      <description>Yapay zeka destekli hukuk teknolojisi girişimi Legora , 550 milyon dolar yatırım yaptı. Şirketin 550 milyon dolarlık E serisi yatırım turuna Atreides Management liderlik etti. İsveç merkezli Legora'nın yatırım turunda Baron Capital, Capital Group, Fidelity Management &amp; Research, Glade Brook Capital  — Webrazzi</description>
+      <pubDate>2026-10-22T08:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Anthropic, görevleri arka planda yürüten yapay zeka agent'ı Claude Duet'i tanıttı</title>
+      <link>https://webrazzi.com/2026/10/22/anthropic-gorevleri-arka-planda-yuruten-yapay-zeka-agenti-claude-dueti-tanitti/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/22/anthropic-gorevleri-arka-planda-yuruten-yapay-zeka-agenti-claude-dueti-tanitti/</guid>
+      <category>Yapay Zeka</category>
+      <description>Anthropic , profesyonellerin ve küçük işletme sahiplerinin günlük işlerini takip etmek için geliştirdiği Claude Duet adlı yapay zeka agent'ını duyurdu. Claude Opus 5.5 modelini kullanan uygulama, ilk aşamada ABD'deki Claude Pro ve Max abonelerine bekleme listesi üzerinden sunuluyor. Duet'in temel fa — Webrazzi</description>
+      <pubDate>2026-10-22T07:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
