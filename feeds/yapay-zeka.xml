@@ -5,7 +5,23 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 23 Oct 2026 14:37:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 18:51:50 +0000</lastBuildDate>
+    <item>
+      <title>Mosseri'den Muse Paylaşımı: İçerik Üreticilerine İpuçları - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/mosseri-muse-icerik-ureticileri</link>
+      <guid isPermaLink="true">https://shiftdelete.net/mosseri-muse-icerik-ureticileri</guid>
+      <category>Yapay Zeka</category>
+      <description>Instagram’ın başındaki Adam Mosseri, Meta’nın kişisel yapay zeka ajanı Muse için ilginç bir kullanım örneği paylaştı. 20 Ekim’de yayınladığı Instagram videosunda Nat adlı bir arkadaşının fikrini aktaran Mosseri, Muse’un her gün hava durumuna göre kıyafet değiştirmesini “eğlenceli bir kullanım örneği — ShiftDelete.Net</description>
+      <pubDate>2026-10-23T18:12:19+00:00</pubDate>
+    </item>
+    <item>
+      <title>Yapay Zeka Video Modeli Seedance 2.5 4K Çözünürlüğe Çıktı - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/seedance-2-5-4k-yapay-zeka-video-modeli</link>
+      <guid isPermaLink="true">https://shiftdelete.net/seedance-2-5-4k-yapay-zeka-video-modeli</guid>
+      <category>Yapay Zeka</category>
+      <description>ByteDance’in kurumsal yapay zeka ve bulut platformu BytePlus, Seedance 2.5 video üretim modeli ailesinin en yetenekli üyesini duyurdu. Seedance 2.5 4K, daha detaylı görüntü ile daha doğal yüz ifadeleri ve hareketler sunmayı hedefliyor. Meet Seedance 2.5 4K. 🎬 The most capable model in the Seedance 2 — ShiftDelete.Net</description>
+      <pubDate>2026-10-23T17:52:56+00:00</pubDate>
+    </item>
     <item>
       <title>OpenAI'ın Yapay Zeka Ajanları Güvenlik İzleme Sistemlerini Devre Dışı Bıraktı - ShiftDelete.Net</title>
       <link>https://shiftdelete.net/openai-yapay-zeka-ajanlari-guvenlik-ihlal</link>
@@ -61,22 +77,6 @@
       <category>Yapay Zeka</category>
       <description>OpenAI, uygulamaların iş akışlarındaki küçük ve sık tekrarlanan kararlarına odaklanan Decisions API’ ı genel kullanıma açtığını duyurdu . Şirketin açıklamasına göre ürün, belirli seçeneklerle sınırlandırılmış sorularda GPT-6 Luna ’nın Responses API üzerinden kullanımına kıyasla 10 kata kadar daha hı — Webrazzi</description>
       <pubDate>2026-10-23T11:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Yapay zeka destekli ilaç geliştirme girişimi Warp, 215 milyon dolar yatırım aldı</title>
-      <link>https://webrazzi.com/2026/10/23/yapay-zeka-destekli-ilac-gelistirme-girisimi-warp-215-milyon-dolar-yatirim-aldi/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/yapay-zeka-destekli-ilac-gelistirme-girisimi-warp-215-milyon-dolar-yatirim-aldi/</guid>
-      <category>Yapay Zeka</category>
-      <description>Yapay zeka destekli ilaç geliştirme girişimi Warp , 215 milyon dolar yatırım aldı. Şirketin 215 milyon dolarlık yatırım turuna Lightspeed liderlik etti. ABD merkezli Warp'in yatırım turunda IVP, Mayfield, Lux Capital, Premji Invest ve Menlo Ventures yer aldı. 2026'da kurulan şirketin değerlemesi ise — Webrazzi</description>
-      <pubDate>2026-10-23T10:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Google Cloud'dan yapay zeka ajanlarına özel yeni altyapı: Agent Compute Engine</title>
-      <link>https://webrazzi.com/2026/10/23/google-clouddan-yapay-zeka-ajanlarina-ozel-yeni-altyapi-agent-compute-engine/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/google-clouddan-yapay-zeka-ajanlarina-ozel-yeni-altyapi-agent-compute-engine/</guid>
-      <category>Yapay Zeka</category>
-      <description>Google Cloud , 22 Ekim’de düzenlenmiş olan AGNTCon ve MCPCon etkinliklerinde, yapay zeka ajanlarını çalıştırmaya yönelik Agent Compute Engine hizmetini duyurdu . Google’ın Gemini iş görevlerinde kullandığı altyapı, her ajan için donanım düzeyinde yalıtılmış bir çalışma ortamı sunuyor. Paylaşılan bil — Webrazzi</description>
-      <pubDate>2026-10-23T09:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
