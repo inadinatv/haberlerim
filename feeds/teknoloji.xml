@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 23 Oct 2026 18:51:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 21:49:30 +0000</lastBuildDate>
+    <item>
+      <title>Yapay zekayla tıbbi teşhise ilişkin yeni araştırmanın sonuçları açıklandı</title>
+      <link>https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zekayla-tibbi-teshise-iliskin-yeni-arastirmanin-sonuclari-aciklandi/4098961</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zekayla-tibbi-teshise-iliskin-yeni-arastirmanin-sonuclari-aciklandi/4098961</guid>
+      <category>Teknoloji</category>
+      <description>ABD merkezli teknoloji şirketi Microsoft tarafından yürütülen araştırmada, şirketin yapay zeka destekli teşhis sisteminin geçmiş vaka verilerindeki hekim sonuçlarına kıyasla 2,3 kat daha yüksek tanı doğruluğuna ulaştığı belirlendi. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-23T17:50:48+00:00</pubDate>
+    </item>
     <item>
       <title>NVIDIA'nın CEO'su Huang, Kazakistan'ın küresel bir fiziksel yapay zeka merkezi olabileceğini söyledi</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/nvidianin-ceosu-huang-kazakistanin-kuresel-bir-fiziksel-yapay-zeka-merkezi-olabilecegini-soyledi/4098869</link>
@@ -37,14 +45,6 @@
       <category>Teknoloji</category>
       <description>İnternet sitelerindeki altyapı açıkları ve sosyal medya reklamları üzerinden iPhone cihazlara yerleşen casus yazılımlar tespit edildi. Kullanıcı etkileşimi gerektirmeyen bu yöntemle doğrudan finansal veriler ve giriş bilgileri hedef alınıyor. — Sözcü</description>
       <pubDate>2026-10-23T12:34:06+00:00</pubDate>
-    </item>
-    <item>
-      <title>Kanada, savunma sanayisinde yerlileşme için Türkiye'nin &quot;SSB modelini&quot; örnek alacak</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/kanada-savunma-sanayisinde-yerlilesme-icin-turkiyenin-ssb-modelini-ornek-alacak/4098539</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/kanada-savunma-sanayisinde-yerlilesme-icin-turkiyenin-ssb-modelini-ornek-alacak/4098539</guid>
-      <category>Teknoloji</category>
-      <description>Kanada'nın savunma sanayisinde yerlileşme hedefleri doğrultusunda Cumhurbaşkanlığı Savunma Sanayii Başkanlığını (SSB) örnek model olarak almayı planladığı bildirildi. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-23T12:15:17+00:00</pubDate>
     </item>
   </channel>
 </rss>

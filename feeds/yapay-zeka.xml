@@ -5,7 +5,23 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 23 Oct 2026 18:51:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 21:49:30 +0000</lastBuildDate>
+    <item>
+      <title>Tencent'ten Komutlarla Yönetilen Video Dünyası Yapay Zekası: Hy-Nomas - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/tencent-hunyuan-hy-nomas</link>
+      <guid isPermaLink="true">https://shiftdelete.net/tencent-hunyuan-hy-nomas</guid>
+      <category>Yapay Zeka</category>
+      <description>Tencent’in yapay zeka ekibi Hunyuan, kullanıcının yazdığı komutlarla ve kamera hareketleriyle yönlendirebildiği yeni bir video modelini herkesin kullanımına açtı. Hy-Nomas adlı model, videoyu tek seferde üretmek yerine parça parça oluşturuyor ve her adımda yeni bir talimat almaya izin veriyor. 🚀 Int — ShiftDelete.Net</description>
+      <pubDate>2026-10-23T19:34:28+00:00</pubDate>
+    </item>
+    <item>
+      <title>NVIDIA'dan İnternetsiz Çalışan Küçük ve Hızlı Yapay Zeka Modeli: Nemotron 3.5 Bolt - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/nvidia-nemotron-3-5-bolt-e4b</link>
+      <guid isPermaLink="true">https://shiftdelete.net/nvidia-nemotron-3-5-bolt-e4b</guid>
+      <category>Yapay Zeka</category>
+      <description>NVIDIA, yerel çalışan sesli asistanlar, oyun karakterleri ve robotlar için geliştirdiği yeni küçük dil modelini herkesin kullanımına açtı. Nemotron 3.5 Bolt E4B 4GB adlı açık model, konuşurken araç çağırıp iş de yapabiliyor ve yaklaşık 4 GB bellekle çalışacak şekilde tasarlandı. Available now: NVIDI — ShiftDelete.Net</description>
+      <pubDate>2026-10-23T19:05:23+00:00</pubDate>
+    </item>
     <item>
       <title>Mosseri'den Muse Paylaşımı: İçerik Üreticilerine İpuçları - ShiftDelete.Net</title>
       <link>https://shiftdelete.net/mosseri-muse-icerik-ureticileri</link>
@@ -53,30 +69,6 @@
       <category>Yapay Zeka</category>
       <description>Andreessen Horowitz ’in kripto odaklı yatırım birimi a16z Crypto , bundan sonra a16z Frontier adıyla faaliyet göstereceğini duyurdu . İsim değişikliğiyle birlikte yeni fonunun kapsamını genişleten ekip, kriptonun yanı sıra yeni teknolojiler geliştiren ve henüz oluşum aşamasındaki pazarlara odaklanan — Webrazzi</description>
       <pubDate>2026-10-23T13:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Microsoft'un yapay zeka destekli tıbbi teşhis sistemi: MAI-DxO</title>
-      <link>https://webrazzi.com/2026/10/23/microsoft-un-yapay-zeka-destekli-tibbi-teshis-sistemi-mai-dxo/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/microsoft-un-yapay-zeka-destekli-tibbi-teshis-sistemi-mai-dxo/</guid>
-      <category>Yapay Zeka</category>
-      <description>Microsoft ’un yapay zeka destekli teşhis sistemi MAI-DxO , karmaşık tıbbi vakalarda gerçekleştirilen simülasyonlarda yüzde 83 doğruluk oranına ulaştı. Science dergisinde yayımlanan araştırmaya göre genel pratisyen hekimler ve genel dahiliye uzmanlarında bu oran yüzde 36 oldu. Microsoft AI CEO’su Mus — Webrazzi</description>
-      <pubDate>2026-10-23T12:00:00+00:00</pubDate>
-    </item>
-    <item>
-      <title>Apple iWork Uygulamaları iPhone Duo Desteğiyle Güncellendi - ShiftDelete.Net</title>
-      <link>https://shiftdelete.net/apple-iwork-intelligent-assistant-iphone-duo</link>
-      <guid isPermaLink="true">https://shiftdelete.net/apple-iwork-intelligent-assistant-iphone-duo</guid>
-      <category>Yapay Zeka</category>
-      <description>Apple, iWork uygulamaları Keynote, Numbers ve Pages için Intelligent Assistant özelliğini ve iPhone Duo desteğini kullanıma sundu. — ShiftDelete.Net</description>
-      <pubDate>2026-10-23T11:00:06+00:00</pubDate>
-    </item>
-    <item>
-      <title>OpenAI, Jev'e rakip hızlı karar alma aracı Decisions API'ı genel kullanıma açtı</title>
-      <link>https://webrazzi.com/2026/10/23/openai-hizli-karar-almaya-odaklanan-decisions-apii-genel-kullanima-acti/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/openai-hizli-karar-almaya-odaklanan-decisions-apii-genel-kullanima-acti/</guid>
-      <category>Yapay Zeka</category>
-      <description>OpenAI, uygulamaların iş akışlarındaki küçük ve sık tekrarlanan kararlarına odaklanan Decisions API’ ı genel kullanıma açtığını duyurdu . Şirketin açıklamasına göre ürün, belirli seçeneklerle sınırlandırılmış sorularda GPT-6 Luna ’nın Responses API üzerinden kullanımına kıyasla 10 kata kadar daha hı — Webrazzi</description>
-      <pubDate>2026-10-23T11:00:00+00:00</pubDate>
     </item>
   </channel>
 </rss>
