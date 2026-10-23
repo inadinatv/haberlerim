@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-23T03:09:34.440289+00:00",
-  "sure_saniye": 38.9,
+  "son_guncelleme": "2026-10-23T09:03:22.203427+00:00",
+  "sure_saniye": 37.5,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 211,
-  "tam_metin_haber": 210,
-  "video_haber": 6,
+  "kazanilan_tam_metin": 213,
+  "tam_metin_haber": 208,
+  "video_haber": 18,
   "kategoriler": {
-    "Gündem": 84,
-    "Ekonomi": 28,
-    "Spor": 49,
-    "Dünya": 49,
-    "Teknoloji": 7,
-    "Yapay Zeka": 1,
-    "Sağlık": 2,
+    "Gündem": 85,
+    "Ekonomi": 32,
+    "Spor": 42,
+    "Dünya": 53,
+    "Teknoloji": 3,
+    "Yapay Zeka": 3,
+    "Sağlık": 1,
     "Yaşam & Sanat": 15,
-    "Magaza": 15
+    "Magaza": 16
   },
   "kaynaklar": {
     "NTV": {
@@ -50,10 +50,10 @@
       "hata": null
     },
     "Hürriyet": {
-      "haber": 50,
+      "haber": 42,
       "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
+      "basarili": 5,
+      "hatali": 2,
       "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
     },
     "CNN Türk": {
@@ -64,16 +64,9 @@
       "hata": null
     },
     "Sözcü": {
-      "haber": 59,
+      "haber": 60,
       "durum": "aktif",
       "basarili": 7,
-      "hatali": 0,
-      "hata": null
-    },
-    "Webrazzi": {
-      "haber": 12,
-      "durum": "aktif",
-      "basarili": 1,
       "hatali": 0,
       "hata": null
     },
@@ -91,6 +84,13 @@
       "hatali": 0,
       "hata": null
     },
+    "Webrazzi": {
+      "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
     "ShiftDelete.Net": {
       "haber": 12,
       "durum": "aktif",
@@ -100,6 +100,7 @@
     }
   },
   "hatalar": [
+    "Hürriyet (http://www.hurriyet.com.tr/rss/spor): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252",
     "Hürriyet (http://www.hurriyet.com.tr/rss/saglik): XML çözümlenemedi: not well-formed (invalid token): line 1, column 5252"
   ]
 }
