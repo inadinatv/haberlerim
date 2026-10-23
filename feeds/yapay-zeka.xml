@@ -5,14 +5,30 @@
     <link>./</link>
     <description>GÜNDEM Yapay Zeka RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 23 Oct 2026 03:09:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 09:03:22 +0000</lastBuildDate>
     <item>
-      <title>Google, Gemini destekli navigasyonu CarPlay'e taşıyor</title>
-      <link>https://webrazzi.com/2026/10/22/google-gemini-destekli-navigasyonu-carplay-e-tasiyor/</link>
-      <guid isPermaLink="true">https://webrazzi.com/2026/10/22/google-gemini-destekli-navigasyonu-carplay-e-tasiyor/</guid>
+      <title>Google Cloud'dan yapay zeka ajanlarına özel yeni altyapı: Agent Compute Engine</title>
+      <link>https://webrazzi.com/2026/10/23/google-clouddan-yapay-zeka-ajanlarina-ozel-yeni-altyapi-agent-compute-engine/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/google-clouddan-yapay-zeka-ajanlarina-ozel-yeni-altyapi-agent-compute-engine/</guid>
       <category>Yapay Zeka</category>
-      <description>Google , Gemini destekli navigasyon deneyimini Apple CarPlay kullanıcılarına sunmaya başladı. 21 Ekim’de ABD’de erişime açılan özellik, küresel ölçekte de dağıtıma giriyor. Kullanıcılar, Google Maps arayüzünün sağ alt tarafındaki Gemini simgesine dokunarak asistanla konuşmaya başlayabiliyor. Güncell — Webrazzi</description>
-      <pubDate>2026-10-22T12:00:00+00:00</pubDate>
+      <description>Google Cloud , 22 Ekim’de düzenlenmiş olan AGNTCon ve MCPCon etkinliklerinde, yapay zeka ajanlarını çalıştırmaya yönelik Agent Compute Engine hizmetini duyurdu . Google’ın Gemini iş görevlerinde kullandığı altyapı, her ajan için donanım düzeyinde yalıtılmış bir çalışma ortamı sunuyor. Paylaşılan bil — Webrazzi</description>
+      <pubDate>2026-10-23T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Canva, ilk görsel üretim modeli Craft'ı kullanıma sundu</title>
+      <link>https://webrazzi.com/2026/10/23/canva-ilk-gorsel-uretim-modeli-crafti-kullanima-sundu/</link>
+      <guid isPermaLink="true">https://webrazzi.com/2026/10/23/canva-ilk-gorsel-uretim-modeli-crafti-kullanima-sundu/</guid>
+      <category>Yapay Zeka</category>
+      <description>Canva, kendi araştırma ekibi tarafından geliştirilen ilk görsel üretim modeli Canva Craft’ı duyurdu . Google, OpenAI, ByteDance ve Meta’nın modelleriyle rekabet edecek olan Craft, platformun Dream Lab bölümü üzerinden tüm Canva kullanıcılarının erişimine açıldı. Craft’ın öne çıkan özelliği, görsel ü — Webrazzi</description>
+      <pubDate>2026-10-23T08:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>DNA ile Sohbet Etmeyi Sağlayan Yapay Zeka Modeli Duyuruldu - ShiftDelete.Net</title>
+      <link>https://shiftdelete.net/hugging-face-carbon-x-dna-modeli</link>
+      <guid isPermaLink="true">https://shiftdelete.net/hugging-face-carbon-x-dna-modeli</guid>
+      <category>Yapay Zeka</category>
+      <description>Hugging Face, DNA dizileriyle doğal dilde etkileşim kurmayı sağlayan yeni Carbon-X modelini tanıttı. Detaylar haberimizde. — ShiftDelete.Net</description>
+      <pubDate>2026-10-23T07:00:08+00:00</pubDate>
     </item>
   </channel>
 </rss>
