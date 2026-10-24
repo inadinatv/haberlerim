@@ -5,7 +5,15 @@
     <link>./</link>
     <description>GÜNDEM Teknoloji RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:13:29 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 05:20:32 +0000</lastBuildDate>
+    <item>
+      <title>Microsoft geliştirdi. Doktor gibi teşhis koyan yapay zeka</title>
+      <link>https://www.ntv.com.tr/teknoloji/microsoft-gelistirdi-doktor-gibi-teshis-koyan-yapay-zeka-1747703</link>
+      <guid isPermaLink="true">https://www.ntv.com.tr/teknoloji/microsoft-gelistirdi-doktor-gibi-teshis-koyan-yapay-zeka-1747703</guid>
+      <category>Teknoloji</category>
+      <description>Microsoft yeni geliştirilen ve doktorlar gibi adım adım ilerleyip hastalık teşhisi koyan yapay zeka aracının, karmaşık vakalarda pratisyen hekimlerin iki katından fazla başarılı olduğunu duyurdu. Son yıllarda inanılması güç bir hızla gelişen ve neredeyse bütün sektörlerde dengeleri değiştiren yapay  — NTV</description>
+      <pubDate>2026-10-24T05:44:59+03:00</pubDate>
+    </item>
     <item>
       <title>Yapay zekayla tıbbi teşhise ilişkin yeni araştırmanın sonuçları açıklandı</title>
       <link>https://www.aa.com.tr/tr/bilim-teknoloji/yapay-zekayla-tibbi-teshise-iliskin-yeni-arastirmanin-sonuclari-aciklandi/4098961</link>
@@ -29,22 +37,6 @@
       <category>Teknoloji</category>
       <description>Türkiye'nin yerli otomobili Togg'un T10F 4More Kehribar serisi tanıtıldı. | Anadolu Ajansı — Anadolu Ajansı</description>
       <pubDate>2026-10-23T13:01:38+00:00</pubDate>
-    </item>
-    <item>
-      <title>Sanayi ve Teknoloji Bakanı Kacır'dan &quot;yeni Togg modeli&quot; paylaşımı</title>
-      <link>https://www.aa.com.tr/tr/bilim-teknoloji/sanayi-ve-teknoloji-bakani-kacirdan-yeni-togg-modeli-paylasimi/4098576</link>
-      <guid isPermaLink="true">https://www.aa.com.tr/tr/bilim-teknoloji/sanayi-ve-teknoloji-bakani-kacirdan-yeni-togg-modeli-paylasimi/4098576</guid>
-      <category>Teknoloji</category>
-      <description>Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, Togg'un gelecek yıl satışa sunulacak T6X ve bugün tanıtımı yapılan T10F 4More Kehribar serisine ilişkin değerlendirmede bulundu. | Anadolu Ajansı — Anadolu Ajansı</description>
-      <pubDate>2026-10-23T12:36:47+00:00</pubDate>
-    </item>
-    <item>
-      <title>iPhone'ları hedef alan yeni siber tehdit ortaya çıktı - Sözcü Gazetesi</title>
-      <link>https://www.sozcu.com.tr/iphone-lari-hedef-alan-yeni-siber-tehdit-ortaya-cikti-p372078</link>
-      <guid isPermaLink="true">https://www.sozcu.com.tr/iphone-lari-hedef-alan-yeni-siber-tehdit-ortaya-cikti-p372078</guid>
-      <category>Teknoloji</category>
-      <description>İnternet sitelerindeki altyapı açıkları ve sosyal medya reklamları üzerinden iPhone cihazlara yerleşen casus yazılımlar tespit edildi. Kullanıcı etkileşimi gerektirmeyen bu yöntemle doğrudan finansal veriler ve giriş bilgileri hedef alınıyor. — Sözcü</description>
-      <pubDate>2026-10-23T12:34:06+00:00</pubDate>
     </item>
   </channel>
 </rss>
