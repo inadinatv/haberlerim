@@ -1,24 +1,24 @@
 {
   "surum": "2.1",
-  "son_guncelleme": "2026-10-24T10:12:02.362343+00:00",
-  "sure_saniye": 36.9,
+  "son_guncelleme": "2026-10-24T14:13:25.330278+00:00",
+  "sure_saniye": 38.8,
   "toplam_haber": 250,
   "kaynak_sayisi": 11,
   "aktif_kaynak": 11,
   "besleme_sayisi": 47,
-  "kazanilan_tam_metin": 206,
-  "tam_metin_haber": 202,
-  "video_haber": 24,
+  "kazanilan_tam_metin": 207,
+  "tam_metin_haber": 204,
+  "video_haber": 21,
   "kategoriler": {
-    "Gündem": 85,
-    "Ekonomi": 38,
-    "Spor": 50,
-    "Dünya": 45,
-    "Teknoloji": 4,
-    "Yapay Zeka": 2,
-    "Sağlık": 2,
-    "Yaşam & Sanat": 14,
-    "Magaza": 10
+    "Gündem": 87,
+    "Ekonomi": 33,
+    "Spor": 48,
+    "Dünya": 40,
+    "Teknoloji": 6,
+    "Yapay Zeka": 1,
+    "Sağlık": 4,
+    "Yaşam & Sanat": 19,
+    "Magaza": 12
   },
   "kaynaklar": {
     "NTV": {
@@ -42,19 +42,19 @@
       "hatali": 0,
       "hata": null
     },
-    "Hürriyet": {
-      "haber": 50,
-      "durum": "aktif",
-      "basarili": 6,
-      "hatali": 1,
-      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5099"
-    },
     "Anadolu Ajansı": {
       "haber": 62,
       "durum": "aktif",
       "basarili": 6,
       "hatali": 0,
       "hata": null
+    },
+    "Hürriyet": {
+      "haber": 50,
+      "durum": "aktif",
+      "basarili": 6,
+      "hatali": 1,
+      "hata": "XML çözümlenemedi: not well-formed (invalid token): line 1, column 5099"
     },
     "CNN Türk": {
       "haber": 60,
@@ -70,13 +70,6 @@
       "hatali": 0,
       "hata": null
     },
-    "BBC Türkçe": {
-      "haber": 10,
-      "durum": "aktif",
-      "basarili": 1,
-      "hatali": 0,
-      "hata": null
-    },
     "Habertürk": {
       "haber": 12,
       "durum": "aktif",
@@ -86,6 +79,13 @@
     },
     "Webrazzi": {
       "haber": 12,
+      "durum": "aktif",
+      "basarili": 1,
+      "hatali": 0,
+      "hata": null
+    },
+    "BBC Türkçe": {
+      "haber": 10,
       "durum": "aktif",
       "basarili": 1,
       "hatali": 0,
