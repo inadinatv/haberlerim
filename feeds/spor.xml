@@ -5,7 +5,7 @@
     <link>./</link>
     <description>GÜNDEM Spor RSS akışı</description>
     <language>tr</language>
-    <lastBuildDate>Fri, 23 Oct 2026 21:49:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:13:29 +0000</lastBuildDate>
     <item>
       <title>Fenerbahçe Tarfin, Olympiakos'u Üç Silahşörleri ile devirdi</title>
       <link>https://www.ntv.com.tr/sporskor/fenerbahce-tarfin-olympiakosu-uc-silahsorleri-ile-devirdi-1747697</link>
@@ -263,6 +263,14 @@
       <pubDate>2026-10-23T18:50:17+00:00</pubDate>
     </item>
     <item>
+      <title>Kocaelispor, Alanyaspor’u deplasmanda 2 golle geçti</title>
+      <link>https://www.aa.com.tr/tr/spor/kocaelispor-alanyaspor-u-deplasmanda-2-golle-gecti/4098974</link>
+      <guid isPermaLink="true">https://www.aa.com.tr/tr/spor/kocaelispor-alanyaspor-u-deplasmanda-2-golle-gecti/4098974</guid>
+      <category>Spor</category>
+      <description>Trendyol Süper Lig'in 9. haftasında Corendon Alanyaspor-Kocaelispor karşılaşması, konuk takımın 2-1 üstünlüğüyle tamamlandı. | Anadolu Ajansı — Anadolu Ajansı</description>
+      <pubDate>2026-10-23T18:07:00+00:00</pubDate>
+    </item>
+    <item>
       <title>Son Dakika Spor Haberi | Victor Osimhen: Lille</title>
       <link>https://www.cnnturk.com/spor/futbol/victor-osimhen-lillee-sezon-icin-en-iyi-dileklerimi-iletiyorum-3483727</link>
       <guid isPermaLink="true">https://www.cnnturk.com/spor/futbol/victor-osimhen-lillee-sezon-icin-en-iyi-dileklerimi-iletiyorum-3483727</guid>
@@ -317,14 +325,6 @@
       <category>Spor</category>
       <description>Eintracht Frankfurt Teknik Direktörü Adi Hütter, milli futbolcu Can Uzun hakkında çarpıcı açıklamalar yaptı. — Hürriyet</description>
       <pubDate>2026-10-23T15:11:14+00:00</pubDate>
-    </item>
-    <item>
-      <title>PSG-Lyon maçı ertelendi</title>
-      <link>https://www.hurriyet.com.tr/sporarena/psg-lyon-maci-ertelendi-43352615</link>
-      <guid isPermaLink="true">https://www.hurriyet.com.tr/sporarena/psg-lyon-maci-ertelendi-43352615</guid>
-      <category>Spor</category>
-      <description>Fransa Lig 1'de oynanacak Paris Saint Germain (PSG) - Lyon maçı, ülke genelindeki protestolar nedeniyle ertelendi. — Hürriyet</description>
-      <pubDate>2026-10-23T14:22:49+00:00</pubDate>
     </item>
   </channel>
 </rss>
